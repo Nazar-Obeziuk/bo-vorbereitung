@@ -1,0 +1,36 @@
+.secondary-button {
+  padding: 12px 84px;
+  background: var(--primary-orange);
+  border-radius: 25px;
+  border: 4px solid var(--primary-orange);
+  outline: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--white);
+  transition: 0.4s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.secondary-button:hover {
+  background: transparent;
+  color: var(--primary-orange);
+}
+
+.secondary-button.border {
+  padding: 14px 34px;
+  background: transparent;
+  border: 4px solid var(--black);
+  color: var(--black);
+  font-size: 20px;
+  line-height: 30px;
+  gap: 12px;
+}
+
+.secondary-button.border:hover {
+  color: var(--primary-orange);
+  border-color: var(--primary-orange);
+}
