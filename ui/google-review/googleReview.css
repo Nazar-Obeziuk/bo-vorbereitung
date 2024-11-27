@@ -1,0 +1,38 @@
+.google-review_block {
+  max-width: 620px;
+  padding: 32px 48px 32px 78px;
+  border: 2px solid var(--gray);
+  border-radius: 12px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 72px;
+}
+
+.google-logo_img {
+  width: 100%;
+}
+
+.google-block_info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.google-info_line {
+  width: 1px;
+  height: 48px;
+  background-color: var(--gray);
+}
+
+.google-info_count {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.google-count_stars {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
