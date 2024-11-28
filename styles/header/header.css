@@ -1,3 +1,102 @@
-.header {
-  background: red;
+.header-first {
+  background-color: var(--light-gray);
+  padding: 9px 0;
+}
+
+.header-first .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-first .container .refresh {
+  display: flex;
+  align-items: center;
+}
+
+.header-first .container .refresh svg {
+  margin-right: 6px;
+}
+
+.header-first .container .header-first-content {
+  display: flex;
+  grid-gap: 40px;
+  align-items: center;
+}
+
+.header-first .container .header-first-content > div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.header-first .container .header-first-content .language {
+  display: flex;
+  align-items: center;
+}
+
+.header-first .container .header-first-content .language svg {
+  margin-right: 6px;
+}
+
+.header-first .container .header-first-content .social {
+  display: flex;
+  grid-gap: 14px;
+  align-items: center;
+}
+
+.header-first .container .header-first-content .social div {
+  width: 28px;
+  height: 28px;
+}
+
+.header-second {
+  background-color: var(--dark);
+  padding: 13px 0;
+}
+
+.header-second .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-second .logo {
+  width: 200px;
+  height: 23px;
+}
+
+.header-second .header-second-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 53px;
+}
+
+.header-second .header-second-content .header-second-nav {
+  display: flex;
+  grid-gap: 20px;
+}
+
+.header-second .header-second-content .header-second-nav div {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+
+.header-second .header-second-content .header-second-nav div a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.header-second .header-second-content .header-second-content-buttons {
+  display: flex;
+  grid-gap: 12px;
+  align-items: center;
+}
+
+.header-second .header-second-content .header-second-content-buttons div {
+  width: 0;
+  height: 51px;
+  border-left: 1px solid var(--white);
+  opacity: 0.5;
 }
