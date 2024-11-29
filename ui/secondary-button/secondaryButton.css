@@ -21,7 +21,7 @@
 }
 
 .secondary-button.border {
-  padding: 14px 34px;
+  padding: 14px 56px;
   background: transparent;
   border: 4px solid var(--black);
   color: var(--black);

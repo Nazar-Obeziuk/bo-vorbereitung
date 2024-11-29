@@ -22,30 +22,30 @@ li {
 }
 
 .container {
-  max-width: 1256px;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.container.small {
+  max-width: 1076px;
   margin: 0 auto;
 }
 
 @media (max-width: 575.98px) {
-  .container {
-    max-width: 100%;
-  }
 }
 
 @media (max-width: 767.98px) {
-  .container {
-    max-width: 576px;
-  }
 }
 
 @media (max-width: 991.98px) {
-  .container {
-    max-width: 768px;
-  }
 }
 
 @media (max-width: 1199.98px) {
   .container {
-    max-width: 992px;
+    max-width: 100%;
+  }
+  .container.small {
+    width: 100%;
   }
 }

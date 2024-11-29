@@ -73,24 +73,25 @@
             Hören
         </button>
         <br>
-        <div class="level-language a1">
-            <p>A1</p>
-        </div>
-        <br>
-        <div class="level-language a2">
-            <p>A2</p>
-        </div>
-        <br>
-        <div class="level-language b1">
-            <p>B1</p>
-        </div>
-        <br>
-        <div class="level-language b2">
-            <p>B2</p>
-        </div>
-        <br>
-        <div class="level-language c1">
-            <p>C1</p>
+        <div class="level-languages level-6">
+            <div class="level-language a1">
+                <p>A1</p>
+            </div>
+            <div class="level-language a2">
+                <p>A2</p>
+            </div>
+            <div class="level-language b1">
+                <p>B1</p>
+            </div>
+            <div class="level-language b2">
+                <p>B2</p>
+            </div>
+            <div class="level-language c1">
+                <p>C1</p>
+            </div>
+            <div class="level-language c2">
+                <p>C2</p>
+            </div>
         </div>
         <br>
         <div class="level-language c2">
@@ -152,7 +153,7 @@
             <div class="progress-info">
                 <span class="start-label text p4">Dein Fortschritt</span>
                 <span class="end-label text p4">
-                    Erfolgsquote 70 % 
+                    Erfolgsquote 70 %
                     <div class="like-icon"><?php echo $like_light; ?></div>
                 </span>
             </div>
@@ -168,7 +169,7 @@
             const progressBar = document.getElementById('progress-bar');
             progressSelectorValue.innerHTML = progressSlider.value + "%";
 
-            progressSlider.oninput = function(){
+            progressSlider.oninput = function() {
                 progressSelectorValue.innerHTML = this.value + "%";
                 //const left = (((value - minValue) / (valueMax - valueMin)) * ((totalInputWidth - thumbHalfWidth) - thumbHalfWidth)) + thumbHalfWidth;
                 const currentThumbPosition = (this.value / 100) * ((this.clientWidth - 22) - 22);

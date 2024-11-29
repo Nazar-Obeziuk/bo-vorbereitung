@@ -55,7 +55,7 @@
    <div class="header-second">
       <div class="container">
          <div class="logo">
-            <img src="../images/Logo/logo.webp" alt="logo">
+            <img src="./images/logo.svg" alt="logo">
          </div>
          <div class="header-second-content">
             <div class="header-second-nav">
