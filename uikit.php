@@ -178,23 +178,23 @@
         </script>
         <br>
         <div class="dropdown-menu">
-            <div class="dropdown-menu-item selected">
+            <div class="dropdown-menu-item selected" id="dropdown-menu-item-1">
                 <a class="dropdown-menu-item-link" href="#">
                     <div class="flag-icon"><?php echo $flag_english; ?></div>
                     <span class="text p2 p2_semibold">Englisch</span>
                     <div class="check-icon"><?php echo $check_big; ?></div>
                 </a>
             </div>
-            <div class="dropdown-menu-item">
+            <div class="dropdown-menu-item" id="dropdown-menu-item-2">
                 <a class="dropdown-menu-item-link" href="#">
-                    <?php echo $flag_turkish; ?>
+                    <div class="flag-icon"><?php echo $flag_turkish; ?></div>
                     <span class="text p2 p2_semibold">Türkisch</span>
                     <div class="check-icon"><?php echo $check_big; ?></div>
                 </a>
             </div>
-            <div class="dropdown-menu-item">
+            <div class="dropdown-menu-item" id="dropdown-menu-item-3">
                 <a class="dropdown-menu-item-link" href="#">
-                    <?php echo $flag_russian; ?>
+                    <div class="flag-icon"><?php echo $flag_russian; ?></div>
                     <span class="text p2 p2_semibold">Russisch</span>
                     <div class="check-icon"><?php echo $check_big; ?></div>
                 </a>
@@ -202,37 +202,37 @@
         </div>
         <br>
         <div class="dropdown-menu">
-            <div class="dropdown-menu-item">
+            <div class="dropdown-menu-item" id="dropdown-menu-item-1">
                 <a class="dropdown-menu-item-link" href="#">
                     <span class="text p2 p2_semibold">A1 Hören</span>
                     <div class="check-icon"><?php echo $check_big; ?></div>
                 </a>
             </div>
-            <div class="dropdown-menu-item">
+            <div class="dropdown-menu-item" id="dropdown-menu-item-2">
                 <a class="dropdown-menu-item-link" href="#">
                     <span class="text p2 p2_semibold">A1 Lesen</span>
                     <div class="check-icon"><?php echo $check_big; ?></div>
                 </a>
             </div>
-            <div class="dropdown-menu-item selected">
+            <div class="dropdown-menu-item selected" id="dropdown-menu-item-3">
                 <a class="dropdown-menu-item-link" href="#">
                     <span class="text p2 p2_semibold">A1 Schreiben</span>
                     <div class="check-icon"><?php echo $check_big; ?></div>
                 </a>
             </div>
-            <div class="dropdown-menu-item">
+            <div class="dropdown-menu-item" id="dropdown-menu-item-4">
                 <a class="dropdown-menu-item-link" href="#">
                     <span class="text p2 p2_semibold">A1 Sprechen</span>
                     <div class="check-icon"><?php echo $check_big; ?></div>
                 </a>
             </div>
-            <div class="dropdown-menu-item">
+            <div class="dropdown-menu-item" id="dropdown-menu-item-5">
                 <a class="dropdown-menu-item-link" href="#">
-                    <span class="text p2 p2_semibold">A1 Sprechen</span>
+                    <span class="text p2 p2_semibold">Wortschatz A1</span>
                     <div class="check-icon"><?php echo $check_big; ?></div>
                 </a>
             </div>
-            <div class="dropdown-menu-item">
+            <div class="dropdown-menu-item" id="dropdown-menu-item-6">
                 <a class="dropdown-menu-item-link" href="#">
                     <span class="text p2 p2_semibold">Verben mit Prapositionen</span>
                     <div class="check-icon"><?php echo $check_big; ?></div>
@@ -240,6 +240,7 @@
             </div>
         </div>
         <br>
+    </div>
         <?php include "./components/footer.php" ?>
 </body>
 
