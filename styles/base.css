@@ -25,6 +25,7 @@ li {
   max-width: 1256px;
   margin: 0 auto;
   padding: 0 16px;
+  box-sizing: content-box;
 }
 
 .arrow-dropdown-icon {
