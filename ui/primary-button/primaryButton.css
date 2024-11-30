@@ -69,3 +69,24 @@
 .primary-button.border.small:hover {
   background: var(--primary-orange);
 }
+
+.primary-button.border.small.bg-transparent {
+  background-color: transparent;
+}
+
+.primary-button.border.small.bg-transparent:hover {
+  color: var(--primary-orange);
+}
+
+.primary-button.border.small.bg-transparent:hover svg path {
+  stroke: var(--primary-orange);
+}
+
+.primary-button.border.small.bg-transparent:active {
+  color: var(--white);
+  background-color: var(--primary-orange);
+}
+
+.primary-button.border.small.bg-transparent:active svg path {
+  stroke: var(--white);
+}

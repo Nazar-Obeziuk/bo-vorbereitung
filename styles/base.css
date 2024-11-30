@@ -24,6 +24,13 @@ li {
 .container {
   max-width: 1256px;
   margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: content-box;
+}
+
+.arrow-dropdown-icon {
+  width: 24px;
+  height: 24px;
 }
 
 @media (max-width: 575.98px) {
