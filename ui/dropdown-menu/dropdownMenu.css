@@ -1,5 +1,4 @@
 .dropdown-menu {
-    width: 100%;
     border: 2px solid var(--primary-orange);
     border-radius: 25px;
     overflow: hidden;
@@ -10,6 +9,7 @@
     border-bottom: 1px solid var(--gray);
     cursor: pointer;
     transition: 0.4s;
+    background-color: var(--white);
 }
 
 .dropdown-menu-item:last-child {
