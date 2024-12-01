@@ -1,0 +1,24 @@
+.listening-german .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.listening-german__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.listening-german .secondary-button svg {
+    width: 32px;
+    height: 32px;
+}
+
+.listening-german .secondary-button {
+    padding: 15px 34px;
+}
