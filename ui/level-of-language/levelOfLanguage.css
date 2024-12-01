@@ -67,6 +67,21 @@
   color: var(--white);
 }
 
+@media (max-width: 767.98px) {
+  .level-languages.level-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .level-languages.level-6 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .level-language p {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
 @media (max-width: 575.98px) {
   .level-language {
     height: 120px;

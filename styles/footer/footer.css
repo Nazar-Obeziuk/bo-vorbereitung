@@ -64,6 +64,10 @@
 .footer-socials_item {
   width: 36px;
   height: 36px;
+  transition: 0.4s;
+}
+.footer-socials_item:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 1199.98px) {
@@ -110,5 +114,24 @@
   }
   .footer-inner_socials {
     gap: 16px;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .footer-info_menu {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .footer-info_block {
+    width: 100%;
+  }
+  .footer-inner_socials {
+    gap: 10px;
+  }
+  .footer-info_logo {
+    max-width: 180px;
+  }
+  .footer-info_logo img {
+    width: 100%;
   }
 }
