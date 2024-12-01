@@ -14,6 +14,15 @@
   justify-content: space-between;
   padding-bottom: 68px;
 }
+.footer-info_logo {
+  width: 200px;
+  height: 20px;
+  display: block;
+}
+.footer-info_logo > img {
+  width: 200px !important;
+  height: 20px;
+}
 .footer-info_menu {
   display: flex;
   gap: 120px;
@@ -129,9 +138,9 @@
     gap: 10px;
   }
   .footer-info_logo {
-    max-width: 180px;
+    width: 180px;
   }
-  .footer-info_logo img {
-    width: 100%;
+  .footer-info_logo > img {
+    width: 180px !important;
   }
 }

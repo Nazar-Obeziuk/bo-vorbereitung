@@ -1,0 +1,16 @@
+.provider {
+    background: var(--light-gray);
+}
+
+.provider .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.provider .level-wrapper-list {
+    margin: 0 auto;
+}

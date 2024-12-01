@@ -52,8 +52,8 @@
                 </div>
                 <div class="google-review_block">
                     <div class="google-block_logo">
-                        <img src="./images/google-logo.svg" alt="google logo" class="google-logo_img">
-                        <img src="./images/google-logo-mobile.svg" alt="google logo" class="google-logo_img mobile">
+                        <img src="/images/google-logo.svg" alt="google logo" class="google-logo_img">
+                        <img src="/images/google-logo-mobile.svg" alt="google logo" class="google-logo_img mobile">
                     </div>
                     <div class="google-block_info">
                         <h3 class="heading h3">4.9</h3>
@@ -103,7 +103,6 @@
                     <div class="secondary-button border">
                         <p>OIF</p>
                     </div>
-
                 </div>
             </div>
         </div>
