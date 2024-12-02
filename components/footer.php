@@ -3,7 +3,7 @@
         <div class="footer-wrapper">
             <div class="footer-wrapper_info">
                 <a href="/" class="footer-info_logo">
-                    <img src="/images/logo.svg" alt="">
+                    <?php echo $logo; ?>
                 </a>
                 <div class="footer-info_menu">
                     <div class="footer-info_block">
