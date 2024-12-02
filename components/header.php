@@ -8,9 +8,29 @@
             <p class="text p4">Letzte Aktualisierung: vor 4 Stunden</p>
          </div>
          <div class="header-first-content">
-            <div>
-               <p class="text p4">Deutschkursanbieter</p>
-               <div class="arrow-dropdown-icon"><?php echo $arrow_caret_down_MD_black; ?></div>
+            <div class="header-first-dropdown-item-1">
+               <div class="header-first-dropdown-item-1-content">
+                  <p class="text p4">Deutschkursanbieter</p>
+                  <div class="arrow-dropdown-icon"><?php echo $arrow_caret_down_MD_black; ?></div>
+               </div>
+               <div class="header-first-dropdown-menu">
+                  <div class="dropdown-menu">
+                     <?php
+                     $item_index = 1;
+                     $language_dropdown = ['item 1', 'item 2', 'item 3'];
+                     foreach ($language_dropdown as $language_dropdown_item_text) { ?>
+                        <div class="dropdown-menu-item" id="dropdown-menu-item-<?php echo $item_index; ?>">
+                           <a class="dropdown-menu-item-link" href="#">
+                              <span class="text p2 p2_semibold"><?php echo $language_dropdown_item_text; ?></span>
+                              <div class="check-icon"><?php echo $check_big; ?></div>
+                           </a>
+                        </div>
+                     <?php
+                        $item_index += 1;
+                     }
+                     ?>
+                  </div>
+               </div>
             </div>
             <div class="language">
                <div class="language-content">
@@ -200,7 +220,7 @@
    function toggleHeaderMenu(button, isInnerDropdownMenu = false, innerDropdownMenuHeight = 0){
       let innerFirstSectionDropdownMenuHeight = 0;
       let innerSecondSectionContentDropdownMenuHeight = 0;
-      if(button.classList.contains('language-content')){
+      if(button.classList.contains('language-content') || button.classList.contains('header-first-dropdown-item-1-content')){
          innerFirstSectionDropdownMenuHeight = innerDropdownMenuHeight;
       }
       else if(button.classList.contains('header-second-nav-item')){
@@ -223,8 +243,27 @@
       }
    });
 
+   const headerFirstDropdownItem1Content = document.querySelectorAll('.header-first-dropdown-item-1-content');
    const headerLanguageContent = document.querySelectorAll('.language-content');
    const headerSecondNavItem = document.querySelectorAll('.header-second-nav-item');
+
+   headerFirstDropdownItem1Content.forEach(function(button) {
+		button.addEventListener('click', function(){
+         if(window.innerWidth < 1199.99){
+            let innerDropdownMenuHeight = 0;
+            if(this.parentElement.children[1].getAttribute('style')){
+               this.parentElement.children[1].removeAttribute('style');
+               innerDropdownMenuHeight -= this.parentElement.children[1].scrollHeight;
+            }
+            else{
+               this.parentElement.children[1].style.height = `${this.parentElement.children[1].scrollHeight}px`;
+               innerDropdownMenuHeight = this.parentElement.children[1].scrollHeight;
+            }
+            toggleHeaderMenu(this, true, innerDropdownMenuHeight);
+         }
+		});
+	});
+
 	headerLanguageContent.forEach(function(button) {
 		button.addEventListener('click', function(){
          if(window.innerWidth < 1199.99){
@@ -241,6 +280,7 @@
          }
 		});
 	});
+
 	headerSecondNavItem.forEach(function(button) {
 		button.addEventListener('click', function(e){
          if(window.innerWidth < 1199.99){
