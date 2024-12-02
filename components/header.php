@@ -40,32 +40,32 @@
             </div>
             <div class="social">
                <div class="tik-tok">
-                  <a href="#" style="display: flex; width: inherit; height: inherit;">
+                  <a href="#">
                      <?php echo $header_tik_tok; ?>
                   </a>
                </div>
                <div class="instagram">
-                  <a href="#" style="display: flex; width: inherit; height: inherit;">
+                  <a href="#">
                      <?php echo $header_instagram; ?>
                   </a>
                </div>
                <div class="youtube">
-                  <a href="#" style="display: flex; width: inherit; height: inherit;">
+                  <a href="#">
                      <?php echo $header_youtube; ?>
                   </a>
                </div>
                <div class="facebook">
-                  <a href="#" style="display: flex; width: inherit; height: inherit;">
+                  <a href="#">
                      <?php echo $header_facebook; ?>
                   </a>
                </div>
                <div class="telegram">
-                  <a href="#" style="display: flex; width: inherit; height: inherit;">
+                  <a href="#">
                      <?php echo $header_telegram; ?>
                   </a>
                </div>
                <div class="whatsapp">
-                  <a href="#" style="display: flex; width: inherit; height: inherit;">
+                  <a href="#">
                      <?php echo $header_whatsapp; ?>
                   </a>
                </div>
@@ -155,29 +155,29 @@
       });
    });
 
-   const toggleMenu = (mobileBtn, mobileMenu, additionalHeight = 0, isInnerMobileMenu = false) => {
-		let isInnerMobileButtonActive = false;
-		if(isInnerMobileMenu){
+   function toggleMenu (mobileBtn, mobileMenu, additionalHeight = 0, isInnerDropdownMenu = false, innerDropdownMenuHeight = 0){
+      function setMobileMenuHeight (mobileMenuElement, additionalHeightValue, innerDropdownMenuHeightValue){
+         const mobileMenuHeight = [...mobileMenuElement.children].reduce(function(total, item){
+					return total + item.scrollHeight;
+				}, 0);
+				mobileMenuElement.setAttribute('style', 'height: ' + (mobileMenuHeight + additionalHeightValue + innerDropdownMenuHeightValue) + 'px;');
+      }
+		let isInnerDropdownButtonActive = false;
+		if(isInnerDropdownMenu){
 			if(!mobileBtn.classList.contains('open')){
-				isInnerMobileButtonActive = false;
+				isInnerDropdownButtonActive = false;
 			}
 			else {
-				isInnerMobileButtonActive = true;
+				isInnerDropdownButtonActive = true;
 			}
 		}
 		if (!mobileBtn.classList.contains('open')){
-			const mobileMenuHeight = [...mobileMenu.children].reduce(function(total, item){
-				return total + item.scrollHeight;
-			}, 0);
-			mobileMenu.setAttribute('style', 'height: ' + (mobileMenuHeight + additionalHeight) + 'px;');
+			setMobileMenuHeight(mobileMenu, additionalHeight, innerDropdownMenuHeight);
 			mobileBtn.classList.add('open');
 		}
 		else {
-			if(isInnerMobileButtonActive){
-				const mobileMenuHeight = [...mobileMenu.children].reduce(function(total, item){
-					return total + item.scrollHeight;
-				}, 0);
-				mobileMenu.setAttribute('style', 'height: ' + (mobileMenuHeight + additionalHeight) + 'px;');
+			if(isInnerDropdownButtonActive){
+				setMobileMenuHeight(mobileMenu, additionalHeight, innerDropdownMenuHeight);
 				mobileBtn.classList.remove('open');
 			}
 			else {
@@ -185,7 +185,7 @@
 				mobileBtn.classList.remove('open');
 			}
 		}
-	};
+	}
 
    const burgerBtn = document.getElementById('burger-menu');
    const headerFirstSection = document.getElementById('header-first');
@@ -195,13 +195,21 @@
    const headerSecondSectionContentPaddingTopAndBottom = 20 + 36;
    const headerSecondSectionContentGap = 20;
 
-   function toggleHeaderMenu(button, isInnerMobileMenu = false){
-      toggleMenu(button, headerSecondSectionContent, (headerSecondSectionContentPaddingTopAndBottom + headerSecondSectionContentGap), isInnerMobileMenu);
+   function toggleHeaderMenu(button, isInnerDropdownMenu = false, innerDropdownMenuHeight = 0){
+      let innerFirstSectionDropdownMenuHeight = 0;
+      let innerSecondSectionContentDropdownMenuHeight = 0;
+      if(button.classList.contains('language-content')){
+         innerFirstSectionDropdownMenuHeight = innerDropdownMenuHeight;
+      }
+      else if(button.classList.contains('header-second-nav-item')){
+         innerSecondSectionContentDropdownMenuHeight = innerDropdownMenuHeight;
+      }
+      toggleMenu(button, headerSecondSectionContent, (headerSecondSectionContentPaddingTopAndBottom + headerSecondSectionContentGap), isInnerDropdownMenu, innerSecondSectionContentDropdownMenuHeight);
       button.classList.toggle('open');
       if(headerSecondSectionContent.getAttribute('style')){
          headerSecondSectionContent.style.padding = "20px 16px 36px";
       }
-      toggleMenu(button, headerFirstSection, headerFirstSectionPaddingTopAndBottom, isInnerMobileMenu);
+      toggleMenu(button, headerFirstSection, headerFirstSectionPaddingTopAndBottom, isInnerDropdownMenu, innerFirstSectionDropdownMenuHeight);
       if(headerFirstSection.getAttribute('style')){
          headerFirstSection.style.padding = "9px 0px";
       }
@@ -217,17 +225,63 @@
    const headerSecondNavItem = document.querySelectorAll('.header-second-nav-item');
 	headerLanguageContent.forEach(function(button) {
 		button.addEventListener('click', function(){
-			this.parentElement.children[1] && this.parentElement.children[1].classList.toggle('show');
-         toggleHeaderMenu(this, true);
-			//toggleMenu(this, searchCatalogNav, searchCatalogAllAdditionalIndents, true);
+         if(window.innerWidth < 1199.99){
+            let innerDropdownMenuHeight = 0;
+            if(this.parentElement.children[1].getAttribute('style')){
+               this.parentElement.children[1].removeAttribute('style');
+               innerDropdownMenuHeight -= this.parentElement.children[1].scrollHeight;
+            }
+            else{
+               this.parentElement.children[1].style.height = `${this.parentElement.children[1].scrollHeight}px`;
+               innerDropdownMenuHeight = this.parentElement.children[1].scrollHeight;
+            }
+            toggleHeaderMenu(this, true, innerDropdownMenuHeight);
+         }
 		});
 	});
 	headerSecondNavItem.forEach(function(button) {
 		button.addEventListener('click', function(e){
-			this.parentElement.children[1] && this.parentElement.children[1].classList.toggle('show');
-         toggleHeaderMenu(this, true);
-			//toggleMenu(this, searchCatalogNav, searchCatalogAllAdditionalIndents, true);
+         if(window.innerWidth < 1199.99){
+            let innerDropdownMenuHeight = 0;
+            if(this.parentElement.children[1].getAttribute('style')){
+               this.parentElement.children[1].removeAttribute('style');
+               innerDropdownMenuHeight -= this.parentElement.children[1].scrollHeight;
+            }
+            else{
+               this.parentElement.children[1].style.height = `${this.parentElement.children[1].scrollHeight}px`;
+               innerDropdownMenuHeight = this.parentElement.children[1].scrollHeight;
+            }
+            toggleHeaderMenu(this, true, innerDropdownMenuHeight);
+         }
 		});
 	});
 
+   function windowResize() {
+      function removeClassOpen(element){
+         if(element.classList.contains('open')){
+            element.classList.remove('open');
+         }
+      }
+      function removeAttributeStyle(element) {
+         if(element.getAttribute('style')){
+            element.removeAttribute('style');
+         }
+      }
+      if(window.innerWidth > 1199.98){
+         removeClassOpen(burgerBtn);
+         removeAttributeStyle(headerFirstSection);
+         removeAttributeStyle(headerSecondSectionContent);
+         headerLanguageContent.forEach((button) => {
+            removeClassOpen(button);
+            removeAttributeStyle(button.parentElement.children[1]);
+         });
+         headerSecondNavItem.forEach((button) => {
+            removeClassOpen(button);
+            removeAttributeStyle(button.parentElement.children[1]);
+         });
+      }
+   }
+
+   window.addEventListener('resize', windowResize);
+   window.addEventListener('orientationchange', windowResize);
 </script>
