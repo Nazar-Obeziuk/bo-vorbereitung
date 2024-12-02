@@ -244,6 +244,15 @@
     flex-direction: column;
   }
 
+  .header.open {
+    overflow-y: scroll;
+    height: 100vh;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
   .header-first {
     order: 1;
     height: 0;
