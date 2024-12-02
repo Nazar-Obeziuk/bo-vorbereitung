@@ -1,27 +1,28 @@
 .secondary-button {
   padding: 12px 84px;
-  background: var(--primary-orange);
   border-radius: 25px;
-  border: 4px solid var(--primary-orange);
+  border: 4px solid var(--black);
   outline: none;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
-  color: var(--white);
   transition: 0.4s;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 12px;
+  background: transparent;
+  color: var(--black);
 }
 
 .secondary-button:hover {
-  background: transparent;
-  color: var(--primary-orange);
+  background: var(--primary-orange);
+  border: 4px solid var(--primary-orange);
+  color: var(--white);
 }
 
 .secondary-button.border {
-  padding: 14px 34px;
+  padding: 14px 56px;
   background: transparent;
   border: 4px solid var(--black);
   color: var(--black);
