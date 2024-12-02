@@ -57,7 +57,7 @@
   transition: 0.4s;
 }
 .footer-actions_button:hover {
-  transform: scale(1.1);
+  transform: scale(1.04);
 }
 .footer-actions_button .language,
 .footer-first-dropdown-item-1 {

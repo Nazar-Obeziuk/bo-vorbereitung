@@ -97,7 +97,7 @@
       <div class="container">
          <div>
             <div class="logo">
-               <img src="/images/logo.svg" alt="logo">
+               <?php echo $logo; ?>
             </div>
             <div id="burger-menu" class="burger-menu">
                <div></div>
