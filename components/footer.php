@@ -27,8 +27,61 @@
                     </div>
                 </div>
                 <div class="footer-info_actions">
-                    <div class="footer-actions_button">Deutschkursanbieter</div>
-                    <div class="footer-actions_button">Deutsch</div>
+                    <div class="footer-actions_button">
+                        <div class="footer-first-dropdown-item-1">
+                            <div class="footer-first-dropdown-item-1-content">
+                                <p class="text p4">Deutschkursanbieter</p>
+                                <div class="arrow-dropdown-icon"><?php echo $arrow_caret_down_MD_white; ?></div>
+                            </div>
+                            <div class="footer-first-dropdown-menu">
+                                <div class="dropdown-menu">
+                                    <?php
+                                    $item_index = 1;
+                                    $language_dropdown = ['item 1', 'item 2', 'item 3'];
+                                    foreach ($language_dropdown as $language_dropdown_item_text) { ?>
+                                        <div class="dropdown-menu-item" id="dropdown-menu-item-<?php echo $item_index; ?>">
+                                        <a class="dropdown-menu-item-link" href="#">
+                                            <span class="text p2 p2_semibold"><?php echo $language_dropdown_item_text; ?></span>
+                                            <div class="check-icon"><?php echo $check_big; ?></div>
+                                        </a>
+                                        </div>
+                                    <?php
+                                        $item_index += 1;
+                                    }
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="footer-actions_button">Deutsch</div> -->
+                     <div class="footer-actions_button">
+                        <div class="language">
+                            <div class="language-content">
+                                <div class="language-icon"><?php echo $flag_germany; ?></div>
+                                <p class="text p4">Deutsch</p>
+                                <div class="arrow-dropdown-icon"><?php echo $arrow_caret_down_MD_black; ?></div>
+                            </div>
+                            <div class="footer-language-dropdown-menu">
+                                <div class="dropdown-menu">
+                                    <?php
+                                    $item_index = 1;
+                                    $language_dropdown = ['Englisch' => $flag_english, 'Türkisch' => $flag_turkish, 'Russisch' => $flag_russian];
+                                    foreach ($language_dropdown as $language_dropdown_item_text => $language_dropdown_item_flag) { ?>
+                                        <div class="dropdown-menu-item" id="dropdown-menu-item-<?php echo $item_index; ?>">
+                                        <a class="dropdown-menu-item-link" href="#">
+                                            <div class="flag-icon"><?php echo $language_dropdown_item_flag; ?></div>
+                                            <span class="text p2 p2_semibold"><?php echo $language_dropdown_item_text; ?></span>
+                                            <div class="check-icon"><?php echo $check_big; ?></div>
+                                        </a>
+                                        </div>
+                                    <?php
+                                        $item_index += 1;
+                                    }
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
                 </div>
             </div>
             <div class="footer-wrapper_inner">
@@ -73,3 +126,7 @@
         </div>
     </div>
 </footer>
+
+<script type="text/javascript">
+
+</script>

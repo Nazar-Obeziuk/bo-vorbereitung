@@ -8,9 +8,29 @@
             <p class="text p4">Letzte Aktualisierung: vor 4 Stunden</p>
          </div>
          <div class="header-first-content">
-            <div>
-               <p class="text p4">Deutschkursanbieter</p>
-               <div class="arrow-dropdown-icon"><?php echo $arrow_caret_down_MD_black; ?></div>
+            <div class="header-first-dropdown-item-1">
+               <div class="header-first-dropdown-item-1-content">
+                  <p class="text p4">Deutschkursanbieter</p>
+                  <div class="arrow-dropdown-icon"><?php echo $arrow_caret_down_MD_black; ?></div>
+               </div>
+               <div class="header-first-dropdown-menu">
+                  <div class="dropdown-menu">
+                     <?php
+                     $item_index = 1;
+                     $language_dropdown = ['item 1', 'item 2', 'item 3'];
+                     foreach ($language_dropdown as $language_dropdown_item_text) { ?>
+                        <div class="dropdown-menu-item" id="dropdown-menu-item-<?php echo $item_index; ?>">
+                           <a class="dropdown-menu-item-link" href="#">
+                              <span class="text p2 p2_semibold"><?php echo $language_dropdown_item_text; ?></span>
+                              <div class="check-icon"><?php echo $check_big; ?></div>
+                           </a>
+                        </div>
+                     <?php
+                        $item_index += 1;
+                     }
+                     ?>
+                  </div>
+               </div>
             </div>
             <div class="language">
                <div class="language-content">
@@ -40,32 +60,32 @@
             </div>
             <div class="social">
                <div class="tik-tok">
-                  <a href="https://www.tiktok.com/@vorbereitung.mit.bo" target="_blank" style="display: flex; width: inherit; height: inherit;">
+                  <a href="https://www.tiktok.com/@vorbereitung.mit.bo" target="_blank">
                      <?php echo $header_tik_tok; ?>
                   </a>
                </div>
                <div class="instagram">
-                  <a href="https://www.instagram.com/vorbereitung_mit_bo" target="_blank" style="display: flex; width: inherit; height: inherit;">
+                  <a href="https://www.instagram.com/vorbereitung_mit_bo" target="_blank">
                      <?php echo $header_instagram; ?>
                   </a>
                </div>
                <div class="youtube">
-                  <a href="https://youtube.com/@vorbereitungbo" target="_blank" style="display: flex; width: inherit; height: inherit;">
+                  <a href="https://youtube.com/@vorbereitungbo" target="_blank">
                      <?php echo $header_youtube; ?>
                   </a>
                </div>
                <div class="facebook">
-                  <a href="https://www.facebook.com/profile.php?id=61554970806530" target="_blank" style="display: flex; width: inherit; height: inherit;">
+                  <a href="https://www.facebook.com/profile.php?id=61554970806530" target="_blank">
                      <?php echo $header_facebook; ?>
                   </a>
                </div>
                <div class="telegram">
-                  <a href="https://t.me/deutsch_vorbereitung" target="_blank" style="display: flex; width: inherit; height: inherit;">
+                  <a href="https://t.me/deutsch_vorbereitung" target="_blank">
                      <?php echo $header_telegram; ?>
                   </a>
                </div>
                <div class="whatsapp">
-                  <a href="https://whatsapp.com/channel/0029VaRxVlz5Ui2ZwdrgVe12" target="_blank" style="display: flex; width: inherit; height: inherit;">
+                  <a href="https://whatsapp.com/channel/0029VaRxVlz5Ui2ZwdrgVe12" target="_blank">
                      <?php echo $header_whatsapp; ?>
                   </a>
                </div>
@@ -157,34 +177,37 @@
       });
    });
 
-   const toggleMenu = (mobileBtn, mobileMenu, additionalHeight = 0, isInnerMobileMenu = false) => {
-      let isInnerMobileButtonActive = false;
-      if (isInnerMobileMenu) {
-         if (!mobileBtn.classList.contains('open')) {
-            isInnerMobileButtonActive = false;
-         } else {
-            isInnerMobileButtonActive = true;
-         }
+   function toggleMenu (mobileBtn, mobileMenu, additionalHeight = 0, isInnerDropdownMenu = false, innerDropdownMenuHeight = 0){
+      function setMobileMenuHeight (mobileMenuElement, additionalHeightValue, innerDropdownMenuHeightValue){
+         const mobileMenuHeight = [...mobileMenuElement.children].reduce(function(total, item){
+					return total + item.scrollHeight;
+				}, 0);
+				mobileMenuElement.setAttribute('style', 'height: ' + (mobileMenuHeight + additionalHeightValue + innerDropdownMenuHeightValue) + 'px;');
       }
-      if (!mobileBtn.classList.contains('open')) {
-         const mobileMenuHeight = [...mobileMenu.children].reduce(function(total, item) {
-            return total + item.scrollHeight;
-         }, 0);
-         mobileMenu.setAttribute('style', 'height: ' + (mobileMenuHeight + additionalHeight) + 'px;');
-         mobileBtn.classList.add('open');
-      } else {
-         if (isInnerMobileButtonActive) {
-            const mobileMenuHeight = [...mobileMenu.children].reduce(function(total, item) {
-               return total + item.scrollHeight;
-            }, 0);
-            mobileMenu.setAttribute('style', 'height: ' + (mobileMenuHeight + additionalHeight) + 'px;');
-            mobileBtn.classList.remove('open');
-         } else {
-            mobileMenu.removeAttribute('style');
-            mobileBtn.classList.remove('open');
-         }
-      }
-   };
+		let isInnerDropdownButtonActive = false;
+		if(isInnerDropdownMenu){
+			if(!mobileBtn.classList.contains('open')){
+				isInnerDropdownButtonActive = false;
+			}
+			else {
+				isInnerDropdownButtonActive = true;
+			}
+		}
+		if (!mobileBtn.classList.contains('open')){
+			setMobileMenuHeight(mobileMenu, additionalHeight, innerDropdownMenuHeight);
+			mobileBtn.classList.add('open');
+		}
+		else {
+			if(isInnerDropdownButtonActive){
+				setMobileMenuHeight(mobileMenu, additionalHeight, innerDropdownMenuHeight);
+				mobileBtn.classList.remove('open');
+			}
+			else {
+				mobileMenu.removeAttribute('style');
+				mobileBtn.classList.remove('open');
+			}
+		}
+	}
 
    const burgerBtn = document.getElementById('burger-menu');
    const headerFirstSection = document.getElementById('header-first');
@@ -194,14 +217,22 @@
    const headerSecondSectionContentPaddingTopAndBottom = 20 + 36;
    const headerSecondSectionContentGap = 20;
 
-   function toggleHeaderMenu(button, isInnerMobileMenu = false) {
-      toggleMenu(button, headerSecondSectionContent, (headerSecondSectionContentPaddingTopAndBottom + headerSecondSectionContentGap), isInnerMobileMenu);
+   function toggleHeaderMenu(button, isInnerDropdownMenu = false, innerDropdownMenuHeight = 0){
+      let innerFirstSectionDropdownMenuHeight = 0;
+      let innerSecondSectionContentDropdownMenuHeight = 0;
+      if(button.classList.contains('language-content') || button.classList.contains('header-first-dropdown-item-1-content')){
+         innerFirstSectionDropdownMenuHeight = innerDropdownMenuHeight;
+      }
+      else if(button.classList.contains('header-second-nav-item')){
+         innerSecondSectionContentDropdownMenuHeight = innerDropdownMenuHeight;
+      }
+      toggleMenu(button, headerSecondSectionContent, (headerSecondSectionContentPaddingTopAndBottom + headerSecondSectionContentGap), isInnerDropdownMenu, innerSecondSectionContentDropdownMenuHeight);
       button.classList.toggle('open');
       if (headerSecondSectionContent.getAttribute('style')) {
          headerSecondSectionContent.style.padding = "20px 16px 36px";
       }
-      toggleMenu(button, headerFirstSection, headerFirstSectionPaddingTopAndBottom, isInnerMobileMenu);
-      if (headerFirstSection.getAttribute('style')) {
+      toggleMenu(button, headerFirstSection, headerFirstSectionPaddingTopAndBottom, isInnerDropdownMenu, innerFirstSectionDropdownMenuHeight);
+      if(headerFirstSection.getAttribute('style')){
          headerFirstSection.style.padding = "9px 0px";
       }
    }
@@ -212,20 +243,87 @@
       }
    });
 
+   const headerFirstDropdownItem1Content = document.querySelectorAll('.header-first-dropdown-item-1-content');
    const headerLanguageContent = document.querySelectorAll('.language-content');
    const headerSecondNavItem = document.querySelectorAll('.header-second-nav-item');
-   headerLanguageContent.forEach(function(button) {
-      button.addEventListener('click', function() {
-         this.parentElement.children[1] && this.parentElement.children[1].classList.toggle('show');
-         toggleHeaderMenu(this, true);
-         //toggleMenu(this, searchCatalogNav, searchCatalogAllAdditionalIndents, true);
-      });
-   });
-   headerSecondNavItem.forEach(function(button) {
-      button.addEventListener('click', function(e) {
-         this.parentElement.children[1] && this.parentElement.children[1].classList.toggle('show');
-         toggleHeaderMenu(this, true);
-         //toggleMenu(this, searchCatalogNav, searchCatalogAllAdditionalIndents, true);
-      });
-   });
+
+   headerFirstDropdownItem1Content.forEach(function(button) {
+		button.addEventListener('click', function(){
+         if(window.innerWidth < 1199.99){
+            let innerDropdownMenuHeight = 0;
+            if(this.parentElement.children[1].getAttribute('style')){
+               this.parentElement.children[1].removeAttribute('style');
+               innerDropdownMenuHeight -= this.parentElement.children[1].scrollHeight;
+            }
+            else{
+               this.parentElement.children[1].style.height = `${this.parentElement.children[1].scrollHeight}px`;
+               innerDropdownMenuHeight = this.parentElement.children[1].scrollHeight;
+            }
+            toggleHeaderMenu(this, true, innerDropdownMenuHeight);
+         }
+		});
+	});
+
+	headerLanguageContent.forEach(function(button) {
+		button.addEventListener('click', function(){
+         if(window.innerWidth < 1199.99){
+            let innerDropdownMenuHeight = 0;
+            if(this.parentElement.children[1].getAttribute('style')){
+               this.parentElement.children[1].removeAttribute('style');
+               innerDropdownMenuHeight -= this.parentElement.children[1].scrollHeight;
+            }
+            else{
+               this.parentElement.children[1].style.height = `${this.parentElement.children[1].scrollHeight}px`;
+               innerDropdownMenuHeight = this.parentElement.children[1].scrollHeight;
+            }
+            toggleHeaderMenu(this, true, innerDropdownMenuHeight);
+         }
+		});
+	});
+
+	headerSecondNavItem.forEach(function(button) {
+		button.addEventListener('click', function(e){
+         if(window.innerWidth < 1199.99){
+            let innerDropdownMenuHeight = 0;
+            if(this.parentElement.children[1].getAttribute('style')){
+               this.parentElement.children[1].removeAttribute('style');
+               innerDropdownMenuHeight -= this.parentElement.children[1].scrollHeight;
+            }
+            else{
+               this.parentElement.children[1].style.height = `${this.parentElement.children[1].scrollHeight}px`;
+               innerDropdownMenuHeight = this.parentElement.children[1].scrollHeight;
+            }
+            toggleHeaderMenu(this, true, innerDropdownMenuHeight);
+         }
+		});
+	});
+
+   function windowResize() {
+      function removeClassOpen(element){
+         if(element.classList.contains('open')){
+            element.classList.remove('open');
+         }
+      }
+      function removeAttributeStyle(element) {
+         if(element.getAttribute('style')){
+            element.removeAttribute('style');
+         }
+      }
+      if(window.innerWidth > 1199.98){
+         removeClassOpen(burgerBtn);
+         removeAttributeStyle(headerFirstSection);
+         removeAttributeStyle(headerSecondSectionContent);
+         headerLanguageContent.forEach((button) => {
+            removeClassOpen(button);
+            removeAttributeStyle(button.parentElement.children[1]);
+         });
+         headerSecondNavItem.forEach((button) => {
+            removeClassOpen(button);
+            removeAttributeStyle(button.parentElement.children[1]);
+         });
+      }
+   }
+
+   window.addEventListener('resize', windowResize);
+   window.addEventListener('orientationchange', windowResize);
 </script>
