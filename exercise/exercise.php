@@ -14,7 +14,11 @@
     <section class="breadcrumbs">
         <div class="container">
             <h4 class="heading h4">Deutsch <span>B1</span></h4>
-            <p class="text p4">Vorbereiting mit BO -> <span>B1 (Goethe)</span></p>
+              <div>
+                <a class="text p4" href="">Vorbereiting mit BO  </a>
+                <span>-></span>
+                <a class="text p4 bold" href="">B1 (Goethe)</a>
+            </div>
         </div>
     </section>
     <section class="choice-of-exercises">
