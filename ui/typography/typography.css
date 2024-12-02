@@ -2,6 +2,10 @@
   color: var(--black);
 }
 
+.heading span {
+  color: var(--primary-orange);
+}
+
 .heading.h1 {
   font-size: 64px;
   font-weight: 700;

@@ -7,7 +7,11 @@
 
 @import "../ui/main.css";
 
-@import "./main-page/mainPage.css";
+@import "./home/home.css";
+@import "./writing/writing.css";
+@import "./listening-german/listening-german.css";
+@import "./provider/provider.css";
+@import "./exercise/exercise.css";
 
 .breadcrumbs {
   padding: 14px 0;
