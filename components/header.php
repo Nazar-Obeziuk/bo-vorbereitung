@@ -97,7 +97,7 @@
       <div class="container">
          <div>
             <div class="logo">
-               <img src="/images/logo.svg" alt="logo">
+               <?php echo $logo; ?>
             </div>
             <div id="burger-menu" class="burger-menu">
                <div></div>
@@ -209,6 +209,7 @@
 		}
 	}
 
+   const header = document.querySelector('header');
    const burgerBtn = document.getElementById('burger-menu');
    const headerFirstSection = document.getElementById('header-first');
    const headerSecondSectionContent = document.getElementById('header-second-content');
@@ -230,10 +231,18 @@
       button.classList.toggle('open');
       if (headerSecondSectionContent.getAttribute('style')) {
          headerSecondSectionContent.style.padding = "20px 16px 36px";
+         document.body.style.overflow = "hidden";
+         document.body.style.maxHeight = "100vh";
+         header.classList.add('open');
+      }
+      else {
+         document.body.removeAttribute('style');
+         header.classList.remove('open');
       }
       toggleMenu(button, headerFirstSection, headerFirstSectionPaddingTopAndBottom, isInnerDropdownMenu, innerFirstSectionDropdownMenuHeight);
       if(headerFirstSection.getAttribute('style')){
          headerFirstSection.style.padding = "9px 0px";
+         headerFirstSection.style.overflow = "visible";
       }
    }
 

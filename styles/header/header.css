@@ -120,6 +120,11 @@
   height: 23px;
 }
 
+.header-second .logo svg {
+  width: 100%;
+  height: 100%;
+}
+
 .header-second .header-second-content {
   display: flex;
   justify-content: space-between;
@@ -237,6 +242,15 @@
   .header {
     display: flex;
     flex-direction: column;
+  }
+
+  .header.open {
+    overflow-y: scroll;
+    height: 100vh;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 
   .header-first {
@@ -383,10 +397,7 @@
 
   .header-second .logo {
     width: 180px;
-  }
-
-  .header-second .logo img {
-    width: 100%;
+    height: 20px;
   }
 
   .header-second .header-second-content {
