@@ -1,3 +1,4 @@
+@import "./deutsch-b1-horen.css";
 @import "./variables.css";
 @import "./fonts.css";
 @import "./base.css";
@@ -201,6 +202,12 @@
   color: #333;
 }
 
+@media (max-width: 991.98px) {
+  .choice-of-exercises__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 1199.98px) {
   .choice-of-exercises__list {
     grid-template-columns: repeat(3, 1fr);
@@ -221,25 +228,5 @@
   .questions-box__text {
     max-height: none;
     width: 100%;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .choice-of-exercises__list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .choice-of-exercises .outline-orange {
-    gap: 0;
-    padding: 16px 0;
-  }
-
-  .choice-of-exercises .outline-orange svg {
-    height: 80px;
-    width: 80px;
-  }
-  .choice-of-exercises .container {
-    gap: 24px;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 }
