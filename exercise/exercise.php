@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <?php include "../components/header.php" ?>
+    <?php include dirname(__DIR__) . "/components/header.php"; ?>
     <section class="breadcrumbs">
         <div class="container">
             <h4 class="heading h4">Deutsch <span>B1</span></h4>
@@ -121,6 +121,6 @@
     </section>
 
 
-    <?php include "../components/footer.php" ?>
-    <script src="./script.js"></script>
+    <?php include dirname(__DIR__) . "/components/footer.php" ?>
+    <script src="../script.js"></script>
 </body>

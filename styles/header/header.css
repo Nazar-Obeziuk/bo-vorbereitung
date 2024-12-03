@@ -67,7 +67,7 @@
   position: absolute;
   top: 100%;
   left: -100%;
-  z-index: 3;
+  z-index: 4;
 }
 
 .header-first-dropdown-item-1 .header-first-dropdown-menu {
@@ -190,6 +190,7 @@
   position: absolute;
   top: 100%;
   transform: translateX(-50%);
+  z-index: 4;
 }
 
 .header-second .header-second-content .header-second-nav > div:hover .header-second-nav-dropdown-menu {
