@@ -229,8 +229,8 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .choice-of-exercises .outline-orange {
-    gap: 16px;
-    padding: 22px 0;
+    gap: 0;
+    padding: 16px 0;
   }
 
   .choice-of-exercises .outline-orange svg {
