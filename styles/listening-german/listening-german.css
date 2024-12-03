@@ -11,8 +11,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
-
 
 .listening-german .secondary-button svg {
     width: 32px;

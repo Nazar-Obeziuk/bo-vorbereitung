@@ -167,15 +167,31 @@
             const progressSlider = document.getElementById('progress-slider');
             const progressSelectorValue = document.getElementById('progress-selector-value');
             const progressBar = document.getElementById('progress-bar');
-            progressSelectorValue.innerHTML = progressSlider.value + "%";
+
+            // Set initial value to 43%
+            progressSlider.value = 43;
+
+            function updateProgress() {
+                progressSelectorValue.innerHTML = progressSlider.value + "%";
+                const currentThumbPosition = (progressSlider.value / 100) * (progressSlider.clientWidth - 44); // Adjusted for thumb width
+                progressSelectorValue.style.left = currentThumbPosition + "px";
+                progressBar.style.width = progressSlider.value + "%";
+            }
+
+            // Initial update
+            updateProgress();
 
             progressSlider.oninput = function() {
-                progressSelectorValue.innerHTML = this.value + "%";
-                //const left = (((value - minValue) / (valueMax - valueMin)) * ((totalInputWidth - thumbHalfWidth) - thumbHalfWidth)) + thumbHalfWidth;
-                const currentThumbPosition = (this.value / 100) * ((this.clientWidth - 22) - 22);
-                progressSelectorValue.style.left = currentThumbPosition + "px";
-                progressBar.style.width = (currentThumbPosition + 8) + "px";
-            }
+                updateProgress();
+            };
+
+            progressBar.parentElement.addEventListener('click', function(event) {
+                const rect = progressBar.parentElement.getBoundingClientRect();
+                const offsetX = event.clientX - rect.left;
+                const newValue = (offsetX / rect.width) * 100;
+                progressSlider.value = newValue;
+                updateProgress();
+            });
         </script>
         <br>
         <div class="dropdown-menu">
@@ -241,6 +257,49 @@
             </div>
         </div>
         <br>
+        <span class="dot text p3">40% (234 von 587 Personen konnten beim ersten Mal richtig antworten)
+        </span>
+        <br>
+        <div class="list__">
+            <label class="text p2"> Alex schlägt Serg vor, nach Mallorca zu fliegen.</label>
+            <span class="input__box border__box">
+                <input class="input_radio" type="radio" name="answer" value="richtig"> Richtig.
+            </span>
+            <span class="input__box border__box">
+                <input class="input_radio" type="radio" name="answer" value="falsch"> Falsch.
+            </span>
+        </div>
+        <script type="text/javascript">
+            // Select all radio buttons with the class 'input_radio'
+            const radioButtons = document.querySelectorAll('.input_radio');
+
+            // Add a click event listener to each radio button
+            radioButtons.forEach((radioButton) => {
+            radioButton.addEventListener('click', function () {
+                // Find the closest .list__ parent element
+                const listParent = this.closest('.list__');
+                
+                // Remove the 'orange' class from all .input__box.border__box elements within the .list__ parent
+                listParent.querySelectorAll('.input__box.border__box').forEach((box) => {
+                box.classList.remove('orange');
+                });
+                
+                // Add the 'orange' class to the parent element of the clicked radio button
+                this.closest('.input__box').classList.add('orange');
+            });
+            });
+        </script>
+        <br>
+        <span class="input__box">
+            <input class="input_radio" type="radio" name="answer" value="falsch"> Falsch.
+        </span>
+
+        <br>
+        <hr>
+        <br>
+        <br>
+        <br>
+
     </div>
 
     <!-- <button class="primary-button" type="button">
