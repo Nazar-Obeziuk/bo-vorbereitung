@@ -1,24 +1,45 @@
+.listening-german {
+  background: var(--light-gray);
+}
+
 .listening-german .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 35px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .listening-german__list {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-
 .listening-german .secondary-button svg {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 .listening-german .secondary-button {
-    padding: 15px 34px;
+  padding: 12px 30px;
+  transition: 0.4s;
+}
+
+.listening-german .secondary-button p {
+  font-weight: 600;
+}
+
+.listening-german .secondary-button:hover {
+  background: var(--primary-orange);
+  color: var(--white);
+}
+
+.listening-german .secondary-button:hover svg path {
+  transition: 0.4s;
+}
+
+.listening-german .secondary-button:hover svg path {
+  stroke: var(--white);
 }
