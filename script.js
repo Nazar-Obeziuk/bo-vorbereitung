@@ -8,25 +8,6 @@ faqItems.forEach((faqItem) => {
   });
 });
 
-// Select all radio buttons with the class 'input_radio'
-const radioButtons = document.querySelectorAll('.input_radio');
-
-// Add a click event listener to each radio button
-radioButtons.forEach((radioButton) => {
-  radioButton.addEventListener('click', function () {
-    // Find the closest .list__ parent element
-    const listParent = this.closest('.list__');
-    
-    // Remove the 'orange' class from all .input__box.border__box elements within the .list__ parent
-    listParent.querySelectorAll('.input__box.border__box').forEach((box) => {
-      box.classList.remove('orange');
-    });
-    
-    // Add the 'orange' class to the parent element of the clicked radio button
-    this.closest('.input__box').classList.add('orange');
-  });
-});
-
 function isReviewsSwiperPresent() {
   return document.querySelector('.reviews_swiper') !== null;
 }
