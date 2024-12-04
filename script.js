@@ -7,9 +7,9 @@ faqItems.forEach((faqItem) => {
   });
 });
 
-  // home feedback slider
-  const arrowReviewsLeft = document.querySelector(".arrow-left-reviews");
-  const arrowReviewsRight = document.querySelector(".arrow-right-reviews");
+// home feedback slider
+const arrowReviewsLeft = document.querySelector(".arrow-left-reviews");
+const arrowReviewsRight = document.querySelector(".arrow-right-reviews");
 
 var swiper = new Swiper(".reviews_swiper", {
   spaceBetween: 16,
@@ -32,5 +32,3 @@ var swiper = new Swiper(".reviews_swiper", {
     prevEl: arrowReviewsLeft,
   },
 });
-
-}

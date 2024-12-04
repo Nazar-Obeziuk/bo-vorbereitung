@@ -95,7 +95,9 @@
                 <p class='text p3 center'>Sie hören ein Gespräch. Zu diesem Gespräch gibt es zwei Aufgaben. Entscheiden Sie bei diesem Gespräch, ob die Aussage dazurichtig oder falsch ist und welche Antwort (a, b oder c) am besten passt.</p>
                 <div class="box__audio">
                     <h3 class="heading h3">Mallorca</h3>
-                    <audio src="../audio/BRdXYEtmgvCX.128.mp3" controls></audio>
+
+    <audio id="audio" src="../audio/BRdXYEtmgvCX.128.mp3" controls></audio>
+    
                 </div>
             </div>
             <div class="box_border back__width">
