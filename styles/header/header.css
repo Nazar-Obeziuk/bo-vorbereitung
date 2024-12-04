@@ -1,6 +1,7 @@
 .header-first {
   background-color: var(--light-gray);
   padding: 9px 0;
+  border-top: 1px solid var(--dark);
 }
 
 .header-first .container {
@@ -74,11 +75,15 @@
   left: -50%;
 }
 
-.header-first .container .header-first-content .language:hover .header-first-dropdown-menu,
+.header-first
+  .container
+  .header-first-content
+  .language:hover
+  .header-first-dropdown-menu,
 .header-first-dropdown-item-1:hover .header-first-dropdown-menu {
   display: block;
   animation-name: showDropdown;
-  animation-duration: .3s;
+  animation-duration: 0.3s;
   animation-timing-function: ease-in;
 }
 
@@ -142,7 +147,11 @@
   cursor: pointer;
 }
 
-.header-second .header-second-content .header-second-nav > div .header-second-nav-item {
+.header-second
+  .header-second-content
+  .header-second-nav
+  > div
+  .header-second-nav-item {
   display: flex;
   align-items: center;
   color: var(--white);
@@ -159,7 +168,10 @@
   align-items: center;
 }
 
-.header-second .header-second-content .header-second-content-buttons .primary-button.border.small.bg-transparent {
+.header-second
+  .header-second-content
+  .header-second-content-buttons
+  .primary-button.border.small.bg-transparent {
   max-height: 48px;
 }
 
@@ -170,20 +182,46 @@
   opacity: 0.5;
 }
 
-.header-second .header-second-content .header-second-nav > div > div:first-child .text.p3,
-.header-second .header-second-content .header-second-nav > div > div:first-child svg path{
+.header-second
+  .header-second-content
+  .header-second-nav
+  > div
+  > div:first-child
+  .text.p3,
+.header-second
+  .header-second-content
+  .header-second-nav
+  > div
+  > div:first-child
+  svg
+  path {
   transition: 0.4s;
 }
 
-.header-second .header-second-content .header-second-nav > div:hover > div:first-child .text.p3 {
+.header-second
+  .header-second-content
+  .header-second-nav
+  > div:hover
+  > div:first-child
+  .text.p3 {
   color: var(--primary-orange);
 }
 
-.header-second .header-second-content .header-second-nav > div:hover > div:first-child svg path{
+.header-second
+  .header-second-content
+  .header-second-nav
+  > div:hover
+  > div:first-child
+  svg
+  path {
   stroke: var(--primary-orange);
 }
 
-.header-second .header-second-content .header-second-nav > div .header-second-nav-dropdown-menu {
+.header-second
+  .header-second-content
+  .header-second-nav
+  > div
+  .header-second-nav-dropdown-menu {
   display: none;
   width: 440px;
   padding-top: 31px;
@@ -193,10 +231,14 @@
   z-index: 4;
 }
 
-.header-second .header-second-content .header-second-nav > div:hover .header-second-nav-dropdown-menu {
+.header-second
+  .header-second-content
+  .header-second-nav
+  > div:hover
+  .header-second-nav-dropdown-menu {
   display: block;
   animation-name: showDropdown;
-  animation-duration: .3s;
+  animation-duration: 0.3s;
   animation-timing-function: ease-in;
 }
 
@@ -221,6 +263,10 @@
     justify-content: space-between;
     cursor: pointer;
   }
+  .header-first {
+    border-top: none;
+  }
+
   .burger-menu div {
     width: 100%;
     height: 2.75px;
@@ -233,11 +279,11 @@
   }
 
   .burger-menu.open div:nth-child(2) {
-      opacity: 0;
+    opacity: 0;
   }
 
   .burger-menu.open div:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(5px, -5px);
   }
 
   .header {
@@ -305,7 +351,11 @@
   }
 
   .header-first-dropdown-menu,
-  .header-second .header-second-content .header-second-nav > div .header-second-nav-dropdown-menu {
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    .header-second-nav-dropdown-menu {
     display: block;
     height: 0;
     position: static;
@@ -315,24 +365,43 @@
     transition: 0.3s;
   }
 
-  .header-second .header-second-content .header-second-nav > div .header-second-nav-dropdown-menu {
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    .header-second-nav-dropdown-menu {
     transform: translateX(0);
   }
 
   .header-first-dropdown-menu .dropdown-menu,
-  .header-second .header-second-content .header-second-nav > div .header-second-nav-dropdown-menu .dropdown-menu {
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    .header-second-nav-dropdown-menu
+    .dropdown-menu {
     border: 0;
     border-radius: 0;
     background-color: var(--light-gray);
   }
 
   .header-first-dropdown-menu .dropdown-menu-item,
-  .header-second .header-second-content .header-second-nav > div .header-second-nav-dropdown-menu .dropdown-menu-item {
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    .header-second-nav-dropdown-menu
+    .dropdown-menu-item {
     background-color: var(--light-gray);
   }
 
   .header-first-dropdown-menu .dropdown-menu-item-link,
-  .header-second .header-second-content .header-second-nav > div .header-second-nav-dropdown-menu .dropdown-menu-item-link {
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    .header-second-nav-dropdown-menu
+    .dropdown-menu-item-link {
     padding: 15px 20px;
     gap: 10px;
   }
@@ -359,11 +428,36 @@
   }
 
   .header-first .container .header-first-content .language .arrow-dropdown-icon,
-  .header-first .container .header-first-content .language .arrow-dropdown-icon svg,
-  .header-first .container .header-first-content .header-first-dropdown-item-1 .arrow-dropdown-icon,
-  .header-first .container .header-first-content .header-first-dropdown-item-1 .arrow-dropdown-icon svg,
-  .header-second .header-second-content .header-second-nav > div .header-second-nav-item .arrow-dropdown-icon,
-  .header-second .header-second-content .header-second-nav > div .header-second-nav-item .arrow-dropdown-icon svg {
+  .header-first
+    .container
+    .header-first-content
+    .language
+    .arrow-dropdown-icon
+    svg,
+  .header-first
+    .container
+    .header-first-content
+    .header-first-dropdown-item-1
+    .arrow-dropdown-icon,
+  .header-first
+    .container
+    .header-first-content
+    .header-first-dropdown-item-1
+    .arrow-dropdown-icon
+    svg,
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    .header-second-nav-item
+    .arrow-dropdown-icon,
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    .header-second-nav-item
+    .arrow-dropdown-icon
+    svg {
     width: 32px;
     height: 32px;
   }
@@ -421,16 +515,27 @@
     width: 100%;
   }
 
-  .header-second .header-second-content .header-second-content-buttons .primary-button {
+  .header-second
+    .header-second-content
+    .header-second-content-buttons
+    .primary-button {
     padding: 12px 26px;
   }
 
-  .header-second .header-second-content .header-second-content-buttons .primary-button.border.small.bg-transparent {
+  .header-second
+    .header-second-content
+    .header-second-content-buttons
+    .primary-button.border.small.bg-transparent {
     color: var(--black);
     padding: 12px 14px;
   }
 
-  .header-second .header-second-content .header-second-content-buttons .primary-button.border.small.bg-transparent svg path {
+  .header-second
+    .header-second-content
+    .header-second-content-buttons
+    .primary-button.border.small.bg-transparent
+    svg
+    path {
     stroke: var(--black);
   }
 
@@ -438,27 +543,47 @@
     display: none;
   }
 
-  .header-second .header-second-content .header-second-nav > div .header-second-nav-item,
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    .header-second-nav-item,
   .header-second .header-second-content .header-second-nav > div > a {
     color: var(--black);
   }
 
-  .header-second .header-second-content .header-second-nav > div .header-second-nav-item {
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    .header-second-nav-item {
     padding: 15px 0;
     border-top: 1px solid var(--gray);
     justify-content: space-between;
   }
 
   .header-second .header-second-content .header-second-nav > div#header-B2,
-  .header-second .header-second-content .header-second-nav > div#header-modeltest {
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div#header-modeltest {
     border-bottom: 1px solid var(--gray);
   }
 
-  .header-second .header-second-content .header-second-nav > div#header-modeltest {
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div#header-modeltest {
     padding: 15px 0;
   }
 
-  .header-second .header-second-content .header-second-nav > div .header-second-nav-item svg path {
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    .header-second-nav-item
+    svg
+    path {
     stroke: var(--black);
   }
 
@@ -466,44 +591,142 @@
     margin: 0 auto;
   }
 
-  .header-second .header-second-content .header-second-nav > div:hover > div:first-child .text.p3 {
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div:hover
+    > div:first-child
+    .text.p3 {
     color: var(--black);
   }
 
-  .header-second .header-second-content .header-second-nav > div:hover > div:first-child svg path {
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div:hover
+    > div:first-child
+    svg
+    path {
     stroke: var(--black);
   }
-  
+
   .header-first-dropdown-item-1-content .arrow-dropdown-icon svg,
   .header-first-dropdown-item-1-content.open .arrow-dropdown-icon svg,
   .header-first-dropdown-item-1-content .arrow-dropdown-icon svg path,
   .header-first-dropdown-item-1-content.open .arrow-dropdown-icon svg path,
-  .header-first .container .header-first-content .language-content .arrow-dropdown-icon svg,
-  .header-first .container .header-first-content .language-content.open .arrow-dropdown-icon svg,
-  .header-first .container .header-first-content .language-content .arrow-dropdown-icon svg path,
-  .header-first .container .header-first-content .language-content.open .arrow-dropdown-icon svg path,
-  .header-second .header-second-content .header-second-nav > div > div.header-second-nav-item .text.p3,
-  .header-second .header-second-content .header-second-nav > div > div.header-second-nav-item.open .text.p3,
-  .header-second .header-second-content .header-second-nav > div .header-second-nav-item .arrow-dropdown-icon svg,
-  .header-second .header-second-content .header-second-nav > div .header-second-nav-item.open .arrow-dropdown-icon svg,
-  .header-second .header-second-content .header-second-nav > div .header-second-nav-item .arrow-dropdown-icon svg path,
-  .header-second .header-second-content .header-second-nav > div .header-second-nav-item.open .arrow-dropdown-icon svg path {
+  .header-first
+    .container
+    .header-first-content
+    .language-content
+    .arrow-dropdown-icon
+    svg,
+  .header-first
+    .container
+    .header-first-content
+    .language-content.open
+    .arrow-dropdown-icon
+    svg,
+  .header-first
+    .container
+    .header-first-content
+    .language-content
+    .arrow-dropdown-icon
+    svg
+    path,
+  .header-first
+    .container
+    .header-first-content
+    .language-content.open
+    .arrow-dropdown-icon
+    svg
+    path,
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    > div.header-second-nav-item
+    .text.p3,
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    > div.header-second-nav-item.open
+    .text.p3,
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    .header-second-nav-item
+    .arrow-dropdown-icon
+    svg,
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    .header-second-nav-item.open
+    .arrow-dropdown-icon
+    svg,
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    .header-second-nav-item
+    .arrow-dropdown-icon
+    svg
+    path,
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    .header-second-nav-item.open
+    .arrow-dropdown-icon
+    svg
+    path {
     transition: 0.4s;
   }
 
-  .header-second .header-second-content .header-second-nav > div > div.header-second-nav-item.open .text.p3 {
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    > div.header-second-nav-item.open
+    .text.p3 {
     color: var(--primary-orange);
   }
 
   .header-first-dropdown-item-1-content.open .arrow-dropdown-icon svg,
-  .header-first .container .header-first-content .language-content.open .arrow-dropdown-icon svg,
-  .header-second .header-second-content .header-second-nav > div .header-second-nav-item.open .arrow-dropdown-icon svg {
+  .header-first
+    .container
+    .header-first-content
+    .language-content.open
+    .arrow-dropdown-icon
+    svg,
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    .header-second-nav-item.open
+    .arrow-dropdown-icon
+    svg {
     transform: rotate(180deg);
   }
 
   .header-first-dropdown-item-1-content.open .arrow-dropdown-icon svg path,
-  .header-first .container .header-first-content .language-content.open .arrow-dropdown-icon svg path,
-  .header-second .header-second-content .header-second-nav > div .header-second-nav-item.open .arrow-dropdown-icon svg path {
+  .header-first
+    .container
+    .header-first-content
+    .language-content.open
+    .arrow-dropdown-icon
+    svg
+    path,
+  .header-second
+    .header-second-content
+    .header-second-nav
+    > div
+    .header-second-nav-item.open
+    .arrow-dropdown-icon
+    svg
+    path {
     stroke: var(--primary-orange);
   }
 }
@@ -514,7 +737,10 @@
     width: 100%;
   }
 
-  .header-second .header-second-content .header-second-content-buttons .primary-button {
+  .header-second
+    .header-second-content
+    .header-second-content-buttons
+    .primary-button {
     width: 100%;
     justify-content: center;
   }
@@ -523,7 +749,8 @@
     grid-gap: 10px;
   }
 
-  .header-first .container .header-first-content .social div, .header-first .container .header-first-content .social div svg {
+  .header-first .container .header-first-content .social div,
+  .header-first .container .header-first-content .social div svg {
     width: 36px;
     height: 36px;
   }

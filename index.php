@@ -14,7 +14,7 @@
 
     <section class="main-heading-text">
         <div class="container">
-            <h1 class="heading h1">Wir helfen Ihnen bei der Vorbereitung auf die <span>Deutschprüfung</span></h1>
+            <h1>Wir helfen Ihnen bei der Vorbereitung auf die <span>Deutschprüfung</span></h1>
             <div class="main-heading-text-content">
                 <div class="main-heading-text-item">
                     <div class="check-icon"><?php echo $check_big; ?></div>
@@ -35,7 +35,7 @@
     <section class="level-section">
         <div class="container">
             <div class="level-wrapper">
-                <h2 class="level-wrapper_title heading h2">Wähl dein Deutsch <span>Niveau</span> aus</h2>
+                <h2>Wähl dein Deutsch <span>Niveau</span> aus</h2>
                 <div class="level-languages level-4">
                     <div class="level-language a1">
                         <p>A1</p>
@@ -56,7 +56,7 @@
                         <img src="/images/google-logo-mobile.svg" alt="google logo" class="google-logo_img mobile">
                     </div>
                     <div class="google-block_info">
-                        <h3 class="heading h3">4.9</h3>
+                        <h3>4.9</h3>
                         <span class="google-info_line"></span>
                         <div class="google-info_count">
                             <div class="google-count_stars">
@@ -76,11 +76,11 @@
                                     <path d="M8.99446 14.2698L13.1445 16.7798C13.9045 17.2398 14.8345 16.5598 14.6345 15.6998L13.5345 10.9798L17.2045 7.79977C17.8745 7.21977 17.5145 6.11977 16.6345 6.04977L11.8045 5.63977L9.91446 1.17977C9.57446 0.369766 8.41446 0.369766 8.07446 1.17977L6.18446 5.62977L1.35446 6.03977C0.474458 6.10977 0.114457 7.20977 0.784457 7.78977L4.45446 10.9698L3.35446 15.6898C3.15446 16.5498 4.08446 17.2298 4.84446 16.7698L8.99446 14.2698Z" fill="#F7631B" />
                                 </svg>
                             </div>
-                            <p class="text p3">59 Bewertungen</p>
+                            <a href="#" class="text p3">59 Bewertungen</a>
                         </div>
                     </div>
                 </div>
-                <h2 class="level-wrapper_title heading h2">Oder wähl deinen <span>Deutschkursanbieter</span> aus</h2>
+                <h2>Oder wähl deinen <span>Deutschkursanbieter</span> aus</h2>
                 <div class="level-wrapper-list">
                     <div class="secondary-button border">
                         <p>Goethe</p>
@@ -111,7 +111,7 @@
     <section class="feedback-section">
         <div class="container">
             <div class="feedback-wrapper">
-                <h2 class="feedback-wrapper_title heading h2"><span>Feedback</span> unserer Studierenden</h2>
+                <h2><span>Feedback</span> unserer Studierenden</h2>
                 <div class="feedback-wrapper_main">
                     <div class="swiper reviews_swiper">
                         <div class="swiper-wrapper">
@@ -321,12 +321,12 @@
     <section class="faq-section">
         <div class="container">
             <div class="faq-wrapper">
-                <h2 class="faq-wrapper_title heading h2">Die häufigsten <span>Fragen</span></h2>
+                <h2>Die häufigsten <span>Fragen</span></h2>
                 <div class="faq-wrapper_main">
                     <div class="faq-main_item">
                         <div class="faq-item_block">
                             <div class="faq-item_info">
-                                <h3 class="heading h3">Welches Deutschniveau brauche ich, um die Prüfung zu bestehen?</h3>
+                                <h3>Welches Deutschniveau brauche ich, um die Prüfung zu bestehen?</h3>
                                 <div class="faq-info_main">
                                     <p class="text p2">Um den Deutsch-Test für Zuwanderer erfolgreich zu bestehen, wird in der Regel das Niveau B1 benötigt, das eine komfortable Kommunikation in Alltagssituationen ermöglicht.</p>
                                 </div>
@@ -341,7 +341,7 @@
                     <div class="faq-main_item">
                         <div class="faq-item_block">
                             <div class="faq-item_info">
-                                <h3 class="heading h3">Kann ich mich online auf die Prüfung vorbereiten?</h3>
+                                <h3>Kann ich mich online auf die Prüfung vorbereiten?</h3>
                                 <div class="faq-info_main">
                                     <p class="text p2">Um den Deutsch-Test für Zuwanderer erfolgreich zu bestehen, wird in der Regel das Niveau B1 benötigt, das eine komfortable Kommunikation in Alltagssituationen ermöglicht.</p>
                                 </div>
@@ -356,7 +356,7 @@
                     <div class="faq-main_item">
                         <div class="faq-item_block">
                             <div class="faq-item_info">
-                                <h3 class="heading h3">Wie lange dauert die Vorbereitung auf die Deutschprüfung?</h3>
+                                <h3>Wie lange dauert die Vorbereitung auf die Deutschprüfung?</h3>
                                 <div class="faq-info_main">
                                     <p class="text p2">Um den Deutsch-Test für Zuwanderer erfolgreich zu bestehen, wird in der Regel das Niveau B1 benötigt, das eine komfortable Kommunikation in Alltagssituationen ermöglicht.</p>
                                 </div>
@@ -371,7 +371,7 @@
                     <div class="faq-main_item">
                         <div class="faq-item_block">
                             <div class="faq-item_info">
-                                <h3 class="heading h3">Gibt es Probetests zur Selbstüberprüfung?</h3>
+                                <h3>Gibt es Probetests zur Selbstüberprüfung?</h3>
                                 <div class="faq-info_main">
                                     <p class="text p2">Um den Deutsch-Test für Zuwanderer erfolgreich zu bestehen, wird in der Regel das Niveau B1 benötigt, das eine komfortable Kommunikation in Alltagssituationen ermöglicht.</p>
                                 </div>

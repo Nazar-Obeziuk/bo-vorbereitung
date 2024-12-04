@@ -1,38 +1,44 @@
-.heading {
+h1,
+h2,
+h3,
+h4 {
   color: var(--black);
 }
 
-.heading span {
+h1 span,
+h2 span,
+h3 span,
+h4 span {
   color: var(--primary-orange);
 }
 
-.heading.h1 {
+h1 {
   font-size: 64px;
   font-weight: 700;
   line-height: 80px;
 }
 
-.heading.h2 {
+h2 {
   font-size: 48px;
   font-weight: 600;
   line-height: 60px;
 }
 
-.heading.h3 {
+h3 {
   font-size: 36px;
   font-weight: 500;
   line-height: 46px;
 }
 
-.heading.h4 {
+h4 {
   font-size: 24px;
   font-weight: 600;
   line-height: 34px;
 }
 
-.heading.orange {
+/* .heading.orange {
   color: var(--primary-orange);
-}
+} */
 
 .text.p1 {
   font-size: 28px;
@@ -73,22 +79,22 @@
 }
 
 @media (max-width: 991.98px) {
-  .heading.h1 {
+  .h1 {
     font-size: 48px;
     line-height: 60px;
   }
 
-  .heading.h2 {
+  h2 {
     font-size: 36px;
     line-height: 46px;
   }
 
-  .heading.h3 {
+  h3 {
     font-size: 30px;
     line-height: 40px;
   }
 
-  .heading.h4 {
+  h4 {
     font-size: 22px;
     line-height: 28px;
   }
@@ -115,22 +121,22 @@
 }
 
 @media (max-width: 767.98px) {
-  .heading.h1 {
+  h1 {
     font-size: 32px;
     line-height: 40px;
   }
 
-  .heading.h2 {
+  h2 {
     font-size: 26px;
     line-height: 32px;
   }
 
-  .heading.h3 {
+  h3 {
     font-size: 24px;
     line-height: 28px;
   }
 
-  .heading.h4 {
+  h4 {
     font-size: 20px;
     line-height: 24px;
   }

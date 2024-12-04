@@ -129,8 +129,12 @@
   color: var(--primary-orange);
 }
 
-.faq-main_item.active .faq-item_chevron {
+.faq-item_chevron {
   transform: rotate(-180deg);
+}
+
+.faq-main_item.active .faq-item_chevron {
+  transform: rotate(0deg);
 }
 
 .faq-info_main {

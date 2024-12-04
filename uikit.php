@@ -144,7 +144,7 @@
                             <path d="M8.99446 14.2698L13.1445 16.7798C13.9045 17.2398 14.8345 16.5598 14.6345 15.6998L13.5345 10.9798L17.2045 7.79977C17.8745 7.21977 17.5145 6.11977 16.6345 6.04977L11.8045 5.63977L9.91446 1.17977C9.57446 0.369766 8.41446 0.369766 8.07446 1.17977L6.18446 5.62977L1.35446 6.03977C0.474458 6.10977 0.114457 7.20977 0.784457 7.78977L4.45446 10.9698L3.35446 15.6898C3.15446 16.5498 4.08446 17.2298 4.84446 16.7698L8.99446 14.2698Z" fill="#F7631B" />
                         </svg>
                     </div>
-                    <p class="text p3">59 Bewertungen</p>
+                    <a href="#" class="text p3">59 Bewertungen</a>
                 </div>
             </div>
         </div>
@@ -275,18 +275,18 @@
 
             // Add a click event listener to each radio button
             radioButtons.forEach((radioButton) => {
-            radioButton.addEventListener('click', function () {
-                // Find the closest .list__ parent element
-                const listParent = this.closest('.list__');
-                
-                // Remove the 'orange' class from all .input__box.border__box elements within the .list__ parent
-                listParent.querySelectorAll('.input__box.border__box').forEach((box) => {
-                box.classList.remove('orange');
+                radioButton.addEventListener('click', function() {
+                    // Find the closest .list__ parent element
+                    const listParent = this.closest('.list__');
+
+                    // Remove the 'orange' class from all .input__box.border__box elements within the .list__ parent
+                    listParent.querySelectorAll('.input__box.border__box').forEach((box) => {
+                        box.classList.remove('orange');
+                    });
+
+                    // Add the 'orange' class to the parent element of the clicked radio button
+                    this.closest('.input__box').classList.add('orange');
                 });
-                
-                // Add the 'orange' class to the parent element of the clicked radio button
-                this.closest('.input__box').classList.add('orange');
-            });
             });
         </script>
         <br>

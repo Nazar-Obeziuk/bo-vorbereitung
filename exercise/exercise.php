@@ -13,9 +13,9 @@
     <?php include dirname(__DIR__) . "/components/header.php"; ?>
     <section class="breadcrumbs">
         <div class="container">
-            <h4 class="heading h4">Deutsch <span>B1</span></h4>
-              <div>
-                <a class="text p4" href="">Vorbereiting mit BO  </a>
+            <h4>Deutsch <span>B1</span></h4>
+            <div>
+                <a class="text p4" href="">Vorbereiting mit BO </a>
                 <span>-></span>
                 <a class="text p4 bold" href="">B1 (Goethe)</a>
             </div>
@@ -23,7 +23,7 @@
     </section>
     <section class="choice-of-exercises">
         <div class="container">
-            <h2 class="level-wrapper_title heading h2"><span>B1</span> Übungen auswählen</h2>
+            <h2><span>B1</span> Übungen auswählen</h2>
             <div class="choice-of-exercises__list">
                 <div class="listen-block outline-orange">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
@@ -76,7 +76,7 @@
                     <img src="/images/google-logo-mobile.svg" alt="google logo" class="google-logo_img mobile">
                 </div>
                 <div class="google-block_info">
-                    <h3 class="heading h3">4.9</h3>
+                    <h3>4.9</h3>
                     <span class="google-info_line"></span>
                     <div class="google-info_count">
                         <div class="google-count_stars">
@@ -96,7 +96,7 @@
                                 <path d="M8.99446 14.2698L13.1445 16.7798C13.9045 17.2398 14.8345 16.5598 14.6345 15.6998L13.5345 10.9798L17.2045 7.79977C17.8745 7.21977 17.5145 6.11977 16.6345 6.04977L11.8045 5.63977L9.91446 1.17977C9.57446 0.369766 8.41446 0.369766 8.07446 1.17977L6.18446 5.62977L1.35446 6.03977C0.474458 6.10977 0.114457 7.20977 0.784457 7.78977L4.45446 10.9698L3.35446 15.6898C3.15446 16.5498 4.08446 17.2298 4.84446 16.7698L8.99446 14.2698Z" fill="#F7631B" />
                             </svg>
                         </div>
-                        <p class="text p3">59 Bewertungen</p>
+                        <a href="#" class="text p3">59 Bewertungen</a>
                     </div>
                 </div>
             </div>
@@ -104,11 +104,11 @@
     </section>
     <section class="questions">
         <div class="container">
-            <h2 class="level-wrapper_title heading h2">Die häufigsten <span>Fragen</span></h2>
+            <h2>Die häufigsten <span>Fragen</span></h2>
             <div class="questions-box">
                 <img src="../images/questions.webp" alt="Questions image">
                 <div class="questions-box__text">
-                    <h3 class="heading h3">Welches Deutschniveau brauche ich, um die Prüfung zu bestehen?</h3>
+                    <h3>Welches Deutschniveau brauche ich, um die Prüfung zu bestehen?</h3>
                     <p class="text p1">Um den Deutsch-Test für Zuwanderer erfolgreich zu bestehen, wird in der Regel das Niveau B1 benötigt, das eine komfortable Kommunikation in Alltagssituationen ermöglicht.</p>
                     <p class="text p1">Um den Deutsch-Test für Zuwanderer erfolgreich zu bestehen, wird in der Regel das Niveau B1 benötigt, das eine komfortable Kommunikation in Alltagssituationen ermöglicht.</p>
                     <p class="text p1">Um den Deutsch-Test für Zuwanderer erfolgreich zu bestehen, wird in der Regel das Niveau B1 benötigt, das eine komfortable Kommunikation in Alltagssituationen ermöglicht.</p>

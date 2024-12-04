@@ -36,6 +36,11 @@
   gap: 8px;
 }
 
+.google-info_count a {
+  color: var(--black);
+  text-decoration: underline;
+}
+
 .google-count_stars {
   display: flex;
   align-items: center;

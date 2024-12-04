@@ -9,20 +9,24 @@
                     <div class="footer-info_block">
                         <p class="text p2">Unsere Level</p>
                         <div class="footer-block_list">
-                            <p class="text p3">A1</p>
-                            <p class="text p3">A2</p>
-                            <p class="text p3">B1</p>
-                            <p class="text p3">B2</p>
-                            <p class="text p3">Modelltest</p>
+                            <a href="#" class="text p3">A1</a>
+                            <a href="#" class="text p3">A2</a>
+                            <a href="#" class="text p3">B1</a>
+                            <a href="#" class="text p3">B2</a>
+                            <a href="#" class="text p3">Modelltest</a>
                         </div>
                     </div>
                     <div class="footer-info_block">
                         <p class="text p2">Rechtliche Information</p>
                         <div class="footer-block_list">
-                            <p class="text p3">Kontact</p>
-                            <p class="text p3">Impressum und AGB</p>
-                            <p class="text p3">Datenschutzerklarung</p>
-                            <p class="text p3">Cookie-Richtlinie</p>
+                            <a href="#" class="text p3">Kontact</a>
+                            <!-- <div class="footer-list-item">
+                                <a href="#" class="text p3">Impressum</a>
+                                <a href="#" class="text p3">AGB</a>
+                            </div> -->
+                            <p class="text p3"><a href="#" class="text p3">Impressum</a> und <a href="#" class="text p3">AGB</a></p>
+                            <a href="#" class="text p3">Datenschutzerklarung</a>
+                            <a href="#" class="text p3">Cookie-Richtlinie</a>
                         </div>
                     </div>
                 </div>
@@ -40,10 +44,10 @@
                                     $language_dropdown = ['item 1', 'item 2', 'item 3'];
                                     foreach ($language_dropdown as $language_dropdown_item_text) { ?>
                                         <div class="dropdown-menu-item" id="dropdown-menu-item-<?php echo $item_index; ?>">
-                                        <a class="dropdown-menu-item-link" href="#">
-                                            <span class="text p2 p2_semibold"><?php echo $language_dropdown_item_text; ?></span>
-                                            <div class="check-icon"><?php echo $check_big; ?></div>
-                                        </a>
+                                            <a class="dropdown-menu-item-link" href="#">
+                                                <span class="text p2 p2_semibold"><?php echo $language_dropdown_item_text; ?></span>
+                                                <div class="check-icon"><?php echo $check_big; ?></div>
+                                            </a>
                                         </div>
                                     <?php
                                         $item_index += 1;
@@ -53,8 +57,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="footer-actions_button">Deutsch</div> -->
-                     <div class="footer-actions_button">
+                    <div class="footer-actions_button">
                         <div class="language">
                             <div class="language-content">
                                 <div class="language-icon"><?php echo $flag_germany; ?></div>
@@ -68,11 +71,11 @@
                                     $language_dropdown = ['Englisch' => $flag_english, 'Türkisch' => $flag_turkish, 'Russisch' => $flag_russian];
                                     foreach ($language_dropdown as $language_dropdown_item_text => $language_dropdown_item_flag) { ?>
                                         <div class="dropdown-menu-item" id="dropdown-menu-item-<?php echo $item_index; ?>">
-                                        <a class="dropdown-menu-item-link" href="#">
-                                            <div class="flag-icon"><?php echo $language_dropdown_item_flag; ?></div>
-                                            <span class="text p2 p2_semibold"><?php echo $language_dropdown_item_text; ?></span>
-                                            <div class="check-icon"><?php echo $check_big; ?></div>
-                                        </a>
+                                            <a class="dropdown-menu-item-link" href="#">
+                                                <div class="flag-icon"><?php echo $language_dropdown_item_flag; ?></div>
+                                                <span class="text p2 p2_semibold"><?php echo $language_dropdown_item_text; ?></span>
+                                                <div class="check-icon"><?php echo $check_big; ?></div>
+                                            </a>
                                         </div>
                                     <?php
                                         $item_index += 1;
@@ -81,7 +84,7 @@
                                 </div>
                             </div>
                         </div>
-                     </div>
+                    </div>
                 </div>
             </div>
             <div class="footer-wrapper_inner">
