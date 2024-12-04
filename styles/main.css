@@ -1,0 +1,215 @@
+@import "./variables.css";
+@import "./fonts.css";
+@import "./base.css";
+
+@import "./header/header.css";
+@import "./footer/footer.css";
+
+@import "../ui/main.css";
+
+@import "./home/home.css";
+@import "./writing/writing.css";
+@import "./listening-german/listening-german.css";
+@import "./provider/provider.css";
+@import "./exercise/exercise.css";
+
+/* input styles */
+
+.input {
+    width: 100%;
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--border-gray);
+    padding: 16px 24px;
+    outline: none;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--black);
+}
+
+.input::placeholder {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--black);
+}
+
+.breadcrumbs {
+    padding: 14px 0;
+}
+
+.breadcrumbs h4 span {
+    color: var(--primary-orange);
+}
+
+.breadcrumbs a {
+    color: var(--black);
+}
+
+.breadcrumbs .bold {
+    font-weight: 600;
+}
+
+.questions .container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.questions .container h2 {
+    text-align: center;
+}
+
+.questions-box {
+    display: flex;
+    gap: 20px;
+}
+
+.questions-box img {
+    width: 410px;
+    height: 468px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.questions-box__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 650px;
+    overflow-y: scroll;
+    width: 720px;
+}
+
+.questions-box__text h3 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.questions-box__text p {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+    font-family: "Inter", sans-serif;
+    color: var(--light-black);
+}
+
+.choice-of-exercises {
+    background: var(--light-gray);
+}
+
+.choice-of-exercises .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.choice-of-exercises__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+}
+
+.choice-of-exercises .outline-orange {
+    width: 100%;
+    gap: 36px;
+    border-color: var(--black);
+    height: auto;
+    padding: 48px 0;
+}
+
+.choice-of-exercises .outline-orange svg {
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+}
+
+.choice-of-exercises .outline-orange:hover {
+    border-color: var(--primary-orange);
+}
+
+.choice-of-exercises .outline-orange svg path {
+    stroke: var(--black);
+}
+
+.progress-circle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: conic-gradient(var(--dark-green) 0% 100%,
+            var(--gray) 100% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.progress-circle:before {
+    position: absolute;
+    content: "";
+    top: 8%;
+    left: 8%;
+    width: 84%;
+    height: 84%;
+    background: var(--white);
+    border-radius: 50%;
+}
+
+.progress-circle span {
+    position: absolute;
+    font-size: 14px;
+}
+
+@media (max-width: 1199.98px) {
+    .choice-of-exercises__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container.small {
+        width: 100%;
+    }
+
+    .questions-box {
+        flex-direction: column-reverse;
+    }
+
+    .questions-box img {
+        width: 100%;
+    }
+
+    .questions-box__text {
+        max-height: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .choice-of-exercises__list {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center; /* Center items both horizontally and vertically */
+    }
+
+    .choice-of-exercises .outline-orange {
+        gap: 16px;
+        padding: 22px 0;
+    }
+
+    .choice-of-exercises .outline-orange svg {
+        height: 80px;
+        width: 80px;
+    }
+
+    .choice-of-exercises .container {
+        gap: 24px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}

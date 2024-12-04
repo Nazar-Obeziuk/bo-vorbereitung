@@ -1,0 +1,62 @@
+.listen-block {
+  width: 164px;
+  height: 140px;
+  background: transparent;
+  border-radius: 25px;
+  border: 3px solid var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 18px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.listen-block p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--black);
+}
+
+.listen-block:hover p {
+  color: var(--primary-orange);
+}
+
+.listen-block:hover svg path {
+  stroke: var(--primary-orange);
+}
+
+.listen-block.outline-orange {
+  border-color: var(--primary-orange);
+}
+
+.listen-block.outline-orange svg path {
+  stroke: var(--primary-orange);
+}
+
+.listen-block.outline-orange:hover {
+  background: var(--primary-orange);
+}
+
+.listen-block.outline-orange:hover p {
+  color: var(--white);
+}
+
+.listen-block.outline-orange:hover svg path {
+  stroke: var(--white);
+}
+
+.listen-block.disabled {
+  border-color: var(--gray);
+  cursor: auto;
+}
+
+.listen-block.disabled p {
+  color: var(--gray);
+}
+
+.listen-block.disabled svg path {
+  stroke: var(--gray);
+}

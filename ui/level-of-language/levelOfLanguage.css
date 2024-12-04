@@ -1,0 +1,89 @@
+.level-languages {
+  width: 100%;
+  display: grid;
+  gap: 16px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.level-languages.level-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.level-languages.level-6 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.level-language {
+  width: 100%;
+  height: 190px;
+  border: 2px solid var(--gray);
+  background: transparent;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.level-language.a1 {
+  background: var(--light-green);
+}
+
+.level-language.a2 {
+  background: var(--green);
+}
+
+.level-language.b1 {
+  background: var(--light-yellow);
+}
+
+.level-language.b2 {
+  background: var(--yellow);
+}
+
+.level-language.c1 {
+  background: var(--light-purple);
+}
+
+.level-language.c2 {
+  background: var(--purple);
+}
+
+.level-language:hover {
+  background: var(--black);
+  border-color: var(--primary-orange);
+}
+
+.level-language p {
+  font-size: 64px;
+  font-weight: 600;
+  color: var(--black);
+  line-height: 76px;
+}
+
+.level-language:hover p {
+  color: var(--white);
+}
+
+@media (max-width: 767.98px) {
+  .level-languages.level-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .level-languages.level-6 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .level-language p {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .level-language {
+    height: 120px;
+  }
+}
