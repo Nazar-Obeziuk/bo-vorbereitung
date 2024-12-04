@@ -1,7 +1,23 @@
+
+
+// progress
+const circles = document.querySelectorAll('.progress-circle');
+
+if (circles.length > 0) {
+  circles.forEach(circle => {
+    const progress = circle.getAttribute('data-progress');
+    if (progress !== null) {
+      circle.style.background = `conic-gradient(var(--dark-green) 0% ${progress}%, var(--gray) ${progress}% 100%)`;
+    }
+  });
+}
+
+
+
 // faq
 const faqItems = document.querySelectorAll(".faq-main_item");
 
-if(faqItems){
+if (faqItems) {
   faqItems.forEach((faqItem) => {
     faqItem.addEventListener("click", function () {
       this.classList.toggle("active");
@@ -10,11 +26,10 @@ if(faqItems){
 }
 
 // home feedback slider
-
 const arrowReviewsLeft = document.querySelector(".arrow-left-reviews");
 const arrowReviewsRight = document.querySelector(".arrow-right-reviews");
 
-if(arrowReviewsLeft || arrowReviewsRight){
+if (arrowReviewsLeft || arrowReviewsRight) {
   var swiper = new Swiper(".reviews_swiper", {
     spaceBetween: 16,
     slidesPerView: 1,
@@ -46,7 +61,7 @@ const progressSelectorValue = document.getElementById(
   "progress-selector-value"
 );
 const progressBar = document.getElementById("progress-bar");
-if(progressSlider){
+if (progressSlider) {
   progressSelectorValue.innerHTML = progressSlider.value + "%";
   progressSlider.oninput = function () {
     progressSelectorValue.innerHTML = this.value + "%";
