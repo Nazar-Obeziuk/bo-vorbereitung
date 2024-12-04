@@ -194,6 +194,7 @@
 @media (max-width: 767.98px) {
     .choice-of-exercises__list {
         grid-template-columns: repeat(2, 1fr);
+        place-items: center; /* Center items both horizontally and vertically */
     }
 
     .choice-of-exercises .outline-orange {
