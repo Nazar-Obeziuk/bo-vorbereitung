@@ -68,9 +68,6 @@
 .writing-radio_control {
   display: flex;
   align-items: center;
-  gap: 16px;
-}
-.radio-input {
 }
 .writing-radio_label {
   font-size: 24px;

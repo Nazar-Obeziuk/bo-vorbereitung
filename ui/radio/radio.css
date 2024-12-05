@@ -1,0 +1,105 @@
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--gray);
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  margin-right: 14px;
+}
+
+input[type="radio"]:checked {
+  width: 24px;
+  height: 24px;
+  background: var(--primary-orange);
+  border: 1px solid var(--primary-orange);
+  border-radius: 50%;
+  outline: none;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input__box {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.input__box.border__box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.4s linear;
+
+  height: 80px;
+  width: 100%;
+  border: 2px solid var(--gray, #cacaca);
+  padding: 28px 35px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.input__box.border__box.orange {
+  border: 2px solid var(--primary-orange);
+  font-weight: 600;
+  transition: all 0.4s linear;
+}
+
+form {
+  counter-reset: labelCounter;
+}
+
+form .list__ {
+  counter-increment: labelCounter;
+}
+
+.list__ .text::before {
+  content: counter(labelCounter) ". ";
+  font-weight: bold;
+  margin-left: -30px;
+
+  color: var(--orange-text, #f7631b);
+  font: 600 24px/1.3em "Inter", sans-serif;
+  position: absolute;
+}
+
+@media (max-width: 767.98px) {
+  .input__box.border__box {
+    padding: 20px 18px;
+    height: 60px;
+    margin-bottom: 12px;
+  }
+
+  .list__ .text::before {
+    content: counter(labelCounter) ". ";
+    font-weight: bold;
+    margin-left: 0;
+    color: var(--orange-text, #f7631b);
+    font: 600 16px/1.3em "Inter", sans-serif;
+    position: relative;
+    margin-right: 5px;
+  }
+
+  form .list__ label.text {
+    font: 600 16px/1.3em "Inter", sans-serif;
+    margin-bottom: 16px;
+  }
+}

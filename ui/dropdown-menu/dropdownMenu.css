@@ -4,6 +4,12 @@
     overflow: hidden;
 }
 
+.dropdown-menu.navigation{
+    display: none;
+    margin-top: -25px;
+    position: relative;
+}
+
 .dropdown-menu-item {
     display: flex;
     border-bottom: 1px solid var(--gray);
@@ -50,4 +56,17 @@
 .dropdown-menu-item:hover .check-icon,
 .dropdown-menu-item.selected .check-icon {
     opacity: 1;
+}
+
+
+
+.dropdown-menu.navigation .dropdown-menu-item-link {
+    padding: 17px 20px 16px 28px;
+}
+
+@media (max-width: 1199.98px) {
+    .dropdown-menu.open{
+        width: 100%;
+        display: block;
+    }
 }
