@@ -153,15 +153,39 @@
                 <h2><span>B1</span> Schprechen</h2>
                 <div class="writing-wrapper_main">
                     <div class="writing-main_service">
-                        <button class="secondary-button active" type="button">
-                            Uber mich
-                        </button>
-                        <button class="secondary-button" type="button">
-                            Bild beschreiben
-                        </button>
-                        <button class="secondary-button" type="button">
-                            Dialog
-                        </button>
+
+                        <div class="schprechen-menu">
+                            <button class="secondary-button active" type="button">
+                                Uber mich
+                            </button>
+                            <button class="secondary-button" type="button">
+                                Bild beschreiben
+                            </button>
+                            <button class="secondary-button" type="button">
+                                Dialog
+                            </button>
+                        </div>
+
+                        <div class="dropdown-menu schprechen-navigation"> 
+                            <div class="dropdown-menu-item" id="dropdown-menu-item-1">
+                                <a class="dropdown-menu-item-link" href="#">
+                                    <p class="text p3">Uber mich</p>
+                                    <div class="check-icon"><?php echo $check_smoll; ?></div>
+                                </a>
+                            </div>
+                            <div class="dropdown-menu-item" id="dropdown-menu-item-2">
+                                <a class="dropdown-menu-item-link" href="#">
+                                    <p class="text p3">Bild beschreiben</p>
+                                    <div class="check-icon"><?php echo $check_smoll; ?></div>
+                                </a>
+                            </div>
+                            <div class="dropdown-menu-item" id="dropdown-menu-item-3">
+                                <a class="dropdown-menu-item-link" href="#">
+                                    <p class="text p3">Dialog</p>
+                                    <div class="check-icon"><?php echo $check_smoll; ?></div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="writing-main_tabs">
                         <div class="writing-tabs_item active" data-target="info">
