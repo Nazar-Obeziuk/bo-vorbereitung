@@ -82,27 +82,27 @@
                 </div>
                 <h2>Oder wähl deinen <span>Deutschkursanbieter</span> aus</h2>
                 <div class="level-wrapper-list">
-                    <div class="secondary-button border">
+                    <a href="#" class="secondary-button border">
                         <p>Goethe</p>
-                    </div>
-                    <div class="secondary-button border">
+                    </a>
+                    <a href="#" class="secondary-button border">
                         <p>Telc</p>
-                    </div>
-                    <div class="secondary-button border">
+                    </a>
+                    <a href="#" class="secondary-button border">
                         <p>OSD</p>
-                    </div>
-                    <div class="secondary-button border">
+                    </a>
+                    <a href="#" class="secondary-button border">
                         <p>DSD</p>
-                    </div>
-                    <div class="secondary-button border">
+                    </a>
+                    <a href="#" class="secondary-button border">
                         <p>TestDAF</p>
-                    </div>
-                    <div class="secondary-button border">
+                    </a>
+                    <a href="#" class="secondary-button border">
                         <p>g.a.s.t.</p>
-                    </div>
-                    <div class="secondary-button border">
+                    </a>
+                    <a href="#" class="secondary-button border">
                         <p>OIF</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

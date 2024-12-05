@@ -13,14 +13,14 @@
   cursor: pointer;
 }
 
-.listen-block p {
+.listen-block a {
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
   color: var(--black);
 }
 
-.listen-block:hover p {
+.listen-block:hover a {
   color: var(--primary-orange);
 }
 
@@ -32,6 +32,17 @@
   border-color: var(--primary-orange);
 }
 
+.listen-block.outline-orange.active {
+  background: var(--primary-orange);
+  border-color: var(--primary-orange);
+}
+.listen-block.outline-orange.active a {
+  color: var(--white);
+}
+.listen-block.outline-orange.active svg path {
+  stroke: var(--white);
+}
+
 .listen-block.outline-orange svg path {
   stroke: var(--primary-orange);
 }
@@ -40,7 +51,7 @@
   background: var(--primary-orange);
 }
 
-.listen-block.outline-orange:hover p {
+.listen-block.outline-orange:hover a {
   color: var(--white);
 }
 
@@ -53,7 +64,7 @@
   cursor: auto;
 }
 
-.listen-block.disabled p {
+.listen-block.disabled a {
   color: var(--gray);
 }
 

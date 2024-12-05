@@ -13,41 +13,40 @@
     <?php include dirname(__DIR__) . "/components/header.php"; ?>
     <section class="breadcrumbs">
         <div class="container">
-            <h4>Deutsch <span>B1</span></h4>
-            <div>
-                <a class="text p4" href="">Vorbereiting mit BO </a>
+            <p class="breadcrumbs-title">Deutsch <span>B1</span></з>
+            <div class="breadcrumbs-main">
+                <a class="text p4" href="#">Vorbereiting mit BO </a>
                 <span>-></span>
-                <a class="text p4 bold" href="">Deutschkursanbieter</a>
+                <p class="text p4 bold">Deutschkursanbieter</p>
             </div>
-
         </div>
     </section>
     <section class="provider">
         <div class="container">
-            <h2>Oder wähl deinen <span>Deutschkursanbieter</span> aus</h2>
+            <h1>Oder wähl deinen <span>Deutschkursanbieter</span> aus</h1>
 
             <div class="level-wrapper-list">
-                <div class="secondary-button border">
+                <a href="#" class="secondary-button border">
                     <p>Goethe</p>
-                </div>
-                <div class="secondary-button border">
+                </a>
+                <a href="#" class="secondary-button border">
                     <p>Telc</p>
-                </div>
-                <div class="secondary-button border">
+                </a>
+                <a href="#" class="secondary-button border">
                     <p>OSD</p>
-                </div>
-                <div class="secondary-button border">
+                </a>
+                <a href="#" class="secondary-button border">
                     <p>DSD</p>
-                </div>
-                <div class="secondary-button border">
+                </a>
+                <a href="#" class="secondary-button border">
                     <p>TestDAF</p>
-                </div>
-                <div class="secondary-button border">
+                </a>
+                <a href="#" class="secondary-button border">
                     <p>g.a.s.t.</p>
-                </div>
-                <div class="secondary-button border">
+                </a>
+                <a href="#" class="secondary-button border">
                     <p>OIF</p>
-                </div>
+                </a>
             </div>
             <div class="google-review_block">
                 <div class="google-block_logo">

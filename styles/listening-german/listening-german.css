@@ -41,7 +41,7 @@
 }
 
 .listening-german .secondary-button {
-  padding: 12px 30px;
+  padding: 12px 26px;
   transition: 0.4s;
 }
 
@@ -150,6 +150,26 @@
 
   .listening-list {
     max-width: none;
+  }
+
+  .listening-german__list > .secondary-button:not(.active) {
+    display: none;
+  }
+
+  .listening-german__list > .secondary-button {
+    width: 100%;
+    position: relative;
+  }
+
+  .listening-german__list > .secondary-button.active::after {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIxLjMzMzcgMTMuMzMzNUwxNi4wMDAzIDE4LjY2NjhMMTAuNjY3IDEzLjMzMzUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=")
+      no-repeat center;
+    background-size: contain;
+    margin-left: auto;
   }
 }
 
