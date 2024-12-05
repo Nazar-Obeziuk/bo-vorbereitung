@@ -33,6 +33,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-height: 670px;
+    overflow-y: scroll;
 }
 
 .listening-german .secondary-button svg {
@@ -52,6 +54,16 @@
 .listening-german .secondary-button:hover {
     background: var(--primary-orange);
     color: var(--white);
+}
+
+.listening-german .secondary-button.active {
+    background: var(--primary-orange);
+    border-color: var(--primary-orange);
+    color: var(--white);
+}
+
+.listening-german .secondary-button.active svg path {
+    stroke: var(--white);
 }
 
 .listening-german .secondary-button:hover svg path {
@@ -87,6 +99,10 @@
     gap: 16px;
 }
 
+.listening-exercises .primary-button {
+    background: var(--white);
+}
+
 .listening-exercises .listening-exercises__row:before {
     position: absolute;
     content: "";
@@ -96,7 +112,7 @@
     height: 100px;
     background: linear-gradient(transparent 90%, var(--light-gray));
 
-    background: rgb(255, 255, 255);
+    background: var(--white);
     background: linear-gradient(0deg, var(--light-gray) 50%, #f8f8fa82 100%);
 }
 
