@@ -96,6 +96,14 @@
                             Dialog
                         </button>
                     </div>
+                    <div class="writing-main_tabs">
+                        <div class="writing-tabs_item active" data-target="info">
+                            <p class="writing-tab_text text p3">Beispielergebnis</p>
+                        </div>
+                        <div class="writing-tabs_item" data-target="service">
+                            <p class="writing-tab_text text p3">Info bearbeiten</p>
+                        </div>
+                    </div>
                     <div class="writing-main_insert">
                         <div class="writing-insert_content">
                             <h4>Uber mich</h4>
@@ -175,6 +183,14 @@
                         <p class="text p1">In Bezug auf Sprachen beherrsche ich meine Muttersprache und kann auch <span>Englisch</span> sprechen. Das Lernen der deutschen Sprache ist eine aufregende Herausforderung für mich, und ich freue mich darauf, meine Fähigkeiten weiter zu verbessern.</p>
                         <p class="text p1">In der Zukunft möchte ich mein Deutsch verbessern und in meinem Job erfolgreich sein. Ich bin sicher, dass das meine Integration im neuen Land hilft.</p>
                         <p class="text p1">Das war eine kurze Zusammenfassung über mich. Ich freue mich darauf, mehr Menschen kennenzulernen und meine Erfahrungen in Deutschland zu erweitern.</p>
+                        <div class="writing-info_action">
+                            <button class="primary-button border" type="button">
+                                <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 8.00016L8.16667 14.6668M1.5 8.00016L8.16667 1.3335M1.5 8.00016H25.5" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Zurück
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

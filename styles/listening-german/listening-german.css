@@ -11,9 +11,27 @@
   padding-bottom: 50px;
 }
 
+.listening-list__title {
+  padding: 25px 0;
+  font-weight: 600 !important;
+}
+
 .listening-german__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+  width: 100%;
+}
+
+.listening-german__list svg path {
+  stroke: var(--primary-orange);
+}
+
+.listening-list__content {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -42,4 +60,101 @@
 
 .listening-german .secondary-button:hover svg path {
   stroke: var(--white);
+}
+
+.listening-exercises {
+  background: var(--light-gray);
+  padding-bottom: 50px;
+}
+
+.listening-exercises h2 {
+  text-align: center;
+}
+
+.listening-exercises__buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  gap: 15px;
+  text-wrap: nowrap;
+  padding-top: 83px;
+}
+
+.listening-exercises .listening-exercises__row {
+  position: relative;
+  display: flex;
+  gap: 16px;
+}
+
+.listening-exercises .listening-exercises__row:before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0%;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(transparent 90%, var(--light-gray));
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, var(--light-gray) 50%, #f8f8fa82 100%);
+}
+
+.listening-exercises .listening-exercises__row .primary-button {
+  position: absolute;
+  text-wrap: nowrap;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.listening-list {
+  width: 100%;
+  max-width: 900px;
+}
+
+.listening-list__box {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  gap: 15px;
+  width: 100%;
+  border-bottom: 1px solid var(--gray);
+  border-left: 1px solid var(--gray);
+  border-right: 1px solid var(--gray);
+}
+
+.listening-list__box:first-child {
+  border-top: 1px solid var(--gray);
+}
+
+.listening-list__text .bold {
+  font-weight: bold;
+}
+
+.listening-list__progress {
+  margin-left: auto;
+}
+
+@media (max-width: 1199.98px) {
+  .listening-exercises .listening-exercises__row {
+    flex-direction: column;
+  }
+
+  .listening-exercises__buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: none;
+  }
+
+  .listening-list {
+    max-width: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .listening-exercises__buttons button {
+    width: 100%;
+  }
 }

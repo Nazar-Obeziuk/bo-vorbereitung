@@ -96,3 +96,67 @@
 .writing-main_info p span {
   font-weight: 600;
 }
+.writing-main_tabs {
+  width: calc(100% + 32px);
+  background: var(--white);
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  display: none;
+  margin-left: -16px;
+  margin-right: -16px;
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+}
+.writing-tabs_item {
+  padding: 16px 0;
+  border-bottom: 3px solid var(--light-black);
+  cursor: pointer;
+}
+.writing-tabs_item.active {
+  border-color: var(--primary-orange);
+}
+.writing-tab_text {
+  font-weight: 600 !important;
+}
+.writing-info_action {
+  width: 100%;
+  display: none;
+}
+.writing-info_action button {
+  width: 100%;
+}
+
+@media (max-width: 1199.98px) {
+  .writing-main_tabs {
+    display: flex;
+  }
+  .writing-info_action {
+    display: block;
+  }
+  .writing-insert_content h4 {
+    display: none;
+  }
+  .writing-wrapper_main {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .writing-main_service,
+  .writing-main_insert,
+  .writing-main_info {
+    width: 100%;
+  }
+  .writing-main_insert {
+    display: none;
+    padding: 0;
+    gap: 24px;
+  }
+  .writing-insert_content {
+    padding-left: 0;
+    border-left: none;
+  }
+  .writing-main_info {
+    padding: 0;
+    background: transparent;
+  }
+}
