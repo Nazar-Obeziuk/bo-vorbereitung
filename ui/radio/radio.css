@@ -75,10 +75,14 @@ form .list__ {
   content: counter(labelCounter) ". ";
   font-weight: bold;
   margin-left: -30px;
-
   color: var(--orange-text, #f7631b);
   font: 600 24px/1.3em "Inter", sans-serif;
   position: absolute;
+}
+
+form .list__ label.text {
+  margin-bottom: 24px;
+  display: inline-block;
 }
 
 @media (max-width: 767.98px) {
@@ -100,6 +104,6 @@ form .list__ {
 
   form .list__ label.text {
     font: 600 16px/1.3em "Inter", sans-serif;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 }

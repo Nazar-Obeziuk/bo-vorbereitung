@@ -244,9 +244,6 @@
                 </button>
             </div>
         </div>
-
-
-
     </section>
 
     <section class="choice-of-exercises">

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B1 Übungen auswählen</title>
+    <title>Modelltest</title>
     <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="stylesheet" href="../styles/deutsch-b1-horen/deutsch-b1-horen.css" />
+    <link rel="stylesheet" href="../styles/model-test/model-test.css" />
     <link rel="stylesheet" href="../styles/listening-german/listening-german.css" />
 </head>
 
@@ -15,13 +15,13 @@
 
     <section class="breadcrumbs">
         <div class="container">
-            <p class="breadcrumbs-title">Deutsch <span>B1 Hören</span></з>
+            <p class="breadcrumbs-title">Deutsch <span>B1 Modelltest</span></з>
             <div class="breadcrumbs-main">
                 <a class="text p4" href="#">Vorbereiting mit BO</a>
                 <span>-></span>
                 <a class="text p4" href="#">B1 (Goethe)</a>
                 <span>-></span>
-                <p class="text p4 bold">Hören</p>
+                <p class="text p4 bold">Modelltest</p>
             </div>
         </div>
     </section>
@@ -31,7 +31,7 @@
             <h1><span>B1</span> Übungen auswählen</h1>
 
             <div class="listening-german__list">
-                <button class="secondary-button active border" type="button">
+                <button class="secondary-button border" type="button">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M23.645 15.5112C23.645 11.2156 20.1627 7.7334 15.8672 7.7334C11.5716 7.7334 8.08941 11.2156 8.08941 15.5112M20.3116 19.4001V21.6223C20.3116 22.1386 20.3116 22.3967 20.3543 22.6114C20.5297 23.4929 21.2188 24.1824 22.1004 24.3577C22.315 24.4004 22.5731 24.4004 23.0894 24.4004C23.6057 24.4004 23.8638 24.4004 24.0785 24.3577C24.96 24.1824 25.649 23.4929 25.8243 22.6114C25.867 22.3967 25.8672 22.1386 25.8672 21.6223V19.4001C25.8672 18.8838 25.867 18.6251 25.8243 18.4105C25.649 17.5289 24.96 16.8403 24.0785 16.665C23.8638 16.6223 23.6057 16.6223 23.0894 16.6223C22.5731 16.6223 22.315 16.6223 22.1004 16.665C21.2188 16.8403 20.5297 17.5289 20.3543 18.4105C20.3116 18.6251 20.3116 18.8838 20.3116 19.4001ZM11.4227 19.4001V21.6223C11.4227 22.1386 11.4226 22.3967 11.3799 22.6114C11.2045 23.4929 10.5155 24.1824 9.63401 24.3577C9.41934 24.4004 9.16129 24.4004 8.64501 24.4004C8.12874 24.4004 7.87059 24.4004 7.65592 24.3577C6.77439 24.1824 6.08524 23.4929 5.90989 22.6114C5.86719 22.3967 5.86719 22.1386 5.86719 21.6223V19.4001C5.86719 18.8838 5.86719 18.6251 5.90989 18.4105C6.08524 17.5289 6.77439 16.8403 7.65592 16.665C7.87059 16.6223 8.12873 16.6223 8.64501 16.6223C9.1613 16.6223 9.41934 16.6223 9.63401 16.665C10.5155 16.8403 11.2045 17.5289 11.3799 18.4105C11.4226 18.6251 11.4227 18.8838 11.4227 19.4001Z" stroke="#F7631B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
@@ -59,7 +59,7 @@
                     <p class="text p3">Sprechen</p>
                 </button>
 
-                <button class="secondary-button border" type="button">
+                <button class="secondary-button active border" type="button">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.5331 8.35552H9.42198C8.17742 8.35552 7.55468 8.35552 7.07932 8.59773C6.66118 8.81078 6.32147 9.15049 6.10842 9.56863C5.86621 10.044 5.86621 10.6667 5.86621 11.9113V22.578C5.86621 23.8225 5.86621 24.4445 6.10842 24.9198C6.32147 25.338 6.66118 25.6783 7.07932 25.8913C7.55421 26.1333 8.1762 26.1333 9.41833 26.1333H20.0919C21.334 26.1333 21.9551 26.1333 22.43 25.8913C22.8481 25.6783 23.189 25.3377 23.402 24.9195C23.644 24.4446 23.644 23.8233 23.644 22.5812V19.4666M19.1995 9.46663L12.5329 16.1333V19.4666H15.8662L22.5329 12.8M19.1995 9.46663L22.5329 6.1333L25.8662 9.46663L22.5329 12.8M19.1995 9.46663L22.5329 12.8" stroke="#F7631B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
@@ -152,68 +152,59 @@
                 </div>
             </div>
 
-            <span class="dot text p3">40% (234 von 587 Personen konnten beim ersten Mal richtig antworten)</span>
-            <div class="box_border">
-                <h2><span>Text</span> für die Aufgaben</h2>
-                <p class='text p3 center'>Sie hören ein Gespräch. Zu diesem Gespräch gibt es zwei Aufgaben. Entscheiden Sie bei diesem Gespräch, ob die Aussage dazurichtig oder falsch ist und welche Antwort (a, b oder c) am besten passt.</p>
-                <div class="box__audio">
-                    <h3>Mallorca</h3>
-                    <audio id="audio" src="../audio/BRdXYEtmgvCX.128.mp3" controls></audio>
+            <div class="model-main">
+                <h2><span>B1 Modelltest</span> Übungen (von Goethe) mit Lösungen</h2>
+                <div class="model-main_timer">
+                    <div class="model-timer_info">
+                        <p class="text p2">Teil 1: Ansagen am Telefon, öffentliche Durchsagen verstehen</p>
+                    </div>
+                    <div class="model-timer_time">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 6.33333V13H19.6667M13 25C6.37258 25 1 19.6274 1 13C1 6.37258 6.37258 1 13 1C19.6274 1 25 6.37258 25 13C25 19.6274 19.6274 25 13 25Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p class="text p3">25 Min</p>
+                    </div>
+                </div>
+                <div class="model-main_test">
+                    <p class="text p3">Sie hören vier Ansagen. Zu jeder Ansage gibt es eine Aufgabe. Welche Lösung (a, b oder c) passt am besten?</p>
+                    <form method="post" action="#">
+                        <audio id="audio" src="../audio/BRdXYEtmgvCX.128.mp3" controls></audio>
+                        <div class="list__">
+                            <label for="answer-1" class='text p2_semibold'>Was wird während dieser Zeit vorübergehend unterbrochen sein? </label>
+                            <div class="model-list_radio">
+                                <span class="input__box border__box orange">
+                                    <input class='input_radio' type="radio" name="answer-1" value="a" checked> a) Die Verfügbarkeit von dringenden Bestellungen.
+                                </span>
+                                <span class="input__box border__box">
+                                    <input class='input_radio' type="radio" name="answer-1" value="b"> b) Die Lieferung von bereits getätigten Bestellungen.
+                                </span>
+                                <span class="input__box border__box">
+                                    <input class='input_radio' type="radio" name="answer-1" value="c"> c) Online-Bestellungen könnten unterbrochen sein.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="model-test_line"></div>
+                        <audio id="audio" src="../audio/BRdXYEtmgvCX.128.mp3" controls></audio>
+                        <div class="list__">
+                            <label for="answer-2" class='text p2_semibold'>Was können die Zuschauer heute erwarten?</label>
+                            <div class="model-list_radio">
+                                <span class="input__box border__box orange">
+                                    <input class='input_radio' type="radio" name="answer-2" value="a" checked> a) Regen.
+                                </span>
+                                <span class="input__box border__box">
+                                    <input class='input_radio' type="radio" name="answer-2" value="b"> b) Sonniges Wetter mit wenig Wind.
+                                </span>
+                                <span class="input__box border__box">
+                                    <input class='input_radio' type="radio" name="answer-2" value="c"> c) Sonniges Wetter mit Wind.
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="model-main_action">
+                    <button class="deutsch-b1-horen-button primary-button border small" type="button">Modelltest-Ergebnisse anzeigen</button>
                 </div>
             </div>
-
-            <div class="box_border back__width">
-                <p class='text p3 center'>Sie hören vier Ansagen. Zu jeder Ansage gibt es eine Aufgabe. Welche Lösung (a, b oder c) passt am besten?</p>
-                <h3>Aufgaben:</h3>
-
-                <form method="post" action="#">
-                    <div class="list__">
-                        <label class='text p2_semibold'> Alex schlägt Serg vor, nach Mallorca zu fliegen.</label>
-                        <span class="input__box border__box orange">
-                            <input class='input_radio' type="radio" name="answer" value="richtig" checked> Richtig.
-                        </span>
-                        <span class="input__box border__box">
-                            <input class='input_radio' type="radio" name="answer" value="falsch"> Falsch.
-                        </span>
-                    </div>
-                    <hr>
-                    <div class="list__">
-                        <label class='text p2_semibold'> Wo möchte Alex am liebsten übernachten?</label>
-                        <span class="input__box border__box orange">
-                            <input class='input_radio' type="radio" name="liebsten" value="bei Verwandten" checked> bei Verwandten.
-                        </span>
-                        <span class="input__box border__box">
-                            <input class='input_radio' type="radio" name="liebsten" value="im Hotel"> im Hotel.
-                        </span>
-                        <span class="input__box border__box">
-                            <input class='input_radio' type="radio" name="liebsten" value="im Zelt"> im Zelt.
-                        </span>
-                    </div>
-
-                    <div class="grup__button">
-                        <button class="primary-button border" type="button">
-                            <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.5 8.00016L8.16667 14.6668M1.5 8.00016L8.16667 1.3335M1.5 8.00016H25.5" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                            Zurück
-                        </button>
-
-                        <button class="primary-button big" type="button">Prüfen</button>
-                    </div>
-                </form>
-
-            </div>
-            <hr>
-            <ul class='list'>
-                <li><a href="#">3 deutscher Kollegen kommen nächste Woche Ihre Firma besuchen</a></li>
-                <li><a href="#">Abschiedsparty organisieren.</a></li>
-                <li><a href="#">Absolventenfeier (Fest)</a></li>
-                <li><a href="#">Am Wochenende einen Ausflug machen</a></li>
-                <li><a href="#">Besuch bei einer Freundin in einer anderen Stadt.</a></li>
-                <li><a href="#">Besuch eines Fortbildungskurses planen.</a></li>
-            </ul>
-
-            <button class="deutsch-b1-horen-button primary-button border small" type="button">Alle Dialoge B1</button>
         </div>
     </section>
 
@@ -221,7 +212,7 @@
         <div class="container">
             <h2>Fahren Sie mit den <span>Übungen</span> fort</h2>
             <div class="choice-of-exercises__list">
-                <div class="listen-block outline-orange active" onclick=location.href="#">
+                <div class="listen-block outline-orange" onclick=location.href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
                         <path d="M73.8891 48.4721C73.8891 35.0485 63.0071 24.1665 49.5835 24.1665C36.1599 24.1665 25.2779 35.0485 25.2779 48.4721M63.4724 60.6248V67.5693C63.4724 69.1827 63.4724 69.9894 63.6058 70.6602C64.1538 73.415 66.3074 75.5696 69.0622 76.1176C69.733 76.251 70.5396 76.251 72.1529 76.251C73.7663 76.251 74.573 76.251 75.2438 76.1176C77.9986 75.5696 80.1516 73.415 80.6996 70.6602C80.833 69.9894 80.8335 69.1827 80.8335 67.5693V60.6248C80.8335 59.0115 80.833 58.2032 80.6996 57.5324C80.1516 54.7776 77.9986 52.6257 75.2438 52.0777C74.573 51.9443 73.7663 51.9443 72.1529 51.9443C70.5396 51.9443 69.733 51.9443 69.0622 52.0777C66.3074 52.6257 64.1538 54.7776 63.6058 57.5324C63.4724 58.2032 63.4724 59.0115 63.4724 60.6248ZM35.6946 60.6248V67.5693C35.6946 69.1827 35.6941 69.9894 35.5607 70.6602C35.0127 73.415 32.8596 75.5696 30.1048 76.1176C29.434 76.251 28.6276 76.251 27.0142 76.251C25.4008 76.251 24.5941 76.251 23.9233 76.1176C21.1685 75.5696 19.0149 73.415 18.4669 70.6602C18.3335 69.9894 18.3335 69.1827 18.3335 67.5693V60.6248C18.3335 59.0115 18.3335 58.2032 18.4669 57.5324C19.0149 54.7776 21.1685 52.6257 23.9233 52.0777C24.5941 51.9443 25.4008 51.9443 27.0142 51.9443C28.6276 51.9443 29.434 51.9443 30.1048 52.0777C32.8596 52.6257 35.0127 54.7776 35.5607 57.5324C35.6941 58.2032 35.6946 59.0115 35.6946 60.6248Z" stroke="#161616" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
@@ -250,11 +241,11 @@
                     <a href="#" class="text p3">Sprechen</a>
                 </div>
 
-                <div class="listen-block outline-orange">
+                <div class="listen-block outline-orange active">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
                         <path d="M39.1675 26.1109H29.4453C25.556 26.1109 23.61 26.1109 22.1245 26.8678C20.8178 27.5336 19.7562 28.5952 19.0904 29.9019C18.3335 31.3874 18.3335 33.3335 18.3335 37.2227V70.5561C18.3335 74.4453 18.3335 76.3889 19.0904 77.8744C19.7562 79.1811 20.8178 80.2446 22.1245 80.9103C23.6085 81.6665 25.5522 81.6665 29.4339 81.6665H62.7887C66.6703 81.6665 68.6112 81.6665 70.0953 80.9103C71.402 80.2446 72.4671 79.1801 73.1329 77.8734C73.8891 76.3894 73.8891 74.4478 73.8891 70.5661V60.8332M60.0002 29.5832L39.1668 50.4165V60.8332H49.5835L70.4168 39.9998M60.0002 29.5832L70.4168 19.1665L80.8335 29.5832L70.4168 39.9998M60.0002 29.5832L70.4168 39.9998" stroke="#161616" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    <a href="#" class="text p3">Test</a>
+                    <a href="#" class="text p3">Modelltest</a>
                 </div>
 
                 <div class="listen-block outline-orange">

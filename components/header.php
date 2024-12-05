@@ -96,9 +96,9 @@
    <div class="header-second">
       <div class="container">
          <div>
-            <div class="logo">
+            <a href="/" class="logo">
                <?php echo $logo; ?>
-            </div>
+            </a>
             <div id="burger-menu" class="burger-menu">
                <div></div>
                <div></div>
@@ -177,37 +177,34 @@
       });
    });
 
-   function toggleMenu (mobileBtn, mobileMenu, additionalHeight = 0, isInnerDropdownMenu = false, innerDropdownMenuHeight = 0){
-      function setMobileMenuHeight (mobileMenuElement, additionalHeightValue, innerDropdownMenuHeightValue){
-         const mobileMenuHeight = [...mobileMenuElement.children].reduce(function(total, item){
-					return total + item.scrollHeight;
-				}, 0);
-				mobileMenuElement.setAttribute('style', 'height: ' + (mobileMenuHeight + additionalHeightValue + innerDropdownMenuHeightValue) + 'px;');
+   function toggleMenu(mobileBtn, mobileMenu, additionalHeight = 0, isInnerDropdownMenu = false, innerDropdownMenuHeight = 0) {
+      function setMobileMenuHeight(mobileMenuElement, additionalHeightValue, innerDropdownMenuHeightValue) {
+         const mobileMenuHeight = [...mobileMenuElement.children].reduce(function(total, item) {
+            return total + item.scrollHeight;
+         }, 0);
+         mobileMenuElement.setAttribute('style', 'height: ' + (mobileMenuHeight + additionalHeightValue + innerDropdownMenuHeightValue) + 'px;');
       }
-		let isInnerDropdownButtonActive = false;
-		if(isInnerDropdownMenu){
-			if(!mobileBtn.classList.contains('open')){
-				isInnerDropdownButtonActive = false;
-			}
-			else {
-				isInnerDropdownButtonActive = true;
-			}
-		}
-		if (!mobileBtn.classList.contains('open')){
-			setMobileMenuHeight(mobileMenu, additionalHeight, innerDropdownMenuHeight);
-			mobileBtn.classList.add('open');
-		}
-		else {
-			if(isInnerDropdownButtonActive){
-				setMobileMenuHeight(mobileMenu, additionalHeight, innerDropdownMenuHeight);
-				mobileBtn.classList.remove('open');
-			}
-			else {
-				mobileMenu.removeAttribute('style');
-				mobileBtn.classList.remove('open');
-			}
-		}
-	}
+      let isInnerDropdownButtonActive = false;
+      if (isInnerDropdownMenu) {
+         if (!mobileBtn.classList.contains('open')) {
+            isInnerDropdownButtonActive = false;
+         } else {
+            isInnerDropdownButtonActive = true;
+         }
+      }
+      if (!mobileBtn.classList.contains('open')) {
+         setMobileMenuHeight(mobileMenu, additionalHeight, innerDropdownMenuHeight);
+         mobileBtn.classList.add('open');
+      } else {
+         if (isInnerDropdownButtonActive) {
+            setMobileMenuHeight(mobileMenu, additionalHeight, innerDropdownMenuHeight);
+            mobileBtn.classList.remove('open');
+         } else {
+            mobileMenu.removeAttribute('style');
+            mobileBtn.classList.remove('open');
+         }
+      }
+   }
 
    const header = document.querySelector('header');
    const burgerBtn = document.getElementById('burger-menu');
@@ -218,13 +215,12 @@
    const headerSecondSectionContentPaddingTopAndBottom = 20 + 36;
    const headerSecondSectionContentGap = 20;
 
-   function toggleHeaderMenu(button, isInnerDropdownMenu = false, innerDropdownMenuHeight = 0){
+   function toggleHeaderMenu(button, isInnerDropdownMenu = false, innerDropdownMenuHeight = 0) {
       let innerFirstSectionDropdownMenuHeight = 0;
       let innerSecondSectionContentDropdownMenuHeight = 0;
-      if(button.classList.contains('language-content') || button.classList.contains('header-first-dropdown-item-1-content')){
+      if (button.classList.contains('language-content') || button.classList.contains('header-first-dropdown-item-1-content')) {
          innerFirstSectionDropdownMenuHeight = innerDropdownMenuHeight;
-      }
-      else if(button.classList.contains('header-second-nav-item')){
+      } else if (button.classList.contains('header-second-nav-item')) {
          innerSecondSectionContentDropdownMenuHeight = innerDropdownMenuHeight;
       }
       toggleMenu(button, headerSecondSectionContent, (headerSecondSectionContentPaddingTopAndBottom + headerSecondSectionContentGap), isInnerDropdownMenu, innerSecondSectionContentDropdownMenuHeight);
@@ -234,13 +230,12 @@
          document.body.style.overflow = "hidden";
          document.body.style.maxHeight = "100vh";
          header.classList.add('open');
-      }
-      else {
+      } else {
          document.body.removeAttribute('style');
          header.classList.remove('open');
       }
       toggleMenu(button, headerFirstSection, headerFirstSectionPaddingTopAndBottom, isInnerDropdownMenu, innerFirstSectionDropdownMenuHeight);
-      if(headerFirstSection.getAttribute('style')){
+      if (headerFirstSection.getAttribute('style')) {
          headerFirstSection.style.padding = "9px 0px";
          headerFirstSection.style.overflow = "visible";
       }
@@ -257,68 +252,66 @@
    const headerSecondNavItem = document.querySelectorAll('.header-second-nav-item');
 
    headerFirstDropdownItem1Content.forEach(function(button) {
-		button.addEventListener('click', function(){
-         if(window.innerWidth < 1199.99){
+      button.addEventListener('click', function() {
+         if (window.innerWidth < 1199.99) {
             let innerDropdownMenuHeight = 0;
-            if(this.parentElement.children[1].getAttribute('style')){
+            if (this.parentElement.children[1].getAttribute('style')) {
                this.parentElement.children[1].removeAttribute('style');
                innerDropdownMenuHeight -= this.parentElement.children[1].scrollHeight;
-            }
-            else{
+            } else {
                this.parentElement.children[1].style.height = `${this.parentElement.children[1].scrollHeight}px`;
                innerDropdownMenuHeight = this.parentElement.children[1].scrollHeight;
             }
             toggleHeaderMenu(this, true, innerDropdownMenuHeight);
          }
-		});
-	});
+      });
+   });
 
-	headerLanguageContent.forEach(function(button) {
-		button.addEventListener('click', function(){
-         if(window.innerWidth < 1199.99){
+   headerLanguageContent.forEach(function(button) {
+      button.addEventListener('click', function() {
+         if (window.innerWidth < 1199.99) {
             let innerDropdownMenuHeight = 0;
-            if(this.parentElement.children[1].getAttribute('style')){
+            if (this.parentElement.children[1].getAttribute('style')) {
                this.parentElement.children[1].removeAttribute('style');
                innerDropdownMenuHeight -= this.parentElement.children[1].scrollHeight;
-            }
-            else{
+            } else {
                this.parentElement.children[1].style.height = `${this.parentElement.children[1].scrollHeight}px`;
                innerDropdownMenuHeight = this.parentElement.children[1].scrollHeight;
             }
             toggleHeaderMenu(this, true, innerDropdownMenuHeight);
          }
-		});
-	});
+      });
+   });
 
-	headerSecondNavItem.forEach(function(button) {
-		button.addEventListener('click', function(e){
-         if(window.innerWidth < 1199.99){
+   headerSecondNavItem.forEach(function(button) {
+      button.addEventListener('click', function(e) {
+         if (window.innerWidth < 1199.99) {
             let innerDropdownMenuHeight = 0;
-            if(this.parentElement.children[1].getAttribute('style')){
+            if (this.parentElement.children[1].getAttribute('style')) {
                this.parentElement.children[1].removeAttribute('style');
                innerDropdownMenuHeight -= this.parentElement.children[1].scrollHeight;
-            }
-            else{
+            } else {
                this.parentElement.children[1].style.height = `${this.parentElement.children[1].scrollHeight}px`;
                innerDropdownMenuHeight = this.parentElement.children[1].scrollHeight;
             }
             toggleHeaderMenu(this, true, innerDropdownMenuHeight);
          }
-		});
-	});
+      });
+   });
 
    function windowResize() {
-      function removeClassOpen(element){
-         if(element.classList.contains('open')){
+      function removeClassOpen(element) {
+         if (element.classList.contains('open')) {
             element.classList.remove('open');
          }
       }
+
       function removeAttributeStyle(element) {
-         if(element.getAttribute('style')){
+         if (element.getAttribute('style')) {
             element.removeAttribute('style');
          }
       }
-      if(window.innerWidth > 1199.98){
+      if (window.innerWidth > 1199.98) {
          removeClassOpen(burgerBtn);
          removeAttributeStyle(headerFirstSection);
          removeAttributeStyle(headerSecondSectionContent);

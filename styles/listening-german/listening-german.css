@@ -180,10 +180,17 @@
 .listening-list__progress {
   margin-left: auto;
 }
+.listening-exercises__row .primary-button {
+  padding: 20px 96px;
+}
 
 @media (max-width: 1199.98px) {
   .listening-exercises .listening-exercises__row {
     flex-direction: column;
+  }
+
+  .listening-exercises__row .primary-button {
+    padding: 20px 40px;
   }
 
   .listening-exercises__buttons {

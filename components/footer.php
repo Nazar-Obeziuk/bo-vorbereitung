@@ -20,10 +20,6 @@
                         <p class="text p2">Rechtliche Information</p>
                         <div class="footer-block_list">
                             <a href="#" class="text p3">Kontact</a>
-                            <!-- <div class="footer-list-item">
-                                <a href="#" class="text p3">Impressum</a>
-                                <a href="#" class="text p3">AGB</a>
-                            </div> -->
                             <p class="text p3"><a href="#" class="text p3">Impressum</a> und <a href="#" class="text p3">AGB</a></p>
                             <a href="#" class="text p3">Datenschutzerklarung</a>
                             <a href="#" class="text p3">Cookie-Richtlinie</a>

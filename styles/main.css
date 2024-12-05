@@ -311,7 +311,7 @@ h2 {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: 24px;
+    min-width: 24px;
     height: 24px;
     border: 1px solid var(--gray);
     border-radius: 50%;
@@ -322,10 +322,9 @@ h2 {
   }
 
   input[type="radio"]:checked {
-    width: 24px;
+    min-width: 24px;
     height: 24px;
     background: var(--primary-orange);
-    /* transform: translate(-50%, -50%); */
     border: 1px solid var(--primary-orange);
     border-radius: 50%;
     outline: none;
@@ -354,11 +353,10 @@ h2 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
     height: 80px;
     width: 100%;
     border: 2px solid var(--gray, #cacaca);
-    padding: 28px 35px;
+    padding: 18px;
     border-radius: 4px;
     margin-bottom: 15px;
   }
@@ -398,6 +396,14 @@ h2 {
 
   .box__audio audio::-webkit-media-controls-panel {
     background: #d9d9d9;
+  }
+}
+
+@media (max-width: 400px) {
+  .breadcrumbs-main {
+    display: block;
+    gap: 0;
+    float: inherit;
   }
 }
 

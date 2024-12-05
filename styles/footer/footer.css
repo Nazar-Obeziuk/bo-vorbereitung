@@ -40,6 +40,10 @@
 }
 .footer-block_list a {
   color: var(--white);
+  transition: 0.4s;
+}
+.footer-block_list a:hover {
+  color: var(--primary-orange);
 }
 .footer-info_actions {
   width: 238px;
