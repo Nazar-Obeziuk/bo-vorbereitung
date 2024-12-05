@@ -13,6 +13,24 @@
   cursor: pointer;
 }
 
+.listen-block.active {
+  background: var(--primary-orange);
+  color: var(--white) !important;
+  border: var(--primary-orange);
+}
+
+.listen-block.active svg path {
+  stroke: var(--white);
+}
+
+.listen-block.active.outline-orange svg path {
+  stroke: var(--white);
+}
+
+.listen-block.active.outline-orange p {
+  color: var(--white);
+}
+
 .listen-block p {
   font-size: 16px;
   font-weight: 600;

@@ -24,7 +24,7 @@
         <div class="container">
             <h2 class="level-wrapper_title heading h2"><span>B1</span> Übungen auswählen</h2>
             <div class="listening-german__list">
-                <button class="secondary-button border" type="button">
+                <button class="secondary-button active border" type="button">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M23.645 15.5112C23.645 11.2156 20.1627 7.7334 15.8672 7.7334C11.5716 7.7334 8.08941 11.2156 8.08941 15.5112M20.3116 19.4001V21.6223C20.3116 22.1386 20.3116 22.3967 20.3543 22.6114C20.5297 23.4929 21.2188 24.1824 22.1004 24.3577C22.315 24.4004 22.5731 24.4004 23.0894 24.4004C23.6057 24.4004 23.8638 24.4004 24.0785 24.3577C24.96 24.1824 25.649 23.4929 25.8243 22.6114C25.867 22.3967 25.8672 22.1386 25.8672 21.6223V19.4001C25.8672 18.8838 25.867 18.6251 25.8243 18.4105C25.649 17.5289 24.96 16.8403 24.0785 16.665C23.8638 16.6223 23.6057 16.6223 23.0894 16.6223C22.5731 16.6223 22.315 16.6223 22.1004 16.665C21.2188 16.8403 20.5297 17.5289 20.3543 18.4105C20.3116 18.6251 20.3116 18.8838 20.3116 19.4001ZM11.4227 19.4001V21.6223C11.4227 22.1386 11.4226 22.3967 11.3799 22.6114C11.2045 23.4929 10.5155 24.1824 9.63401 24.3577C9.41934 24.4004 9.16129 24.4004 8.64501 24.4004C8.12874 24.4004 7.87059 24.4004 7.65592 24.3577C6.77439 24.1824 6.08524 23.4929 5.90989 22.6114C5.86719 22.3967 5.86719 22.1386 5.86719 21.6223V19.4001C5.86719 18.8838 5.86719 18.6251 5.90989 18.4105C6.08524 17.5289 6.77439 16.8403 7.65592 16.665C7.87059 16.6223 8.12873 16.6223 8.64501 16.6223C9.1613 16.6223 9.41934 16.6223 9.63401 16.665C10.5155 16.8403 11.2045 17.5289 11.3799 18.4105C11.4226 18.6251 11.4227 18.8838 11.4227 19.4001Z" stroke="#F7631B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
@@ -90,7 +90,7 @@
 
             <div class="listening-exercises__row">
                 <div class="listening-exercises__buttons">
-                    <button class="secondary-button" type="button">
+                    <button class="secondary-button active" type="button">
                         Hören Teil 1
                     </button>
                     <button class="secondary-button" type="button">
@@ -164,7 +164,7 @@
                                 <p class="text p4">Übung 1.4 </p>
                                 <p class="text p3 bold">Was hat Lena für den Abend vor?</p>
                             </div>
-                        
+                
                         </div>
 
                         <div class="listening-list__box">
@@ -192,6 +192,45 @@
                             </div>
                         
                         </div>
+
+
+                        <div class="listening-list__box">
+                            <div class="listening-list__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="listening-list__text">
+                                <p class="text p4">Übung 1.7</p>
+                                <p class="text p3 bold">Ursprüngliche Plan</p>
+                            </div>
+                        
+                        </div>
+
+                        <div class="listening-list__box">
+                            <div class="listening-list__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="listening-list__text">
+                                <p class="text p4">Übung 1.8</p>
+                                <p class="text p3 bold">Ursprüngliche Plan</p>
+                            </div>
+                        
+                        </div>
+
+                        <div class="listening-list__box">
+                            <div class="listening-list__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="listening-list__text">
+                                <p class="text p4">Übung 1.9</p>
+                                <p class="text p3 bold">Ursprüngliche Plan</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -213,7 +252,7 @@
         <div class="container">
             <h2 class="level-wrapper_title heading h2"><span>B1</span> Übungen auswählen</h2>
             <div class="choice-of-exercises__list">
-                <div class="listen-block outline-orange">
+                <div class="listen-block outline-orange active">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
                         <path d="M73.8891 48.4721C73.8891 35.0485 63.0071 24.1665 49.5835 24.1665C36.1599 24.1665 25.2779 35.0485 25.2779 48.4721M63.4724 60.6248V67.5693C63.4724 69.1827 63.4724 69.9894 63.6058 70.6602C64.1538 73.415 66.3074 75.5696 69.0622 76.1176C69.733 76.251 70.5396 76.251 72.1529 76.251C73.7663 76.251 74.573 76.251 75.2438 76.1176C77.9986 75.5696 80.1516 73.415 80.6996 70.6602C80.833 69.9894 80.8335 69.1827 80.8335 67.5693V60.6248C80.8335 59.0115 80.833 58.2032 80.6996 57.5324C80.1516 54.7776 77.9986 52.6257 75.2438 52.0777C74.573 51.9443 73.7663 51.9443 72.1529 51.9443C70.5396 51.9443 69.733 51.9443 69.0622 52.0777C66.3074 52.6257 64.1538 54.7776 63.6058 57.5324C63.4724 58.2032 63.4724 59.0115 63.4724 60.6248ZM35.6946 60.6248V67.5693C35.6946 69.1827 35.6941 69.9894 35.5607 70.6602C35.0127 73.415 32.8596 75.5696 30.1048 76.1176C29.434 76.251 28.6276 76.251 27.0142 76.251C25.4008 76.251 24.5941 76.251 23.9233 76.1176C21.1685 75.5696 19.0149 73.415 18.4669 70.6602C18.3335 69.9894 18.3335 69.1827 18.3335 67.5693V60.6248C18.3335 59.0115 18.3335 58.2032 18.4669 57.5324C19.0149 54.7776 21.1685 52.6257 23.9233 52.0777C24.5941 51.9443 25.4008 51.9443 27.0142 51.9443C28.6276 51.9443 29.434 51.9443 30.1048 52.0777C32.8596 52.6257 35.0127 54.7776 35.5607 57.5324C35.6941 58.2032 35.6946 59.0115 35.6946 60.6248Z" stroke="#161616" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
