@@ -77,12 +77,14 @@ const germanListButtons = document.querySelectorAll('.listening-german__list [ty
 germanListButtons.forEach((button) => {
     button.addEventListener('click', function () {
         // Check if the screen width is less than or equal to 768px (mobile version)
-        if (window.innerWidth <= 768) {
+        if (window.innerWidth <= 1199.98) {
             // Select the '.dropdown-menu' element
             const mobMenu = document.querySelector('section.deutsch-b1-horen .dropdown-menu'); 
             
             // Toggle the 'open' class on the '.dropdown-menu' element
             mobMenu.classList.toggle('open');
+
+            this.classList.toggle('click');
         }
     });
 });
