@@ -110,6 +110,9 @@
   border-bottom: 3px solid var(--light-black);
   cursor: pointer;
 }
+.schprechen-menu button {
+  padding: 10px 26px !important;
+}
 .writing-tabs_item.active {
   border-color: var(--primary-orange);
 }
@@ -155,5 +158,11 @@
   .writing-main_info {
     padding: 0;
     background: transparent;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .writing-wrapper {
+    gap: 20px;
   }
 }
