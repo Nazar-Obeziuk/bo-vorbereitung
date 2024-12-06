@@ -164,7 +164,7 @@
                             </button>
                         </div>
 
-                        <div class="dropdown-menu schprechen-navigation"> 
+                        <div class="dropdown-menu schprechen-navigation">
                             <div class="dropdown-menu-item" id="dropdown-menu-item-1">
                                 <a class="dropdown-menu-item-link" href="#">
                                     <p class="text p3">Uber mich</p>
