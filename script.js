@@ -332,33 +332,38 @@ inputBoxes.forEach((inputBox) => {
   });
 });
 
-const progressSlider = document.getElementById("progress-slider");
-const progressSelectorValue = document.getElementById(
-  "progress-selector-value"
-);
-const progressBar = document.getElementById("progress-bar");
 
-progressSlider.value = 6;
 
-function updateProgress() {
-  progressSelectorValue.innerHTML = progressSlider.value + "%";
-  const currentThumbPosition = (progressSlider.value / 100) * 100; // Calculate percentage
-  progressSelectorValue.style.left = currentThumbPosition + "%";
-  progressBar.style.width = progressSlider.value + "%";
-}
 
-updateProgress();
+document.addEventListener('DOMContentLoaded', () => {
+  const progressSlider = document.getElementById("progress-slider");
+  const progressSelectorValue = document.getElementById("progress-selector-value");
+  const progressBar = document.getElementById("progress-bar");
 
-progressSlider.oninput = function () {
-  updateProgress();
-};
+  if (progressSlider && progressSelectorValue && progressBar) {
+      progressSlider.value = 6;
 
-progressBar.parentElement.addEventListener("click", function (event) {
-  const rect = progressBar.parentElement.getBoundingClientRect();
-  const offsetX = event.clientX - rect.left;
-  const newValue = (offsetX / rect.width) * 100;
-  progressSlider.value = newValue;
-  updateProgress();
+      function updateProgress() {
+          progressSelectorValue.innerHTML = progressSlider.value + "%";
+          const currentThumbPosition = (progressSlider.value / 100) * 100; // Calculate percentage
+          progressSelectorValue.style.left = currentThumbPosition + "%";
+          progressBar.style.width = progressSlider.value + "%";
+      }
+
+      updateProgress();
+
+      progressSlider.oninput = function () {
+          updateProgress();
+      };
+
+      progressBar.parentElement.addEventListener("click", function (event) {
+          const rect = progressBar.parentElement.getBoundingClientRect();
+          const offsetX = event.clientX - rect.left;
+          const newValue = (offsetX / rect.width) * 100;
+          progressSlider.value = newValue;
+          updateProgress();
+      });
+  }
 });
 
 // schreiben tabs
