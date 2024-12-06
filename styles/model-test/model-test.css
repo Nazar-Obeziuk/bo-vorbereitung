@@ -40,8 +40,9 @@
   flex-direction: column;
   gap: 30px;
 }
-.model-main_test form audio {
+.model-main_test form .audio-player {
   width: 100%;
+  margin-bottom: 0;
 }
 .model-test_line {
   width: calc(100% + 200px);

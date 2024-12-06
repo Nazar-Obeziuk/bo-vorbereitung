@@ -3,7 +3,7 @@
 }
 .review-block {
   width: 100%;
-  height: 100%;
+  height: 500px;
   border-radius: 25px;
   border: 2px solid var(--gray);
   padding: 42px 38px;
@@ -53,7 +53,7 @@
   width: 100%;
   height: 90%;
 }
-.swiper {
+.reviews_swiper {
   position: relative !important;
   z-index: 100;
   height: 100%;
