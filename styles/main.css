@@ -8,11 +8,7 @@
 
 @import "../ui/main.css";
 
-@import "./home/home.css";
-@import "./writing/writing.css";
 @import "./listening-german/listening-german.css";
-@import "./provider/provider.css";
-@import "./exercise/exercise.css";
 
 /* input styles */
 
@@ -103,7 +99,7 @@
 }
 
 .choice-of-exercises {
-  background: var(--light-gray);
+  background: var(--white);
 }
 
 .choice-of-exercises h1,
@@ -199,6 +195,49 @@ h2 {
   background: #333;
 }
 
+.navigation-block {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+.navigation-item {
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 8px;
+  border: 2px solid var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--black);
+  transition: 0.4s;
+  cursor: pointer;
+}
+.navigation-item:hover {
+  background: var(--primary-orange);
+  color: var(--white);
+  border-color: var(--primary-orange);
+}
+.navigation-dots {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--black);
+}
+.navigation-item.active {
+  background: var(--primary-orange);
+  color: var(--white);
+  border-color: var(--primary-orange);
+}
+.navigation-item.active.error {
+  background: var(--red);
+}
+.navigation-item.active.correct {
+  background: var(--dark-green);
+}
+
 @media (max-width: 1199.98px) {
   .choice-of-exercises__list {
     grid-template-columns: repeat(3, 1fr);
@@ -267,6 +306,10 @@ h2 {
     max-height: 100%;
     overflow-y: auto;
     padding-right: 0;
+  }
+
+  .navigation-block {
+    gap: 6px;
   }
 }
 

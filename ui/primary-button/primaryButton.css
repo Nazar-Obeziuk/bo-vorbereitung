@@ -20,13 +20,28 @@
 }
 
 .primary-button.big {
-  padding: 22px 168px;
+  padding: 22px 98px;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.primary-button.border.big {
+  padding: 22px 98px;
   font-size: 24px;
   line-height: 34px;
 }
 
 .primary-button.disabled {
   background: var(--gray);
+}
+.primary-button.border.disabled {
+  border-color: var(--gray);
+  background: transparent;
+}
+
+.primary-button.border.disabled:hover {
+  background: transparent;
+  color: var(--black);
 }
 
 .primary-button.disabled:hover {

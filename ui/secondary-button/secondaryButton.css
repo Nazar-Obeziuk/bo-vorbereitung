@@ -28,6 +28,14 @@
   color: var(--white);
 }
 
+.secondary-button svg path {
+  transition: 0.4s;
+}
+
+.secondary-button:hover svg path {
+  stroke: var(--white);
+}
+
 .secondary-button.border {
   padding: 14px 56px;
   background: transparent;

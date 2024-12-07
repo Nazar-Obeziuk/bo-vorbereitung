@@ -6,25 +6,45 @@
   width: 100%;
   position: relative;
   gap: 15px;
-}   
+}
 
-.schprechen-menu>button{
-    width: 100%;
+.schprechen-menu > button {
+  width: 100%;
 }
 
 .dropdown-menu.schprechen-navigation .dropdown-menu-item-link {
-    padding: 17px 20px 16px 28px;
+  padding: 17px 20px 16px 28px;
 }
 
 .dropdown-menu.schprechen-navigation {
-    display: none;
-    position: relative;
+  display: none;
+  position: relative;
 }
 
+.dropdown-menu-item-link p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
+.schprechen-menu > button.click.active::after {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIxLjMzMzcgMTMuMzMzNUwxNi4wMDAzIDE4LjY2NjhMMTAuNjY3IDEzLjMzMzUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=")
+    no-repeat center;
+  background-size: contain;
+  margin-left: auto;
+  transform: scaleY(-1);
+}
 
+@media (max-width: 1199.98px) {
+  .schprechen-menu > button:not(.active) {
+    display: none;
+  }
 
-.schprechen-menu>button.click.active::after {
+  .schprechen-menu > button.active::after {
     content: "";
     display: inline-block;
     width: 32px;
@@ -33,29 +53,10 @@
       no-repeat center;
     background-size: contain;
     margin-left: auto;
-    transform: scaleY(-1);
   }
-  
-  @media (max-width: 1199.98px) {
 
-    .schprechen-menu>button:not(.active) {
-        display: none;
-    }
-
-    .schprechen-menu>button.active::after {
-        content: "";
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-        background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIxLjMzMzcgMTMuMzMzNUwxNi4wMDAzIDE4LjY2NjhMMTAuNjY3IDEzLjMzMzUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=")
-          no-repeat center;
-        background-size: contain;
-        margin-left: auto;
-    }
-
-    .dropdown-menu.schprechen-navigation.open {
-        display: block;
-        position: relative;
-    }
-
+  .dropdown-menu.schprechen-navigation.open {
+    display: block;
+    position: relative;
   }
+}

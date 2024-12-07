@@ -332,37 +332,36 @@ inputBoxes.forEach((inputBox) => {
   });
 });
 
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   const progressSlider = document.getElementById("progress-slider");
-  const progressSelectorValue = document.getElementById("progress-selector-value");
+  const progressSelectorValue = document.getElementById(
+    "progress-selector-value"
+  );
   const progressBar = document.getElementById("progress-bar");
 
   if (progressSlider && progressSelectorValue && progressBar) {
-      progressSlider.value = 6;
+    progressSlider.value = 6;
 
-      function updateProgress() {
-          progressSelectorValue.innerHTML = progressSlider.value + "%";
-          const currentThumbPosition = (progressSlider.value / 100) * 100; // Calculate percentage
-          progressSelectorValue.style.left = currentThumbPosition + "%";
-          progressBar.style.width = progressSlider.value + "%";
-      }
+    function updateProgress() {
+      progressSelectorValue.innerHTML = progressSlider.value + "%";
+      const currentThumbPosition = (progressSlider.value / 100) * 100; // Calculate percentage
+      progressSelectorValue.style.left = currentThumbPosition + "%";
+      progressBar.style.width = progressSlider.value + "%";
+    }
 
+    updateProgress();
+
+    progressSlider.oninput = function () {
       updateProgress();
+    };
 
-      progressSlider.oninput = function () {
-          updateProgress();
-      };
-
-      progressBar.parentElement.addEventListener("click", function (event) {
-          const rect = progressBar.parentElement.getBoundingClientRect();
-          const offsetX = event.clientX - rect.left;
-          const newValue = (offsetX / rect.width) * 100;
-          progressSlider.value = newValue;
-          updateProgress();
-      });
+    progressBar.parentElement.addEventListener("click", function (event) {
+      const rect = progressBar.parentElement.getBoundingClientRect();
+      const offsetX = event.clientX - rect.left;
+      const newValue = (offsetX / rect.width) * 100;
+      progressSlider.value = newValue;
+      updateProgress();
+    });
   }
 });
 
@@ -374,13 +373,10 @@ const insertBlock = document.querySelector(".writing-main_insert");
 
 writingTabs.forEach((writingTab) => {
   writingTab.addEventListener("click", function () {
-    // Видаляємо клас active з усіх табів
     writingTabs.forEach((tab) => tab.classList.remove("active"));
 
-    // Додаємо клас active до поточного таба
     this.classList.add("active");
 
-    // Відображаємо відповідний блок
     const target = this.getAttribute("data-target");
     if (target === "info") {
       infoBlock.style.display = "flex";
@@ -392,11 +388,32 @@ writingTabs.forEach((writingTab) => {
   });
 });
 
+// learn materialien tabs
+
+const learnTabs = document.querySelectorAll(".learn-tabs_item");
+const learnInfoBlock = document.querySelector(".learn-main_info");
+const learnMainBlock = document.querySelector(".learn-main_insert");
+
+learnTabs.forEach((learnTab) => {
+  learnTab.addEventListener("click", function () {
+    learnTabs.forEach((tab) => tab.classList.remove("active"));
+
+    this.classList.add("active");
+
+    const target = this.getAttribute("data-target");
+    if (target === "learn") {
+      learnInfoBlock.style.display = "flex";
+      learnMainBlock.style.display = "none";
+    } else if (target === "modelltest") {
+      learnMainBlock.style.display = "flex";
+      learnInfoBlock.style.display = "none";
+    }
+  });
+});
+
 document.addEventListener("DOMContentLoaded", () => {
-  // Track currently playing audio
   let currentlyPlaying = null;
 
-  // Add CSS for components
   const style = document.createElement("style");
   style.textContent = `
    
@@ -404,7 +421,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.head.appendChild(style);
 
   document.querySelectorAll(".audio-player").forEach((player, index) => {
-    // DOM elements
     const audio = document.querySelectorAll("audio")[index];
     const playButton = player.querySelector(".play-btn");
     const muteButton = player.querySelector(".mute-btn");
@@ -419,14 +435,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentTimeEl = player.querySelector(".current-time");
     const durationEl = player.querySelector(".duration");
 
-    // State
     let isMuted = false;
     let isDragging = false;
     let lastProgress = 0;
     let lastUpdateTime = 0;
     const UPDATE_INTERVAL = 50;
 
-    // Update play button display
     function updatePlayButton(button, isPlaying) {
       if (button) {
         button.innerHTML = isPlaying
@@ -435,14 +449,12 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // Format time utility
     function formatTime(seconds) {
       const minutes = Math.floor(seconds / 60);
       const secs = Math.floor(seconds % 60);
       return `${minutes}:${secs < 10 ? "0" : ""}${secs}`;
     }
 
-    // Update progress from mouse position
     function updateProgressFromMouse(e) {
       const rect = progressBarContainer.getBoundingClientRect();
       const x = Math.max(0, Math.min(e.clientX - rect.left, rect.width));
@@ -458,7 +470,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // Update progress bar and time display
     function updateProgress() {
       const now = Date.now();
       if (now - lastUpdateTime < UPDATE_INTERVAL) return;
@@ -474,7 +485,6 @@ document.addEventListener("DOMContentLoaded", () => {
       lastUpdateTime = now;
     }
 
-    // Event Listeners
     audio.addEventListener("play", () => {
       if (currentlyPlaying && currentlyPlaying !== audio) {
         currentlyPlaying.pause();
@@ -561,7 +571,6 @@ document.addEventListener("DOMContentLoaded", () => {
       progressBarContainer.addEventListener("click", updateProgressFromMouse);
     }
 
-    // Progress updates with RAF
     let rafId = null;
     audio.addEventListener("timeupdate", () => {
       if (!rafId) {
@@ -572,14 +581,12 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Initial duration
     audio.addEventListener("loadedmetadata", () => {
       if (durationEl) {
         durationEl.textContent = formatTime(audio.duration);
       }
     });
 
-    // Handle end of audio
     audio.addEventListener("ended", () => {
       updatePlayButton(playButton, false);
       progressBar.style.width = "0%";
@@ -588,30 +595,26 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Add event listener to all buttons with the class 'primary-button'
-  document.querySelectorAll('.input__box.border__box button.primary-button').forEach(button => {
-      button.addEventListener('click', function() {
-          // Get the value of the data-inputmodal attribute
-          const modalClass = this.getAttribute('data-inputmodal');
-          
-          // Find the element with the corresponding class
-          const modal = document.querySelector(`.${modalClass}`);
-          
-          // Toggle the 'open' class on the modal
-          if (modal) {
-              modal.classList.toggle('open');
-          }
-      });
-  });
+document.addEventListener("DOMContentLoaded", () => {
+  document
+    .querySelectorAll(".input__box.border__box button.primary-button")
+    .forEach((button) => {
+      button.addEventListener("click", function () {
+        const modalClass = this.getAttribute("data-inputmodal");
 
-  // Add event listener to all elements with the class 'close-inputmodal'
-  document.querySelectorAll('.close-inputmodal').forEach(closeButton => {
-    closeButton.addEventListener('click', function() {
-          // Remove the 'open' class from all elements with the class 'inputmodal'
-          document.querySelectorAll('.inputmodal').forEach(modal => {
-              modal.classList.remove('open');
-          });
+        const modal = document.querySelector(`.${modalClass}`);
+
+        if (modal) {
+          modal.classList.toggle("open");
+        }
       });
+    });
+
+  document.querySelectorAll(".close-inputmodal").forEach((closeButton) => {
+    closeButton.addEventListener("click", function () {
+      document.querySelectorAll(".inputmodal").forEach((modal) => {
+        modal.classList.remove("open");
+      });
+    });
   });
 });

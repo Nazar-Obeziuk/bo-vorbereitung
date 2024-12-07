@@ -4,27 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vorbereitung mit BO - B1 Schreiben</title>
+    <title>Vorbereitung mit BO - Verben mit prapositionen</title>
     <meta name="description" content="Online Prüfungsvorbereitung für Deutsch Test für Zuwanderer (A1, A2, B1, B2, C1, C2 )">
     <meta name="keywords" content="Vorbereitung, Deutsch, Kurs, Test">
     <meta property="og:image" content="https://deutsch-vorbereitung.com/img/logo_medium.png">
     <meta property="og:title" content="Vorbereitung mit BO">
     <meta property="og:description" content="Deutsch Prüfung - Vorbereitung auf Hören, Lesen, Schreiben und Sprechen.">
     <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="stylesheet" href="../styles/writing/writing.css" />
+    <link rel="stylesheet" href="../styles/learn-materialien/learn-materialien.css" />
 </head>
 
 <body>
     <?php include dirname(__DIR__) . "/components/header.php"; ?>
     <section class="breadcrumbs">
         <div class="container">
-            <p class="breadcrumbs-title">Deutsch <span>B1 Schreiben</span></з>
+            <p class="breadcrumbs-title">Deutsch <span>B1 Verben mit prapositionen</span></з>
             <div class="breadcrumbs-main">
                 <a class="text p4" href="#">Vorbereiting mit BO</a>
                 <span>-></span>
                 <a class="text p4" href="#">B1 (Goethe)</a>
                 <span>-></span>
-                <p class="text p4 bold">B1 Schreiben</p>
+                <a class="text p4" href="#">Lernmaterialien</a>
+                <span>-></span>
+                <p class="text p4 bold">Verben mit prapositionen</p>
             </div>
         </div>
     </section>
@@ -46,7 +48,7 @@
                     <p class="text p3">Lesen</p>
                 </button>
 
-                <button class="secondary-button active border" type="button">
+                <button class="secondary-button border" type="button">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.40039 25.3698H25.6004M6.40039 25.3698V20.5698L16.0004 10.9698M6.40039 25.3698L11.2004 25.3697L20.8004 15.7698M16.0004 10.9698L19.4427 7.52738L19.4448 7.52534C19.9187 7.05148 20.156 6.81413 20.4296 6.72524C20.6706 6.64693 20.9303 6.64693 21.1713 6.72524C21.4447 6.81407 21.6818 7.05115 22.155 7.52434L24.2427 9.6121C24.7179 10.0873 24.9557 10.325 25.0447 10.599C25.123 10.84 25.123 11.0997 25.0447 11.3407C24.9557 11.6145 24.7183 11.8518 24.2438 12.3264L24.2427 12.3274L20.8004 15.7698M16.0004 10.9698L20.8004 15.7698" stroke="#F7631B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
@@ -67,7 +69,7 @@
                     <p class="text p3">Modelltest</p>
                 </button>
 
-                <button class="secondary-button border" type="button">
+                <button class="secondary-button active border" type="button">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.86621 14.7453V8.86291C5.86621 8.39942 5.9575 7.94047 6.13487 7.51226C6.31224 7.08405 6.57222 6.69497 6.89995 6.36724C7.22769 6.0395 7.61677 5.77953 8.04498 5.60216C8.47318 5.42479 8.93213 5.3335 9.39562 5.3335C9.85911 5.3335 10.3181 5.42479 10.7463 5.60216C11.1745 5.77953 11.5636 6.0395 11.8913 6.36724C12.219 6.69497 12.479 7.08405 12.6564 7.51226C12.8337 7.94047 12.925 8.39942 12.925 8.86291V14.7453M5.86621 11.2158H12.925M24.6897 7.68644V14.7453M5.86621 19.4511H19.9839M5.86621 24.157H12.925M17.6309 24.157L19.9839 26.51L25.8662 20.6276M17.6309 11.2158C17.6309 12.1519 18.0028 13.0496 18.6647 13.7115C19.3266 14.3734 20.2243 14.7453 21.1603 14.7453C22.0964 14.7453 22.9941 14.3734 23.656 13.7115C24.3179 13.0496 24.6897 12.1519 24.6897 11.2158C24.6897 10.2798 24.3179 9.38207 23.656 8.72018C22.9941 8.05828 22.0964 7.68644 21.1603 7.68644C20.2243 7.68644 19.3266 8.05828 18.6647 8.72018C18.0028 9.38207 17.6309 10.2798 17.6309 11.2158Z" stroke="#F7631B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
@@ -151,140 +153,147 @@
         </div>
     </section>
 
-    <section class="writing-section">
+    <section class="learn-section">
         <div class="container">
-            <div class="writing-wrapper">
-                <h2><span>B1</span> Schprechen</h2>
-                <div class="writing-wrapper_main">
-                    <div class="writing-main_service">
+            <div class="learn-wrapper">
+                <h2><span>B1</span> Lernmaterialien</h2>
+                <div class="learn-wrapper_main">
+                    <div class="learn-main_service">
 
                         <div class="schprechen-menu">
+                            <button class="secondary-button" type="button">
+                                LWS
+                            </button>
                             <button class="secondary-button active" type="button">
-                                Uber mich
+                                Verben mit prapositionen
                             </button>
                             <button class="secondary-button" type="button">
-                                Bild beschreiben
+                                Learn
                             </button>
                             <button class="secondary-button" type="button">
-                                Dialog
+                                Modelltest
+                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 7H15M15 7L9 1M15 7L9 13" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="secondary-button" type="button">
+                                Connectors
                             </button>
                         </div>
 
                         <div class="dropdown-menu schprechen-navigation">
                             <div class="dropdown-menu-item" id="dropdown-menu-item-1">
                                 <a class="dropdown-menu-item-link" href="#">
-                                    <p class="text p3">Uber mich</p>
+                                    <p class="text p3">LWS</p>
                                     <div class="check-icon"><?php echo $check_smoll; ?></div>
                                 </a>
                             </div>
                             <div class="dropdown-menu-item" id="dropdown-menu-item-2">
                                 <a class="dropdown-menu-item-link" href="#">
-                                    <p class="text p3">Bild beschreiben</p>
+                                    <p class="text p3">Verben mit prapositionen</p>
                                     <div class="check-icon"><?php echo $check_smoll; ?></div>
                                 </a>
                             </div>
                             <div class="dropdown-menu-item" id="dropdown-menu-item-3">
                                 <a class="dropdown-menu-item-link" href="#">
-                                    <p class="text p3">Dialog</p>
+                                    <p class="text p3">Learn</p>
+                                    <div class="check-icon"><?php echo $check_smoll; ?></div>
+                                </a>
+                            </div>
+                            <div class="dropdown-menu-item" id="dropdown-menu-item-4">
+                                <a class="dropdown-menu-item-link" href="#">
+                                    <p class="text p3">
+                                        Modelltest
+                                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 7H15M15 7L9 1M15 7L9 13" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </p>
+                                    <div class="check-icon"><?php echo $check_smoll; ?></div>
+                                </a>
+                            </div>
+                            <div class="dropdown-menu-item" id="dropdown-menu-item-5">
+                                <a class="dropdown-menu-item-link" href="#">
+                                    <p class="text p3">Connectors</p>
                                     <div class="check-icon"><?php echo $check_smoll; ?></div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="writing-main_tabs">
-                        <div class="writing-tabs_item active" data-target="info">
-                            <p class="writing-tab_text text p3">Beispielergebnis</p>
+                    <div class="learn-main_tabs">
+                        <div class="learn-tabs_item active" data-target="learn">
+                            <p class="learn-tab_text text p3">Learn</p>
                         </div>
-                        <div class="writing-tabs_item" data-target="service">
-                            <p class="writing-tab_text text p3">Info bearbeiten</p>
+                        <div class="learn-tabs_item" data-target="modelltest">
+                            <p class="learn-tab_text text p3">Modelltest</p>
                         </div>
                     </div>
-                    <div class="writing-main_insert">
-                        <div class="writing-insert_content">
-                            <h4>Uber mich</h4>
-                            <div class="writing-content_main">
-                                <div class="writing-main_control">
-                                    <label for="name" class="wrinting-control_label">Ihr Name:</label>
-                                    <input type="text" class="wrinting-control_input input" name="name" value="Kyrylo">
-                                </div>
-                                <div class="writing-main_control">
-                                    <label for="years" class="wrinting-control_label">Ihr Alter:</label>
-                                    <div class="writing-control_block">
-                                        <input type="text" class="wrinting-control_input input" name="years" value="41">
-                                        <span class="writing-block_name">Jahre</span>
-                                    </div>
-                                </div>
-                                <div class="writing-main_control">
-                                    <label for="country" class="wrinting-control_label">Ihr Geburtsland:</label>
-                                    <input type="text" class="wrinting-control_input input" name="country" value="Ukraine">
-                                </div>
-                                <div class="writing-main_control">
-                                    <label for="city" class="wrinting-control_label">Ihr Geburtsort:</label>
-                                    <input type="text" class="wrinting-control_input input" name="city" value="Kyiv">
-                                </div>
-                                <div class="writing-main_control">
-                                    <label for="leave" class="wrinting-control_label">Ihr Wohnort:</label>
-                                    <input type="text" class="wrinting-control_input input" name="leave" value="Graz">
-                                </div>
-                                <div class="writing-main_control">
-                                    <label for="learn" class="wrinting-control_label">Was haben Sie Studiert?</label>
-                                    <input type="text" class="wrinting-control_input input" name="learn" value="Wirtschaft">
-                                </div>
-                                <div class="writing-main_control">
-                                    <label for="proffession" class="wrinting-control_label">Was machen Sie beruflich?</label>
-                                    <input type="text" class="wrinting-control_input input" name="proffession" value="Daten Analyst">
-                                </div>
-                                <div class="writing-main_control">
-                                    <label for="years-2" class="wrinting-control_label">Ihr Alter:</label>
-                                    <input type="text" class="wrinting-control_input input" name="years-2" value="2">
-                                </div>
-                                <div class="writing-main_control">
-                                    <label for="years-2" class="wrinting-control_label">Sind Sie verheiratet?</label>
-                                    <div class="writing-control-radio">
-                                        <div class="writing-radio_control">
-                                            <input type="radio" id="radio-btn-ja" name="radio-btn-1" checked class="radio-input">
-                                            <label for="radio-btn-ja" class="writing-radio_label">ja</label>
-                                        </div>
-                                        <div class="writing-radio_control">
-                                            <input type="radio" id="radio-btn-nein" name="radio-btn-1" class="radio-input">
-                                            <label for="radio-btn-nein" class="writing-radio_label">nein</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="writing-main_control">
-                                    <label for="language" class="wrinting-control_label">Welche Sprachen kennen Sie?</label>
-                                    <input type="text" class="wrinting-control_input input" name="language" value="English">
+                    <div class="learn-main_info">
+                        <h3>Verben mit prapositionen</h3>
+                        <div class="learn-info_content">
+                            <div class="learn-info_navigation">
+                                <div class="navigation-block">
+                                    <span class="navigation-item">1</span>
+                                    <span class="navigation-dots">...</span>
+                                    <span class="navigation-item active error">9</span>
+                                    <span class="navigation-item active correct">10</span>
+                                    <span class="navigation-item active">11</span>
+                                    <span class="navigation-dots">...</span>
+                                    <span class="navigation-item">103</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="writing-insert_actions">
-                            <button class="primary-button border black" type="button">
-                                Aktualisieren
-                            </button>
-                            <button class="primary-button border" type="button">
-                                <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8.00016L8.16667 14.6668M1.5 8.00016L8.16667 1.3335M1.5 8.00016H25.5" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                Zurück
-                            </button>
-                        </div>
-                    </div>
-                    <div class="writing-main_info">
-                        <p class="text p1">Hallo! Mein Name ist <span>Kyrylo</span>. Ich wurde in <span>Kyiv</span> (Ukraine) geboren und bin nun <span>41</span> Jahre alt.</p>
-                        <p class="text p1">Vor einem Jahr bin ich nach Deutschland gezogen und habe seitdem viel über die deutsche Kultur und Sprache gelernt.</p>
-                        <p class="text p1">Derzeit wohne ich in <span>Graz</span>, wo ich einen Deutschkurs besuche, um meine Sprachkenntnisse zu verbessern.</p>
-                        <p class="text p1">In Ukraine habe ich <span>Wirtschaft</span> studiert und als <span>Daten Analyst</span> gearbeitet. Ich strebe danach, auch hier in Deutschland in meinem Bereich zu arbeiten, sobald meine Deutschkenntnisse dies zulassen.</p>
-                        <p class="text p1">Familie ist mir sehr wichtig. Ich bin verheiratet und habe <span>2</span> wundervolle Kinder, die zurzeit zur Schule gehen, und ich bin stolz darauf, sie bei ihren schulischen Aktivitäten zu unterstützen.</p>
-                        <p class="text p1">In Bezug auf Sprachen beherrsche ich meine Muttersprache und kann auch <span>Englisch</span> sprechen. Das Lernen der deutschen Sprache ist eine aufregende Herausforderung für mich, und ich freue mich darauf, meine Fähigkeiten weiter zu verbessern.</p>
-                        <p class="text p1">In der Zukunft möchte ich mein Deutsch verbessern und in meinem Job erfolgreich sein. Ich bin sicher, dass das meine Integration im neuen Land hilft.</p>
-                        <p class="text p1">Das war eine kurze Zusammenfassung über mich. Ich freue mich darauf, mehr Menschen kennenzulernen und meine Erfahrungen in Deutschland zu erweitern.</p>
-                        <div class="writing-info_action">
-                            <button class="primary-button border" type="button">
-                                <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8.00016L8.16667 14.6668M1.5 8.00016L8.16667 1.3335M1.5 8.00016H25.5" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                Zurück
-                            </button>
+                            <div class="learn-info_inner">
+                                <p class="text p1">Ich <span>gratuliere</span> Dir herzlich ____ <span class="correct">zu</span> deiner Hochzeit</p>
+                                <div class="list__">
+                                    <div class="inputmodal inputmodal-2">
+                                        <span class='close-inputmodal'>schließen
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M24 24L16 16M16 16L8 8M16 16L24 8M16 16L8 24" stroke="#161616" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <div class="inputmodal__content">
+                                            <p class='text p2'>Die Natur ist ein wunderbarer Ort, der uns Ruhe und Energie schenkt. Wenn wir durch die grünen Wälder wandern oder die majestätischen Berge betrachten, spüren wir eine tiefe Verbundenheit zur Erde. Jede Jahreszeit bringt ihre eigenen Farben und Düfte, die uns immer wieder in Erstaunen versetzen.
+                                            <p>
+                                            <p class='text p2'>Die frische Luft und die sanften Geräusche der Natur haben eine beruhigende Wirkung auf unseren Geist. Das Zwitschern der Vögel, das leise Plätschern eines Baches und das Rascheln der Blätter schaffen eine friedliche Atmosphäre. Diese Momente erinnern uns daran, wie kostbar und faszinierend die Welt um uns herum ist.</p>
+                                            <p class='text p2'>Die frische Luft und die sanften Geräusche der Natur haben eine beruhigende Wirkung auf unseren Geist. Das Zwitschern der Vögel, das leise Plätschern eines Baches und das Rascheln der Blätter schaffen eine friedliche Atmosphäre. Diese Momente erinnern uns daran, wie kostbar und faszinierend die Welt um uns herum ist.</p>
+                                            <p class='text p2'>Die frische Luft und die sanften Geräusche der Natur haben eine beruhigende Wirkung auf unseren Geist. Das Zwitschern der Vögel, das leise Plätschern eines Baches und das Rascheln der Blätter schaffen eine friedliche Atmosphäre. Diese Momente erinnern uns daran, wie kostbar und faszinierend die Welt um uns herum ist.</p>
+                                        </div>
+                                    </div>
+
+
+                                    <span class="input__box border__box red">
+                                        <input class='input_radio' type="radio" name="radio2" value="bei Verwandten"> <span>auf</span>
+                                    </span>
+                                    <span class="input__box border__box green">
+                                        <input class='input_radio' type="radio" name="radio2" value="im Hotel"> <span>zu</span>
+                                        <button class="primary-button" type="button" data-inputmodal='inputmodal-2'>
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.64648 7.07361C7.81728 6.54732 8.13015 6.07896 8.55078 5.71948C8.97141 5.36001 9.4838 5.12378 10.0303 5.03708C10.5768 4.95038 11.1362 5.0164 11.6475 5.22803C12.1587 5.43966 12.6014 5.78875 12.9268 6.23633C13.2521 6.68391 13.4469 7.21256 13.4904 7.76416C13.5339 8.31576 13.4238 8.86879 13.1727 9.36182C12.9215 9.85484 12.5394 10.2685 12.0676 10.5576C11.5958 10.8467 11.0533 10.9998 10.5 10.9998V12.0002M10.5 19C5.52944 19 1.5 14.9706 1.5 10C1.5 5.02944 5.52944 1 10.5 1C15.4706 1 19.5 5.02944 19.5 10C19.5 14.9706 15.4706 19 10.5 19ZM10.5498 15V15.1L10.4502 15.1002V15H10.5498Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                            Erklärung
+                                        </button>
+                                    </span>
+                                    <span class="input__box border__box">
+                                        <input class='input_radio' type="radio" name="radio2" value="im Zelt"> <span>mit</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="learn-info_action">
+                                <button class="primary-button border big disabled" type="button">
+                                    Skip
+                                </button>
+                            </div>
+                            <div class="learn-info_next">
+                                <button class="primary-button border" type="button">
+                                    Next
+                                    <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.5 7.99984L18.8333 1.33317M25.5 7.99984L18.8333 14.6665M25.5 7.99984H1.5" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <span class="learn-next_result">
+                                    <p class="text p4"></p>Erfolgsquote 70 %
+                                    <div class="like-icon"><?php echo $like_light; ?></div>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -311,7 +320,7 @@
                     <a href="#" class="text p3">Lesen</a>
                 </div>
 
-                <div class="listen-block outline-orange active">
+                <div class="listen-block outline-orange">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
                         <path d="M20 79.2812H80M20 79.2812V64.2812L50 34.2812M20 79.2812L35 79.2811L65 49.2811M50 34.2812L60.7574 23.5237L60.7638 23.5174C62.2446 22.0366 62.9864 21.2948 63.8414 21.017C64.5945 20.7723 65.4059 20.7723 66.1591 21.017C67.0135 21.2946 67.7543 22.0355 69.233 23.5142L75.7573 30.0385C77.2423 31.5235 77.9852 32.2664 78.2634 33.1226C78.5081 33.8758 78.5081 34.6871 78.2633 35.4403C77.9853 36.2959 77.2436 37.0376 75.7606 38.5206L75.7574 38.5237L65 49.2811M50 34.2812L65 49.2811" stroke="#161616" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
@@ -329,73 +338,14 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
                         <path d="M39.1675 26.1109H29.4453C25.556 26.1109 23.61 26.1109 22.1245 26.8678C20.8178 27.5336 19.7562 28.5952 19.0904 29.9019C18.3335 31.3874 18.3335 33.3335 18.3335 37.2227V70.5561C18.3335 74.4453 18.3335 76.3889 19.0904 77.8744C19.7562 79.1811 20.8178 80.2446 22.1245 80.9103C23.6085 81.6665 25.5522 81.6665 29.4339 81.6665H62.7887C66.6703 81.6665 68.6112 81.6665 70.0953 80.9103C71.402 80.2446 72.4671 79.1801 73.1329 77.8734C73.8891 76.3894 73.8891 74.4478 73.8891 70.5661V60.8332M60.0002 29.5832L39.1668 50.4165V60.8332H49.5835L70.4168 39.9998M60.0002 29.5832L70.4168 19.1665L80.8335 29.5832L70.4168 39.9998M60.0002 29.5832L70.4168 39.9998" stroke="#161616" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    <a href="#" class="text p3">Test</a>
+                    <a href="#" class="text p3">Modelltest</a>
                 </div>
 
-                <div class="listen-block outline-orange">
+                <div class="listen-block outline-orange active">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
                         <path d="M18.3335 46.0783V27.6959C18.3335 26.2475 18.6188 24.8133 19.1731 23.4751C19.7273 22.137 20.5398 20.9211 21.5639 19.8969C22.5881 18.8728 23.804 18.0603 25.1421 17.5061C26.4803 16.9518 27.9145 16.6665 29.3629 16.6665C30.8113 16.6665 32.2455 16.9518 33.5837 17.5061C34.9218 18.0603 36.1377 18.8728 37.1619 19.8969C38.1861 20.9211 38.9985 22.137 39.5528 23.4751C40.107 24.8133 40.3923 26.2475 40.3923 27.6959V46.0783M18.3335 35.0489H40.3923M77.157 24.0194V46.0783M18.3335 60.7842H62.4511M18.3335 75.49H40.3923M55.0982 75.49L62.4511 82.843L80.8335 64.4606M55.0982 35.0489C55.0982 37.974 56.2602 40.7794 58.3286 42.8478C60.3971 44.9162 63.2024 46.0783 66.1276 46.0783C69.0528 46.0783 71.8582 44.9162 73.9266 42.8478C75.995 40.7794 77.157 37.974 77.157 35.0489C77.157 32.1237 75.995 29.3183 73.9266 27.2499C71.8582 25.1815 69.0528 24.0194 66.1276 24.0194C63.2024 24.0194 60.3971 25.1815 58.3286 27.2499C56.2602 29.3183 55.0982 32.1237 55.0982 35.0489Z" stroke="#161616" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <a href="#" class="text p3">Lernmaterialien</a>
-                </div>
-            </div>
-
-            <div class="dropdown-menu navigation">
-                <div class="dropdown-menu-item" id="dropdown-menu-item-1">
-                    <a class="dropdown-menu-item-link" href="#">
-                        <svg width="32" height="32" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19.644 9.51118C19.644 5.21563 16.1618 1.7334 11.8662 1.7334C7.57066 1.7334 4.08843 5.21563 4.08843 9.51118M16.3107 13.4001V15.6223C16.3107 16.1386 16.3107 16.3967 16.3534 16.6114C16.5287 17.4929 17.2179 18.1824 18.0994 18.3577C18.3141 18.4004 18.5722 18.4004 19.0884 18.4004C19.6047 18.4004 19.8629 18.4004 20.0775 18.3577C20.9591 18.1824 21.648 17.4929 21.8234 16.6114C21.8661 16.3967 21.8662 16.1386 21.8662 15.6223V13.4001C21.8662 12.8838 21.8661 12.6251 21.8234 12.4105C21.648 11.5289 20.9591 10.8403 20.0775 10.665C19.8629 10.6223 19.6047 10.6223 19.0884 10.6223C18.5722 10.6223 18.3141 10.6223 18.0994 10.665C17.2179 10.8403 16.5287 11.5289 16.3534 12.4105C16.3107 12.6251 16.3107 12.8838 16.3107 13.4001ZM7.42177 13.4001V15.6223C7.42177 16.1386 7.42161 16.3967 7.37891 16.6114C7.20356 17.4929 6.51456 18.1824 5.63303 18.3577C5.41837 18.4004 5.16032 18.4004 4.64404 18.4004C4.12776 18.4004 3.86961 18.4004 3.65495 18.3577C2.77341 18.1824 2.08426 17.4929 1.90891 16.6114C1.86621 16.3967 1.86621 16.1386 1.86621 15.6223V13.4001C1.86621 12.8838 1.86621 12.6251 1.90891 12.4105C2.08426 11.5289 2.77341 10.8403 3.65495 10.665C3.86961 10.6223 4.12775 10.6223 4.64404 10.6223C5.16032 10.6223 5.41837 10.6223 5.63303 10.665C6.51456 10.8403 7.20356 11.5289 7.37891 12.4105C7.42161 12.6251 7.42177 12.8838 7.42177 13.4001Z" stroke="#F7631B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                        <p class="text p3">Hören</p>
-                        <div class="check-icon"><?php echo $check_smoll; ?></div>
-                    </a>
-                </div>
-                <div class="dropdown-menu-item" id="dropdown-menu-item-2">
-                    <a class="dropdown-menu-item-link" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 100 100" fill="none">
-                            <path d="M49.5835 40.8325V76.2492M49.5835 40.8325C49.5835 34.9986 49.5835 32.0829 50.7188 29.8546C51.7175 27.8946 53.3099 26.3005 55.2699 25.3019C57.4982 24.1665 60.4156 24.1665 66.2495 24.1665H75.2773C77.2219 24.1665 78.1949 24.1665 78.9376 24.545C79.591 24.8778 80.1208 25.4086 80.4537 26.062C80.8322 26.8047 80.8335 27.7778 80.8335 29.7224V60.278C80.8335 62.2226 80.8322 63.1935 80.4537 63.9363C80.1208 64.5896 79.5921 65.1222 78.9388 65.4551C78.1967 65.8332 77.2258 65.8332 75.285 65.8332H65.4492C62.1881 65.8332 60.5546 65.8332 59.0745 66.2827C57.7642 66.6806 56.5476 67.3322 55.4897 68.2017C54.2947 69.1839 53.3891 70.5406 51.5802 73.254L49.5835 76.2492M49.5835 40.8325C49.5835 34.9986 49.5829 32.0829 48.4476 29.8546C47.4489 27.8946 45.8552 26.3005 43.8952 25.3019C41.667 24.1665 38.7494 24.1665 32.9155 24.1665H23.8877C21.9431 24.1665 20.9717 24.1665 20.229 24.545C19.5756 24.8778 19.0448 25.4086 18.7119 26.062C18.3335 26.8047 18.3335 27.7778 18.3335 29.7224V60.278C18.3335 62.2226 18.3335 63.1935 18.7119 63.9363C19.0448 64.5896 19.5756 65.1222 20.229 65.4551C20.971 65.8332 21.9412 65.8332 23.882 65.8332H33.718C36.9791 65.8332 38.6093 65.8332 40.0893 66.2827C41.3997 66.6806 42.6221 67.3322 43.68 68.2017C44.8702 69.1799 45.77 70.5296 47.5643 73.2211L49.5835 76.2492" stroke="#F7631B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        <p class="text p3">Lesen</p>
-                        <div class="check-icon"><?php echo $check_smoll; ?></div>
-                    </a>
-                </div>
-                <div class="dropdown-menu-item" id="dropdown-menu-item-3">
-                    <a class="dropdown-menu-item-link" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 100 100" fill="none">
-                            <path d="M20 79.2812H80M20 79.2812V64.2812L50 34.2812M20 79.2812L35 79.2811L65 49.2811M50 34.2812L60.7574 23.5237L60.7638 23.5174C62.2446 22.0366 62.9864 21.2948 63.8414 21.017C64.5945 20.7723 65.4059 20.7723 66.1591 21.017C67.0135 21.2946 67.7543 22.0355 69.233 23.5142L75.7573 30.0385C77.2423 31.5235 77.9852 32.2664 78.2634 33.1226C78.5081 33.8758 78.5081 34.6871 78.2633 35.4403C77.9853 36.2959 77.2436 37.0376 75.7606 38.5206L75.7574 38.5237L65 49.2811M50 34.2812L65 49.2811" stroke="#F7631B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        <p class="text p3">Schreiben</p>
-                        <div class="check-icon"><?php echo $check_smoll; ?></div>
-                    </a>
-                </div>
-                <div class="dropdown-menu-item" id="dropdown-menu-item-4">
-                    <a class="dropdown-menu-item-link" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 100 100" fill="none">
-                            <path d="M59.8345 77.8347C59.8345 70.1946 50.5442 64.001 39.084 64.001C27.6238 64.001 18.3335 70.1946 18.3335 77.8347M66.1569 30.0113C67.4415 31.2958 68.4605 32.8208 69.1557 34.4992C69.8509 36.1776 70.2094 37.9776 70.2094 39.7942C70.2094 41.6109 69.8512 43.406 69.156 45.0844C68.4608 46.7628 67.4415 48.2896 66.1569 49.5742M73.6682 22.5C75.939 24.7708 77.7403 27.4667 78.9693 30.4337C80.1983 33.4007 80.8335 36.5801 80.8335 39.7916C80.8335 43.003 80.1996 46.1838 78.9706 49.1508C77.7417 52.1177 75.939 54.8139 73.6682 57.0847M39.084 53.6258C31.4439 53.6258 25.2503 47.4322 25.2503 39.7921C25.2503 32.152 31.4439 25.9584 39.084 25.9584C46.7241 25.9584 52.9177 32.152 52.9177 39.7921C52.9177 47.4322 46.7241 53.6258 39.084 53.6258Z" stroke="#F7631B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-
-                        <p class="text p3">Sprechen</p>
-                        <div class="check-icon"><?php echo $check_smoll; ?></div>
-                    </a>
-                </div>
-                <div class="dropdown-menu-item" id="dropdown-menu-item-5">
-                    <a class="dropdown-menu-item-link" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 100 100" fill="none">
-                            <path d="M39.1675 26.1109H29.4453C25.556 26.1109 23.61 26.1109 22.1245 26.8678C20.8178 27.5336 19.7562 28.5952 19.0904 29.9019C18.3335 31.3874 18.3335 33.3335 18.3335 37.2227V70.5561C18.3335 74.4453 18.3335 76.3889 19.0904 77.8744C19.7562 79.1811 20.8178 80.2446 22.1245 80.9103C23.6085 81.6665 25.5522 81.6665 29.4339 81.6665H62.7887C66.6703 81.6665 68.6112 81.6665 70.0953 80.9103C71.402 80.2446 72.4671 79.1801 73.1329 77.8734C73.8891 76.3894 73.8891 74.4478 73.8891 70.5661V60.8332M60.0002 29.5832L39.1668 50.4165V60.8332H49.5835L70.4168 39.9998M60.0002 29.5832L70.4168 19.1665L80.8335 29.5832L70.4168 39.9998M60.0002 29.5832L70.4168 39.9998" stroke="#F7631B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-
-                        <p class="text p3">Modelltest</p>
-                        <div class="check-icon"><?php echo $check_smoll; ?></div>
-                    </a>
-                </div>
-                <div class="dropdown-menu-item" id="dropdown-menu-item-6">
-                    <a class="dropdown-menu-item-link" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 100 100" fill="none">
-                            <path d="M18.3335 46.0783V27.6959C18.3335 26.2475 18.6188 24.8133 19.1731 23.4751C19.7273 22.137 20.5398 20.9211 21.5639 19.8969C22.5881 18.8728 23.804 18.0603 25.1421 17.5061C26.4803 16.9518 27.9145 16.6665 29.3629 16.6665C30.8113 16.6665 32.2455 16.9518 33.5837 17.5061C34.9218 18.0603 36.1377 18.8728 37.1619 19.8969C38.1861 20.9211 38.9985 22.137 39.5528 23.4751C40.107 24.8133 40.3923 26.2475 40.3923 27.6959V46.0783M18.3335 35.0489H40.3923M77.157 24.0194V46.0783M18.3335 60.7842H62.4511M18.3335 75.49H40.3923M55.0982 75.49L62.4511 82.843L80.8335 64.4606M55.0982 35.0489C55.0982 37.974 56.2602 40.7794 58.3286 42.8478C60.3971 44.9162 63.2024 46.0783 66.1276 46.0783C69.0528 46.0783 71.8582 44.9162 73.9266 42.8478C75.995 40.7794 77.157 37.974 77.157 35.0489C77.157 32.1237 75.995 29.3183 73.9266 27.2499C71.8582 25.1815 69.0528 24.0194 66.1276 24.0194C63.2024 24.0194 60.3971 25.1815 58.3286 27.2499C56.2602 29.3183 55.0982 32.1237 55.0982 35.0489Z" stroke="#F7631B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        <p class="text p3">Lernmaterialien</p>
-                        <div class="check-icon"><?php echo $check_smoll; ?></div>
-                    </a>
                 </div>
             </div>
 

@@ -11,6 +11,7 @@
     <meta property="og:title" content="Vorbereitung mit BO">
     <meta property="og:description" content="Deutsch Prüfung - Vorbereitung auf Hören, Lesen, Schreiben und Sprechen.">
     <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/listening-german/listening-german.css" />
 </head>
 
 <body>
