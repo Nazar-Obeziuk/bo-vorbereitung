@@ -29,12 +29,13 @@
   stroke: var(--white);
 }
 
-.listening-german__list>.secondary-button.click.active::after {
+.listening-german__list > .secondary-button.click.active::after {
   content: "";
   display: inline-block;
   width: 32px;
   height: 32px;
-  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIxLjMzMzcgMTMuMzMzNUwxNi4wMDAzIDE4LjY2NjhMMTAuNjY3IDEzLjMzMzUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=") no-repeat center;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIxLjMzMzcgMTMuMzMzNUwxNi4wMDAzIDE4LjY2NjhMMTAuNjY3IDEzLjMzMzUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=")
+    no-repeat center;
   background-size: contain;
   margin-left: auto;
   transform: scaleY(-1);
@@ -57,18 +58,14 @@
   stroke: var(--primary-orange);
 }
 
-.listening-list {
+.listening-list__content {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-height: 670px;
-  padding-bottom: 100px;
   overflow-y: scroll;
-  scroll-behavior: smooth;
 }
-
-
 
 .listening-german .secondary-button svg {
   width: 32px;
@@ -126,11 +123,6 @@
   padding-top: 83px;
 }
 
-.listening-exercises__buttons a,
-.listening-exercises__buttons button {
-  width: 100%;
-}
-
 .listening-exercises .listening-exercises__row {
   position: relative;
   display: flex;
@@ -177,10 +169,9 @@
   border-right: 1px solid var(--gray);
 }
 
-.listening-list__content .listening-list__box:nth-child(2) {
+.listening-list__box:first-child {
   border-top: 1px solid var(--gray);
 }
-
 
 .listening-list__text .bold {
   font-weight: bold;
@@ -189,34 +180,8 @@
 .listening-list__progress {
   margin-left: auto;
 }
-
 .listening-exercises__row .primary-button {
   padding: 20px 96px;
-}
-
-.listening-exercises .primary-button .close {
-  display: none;
-}
-
-.listening-exercises.full .listening-list {
-  max-height: none;
-  overflow: auto;
-}
-
-.listening-exercises.full .primary-button .close {
-  display: block;
-}
-
-.listening-exercises.full .primary-button p {
-  display: none;
-}
-
-.listening-exercises.full .primary-button svg {
-  transform: rotate(180deg);
-}
-
-.listening-exercises.full .listening-exercises__row:before {
-  display: none;
 }
 
 
@@ -236,25 +201,25 @@
     max-width: none;
   }
 
-  .listening-german__list>.secondary-button:not(.active) {
+  .listening-german__list > .secondary-button:not(.active) {
     display: none;
   }
 
   .listening-list {
     max-width: none;
   }
-
-  .listening-german__list>.secondary-button {
+  .listening-german__list > .secondary-button {
     width: 100%;
     position: relative;
   }
 
-  .listening-german__list>.secondary-button.active::after {
+  .listening-german__list > .secondary-button.active::after {
     content: "";
     display: inline-block;
     width: 32px;
     height: 32px;
-    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIxLjMzMzcgMTMuMzMzNUwxNi4wMDAzIDE4LjY2NjhMMTAuNjY3IDEzLjMzMzUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=") no-repeat center;
+    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIxLjMzMzcgMTMuMzMzNUwxNi4wMDAzIDE4LjY2NjhMMTAuNjY3IDEzLjMzMzUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=")
+      no-repeat center;
     background-size: contain;
     margin-left: auto;
   }
@@ -265,15 +230,12 @@
     padding-top: 32px;
     padding-bottom: 32px;
   }
-
   .listening-exercises__buttons {
     padding-top: 24px;
   }
-
   .listening-exercises .listening-exercises__row .primary-button {
     width: 100%;
   }
-
   .choice-of-exercises {
     background: var(--white) !important;
   }
