@@ -58,13 +58,15 @@
   stroke: var(--primary-orange);
 }
 
-.listening-list__content {
+.listening-list {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-height: 670px;
+  padding-bottom: 100px;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .listening-german .secondary-button svg {
@@ -123,22 +125,28 @@
   padding-top: 83px;
 }
 
+.listening-exercises__buttons a,
+.listening-exercises__buttons button {
+  width: 100%;
+}
+
 .listening-exercises .listening-exercises__row {
   position: relative;
   display: flex;
   gap: 16px;
+  padding-top: 36px;
 }
 
 .listening-exercises .primary-button {
   background: var(--white);
 }
 
-.listening-exercises .listening-exercises__row:before {
+.listening-exercises .listening-exercises__row::before {
   position: absolute;
   content: "";
   bottom: 0;
   left: 0%;
-  width: 100%;
+  width: calc(100% - 13px);
   height: 100px;
   background: linear-gradient(transparent 90%, var(--light-gray));
   background: var(--white);
@@ -169,7 +177,7 @@
   border-right: 1px solid var(--gray);
 }
 
-.listening-list__box:first-child {
+.listening-list__content .listening-list__box:nth-child(2) {
   border-top: 1px solid var(--gray);
 }
 
@@ -180,10 +188,35 @@
 .listening-list__progress {
   margin-left: auto;
 }
+
 .listening-exercises__row .primary-button {
   padding: 20px 96px;
 }
 
+.listening-exercises .primary-button .close {
+  display: none;
+}
+
+.listening-exercises.full .listening-list {
+  max-height: none;
+  overflow: auto;
+}
+
+.listening-exercises.full .primary-button .close {
+  display: block;
+}
+
+.listening-exercises.full .primary-button p {
+  display: none;
+}
+
+.listening-exercises.full .primary-button svg {
+  transform: rotate(180deg);
+}
+
+.listening-exercises.full .listening-exercises__row:before {
+  display: none;
+}
 
 @media (max-width: 1199.98px) {
   .listening-exercises .listening-exercises__row {
@@ -208,6 +241,7 @@
   .listening-list {
     max-width: none;
   }
+
   .listening-german__list > .secondary-button {
     width: 100%;
     position: relative;
@@ -230,15 +264,25 @@
     padding-top: 32px;
     padding-bottom: 32px;
   }
+
   .listening-exercises__buttons {
     padding-top: 24px;
   }
+
   .listening-exercises .listening-exercises__row .primary-button {
     width: 100%;
   }
+
   .choice-of-exercises {
     background: var(--white) !important;
   }
+
+  .listening-exercises .listening-exercises__row {
+    padding-top: 0;
+  }
+  /* .listening-exercises .listening-exercises__row::before {
+    width: 100%;
+  } */
 }
 
 @media (max-width: 575.98px) {

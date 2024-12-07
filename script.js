@@ -601,11 +601,11 @@ document.addEventListener("DOMContentLoaded", () => {
     .forEach((button) => {
       button.addEventListener("click", function () {
         const modalClass = this.getAttribute("data-inputmodal");
-
         const modal = document.querySelector(`.${modalClass}`);
 
         if (modal) {
           modal.classList.toggle("open");
+          document.body.classList.add("overflow-hidden"); // Add overflow-hidden to body
         }
       });
     });
@@ -615,6 +615,34 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll(".inputmodal").forEach((modal) => {
         modal.classList.remove("open");
       });
+      document.body.classList.remove("overflow-hidden"); // Remove overflow-hidden from body
     });
+  });
+});
+
+// listening-german
+
+const listeningExercises = document.querySelector(".listening-exercises");
+const listeningList = document.querySelector(".listening-list");
+const primaryButton = listeningExercises.querySelector(".primary-button");
+const buttons = document.querySelectorAll(
+  ".listening-exercises__buttons button"
+);
+
+primaryButton.addEventListener("click", () => {
+  const isFull = listeningExercises.classList.contains("full");
+
+  if (isFull) {
+    listeningExercises.classList.remove("full");
+  } else {
+    listeningList.scrollTo(0, 0);
+    listeningExercises.classList.add("full");
+  }
+});
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    buttons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
   });
 });
