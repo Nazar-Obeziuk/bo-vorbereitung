@@ -24,6 +24,12 @@
   gap: 12px;
 }
 
+.google-block_info span {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 46px;
+}
+
 .google-info_line {
   width: 1px;
   height: 48px;
@@ -47,6 +53,13 @@
   gap: 8px;
 }
 
+@media (max-width: 991.98px) {
+  .google-block_info span {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
 @media (max-width: 767.98px) {
   .google-review_block {
     width: 100%;
@@ -67,6 +80,10 @@
     width: 44px;
     height: 44px;
     display: block;
+  }
+  .google-block_info span {
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 

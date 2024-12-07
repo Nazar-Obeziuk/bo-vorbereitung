@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bo vorbereitung</title>
+    <title>Vorbereitung mit BO - Deutschkursanbieter</title>
+    <meta name="description" content="Online Prüfungsvorbereitung für Deutsch Test für Zuwanderer (A1, A2, B1, B2, C1, C2 )">
+    <meta name="keywords" content="Vorbereitung, Deutsch, Kurs, Test">
+    <meta property="og:image" content="https://deutsch-vorbereitung.com/img/logo_medium.png">
+    <meta property="og:title" content="Vorbereitung mit BO">
+    <meta property="og:description" content="Deutsch Prüfung - Vorbereitung auf Hören, Lesen, Schreiben und Sprechen.">
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/provider/provider.css" />
 </head>
@@ -50,11 +55,11 @@
             </div>
             <div class="google-review_block">
                 <div class="google-block_logo">
-                    <img src="/images/google-logo.svg" alt="google logo" class="google-logo_img">
-                    <img src="/images/google-logo-mobile.svg" alt="google logo" class="google-logo_img mobile">
+                    <img src="/images/google-logo.svg" alt="google logo" width="184" height="60" class="google-logo_img">
+                    <img src="/images/google-logo-mobile.svg" alt="google logo" width="44" height="44" class="google-logo_img mobile">
                 </div>
                 <div class="google-block_info">
-                    <h3>4.9</h3>
+                    <span>4.9</span>
                     <span class="google-info_line"></span>
                     <div class="google-info_count">
                         <div class="google-count_stars">

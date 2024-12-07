@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bo vorbereitung v1</title>
+    <title>Vorbereitung mit BO - Deutsch Test für Zuwanderer mit Lösungen</title>
+    <meta name="description" content="Online Prüfungsvorbereitung für Deutsch Test für Zuwanderer (A1, A2, B1, B2, C1, C2 )">
+    <meta name="keywords" content="Vorbereitung, Deutsch, Kurs, Test">
+    <meta property="og:image" content="https://deutsch-vorbereitung.com/img/logo_medium.png">
+    <meta property="og:title" content="Vorbereitung mit BO">
+    <meta property="og:description" content="Deutsch Prüfung - Vorbereitung auf Hören, Lesen, Schreiben und Sprechen.">
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
@@ -52,11 +57,11 @@
                 </div>
                 <div class="google-review_block">
                     <div class="google-block_logo">
-                        <img src="/images/google-logo.svg" alt="google logo" class="google-logo_img">
-                        <img src="/images/google-logo-mobile.svg" alt="google logo" class="google-logo_img mobile">
+                        <img src="/images/google-logo.svg" alt="google logo" width="184" height="60" class="google-logo_img">
+                        <img src="/images/google-logo-mobile.svg" alt="google logo" width="44" height="44" class="google-logo_img mobile">
                     </div>
                     <div class="google-block_info">
-                        <h3>4.9</h3>
+                        <span>4.9</span>
                         <span class="google-info_line"></span>
                         <div class="google-info_count">
                             <div class="google-count_stars">
@@ -120,7 +125,7 @@
                                     <div class="review-block_header">
                                         <div class="review-header_info">
                                             <div class="review-info_avatar">
-                                                <img src="images/review-icon.jpg" alt="review icon" class="review-avatar_icon">
+                                                <img src="images/review-icon.webp" width="100" height="100" alt="review icon" class="review-avatar_icon">
                                             </div>
                                             <div class="review-info_inner">
                                                 <p class="text p4">Damian Lorenzo</p>
@@ -157,7 +162,7 @@
                                     <div class="review-block_header">
                                         <div class="review-header_info">
                                             <div class="review-info_avatar">
-                                                <img src="images/review-icon.jpg" alt="review icon" class="review-avatar_icon">
+                                                <img src="images/review-icon.webp" width="100" height="100" alt="review icon" class="review-avatar_icon">
                                             </div>
                                             <div class="review-info_inner">
                                                 <p class="text p4">Victoria Schewtschenko</p>
@@ -194,7 +199,7 @@
                                     <div class="review-block_header">
                                         <div class="review-header_info">
                                             <div class="review-info_avatar">
-                                                <img src="images/review-icon.jpg" alt="review icon" class="review-avatar_icon">
+                                                <img src="images/review-icon.webp" width="100" height="100" alt="review icon" class="review-avatar_icon">
                                             </div>
                                             <div class="review-info_inner">
                                                 <p class="text p4">Damian Lorenzo</p>
@@ -231,7 +236,7 @@
                                     <div class="review-block_header">
                                         <div class="review-header_info">
                                             <div class="review-info_avatar">
-                                                <img src="images/review-icon.jpg" alt="review icon" class="review-avatar_icon">
+                                                <img src="images/review-icon.webp" width="100" height="100" alt="review icon" class="review-avatar_icon">
                                             </div>
                                             <div class="review-info_inner">
                                                 <p class="text p4">Damian Lorenzo</p>
@@ -268,7 +273,7 @@
                                     <div class="review-block_header">
                                         <div class="review-header_info">
                                             <div class="review-info_avatar">
-                                                <img src="images/review-icon.jpg" alt="review icon" class="review-avatar_icon">
+                                                <img src="images/review-icon.webp" width="100" height="100" alt="review icon" class="review-avatar_icon">
                                             </div>
                                             <div class="review-info_inner">
                                                 <p class="text p4">Damian Lorenzo</p>

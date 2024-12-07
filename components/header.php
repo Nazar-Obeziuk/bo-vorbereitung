@@ -60,32 +60,32 @@
             </div>
             <div class="social">
                <div class="tik-tok">
-                  <a href="https://www.tiktok.com/@vorbereitung.mit.bo" target="_blank">
+                  <a href="https://www.tiktok.com/@vorbereitung.mit.bo" target="_blank" aria-label="TikTok" title="TikTok">
                      <?php echo $header_tik_tok; ?>
                   </a>
                </div>
                <div class="instagram">
-                  <a href="https://www.instagram.com/vorbereitung_mit_bo" target="_blank">
+                  <a href="https://www.instagram.com/vorbereitung_mit_bo" target="_blank" aria-label="Instagram" title="Instagram">
                      <?php echo $header_instagram; ?>
                   </a>
                </div>
                <div class="youtube">
-                  <a href="https://youtube.com/@vorbereitungbo" target="_blank">
+                  <a href="https://youtube.com/@vorbereitungbo" target="_blank" aria-label="Youtube" title="Youtube">
                      <?php echo $header_youtube; ?>
                   </a>
                </div>
                <div class="facebook">
-                  <a href="https://www.facebook.com/profile.php?id=61554970806530" target="_blank">
+                  <a href="https://www.facebook.com/profile.php?id=61554970806530" target="_blank" aria-label="Facebook" title="Facebook">
                      <?php echo $header_facebook; ?>
                   </a>
                </div>
                <div class="telegram">
-                  <a href="https://t.me/deutsch_vorbereitung" target="_blank">
+                  <a href="https://t.me/deutsch_vorbereitung" target="_blank" aria-label="Telegram" title="Telegram">
                      <?php echo $header_telegram; ?>
                   </a>
                </div>
                <div class="whatsapp">
-                  <a href="https://whatsapp.com/channel/0029VaRxVlz5Ui2ZwdrgVe12" target="_blank">
+                  <a href="https://whatsapp.com/channel/0029VaRxVlz5Ui2ZwdrgVe12" target="_blank" aria-label="WhatsApp" title="WhatsApp">
                      <?php echo $header_whatsapp; ?>
                   </a>
                </div>
@@ -96,7 +96,7 @@
    <div class="header-second">
       <div class="container">
          <div>
-            <a href="/" class="logo">
+            <a href="/" aria-label="logo" class="logo">
                <?php echo $logo; ?>
             </a>
             <div id="burger-menu" class="burger-menu">
