@@ -178,13 +178,22 @@ input[type="radio"]:checked::before {
 }
 
 .box_border .inputmodal{
-  margin: 0 0 0 -102px;
-  width: 100%;
+  /* margin: 0 0 0 -102px; */
+  /* width: 100%; */
 }
 
 .inputmodal.open{
   display: flex;
-  position: absolute;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 32px);
+  max-height: 540px;
+  height: calc(100% - 32px);
+  max-width: 1288px;
+  margin: auto;
 
 }
 
@@ -266,13 +275,13 @@ input[type="radio"]:checked::before {
   .inputmodal{
     padding: 30px 25px;
     gap: 25px 0;
-    max-height: 472px;
-    width: calc(100% - 32px);
+    /* max-height: 472px; */
+    /* width: calc(100% - 32px); */
   }
 
   .box_border .inputmodal {
-      margin: 0 0 0 -82px;
-      width: 100%;
+      /* margin: 0 0 0 -82px; */
+      /* width: 100%; */
   }
 
 }
@@ -280,7 +289,7 @@ input[type="radio"]:checked::before {
 @media (max-width: 991.98px){
 
   .box_border .inputmodal{
-    margin: 0 0 0 -70px;
+    /* margin: 0 0 0 -70px; */
   }
 }
 
@@ -308,7 +317,7 @@ input[type="radio"]:checked::before {
   }
 
   .box_border .inputmodal{
-    margin: 0;
+    /* margin: 0; */
   }
 }
 

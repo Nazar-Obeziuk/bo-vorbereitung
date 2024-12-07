@@ -33,6 +33,7 @@
 
     <section class='listening-german deutsch-b1-horen'>
         <div class="container">
+
             <h1><span>B1</span> Übungen auswählen</h1>
 
             <div class="listening-german__list">
@@ -168,10 +169,10 @@
                     <h3 class="time">9 von 45</h3>
                     <p class='text p3'>Leiden konnten Sie Level B1 nicht bestehen.</p>
                     <hr>
-                    <p class='text p3 autor_name'>Ihr Niveau: <span class='text p1 semibold'>Unter A2</span></p>
+                    <p class='text p3 autor_name'>Ihr Niveau: <span class='text p2 semibold'>Unter A2</span></p>
                 </div>
                 <div class="box-button">
-                    <button class="primary-button border small" type="button">Noch einen Modelltest starten</button>
+                    <button class="primary-black" type="button">Noch einen Modelltest starten</button>
                 </div>
 
             </div>
@@ -623,16 +624,15 @@
                 </form>
 
             </div>
+
             <div class="all-solutions">
                 <hr>
-                <button class="deutsch-b1-horen-button primary-button border small" type="button">Alle Lösungen anzeigen</button>
+                <button class="primary-black" type="button">Alle Lösungen anzeigen</button>
                 <div class="all-solutions__content">
                     <p class='text p3'>Sie sollten Abonnent sein ab 4,99 € pro Monat</p>
                     <p class='text p2 semibold'>Sie haben Zugang zu allen Übungen</p>
                 </div>
             </div>
-
-
 
         </div>
     </section>
