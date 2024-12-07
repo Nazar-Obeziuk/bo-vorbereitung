@@ -589,29 +589,24 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Add event listener to all buttons with the class 'primary-button'
-  document.querySelectorAll('.input__box.border__box button.primary-button').forEach(button => {
-      button.addEventListener('click', function() {
-          // Get the value of the data-inputmodal attribute
-          const modalClass = this.getAttribute('data-inputmodal');
-          
-          // Find the element with the corresponding class
-          const modal = document.querySelector(`.${modalClass}`);
-          
-          // Toggle the 'open' class on the modal
-          if (modal) {
-              modal.classList.toggle('open');
-          }
-      });
-  });
+    document.querySelectorAll('.input__box.border__box button.primary-button').forEach(button => {
+        button.addEventListener('click', function() {
+            const modalClass = this.getAttribute('data-inputmodal');
+            const modal = document.querySelector(`.${modalClass}`);
+            
+            if (modal) {
+                modal.classList.toggle('open');
+                document.body.classList.add('overflow-hidden'); // Add overflow-hidden to body
+            }
+        });
+    });
 
-  // Add event listener to all elements with the class 'close-inputmodal'
-  document.querySelectorAll('.close-inputmodal').forEach(closeButton => {
-    closeButton.addEventListener('click', function() {
-          // Remove the 'open' class from all elements with the class 'inputmodal'
-          document.querySelectorAll('.inputmodal').forEach(modal => {
-              modal.classList.remove('open');
-          });
-      });
-  });
+    document.querySelectorAll('.close-inputmodal').forEach(closeButton => {
+        closeButton.addEventListener('click', function() {
+            document.querySelectorAll('.inputmodal').forEach(modal => {
+                modal.classList.remove('open');
+            });
+            document.body.classList.remove('overflow-hidden'); // Remove overflow-hidden from body
+        });
+    });
 });

@@ -23,6 +23,8 @@
             ist kostenlos?
         </button>
         <br>
+        <button class="primary-black" type="button">Alle Lösungen anzeigen</button>
+        <br>
         <button class="primary-button big" type="button">
             Log In
         </button>
@@ -285,29 +287,24 @@
             </div>
             <script type="text/javascript">
                 document.addEventListener('DOMContentLoaded', () => {
-                    // Add event listener to all buttons with the class 'primary-button'
                     document.querySelectorAll('.input__box.border__box button.primary-button').forEach(button => {
                         button.addEventListener('click', function() {
-                            // Get the value of the data-inputmodal attribute
                             const modalClass = this.getAttribute('data-inputmodal');
-
-                            // Find the element with the corresponding class
                             const modal = document.querySelector(`.${modalClass}`);
-
-                            // Toggle the 'open' class on the modal
+                            
                             if (modal) {
                                 modal.classList.toggle('open');
+                                document.body.classList.add('overflow-hidden'); // Add overflow-hidden to body
                             }
                         });
                     });
 
-                    // Add event listener to all elements with the class 'close-inputmodal'
                     document.querySelectorAll('.close-inputmodal').forEach(closeButton => {
                         closeButton.addEventListener('click', function() {
-                            // Remove the 'open' class from all elements with the class 'inputmodal'
                             document.querySelectorAll('.inputmodal').forEach(modal => {
                                 modal.classList.remove('open');
                             });
+                            document.body.classList.remove('overflow-hidden'); // Remove overflow-hidden from body
                         });
                     });
                 });
@@ -430,7 +427,7 @@
         <br>
 
         <div class="all-solutions">
-            <button class="deutsch-b1-horen-button primary-button border small" type="button">Alle Lösungen anzeigen</button>
+            <button class="primary-black" type="button">Alle Lösungen anzeigen</button>
             <div class="all-solutions__content">
                 <p class="text p3">Sie sollten Abonnent sein ab 4,99 € pro Monat</p>
                 <p class="text p2 semibold">Sie haben Zugang zu allen Übungen</p>
@@ -438,7 +435,6 @@
         </div>
 
         <br>
-
 
     </div>
 
