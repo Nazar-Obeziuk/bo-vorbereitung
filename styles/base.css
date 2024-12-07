@@ -9,6 +9,11 @@ body.overflow-hidden {
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -32,19 +37,17 @@ li {
   padding-right: 16px;
   position: relative;
 }
+
 .arrow-dropdown-icon {
   width: 24px;
   height: 24px;
 }
 
-@media (max-width: 575.98px) {
-}
+@media (max-width: 575.98px) {}
 
-@media (max-width: 767.98px) {
-}
+@media (max-width: 767.98px) {}
 
-@media (max-width: 991.98px) {
-}
+@media (max-width: 991.98px) {}
 
 @media (max-width: 1199.98px) {
   .container {

@@ -32,14 +32,14 @@ function toggleMenu(
     ) {
       return total + item.scrollHeight;
     },
-    0);
+      0);
     mobileMenuElement.setAttribute(
       "style",
       "height: " +
-        (mobileMenuHeight +
-          additionalHeightValue +
-          innerDropdownMenuHeightValue) +
-        "px;"
+      (mobileMenuHeight +
+        additionalHeightValue +
+        innerDropdownMenuHeightValue) +
+      "px;"
     );
   }
   let isInnerDropdownButtonActive = false;
@@ -98,7 +98,7 @@ function toggleHeaderMenu(
     button,
     headerSecondSectionContent,
     headerSecondSectionContentPaddingTopAndBottom +
-      headerSecondSectionContentGap,
+    headerSecondSectionContentGap,
     isInnerDropdownMenu,
     innerSecondSectionContentDropdownMenuHeight
   );
@@ -341,28 +341,28 @@ document.addEventListener('DOMContentLoaded', () => {
   const progressBar = document.getElementById("progress-bar");
 
   if (progressSlider && progressSelectorValue && progressBar) {
-      progressSlider.value = 6;
+    progressSlider.value = 6;
 
-      function updateProgress() {
-          progressSelectorValue.innerHTML = progressSlider.value + "%";
-          const currentThumbPosition = (progressSlider.value / 100) * 100; // Calculate percentage
-          progressSelectorValue.style.left = currentThumbPosition + "%";
-          progressBar.style.width = progressSlider.value + "%";
-      }
+    function updateProgress() {
+      progressSelectorValue.innerHTML = progressSlider.value + "%";
+      const currentThumbPosition = (progressSlider.value / 100) * 100; // Calculate percentage
+      progressSelectorValue.style.left = currentThumbPosition + "%";
+      progressBar.style.width = progressSlider.value + "%";
+    }
 
+    updateProgress();
+
+    progressSlider.oninput = function () {
       updateProgress();
+    };
 
-      progressSlider.oninput = function () {
-          updateProgress();
-      };
-
-      progressBar.parentElement.addEventListener("click", function (event) {
-          const rect = progressBar.parentElement.getBoundingClientRect();
-          const offsetX = event.clientX - rect.left;
-          const newValue = (offsetX / rect.width) * 100;
-          progressSlider.value = newValue;
-          updateProgress();
-      });
+    progressBar.parentElement.addEventListener("click", function (event) {
+      const rect = progressBar.parentElement.getBoundingClientRect();
+      const offsetX = event.clientX - rect.left;
+      const newValue = (offsetX / rect.width) * 100;
+      progressSlider.value = newValue;
+      updateProgress();
+    });
   }
 });
 
@@ -589,24 +589,55 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.input__box.border__box button.primary-button').forEach(button => {
-        button.addEventListener('click', function() {
-            const modalClass = this.getAttribute('data-inputmodal');
-            const modal = document.querySelector(`.${modalClass}`);
-            
-            if (modal) {
-                modal.classList.toggle('open');
-                document.body.classList.add('overflow-hidden'); // Add overflow-hidden to body
-            }
-        });
-    });
+  // Add event listener to all buttons with the class 'primary-button'
+  document.querySelectorAll('.input__box.border__box button.primary-button').forEach(button => {
+    button.addEventListener('click', function () {
+      // Get the value of the data-inputmodal attribute
+      const modalClass = this.getAttribute('data-inputmodal');
 
-    document.querySelectorAll('.close-inputmodal').forEach(closeButton => {
-        closeButton.addEventListener('click', function() {
-            document.querySelectorAll('.inputmodal').forEach(modal => {
-                modal.classList.remove('open');
-            });
-            document.body.classList.remove('overflow-hidden'); // Remove overflow-hidden from body
-        });
+      // Find the element with the corresponding class
+      const modal = document.querySelector(`.${modalClass}`);
+
+      // Toggle the 'open' class on the modal
+      if (modal) {
+        modal.classList.toggle('open');
+      }
     });
+  });
+
+  // Add event listener to all elements with the class 'close-inputmodal'
+  document.querySelectorAll('.close-inputmodal').forEach(closeButton => {
+    closeButton.addEventListener('click', function () {
+      // Remove the 'open' class from all elements with the class 'inputmodal'
+      document.querySelectorAll('.inputmodal').forEach(modal => {
+        modal.classList.remove('open');
+      });
+    });
+  });
+});
+
+
+// listening-german
+
+const listeningExercises = document.querySelector(".listening-exercises");
+const listeningList = document.querySelector(".listening-list");
+const primaryButton = listeningExercises.querySelector(".primary-button");
+const buttons = document.querySelectorAll(".listening-exercises__buttons button");
+
+primaryButton.addEventListener("click", () => {
+  const isFull = listeningExercises.classList.contains("full");
+
+  if (isFull) {
+    listeningExercises.classList.remove("full");
+  } else {
+    listeningList.scrollTo(0, 0);
+    listeningExercises.classList.add("full");
+  }
+});
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    buttons.forEach(btn => btn.classList.remove("active"));
+    button.classList.add("active");
+  });
 });
