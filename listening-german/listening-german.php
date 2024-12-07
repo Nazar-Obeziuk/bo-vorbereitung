@@ -96,24 +96,34 @@
             <h2><span>B1 Hören</span> Übungen (von Goethe) mit Lösungen zum Hörverstehen</h2>
             <div class="listening-exercises__row">
                 <div class="listening-exercises__buttons">
-                    <button class="secondary-button active" type="button">
-                        Hören Teil 1
-                    </button>
-                    <button class="secondary-button" type="button">
-                        Hören Teil 2
-                    </button>
-                    <button class="secondary-button" type="button">
-                        Hören Teil 3
-                    </button>
-                    <button class="secondary-button" type="button">
-                        Hören Teil 4
-                    </button>
+                    <a href="#listening-list-1">
+                        <button class="secondary-button active" type="button">
+                            Hören Teil 1
+                        </button>
+                    </a>
+
+                      <a href="#listening-list-2">
+                        <button class="secondary-button" type="button">
+                            Hören Teil 2
+                        </button>
+                    </a>
+
+                      <a href="#text">
+                        <button class="secondary-button" type="button">
+                            Hören Teil 3
+                        </button>
+                    </a>
+
+                    <a href="#text">
+                        <button class="secondary-button" type="button">
+                            Hören Teil 4
+                        </button>
+                    </a>
                 </div>
                 <div class="listening-list">
-                    <p class="listening-list__title text p2">Hören Teil 1 - B1 Übungen</p>
-
-                    <div class="listening-list__content">
-                        <div class="listening-list__box">
+                    <div class="listening-list__content" id="listening-list-1">
+                        <p class="listening-list__title text p2">Hören Teil 1 - B1 Übungen</p>
+                        <div class="listening-list__box" >
                             <div class="listening-list__icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="#F7631B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -219,7 +229,7 @@
                                     <path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <div class="listening-list__text">
+                            <div class="listening-list__text" >
                                 <p class="text p4">Übung 1.8</p>
                                 <p class="text p3 bold">Ursprüngliche Plan</p>
                             </div>
@@ -237,6 +247,179 @@
                                 <p class="text p3 bold">Ursprüngliche Plan</p>
                             </div>
                         </div>
+                        <div class="listening-list__box">
+                            <div class="listening-list__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="listening-list__text">
+                                <p class="text p4">Übung 1.10</p>
+                                <p class="text p3 bold">Ursprüngliche Plan</p>
+                            </div>
+                        </div>
+                        <div class="listening-list__box">
+                            <div class="listening-list__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="listening-list__text">
+                                <p class="text p4">Übung 2.1</p>
+                                <p class="text p3 bold">Ursprüngliche Plan</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="listening-list__content" id="listening-list-2">
+                        <p class="listening-list__title text p2">Hören Teil 2 - B1 Übungen</p>
+                        <div class="listening-list__box" id="listening-list-1">
+                            <div class="listening-list__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="#F7631B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="listening-list__text">
+                                <p class="text p4">Übung 1.1 </p>
+                                <p class="text p3 bold">Die neue Nummer</p>
+                            </div>
+                            <div class="listening-list__progress">
+                                <div class="progress-circle" data-progress="100">
+                                    <span>100%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listening-list__box">
+                            <div class="listening-list__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="listening-list__text">
+                                <p class="text p4">Übung 1.2 </p>
+                                <p class="text p3 bold">Abend Zeit</p>
+                            </div>
+                            <div class="listening-list__progress">
+                                <div class="progress-circle" data-progress="0">
+                                    <span>0%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listening-list__box">
+                            <div class="listening-list__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="listening-list__text">
+                                <p class="text p4">Übung 1.3 </p>
+                                <p class="text p3 bold"> Ursprüngliche Plan</p>
+                            </div>
+
+                        </div>
+
+                        <div class="listening-list__box">
+                            <div class="listening-list__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="listening-list__text">
+                                <p class="text p4">Übung 1.4 </p>
+                                <p class="text p3 bold">Was hat Lena für den Abend vor?</p>
+                            </div>
+
+                        </div>
+
+                        <div class="listening-list__box">
+                            <div class="listening-list__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="listening-list__text">
+                                <p class="text p4">Übung 1.5</p>
+                                <p class="text p3 bold">Ursprüngliche Plan</p>
+                            </div>
+
+                        </div>
+
+                        <div class="listening-list__box">
+                            <div class="listening-list__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="listening-list__text">
+                                <p class="text p4">Übung 1.6</p>
+                                <p class="text p3 bold">Ursprüngliche Plan</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="listening-list__box">
+                            <div class="listening-list__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="listening-list__text">
+                                <p class="text p4">Übung 1.7</p>
+                                <p class="text p3 bold">Ursprüngliche Plan</p>
+                            </div>
+
+                        </div>
+
+                        <div class="listening-list__box">
+                            <div class="listening-list__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="listening-list__text" >
+                                <p class="text p4">Übung 1.8</p>
+                                <p class="text p3 bold">Ursprüngliche Plan</p>
+                            </div>
+
+                        </div>
+
+                        <div class="listening-list__box">
+                            <div class="listening-list__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="listening-list__text">
+                                <p class="text p4">Übung 1.9</p>
+                                <p class="text p3 bold">Ursprüngliche Plan</p>
+                            </div>
+                        </div>
+                        <div class="listening-list__box">
+                            <div class="listening-list__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="listening-list__text">
+                                <p class="text p4">Übung 1.10</p>
+                                <p class="text p3 bold">Ursprüngliche Plan</p>
+                            </div>
+                        </div>
+                        <div class="listening-list__box" >
+                            <div class="listening-list__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="listening-list__text">
+                                <p class="text p4">Übung 2.1</p>
+                                <p class="text p3 bold">Ursprüngliche Plan</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -246,6 +429,7 @@
                         <path d="M16.8337 2.33325L9.50033 9.66659L2.16699 2.33325" stroke="#161616" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                     <p class="text p2 bold">Andere Übungen</p>
+                    <p class="text p2 bold close">Versteckenn</p>
                 </button>
             </div>
         </div>
