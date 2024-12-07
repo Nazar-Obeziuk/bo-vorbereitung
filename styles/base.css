@@ -26,6 +26,7 @@ li {
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
+  position: relative;
 }
 .arrow-dropdown-icon {
   width: 24px;

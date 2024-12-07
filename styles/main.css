@@ -259,8 +259,9 @@ h2 {
     gap: 16px;
     padding: 22px 0;
   }
-
-  .dot {
+  
+  /* see plz ui */
+  /* .dot {
     display: flex;
     justify-items: start;
     align-items: start;
@@ -392,7 +393,8 @@ h2 {
 
   .box__audio .heading.h3 {
     color: var(--primary-orange);
-  }
+  } */ 
+   /* see plz ui */
 
   .box__audio audio::-webkit-media-controls-panel {
     background: #d9d9d9;

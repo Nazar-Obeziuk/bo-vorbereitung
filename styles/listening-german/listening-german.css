@@ -184,6 +184,7 @@
   padding: 20px 96px;
 }
 
+
 @media (max-width: 1199.98px) {
   .listening-exercises .listening-exercises__row {
     flex-direction: column;
