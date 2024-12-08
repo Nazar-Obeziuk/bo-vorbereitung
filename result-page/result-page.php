@@ -155,7 +155,7 @@
                     </span>
                 </div>
                 <div class="progress-slider-wrapper">
-                    <label for="progress-slider"></label>
+                    <label for="progress-slider" aria-hidden="true"></label>
                     <input type="range" min="0" max="100" name="progress-slider" value="0" class="progress-slider" id="progress-slider" step="1">
                     <div class="progress-selector-value" id="progress-selector-value" style="left: 44%">44%</div>
                     <div class="progress-bar" id="progress-bar" style="width: 46%"></div>

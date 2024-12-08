@@ -227,16 +227,13 @@
                             <label for="answer-1" class='text p2_semibold'>Was wird während dieser Zeit vorübergehend unterbrochen sein? </label>
                             <div class="model-list_radio">
                                 <span class="input__box border__box orange">
-                                    <label for="radio"></label>
-                                    <input class='input_radio' type="radio" name="answer-1" value="a" checked> <span>a) Die Verfügbarkeit von dringenden Bestellungen.</span>
+                                    <input class='input_radio' type="radio" name="answer-1" value="a" checked> <label for="answer-1">a) Die Verfügbarkeit von dringenden Bestellungen.</label>
                                 </span>
                                 <span class="input__box border__box">
-                                    <label for="radio"></label>
-                                    <input class='input_radio' type="radio" name="answer-1" value="b"> <span>b) Die Lieferung von bereits getätigten Bestellungen.</span>
+                                    <input class='input_radio' type="radio" name="answer-1" value="b"> <label for="answer-1">b) Die Lieferung von bereits getätigten Bestellungen.</label>
                                 </span>
                                 <span class="input__box border__box">
-                                    <label for="radio"></label>
-                                    <input class='input_radio' type="radio" name="answer-1" value="c"> <span>c) Online-Bestellungen könnten unterbrochen sein.</span>
+                                    <input class='input_radio' type="radio" name="answer-1" value="c"> <label for="answer-1">c) Online-Bestellungen könnten unterbrochen sein.</label>
                                 </span>
                             </div>
                         </div>
@@ -295,16 +292,13 @@
                             <label for="answer-2" class='text p2_semibold'>Was können die Zuschauer heute erwarten?</label>
                             <div class="model-list_radio">
                                 <span class="input__box border__box orange">
-                                    <label for="radio"></label>
-                                    <input class='input_radio' type="radio" name="answer-2" value="a" checked> <span>a) Regen.</span>
+                                    <input class='input_radio' type="radio" name="answer-2" value="a" checked> <label for="answer-2">a) Regen.</label>
                                 </span>
                                 <span class="input__box border__box">
-                                    <label for="radio"></label>
-                                    <input class='input_radio' type="radio" name="answer-2" value="b"> <span>b) Sonniges Wetter mit wenig Wind.</span>
+                                    <input class='input_radio' type="radio" name="answer-2" value="b"> <label for="answer-2">b) Sonniges Wetter mit wenig Wind.</label>
                                 </span>
                                 <span class="input__box border__box">
-                                    <label for="radio"></label>
-                                    <input class='input_radio' type="radio" name="answer-2" value="c"> <span>c) Sonniges Wetter mit Wind.</span>
+                                    <input class='input_radio' type="radio" name="answer-2" value="c"> <label for="answer-2">c) Sonniges Wetter mit Wind.</label>
                                 </span>
                             </div>
                         </div>
