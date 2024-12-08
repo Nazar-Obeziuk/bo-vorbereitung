@@ -324,11 +324,17 @@
 
 .lang .lang-menu {
   position: absolute;
+  width: 350px;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
   display: none;
   padding-top: 20px;
+}
+
+.lang .lang-menu .flag-icon {
+  display: flex;
+  align-items: center;
 }
 
 .lang:hover .lang-menu {
