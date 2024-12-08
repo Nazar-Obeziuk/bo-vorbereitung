@@ -396,8 +396,6 @@
     gap: 30px;
   }
 
-
-
   .alphabet br {
     display: none;
   }
@@ -437,12 +435,17 @@
   .tabs {
     width: 100%;
     text-wrap: nowrap;
-    justify-content: flex-start;
-    overflow-x: scroll;
   }
 
   .tabs::-webkit-scrollbar {
     display: none;
+  }
+
+  .lang .lang-menu {
+    width: 300px;
+    left: auto;
+    right: 0;
+    transform: translateX(0%);
   }
 
 }
