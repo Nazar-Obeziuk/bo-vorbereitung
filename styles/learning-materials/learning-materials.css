@@ -170,11 +170,15 @@
 .tab,
 .lang {
   display: flex;
+  align-items: center;
+  gap: 13px;
   padding: 10px;
   border-bottom: 4px solid var(--black);
   cursor: pointer;
   transition: 0.4s;
 }
+
+
 
 .tab:hover,
 .lang:hover {

@@ -199,6 +199,11 @@
                             <div class="tab" data-tab="thema">Thema</div>
                             <div class="lang">
                                 Translation: English
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                                    <path d="M14 2L8 8L2 2" stroke="#444444" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
                                 <div class="lang-menu">
                                 <div class="dropdown-menu">
                                     <div class="dropdown-menu-item" id="dropdown-menu-item-1">

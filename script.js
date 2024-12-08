@@ -24,10 +24,16 @@ if (accordionHeaders.length > 0) {
     });
   });
 }
-
 // Для табів
 const tabs = document.querySelectorAll('.tabs .tab');
-if (tabs.length > 0) {
+const tabContents = document.querySelectorAll('.learn-info_content');
+
+if (tabs.length > 0 && tabContents.length > 0) {
+  tabs[0].classList.add('active');
+  tabContents.forEach((content, index) => {
+    content.style.display = index === 0 ? 'flex' : 'none';
+  });
+
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
       document.querySelectorAll('.tabs .tab').forEach(t => t.classList.remove('active'));
@@ -35,7 +41,7 @@ if (tabs.length > 0) {
 
       const targetTab = tab.getAttribute('data-tab');
 
-      document.querySelectorAll('.learn-info_content').forEach(content => {
+      tabContents.forEach(content => {
         if (content.getAttribute('data-tab') === targetTab) {
           content.style.display = 'flex';
         } else {
