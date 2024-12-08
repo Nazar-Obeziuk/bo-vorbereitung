@@ -1,3 +1,53 @@
+
+// Для акордеонів
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+if (accordionHeaders.length > 0) {
+  accordionHeaders.forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        button.querySelector("svg").style.transform = "rotate(0deg)";
+      } else {
+        document.querySelectorAll('.accordion-content').forEach(item => {
+          item.style.maxHeight = null;
+        });
+
+        document.querySelectorAll('.accordion-header svg').forEach(svg => {
+          svg.style.transform = "rotate(0deg)";
+        });
+
+        content.style.maxHeight = content.scrollHeight + 'px';
+        button.querySelector("svg").style.transform = "rotate(180deg)";
+      }
+    });
+  });
+}
+
+// Для табів
+const tabs = document.querySelectorAll('.tabs .tab');
+if (tabs.length > 0) {
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.tabs .tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      const targetTab = tab.getAttribute('data-tab');
+
+      document.querySelectorAll('.learn-info_content').forEach(content => {
+        if (content.getAttribute('data-tab') === targetTab) {
+          content.style.display = 'flex';
+        } else {
+          content.style.display = 'none';
+        }
+      });
+    });
+  });
+}
+
+
+
 // header
 
 const headerLevelDropdownMenuItems = document.querySelectorAll(
@@ -32,14 +82,14 @@ function toggleMenu(
     ) {
       return total + item.scrollHeight;
     },
-    0);
+      0);
     mobileMenuElement.setAttribute(
       "style",
       "height: " +
-        (mobileMenuHeight +
-          additionalHeightValue +
-          innerDropdownMenuHeightValue) +
-        "px;"
+      (mobileMenuHeight +
+        additionalHeightValue +
+        innerDropdownMenuHeightValue) +
+      "px;"
     );
   }
   let isInnerDropdownButtonActive = false;
@@ -98,7 +148,7 @@ function toggleHeaderMenu(
     button,
     headerSecondSectionContent,
     headerSecondSectionContentPaddingTopAndBottom +
-      headerSecondSectionContentGap,
+    headerSecondSectionContentGap,
     isInnerDropdownMenu,
     innerSecondSectionContentDropdownMenuHeight
   );

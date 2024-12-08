@@ -167,22 +167,33 @@
   font-weight: 600;
 }
 
-.tab {
+.tab,
+.lang {
   display: flex;
   padding: 10px;
   border-bottom: 4px solid var(--black);
   cursor: pointer;
+  transition: 0.4s;
+}
+
+.tab:hover,
+.lang:hover {
+  border-bottom: 4px solid var(--primary-orange);
 }
 
 .tab.active {
   border-bottom: 4px solid var(--primary-orange);
 }
 
-
 .alphabet {
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
+  letter-spacing: 6px;
+}
+
+.alphabet-content {
+  font-size: 20px;
 }
 
 .alphabet span {
@@ -248,19 +259,99 @@
   background: var(--bright-green);
 }
 
+.accordion {
+  width: 100%;
+  border-bottom: 1px solid var();
+  max-height: 900px;
+  overflow-y: auto;
+}
 
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:first-child {
+  border-top: 1px solid #ddd;
+}
+
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 25px 22px;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 600;
+  background: transparent;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0px;
+  background: #fff;
+  font-size: 20px;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-content .box {
+  display: flex;
+  align-items: center;
+  padding: 25px 22px;
+  border-top: 1px solid #ddd;
+}
+
+.accordion-content p {
+  margin: 15px 0;
+}
+
+.accordion-header svg {
+  transition: transform 0.4s ease;
+}
+
+.lang {
+  position: relative;
+}
+
+.lang .lang-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  padding-top: 20px;
+}
+
+.lang:hover .lang-menu {
+  display: block;
+}
 
 @media (max-width: 1199.98px) {
   .learn-main_tabs {
     display: flex;
   }
 
+  .accordion-header {
+    font-size: 20px;
+  }
+
+  .accordion-content {
+    font-size: 18px;
+  }
+
   .tabs {
     font-size: 16px;
     gap: 20px;
+    justify-content: center;
   }
 
-  .tab {
+  .tab,
+  .lang {
     font-size: 16px;
     border-bottom: 3px solid var(--black);
   }
@@ -308,7 +399,7 @@
   }
 
   .learn-info_content {
-    gap: 24px;
+    gap: 16px;
     border-radius: 12px;
     border: none;
   }
@@ -331,4 +422,17 @@
   .learn-info_inner {
     gap: 16px;
   }
+
+
+  .tabs {
+    width: 100%;
+    text-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
+
+  .tabs::-webkit-scrollbar {
+    display: none;
+  }
+
 }

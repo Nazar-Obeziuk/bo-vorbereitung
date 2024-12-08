@@ -195,11 +195,39 @@
                     </div>
                     <div class="learn-main_info">
                         <div class='tabs'>
-                            <div class="tab active">Alphabet</div>
-                            <div class="tab">Thema</div>
-                            <div class="tab">Translation: English</div>
+                            <div class="tab active" data-tab="alphabet">Alphabet</div>
+                            <div class="tab" data-tab="thema">Thema</div>
+                            <div class="lang">
+                                Translation: English
+                                <div class="lang-menu">
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-menu-item" id="dropdown-menu-item-1">
+                                        <a class="dropdown-menu-item-link" href="#">
+                                            <div class="flag-icon"><svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_528_3168)"><mask id="mask0_528_3168" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="24"><path d="M28.9524 0.5H3.04762C1.36447 0.5 0 1.87299 0 3.56667V20.4333C0 22.127 1.36447 23.5 3.04762 23.5H28.9524C30.6355 23.5 32 22.127 32 20.4333V3.56667C32 1.87299 30.6355 0.5 28.9524 0.5Z" fill="white"></path></mask><g mask="url(#mask0_528_3168)"><path d="M28.9524 0.5H3.04762C1.36447 0.5 0 1.87299 0 3.56667V20.4333C0 22.127 1.36447 23.5 3.04762 23.5H28.9524C30.6355 23.5 32 22.127 32 20.4333V3.56667C32 1.87299 30.6355 0.5 28.9524 0.5Z" fill="#22438B"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M4.57161 2.0332L1.48438 2.07307L1.52399 5.09987L27.4013 22.0095L30.5053 21.9527L30.4474 18.9443L4.57161 2.0332Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M3.04774 2.0332L1.52393 3.56654L28.9525 21.9665L30.4763 20.4332L3.04774 2.0332Z" fill="#C7152A"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M27.4283 2.0332H30.476V5.09987C30.476 5.09987 12.5712 16.4404 4.59863 22.0095C4.50263 22.0769 1.55406 22.0141 1.55406 22.0141L1.31787 19.0992L27.4283 2.0332Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M29.018 1.98975L30.4763 3.56601L3.04774 21.966L1.52393 20.4327L29.018 1.98975Z" fill="#C7152A"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12.1906 2.0332H19.8096V8.16654H30.4763V15.8332H19.8096V21.9665H12.1906V15.8332H1.52393V8.16654H12.1906V2.0332Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M13.7144 2.0332H18.2858V9.69987H30.4763V14.2999H18.2858V21.9665H13.7144V14.2999H1.52393V9.69987H13.7144V2.0332Z" fill="#C7152A"></path><path d="M28.9522 1.2666H3.04743C1.78507 1.2666 0.761719 2.29635 0.761719 3.5666V20.4333C0.761719 21.7035 1.78507 22.7333 3.04743 22.7333H28.9522C30.2146 22.7333 31.2379 21.7035 31.2379 20.4333V3.5666C31.2379 2.29635 30.2146 1.2666 28.9522 1.2666Z" stroke="black" stroke-opacity="0.1"></path></g></g><defs><clipPath id="clip0_528_3168"><rect width="32" height="23" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg></div>
+                                            <span class="text p2 p2_semibold">Englisch</span>
+                                            <div class="check-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.33203 15.9993L11.9317 22.599L26.075 8.45703" stroke="#F7631B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+                                        </a>
+                                        </div>
+                                                            <div class="dropdown-menu-item" id="dropdown-menu-item-2">
+                                        <a class="dropdown-menu-item-link" href="#">
+                                            <div class="flag-icon"><svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_528_2773)"><mask id="mask0_528_2773" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="24"><path d="M28.9524 0.5H3.04762C1.36447 0.5 0 1.87299 0 3.56667V20.4333C0 22.127 1.36447 23.5 3.04762 23.5H28.9524C30.6355 23.5 32 22.127 32 20.4333V3.56667C32 1.87299 30.6355 0.5 28.9524 0.5Z" fill="white"></path></mask><g mask="url(#mask0_528_2773)"><path d="M28.9524 0.5H3.04762C1.36447 0.5 0 1.87299 0 3.56667V20.4333C0 22.127 1.36447 23.5 3.04762 23.5H28.9524C30.6355 23.5 32 22.127 32 20.4333V3.56667C32 1.87299 30.6355 0.5 28.9524 0.5Z" fill="#E70B17"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M21.3364 13.7656L19.5658 14.701L19.9041 12.7184L18.4717 11.3123L20.4526 11.021L21.3364 9.21777L22.2203 11.0225L24.2012 11.3138L22.7688 12.7168L23.1071 14.6994" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.4764 17.3666C17.4219 17.3666 19.8097 14.9639 19.8097 12C19.8097 9.03603 17.4219 6.6333 14.4764 6.6333C11.5309 6.6333 9.14307 9.03603 9.14307 12C9.14307 14.9639 11.5309 17.3666 14.4764 17.3666ZM16.0002 15.8333C18.1031 15.8333 19.8097 14.116 19.8097 12C19.8097 9.88397 18.1031 8.16663 16.0002 8.16663C13.8974 8.16663 12.1907 9.88397 12.1907 12C12.1907 14.116 13.8974 15.8333 16.0002 15.8333Z" fill="white"></path><path d="M28.9522 1.2666H3.04743C1.78507 1.2666 0.761719 2.29635 0.761719 3.5666V20.4333C0.761719 21.7035 1.78507 22.7333 3.04743 22.7333H28.9522C30.2146 22.7333 31.2379 21.7035 31.2379 20.4333V3.5666C31.2379 2.29635 30.2146 1.2666 28.9522 1.2666Z" stroke="black" stroke-opacity="0.1"></path></g></g><defs><clipPath id="clip0_528_2773"><rect width="32" height="23" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg></div>
+                                            <span class="text p2 p2_semibold">Türkisch</span>
+                                            <div class="check-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.33203 15.9993L11.9317 22.599L26.075 8.45703" stroke="#F7631B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+                                        </a>
+                                        </div>
+                                                            <div class="dropdown-menu-item" id="dropdown-menu-item-3">
+                                        <a class="dropdown-menu-item-link" href="#">
+                                            <div class="flag-icon"><svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_528_9268)"><mask id="mask0_528_9268" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="24"><path d="M28.9524 0.5H3.04762C1.36447 0.5 0 1.87299 0 3.56667V20.4333C0 22.127 1.36447 23.5 3.04762 23.5H28.9524C30.6355 23.5 32 22.127 32 20.4333V3.56667C32 1.87299 30.6355 0.5 28.9524 0.5Z" fill="white"></path></mask><g mask="url(#mask0_528_9268)"><path d="M28.9524 0.5H3.04762C1.36447 0.5 0 1.87299 0 3.56667V20.4333C0 22.127 1.36447 23.5 3.04762 23.5H28.9524C30.6355 23.5 32 22.127 32 20.4333V3.56667C32 1.87299 30.6355 0.5 28.9524 0.5Z" fill="#0034A9"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M0 15.8335H32V23.5002H0V15.8335Z" fill="#D7280F"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.5H32V8.16667H0V0.5Z" fill="white"></path><path d="M28.9522 1.2666H3.04743C1.78507 1.2666 0.761719 2.29635 0.761719 3.5666V20.4333C0.761719 21.7035 1.78507 22.7333 3.04743 22.7333H28.9522C30.2146 22.7333 31.2379 21.7035 31.2379 20.4333V3.5666C31.2379 2.29635 30.2146 1.2666 28.9522 1.2666Z" stroke="black" stroke-opacity="0.1"></path></g></g><defs><clipPath id="clip0_528_9268"><rect width="32" height="23" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg></div>
+                                            <span class="text p2 p2_semibold">Russisch</span>
+                                            <div class="check-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.33203 15.9993L11.9317 22.599L26.075 8.45703" stroke="#F7631B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
                         </div>
-                        <div class="learn-info_content">
+                      
+                        <div class="learn-info_content alphabet-content" data-tab="alphabet">
                             <p class="alphabet"><span>A</span> B C D E F G H I J K L M N O P Q R S T U V <br/> W X Y Z Ä Ö Ü ß</p>
                             <p class="letter">A</p>
                             <div class="term"><span class="type">P</span> <p><span class="word">ab</span> <span class="translation">from</span></p></div>
@@ -216,6 +244,324 @@
                             <div class="term"><span class="circle blue"></span> <p><span class="word">der Absender</span>, - <span class="translation">sender</span></p> </div>
                             <div class="term"><span class="circle red"></span> <p><span class="word">die Absicht</span>, -en <span class="translation">intention, intent</span></p> </div>
                             <div class="term"><span class="circle green"></span> <span class="word">середній рід</span></div>
+                        </div>
+
+                          <div class="learn-info_content alphabet-content" data-tab="thema">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        Freizeit  
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M32.6771 16.3227C32.4701 16.1161 32.1894 16 31.8968 16C31.6042 16 31.3236 16.1161 31.1165 16.3227L21.7473 25.6862C21.7131 25.7204 21.6725 25.7476 21.6278 25.7661C21.5831 25.7847 21.5351 25.7942 21.4867 25.7942C21.4383 25.7942 21.3904 25.7847 21.3457 25.7661C21.3009 25.7476 21.2603 25.7204 21.2261 25.6862L11.8569 16.3227C11.6476 16.1278 11.3707 16.0217 11.0847 16.0267C10.7986 16.0318 10.5257 16.1476 10.3234 16.3498C10.1211 16.5519 10.0052 16.8247 10.0002 17.1106C9.99512 17.3965 10.1013 17.6731 10.2963 17.8823L19.6656 27.2458C19.9048 27.4849 20.1888 27.6746 20.5014 27.804C20.814 27.9334 21.1491 28 21.4874 28C21.8258 28 22.1609 27.9334 22.4735 27.804C22.7861 27.6746 23.0701 27.4849 23.3093 27.2458L32.6771 17.8823C32.8839 17.6754 33 17.3949 33 17.1025C33 16.8101 32.8839 16.5296 32.6771 16.3227Z" fill="#F7631B"/>
+                                            </svg>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <div class="box">
+                                            <div class="circle blue"></div>
+                                            <p>der Sport – sport</p>
+                                        </div>
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Freizeit – free time/leisure</p>
+                                        </div>
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Beschäftigung, -en – activity, occupation</p>
+                                        </div>
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Arbeit, -en – work</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Gartenarbeit – gardening</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Hobby, -s – hobby</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Jogging – jogging</p>
+                                        </div>
+
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Wochenende, -n – weekend</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Radfahren – cycling</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        Hobby  
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M32.6771 16.3227C32.4701 16.1161 32.1894 16 31.8968 16C31.6042 16 31.3236 16.1161 31.1165 16.3227L21.7473 25.6862C21.7131 25.7204 21.6725 25.7476 21.6278 25.7661C21.5831 25.7847 21.5351 25.7942 21.4867 25.7942C21.4383 25.7942 21.3904 25.7847 21.3457 25.7661C21.3009 25.7476 21.2603 25.7204 21.2261 25.6862L11.8569 16.3227C11.6476 16.1278 11.3707 16.0217 11.0847 16.0267C10.7986 16.0318 10.5257 16.1476 10.3234 16.3498C10.1211 16.5519 10.0052 16.8247 10.0002 17.1106C9.99512 17.3965 10.1013 17.6731 10.2963 17.8823L19.6656 27.2458C19.9048 27.4849 20.1888 27.6746 20.5014 27.804C20.814 27.9334 21.1491 28 21.4874 28C21.8258 28 22.1609 27.9334 22.4735 27.804C22.7861 27.6746 23.0701 27.4849 23.3093 27.2458L32.6771 17.8823C32.8839 17.6754 33 17.3949 33 17.1025C33 16.8101 32.8839 16.5296 32.6771 16.3227Z" fill="#F7631B"/>
+                                            </svg>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <div class="box">
+                                            <div class="circle blue"></div>
+                                            <p>der Sport – sport</p>
+                                        </div>
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Freizeit – free time/leisure</p>
+                                        </div>
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Beschäftigung, -en – activity, occupation</p>
+                                        </div>
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Arbeit, -en – work</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Gartenarbeit – gardening</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Hobby, -s – hobby</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Jogging – jogging</p>
+                                        </div>
+
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Wochenende, -n – weekend</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Radfahren – cycling</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        Familie  
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M32.6771 16.3227C32.4701 16.1161 32.1894 16 31.8968 16C31.6042 16 31.3236 16.1161 31.1165 16.3227L21.7473 25.6862C21.7131 25.7204 21.6725 25.7476 21.6278 25.7661C21.5831 25.7847 21.5351 25.7942 21.4867 25.7942C21.4383 25.7942 21.3904 25.7847 21.3457 25.7661C21.3009 25.7476 21.2603 25.7204 21.2261 25.6862L11.8569 16.3227C11.6476 16.1278 11.3707 16.0217 11.0847 16.0267C10.7986 16.0318 10.5257 16.1476 10.3234 16.3498C10.1211 16.5519 10.0052 16.8247 10.0002 17.1106C9.99512 17.3965 10.1013 17.6731 10.2963 17.8823L19.6656 27.2458C19.9048 27.4849 20.1888 27.6746 20.5014 27.804C20.814 27.9334 21.1491 28 21.4874 28C21.8258 28 22.1609 27.9334 22.4735 27.804C22.7861 27.6746 23.0701 27.4849 23.3093 27.2458L32.6771 17.8823C32.8839 17.6754 33 17.3949 33 17.1025C33 16.8101 32.8839 16.5296 32.6771 16.3227Z" fill="#F7631B"/>
+                                            </svg>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <div class="box">
+                                            <div class="circle blue"></div>
+                                            <p>der Sport – sport</p>
+                                        </div>
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Freizeit – free time/leisure</p>
+                                        </div>
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Beschäftigung, -en – activity, occupation</p>
+                                        </div>
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Arbeit, -en – work</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Gartenarbeit – gardening</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Hobby, -s – hobby</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Jogging – jogging</p>
+                                        </div>
+
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Wochenende, -n – weekend</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Radfahren – cycling</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        Freizeit  
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M32.6771 16.3227C32.4701 16.1161 32.1894 16 31.8968 16C31.6042 16 31.3236 16.1161 31.1165 16.3227L21.7473 25.6862C21.7131 25.7204 21.6725 25.7476 21.6278 25.7661C21.5831 25.7847 21.5351 25.7942 21.4867 25.7942C21.4383 25.7942 21.3904 25.7847 21.3457 25.7661C21.3009 25.7476 21.2603 25.7204 21.2261 25.6862L11.8569 16.3227C11.6476 16.1278 11.3707 16.0217 11.0847 16.0267C10.7986 16.0318 10.5257 16.1476 10.3234 16.3498C10.1211 16.5519 10.0052 16.8247 10.0002 17.1106C9.99512 17.3965 10.1013 17.6731 10.2963 17.8823L19.6656 27.2458C19.9048 27.4849 20.1888 27.6746 20.5014 27.804C20.814 27.9334 21.1491 28 21.4874 28C21.8258 28 22.1609 27.9334 22.4735 27.804C22.7861 27.6746 23.0701 27.4849 23.3093 27.2458L32.6771 17.8823C32.8839 17.6754 33 17.3949 33 17.1025C33 16.8101 32.8839 16.5296 32.6771 16.3227Z" fill="#F7631B"/>
+                                            </svg>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <div class="box">
+                                            <div class="circle blue"></div>
+                                            <p>der Sport – sport</p>
+                                        </div>
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Freizeit – free time/leisure</p>
+                                        </div>
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Beschäftigung, -en – activity, occupation</p>
+                                        </div>
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Arbeit, -en – work</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Gartenarbeit – gardening</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Hobby, -s – hobby</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Jogging – jogging</p>
+                                        </div>
+
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Wochenende, -n – weekend</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Radfahren – cycling</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        Freunde  
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M32.6771 16.3227C32.4701 16.1161 32.1894 16 31.8968 16C31.6042 16 31.3236 16.1161 31.1165 16.3227L21.7473 25.6862C21.7131 25.7204 21.6725 25.7476 21.6278 25.7661C21.5831 25.7847 21.5351 25.7942 21.4867 25.7942C21.4383 25.7942 21.3904 25.7847 21.3457 25.7661C21.3009 25.7476 21.2603 25.7204 21.2261 25.6862L11.8569 16.3227C11.6476 16.1278 11.3707 16.0217 11.0847 16.0267C10.7986 16.0318 10.5257 16.1476 10.3234 16.3498C10.1211 16.5519 10.0052 16.8247 10.0002 17.1106C9.99512 17.3965 10.1013 17.6731 10.2963 17.8823L19.6656 27.2458C19.9048 27.4849 20.1888 27.6746 20.5014 27.804C20.814 27.9334 21.1491 28 21.4874 28C21.8258 28 22.1609 27.9334 22.4735 27.804C22.7861 27.6746 23.0701 27.4849 23.3093 27.2458L32.6771 17.8823C32.8839 17.6754 33 17.3949 33 17.1025C33 16.8101 32.8839 16.5296 32.6771 16.3227Z" fill="#F7631B"/>
+                                            </svg>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <div class="box">
+                                            <div class="circle blue"></div>
+                                            <p>der Sport – sport</p>
+                                        </div>
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Freizeit – free time/leisure</p>
+                                        </div>
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Beschäftigung, -en – activity, occupation</p>
+                                        </div>
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Arbeit, -en – work</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Gartenarbeit – gardening</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Hobby, -s – hobby</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Jogging – jogging</p>
+                                        </div>
+
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Wochenende, -n – weekend</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Radfahren – cycling</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        Arbeiten  
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M32.6771 16.3227C32.4701 16.1161 32.1894 16 31.8968 16C31.6042 16 31.3236 16.1161 31.1165 16.3227L21.7473 25.6862C21.7131 25.7204 21.6725 25.7476 21.6278 25.7661C21.5831 25.7847 21.5351 25.7942 21.4867 25.7942C21.4383 25.7942 21.3904 25.7847 21.3457 25.7661C21.3009 25.7476 21.2603 25.7204 21.2261 25.6862L11.8569 16.3227C11.6476 16.1278 11.3707 16.0217 11.0847 16.0267C10.7986 16.0318 10.5257 16.1476 10.3234 16.3498C10.1211 16.5519 10.0052 16.8247 10.0002 17.1106C9.99512 17.3965 10.1013 17.6731 10.2963 17.8823L19.6656 27.2458C19.9048 27.4849 20.1888 27.6746 20.5014 27.804C20.814 27.9334 21.1491 28 21.4874 28C21.8258 28 22.1609 27.9334 22.4735 27.804C22.7861 27.6746 23.0701 27.4849 23.3093 27.2458L32.6771 17.8823C32.8839 17.6754 33 17.3949 33 17.1025C33 16.8101 32.8839 16.5296 32.6771 16.3227Z" fill="#F7631B"/>
+                                            </svg>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <div class="box">
+                                            <div class="circle blue"></div>
+                                            <p>der Sport – sport</p>
+                                        </div>
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Freizeit – free time/leisure</p>
+                                        </div>
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Beschäftigung, -en – activity, occupation</p>
+                                        </div>
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Arbeit, -en – work</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle red"></div>
+                                            <p>die Gartenarbeit – gardening</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Hobby, -s – hobby</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Jogging – jogging</p>
+                                        </div>
+
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Wochenende, -n – weekend</p>
+                                        </div>
+
+                                         <div class="box">
+                                            <div class="circle green"></div>
+                                            <p>das Radfahren – cycling</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
