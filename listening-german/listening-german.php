@@ -77,7 +77,7 @@
 
             <div class="dropdown-menu navigation">
                 <div class="dropdown-menu-item" id="dropdown-menu-item-1">
-                    <a class="dropdown-menu-item-link" href="#">
+                    <a class="dropdown-menu-item-link active" href="#">
                         <svg width="32" height="32" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19.644 9.51118C19.644 5.21563 16.1618 1.7334 11.8662 1.7334C7.57066 1.7334 4.08843 5.21563 4.08843 9.51118M16.3107 13.4001V15.6223C16.3107 16.1386 16.3107 16.3967 16.3534 16.6114C16.5287 17.4929 17.2179 18.1824 18.0994 18.3577C18.3141 18.4004 18.5722 18.4004 19.0884 18.4004C19.6047 18.4004 19.8629 18.4004 20.0775 18.3577C20.9591 18.1824 21.648 17.4929 21.8234 16.6114C21.8661 16.3967 21.8662 16.1386 21.8662 15.6223V13.4001C21.8662 12.8838 21.8661 12.6251 21.8234 12.4105C21.648 11.5289 20.9591 10.8403 20.0775 10.665C19.8629 10.6223 19.6047 10.6223 19.0884 10.6223C18.5722 10.6223 18.3141 10.6223 18.0994 10.665C17.2179 10.8403 16.5287 11.5289 16.3534 12.4105C16.3107 12.6251 16.3107 12.8838 16.3107 13.4001ZM7.42177 13.4001V15.6223C7.42177 16.1386 7.42161 16.3967 7.37891 16.6114C7.20356 17.4929 6.51456 18.1824 5.63303 18.3577C5.41837 18.4004 5.16032 18.4004 4.64404 18.4004C4.12776 18.4004 3.86961 18.4004 3.65495 18.3577C2.77341 18.1824 2.08426 17.4929 1.90891 16.6114C1.86621 16.3967 1.86621 16.1386 1.86621 15.6223V13.4001C1.86621 12.8838 1.86621 12.6251 1.90891 12.4105C2.08426 11.5289 2.77341 10.8403 3.65495 10.665C3.86961 10.6223 4.12775 10.6223 4.64404 10.6223C5.16032 10.6223 5.41837 10.6223 5.63303 10.665C6.51456 10.8403 7.20356 11.5289 7.37891 12.4105C7.42161 12.6251 7.42177 12.8838 7.42177 13.4001Z" stroke="#F7631B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -156,29 +156,48 @@
             <h2><span>B1 Hören</span> Übungen (von Goethe) mit Lösungen zum Hörverstehen</h2>
             <div class="listening-exercises__row">
                 <div class="listening-exercises__buttons">
-                    <a href="#listening-list-1">
+
+                    <div class="schprechen-menu">
                         <button class="secondary-button active" type="button">
                             Hören Teil 1
                         </button>
-                    </a>
-
-                    <a href="#listening-list-2">
                         <button class="secondary-button" type="button">
                             Hören Teil 2
                         </button>
-                    </a>
-
-                    <a href="#listening-list-3">
                         <button class="secondary-button" type="button">
                             Hören Teil 3
                         </button>
-                    </a>
-
-                    <a href="#listening-list-4">
                         <button class="secondary-button" type="button">
                             Hören Teil 4
                         </button>
-                    </a>
+                    </div>
+
+                    <div class="dropdown-menu schprechen-navigation">
+                        <div class="dropdown-menu-item" id="dropdown-menu-item-1">
+                            <a class="dropdown-menu-item-link active" href="#">
+                                <p class="text p3">Hören Teil 1</p>
+                                <div class="check-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.5273 6.52734L9 19.0664L2.47266 12.5273L3.52734 11.4727L9 16.9336L20.4727 5.47266L21.5273 6.52734Z" fill="#F7631B"></path></svg></div>
+                            </a>
+                        </div>
+                        <div class="dropdown-menu-item" id="dropdown-menu-item-2">
+                            <a class="dropdown-menu-item-link" href="#">
+                                <p class="text p3">Hören Teil 2</p>
+                                <div class="check-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.5273 6.52734L9 19.0664L2.47266 12.5273L3.52734 11.4727L9 16.9336L20.4727 5.47266L21.5273 6.52734Z" fill="#F7631B"></path></svg></div>
+                            </a>
+                        </div>
+                        <div class="dropdown-menu-item" id="dropdown-menu-item-3">
+                            <a class="dropdown-menu-item-link" href="#">
+                                <p class="text p3">Hören Teil 3</p>
+                                <div class="check-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.5273 6.52734L9 19.0664L2.47266 12.5273L3.52734 11.4727L9 16.9336L20.4727 5.47266L21.5273 6.52734Z" fill="#F7631B"></path></svg></div>
+                            </a>
+                        </div>
+                        <div class="dropdown-menu-item" id="dropdown-menu-item-4">
+                            <a class="dropdown-menu-item-link" href="#">
+                                <p class="text p3">Hören Teil 4</p>
+                                <div class="check-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.5273 6.52734L9 19.0664L2.47266 12.5273L3.52734 11.4727L9 16.9336L20.4727 5.47266L21.5273 6.52734Z" fill="#F7631B"></path></svg></div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="listening-list">

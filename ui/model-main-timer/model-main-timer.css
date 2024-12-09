@@ -9,6 +9,10 @@
   gap: 50px;
 }
 
+.model-main_timer > .model-timer_info > h3,.model-main_timer > .model-timer_info > p{
+  margin-bottom: 0;
+}
+
 .model-main_timer > .model-timer_info > p,
 .model-main_timer > .model-timer_time > p {
   color: var(--white);

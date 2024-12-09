@@ -18,3 +18,30 @@
 .provider .level-wrapper-list {
   margin: 0 auto;
 }
+
+.provider .level-wrapper-list {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+}
+
+.provider .level-wrapper-list a {
+  padding: 14px 60px !important;
+}
+
+@media (max-width: 767.98px) {
+  .provider .level-wrapper-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .provider .level-wrapper-list a {
+    padding: 12px 0 !important;
+    justify-content: center !important;
+    border-width: 2px !important;
+  }
+
+}
