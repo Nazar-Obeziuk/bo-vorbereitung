@@ -55,8 +55,8 @@
             </div>
             <div class="google-review_block">
                 <div class="google-block_logo">
-                    <img src="/images/google-logo.svg" alt="google logo" width="184" height="60" class="google-logo_img">
-                    <img src="/images/google-logo-mobile.svg" alt="google logo" width="44" height="44" class="google-logo_img mobile">
+                    <img loading="lazy" src="/images/google-logo.svg" alt="google logo" width="184" height="60" class="google-logo_img">
+                    <img loading="lazy" src="/images/google-logo-mobile.svg" alt="google logo" width="44" height="44" class="google-logo_img mobile">
                 </div>
                 <div class="google-block_info">
                     <span>4.9</span>
@@ -89,9 +89,9 @@
         <div class="container">
             <h2>Die häufigsten <span>Fragen</span></h2>
             <div class="questions-box">
-                <img src="../images/questions.webp" alt="Questions image">
+                <img loading="lazy" src="../images/questions.webp" alt="Questions image">
                 <div class="questions-box__text custom-scrollbar">
-                    <h3>Welches Deutschniveau brauche ich, um die Prüfung zu bestehen?</h3>
+                    <h3>Welches Deutschniveau brauche ich, um die Prüfung zu bestehen?</h3>
                     <p class="text p1">Um den Deutsch-Test für Zuwanderer erfolgreich zu bestehen, wird in der Regel das Niveau B1 benötigt, das eine komfortable Kommunikation in Alltagssituationen ermöglicht.</p>
                     <p class="text p1">Um den Deutsch-Test für Zuwanderer erfolgreich zu bestehen, wird in der Regel das Niveau B1 benötigt, das eine komfortable Kommunikation in Alltagssituationen ermöglicht.</p>
                     <p class="text p1">Um den Deutsch-Test für Zuwanderer erfolgreich zu bestehen, wird in der Regel das Niveau B1 benötigt, das eine komfortable Kommunikation in Alltagssituationen ermöglicht.</p>
@@ -102,7 +102,6 @@
             </div>
         </div>
     </section>
-
 
     <?php include dirname(__DIR__) . "/components/footer.php" ?>
     <script src="../script.js"></script>

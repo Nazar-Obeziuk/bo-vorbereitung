@@ -141,17 +141,16 @@
             <div class="progress-container">
                 <div class="progress-info">
                     <span class="start-label text p4">Dein Fortschritt</span>
-                    <span class="end-label text p4">Erfolgsquote 70 %
-                        <div class="like-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <span class="end-label text p4">
+                        Erfolgsquote 70 %
+                        <div class="like-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15 9.99905L14.26 9.87605C14.2421 9.98348 14.2479 10.0935 14.2769 10.1985C14.3058 10.3035 14.3573 10.4009 14.4277 10.484C14.4982 10.5671 14.5858 10.6338 14.6847 10.6796C14.7835 10.7254 14.8911 10.7491 15 10.749V9.99905ZM4 9.99905V9.24905C3.80109 9.24905 3.61032 9.32806 3.46967 9.46872C3.32902 9.60937 3.25 9.80013 3.25 9.99905H4ZM6 20.749H17.36V19.249H6V20.749ZM18.56 9.24905H15V10.749H18.56V9.24905ZM15.74 10.122L16.546 5.28705L15.066 5.04005L14.26 9.87605L15.74 10.122ZM14.82 3.24905H14.606V4.74905H14.819L14.82 3.24905ZM11.485 4.91905L8.97 8.69205L10.218 9.52405L12.733 5.75105L11.485 4.91905ZM7.93 9.24905H4V10.749H7.93V9.24905ZM3.25 9.99905V17.999H4.75V9.99905H3.25ZM20.057 18.539L21.257 12.539L19.787 12.244L18.587 18.244L20.057 18.539ZM8.97 8.69205C8.8559 8.86333 8.70127 9.00279 8.51985 9.09996C8.33842 9.19713 8.13581 9.24799 7.93 9.24805V10.748C8.85 10.748 9.708 10.289 10.218 9.52405L8.97 8.69205ZM16.546 5.28705C16.5877 5.03642 16.5743 4.77872 16.5067 4.53379C16.4392 4.28886 16.3191 4.06158 16.1549 3.86774C15.9906 3.67389 15.7861 3.51814 15.5556 3.4113C15.3251 3.30446 15.0741 3.24909 14.82 3.24905L14.819 4.74905C14.8552 4.74914 14.892 4.75711 14.9249 4.77241C14.9578 4.7877 14.9869 4.80997 15.0103 4.83765C15.0337 4.86533 15.0508 4.89777 15.0604 4.93272C15.07 4.96767 15.0719 5.00429 15.066 5.04005L16.546 5.28705ZM18.56 10.748C19.35 10.748 19.94 11.47 19.786 12.243L21.257 12.538C21.3366 12.1391 21.3267 11.7265 21.228 11.3319C21.1293 10.9373 20.9443 10.5695 20.6864 10.255C20.4284 9.9405 20.1039 9.68715 19.7362 9.5132C19.3685 9.33924 18.9668 9.24903 18.56 9.24905V10.748ZM17.36 20.749C17.9957 20.7492 18.6118 20.528 19.1035 20.1251C19.5952 19.7222 19.9322 19.1614 20.057 18.538L18.587 18.243C18.5303 18.5266 18.377 18.7818 18.1533 18.9651C17.9296 19.1483 17.6492 19.2493 17.36 19.249V20.749ZM14.606 3.24905C13.9887 3.24909 13.3809 3.40054 12.8366 3.69187C12.2923 3.98319 11.8284 4.40438 11.486 4.91805L12.733 5.75105C12.9385 5.44271 13.2171 5.18891 13.5438 5.0141C13.8706 4.8393 14.2354 4.74891 14.606 4.74905V3.24905ZM6 19.249C5.31 19.249 4.75 18.689 4.75 17.999H3.25C3.25 18.7284 3.53973 19.4279 4.05546 19.9436C4.57118 20.4593 5.27065 20.749 6 20.749V19.249Z" fill="#F7631B"></path>
                                 <path d="M8 10V20" stroke="#F7631B" stroke-width="1.5"></path>
-                            </svg>
-                        </div>
+                            </svg></div>
                     </span>
                 </div>
                 <div class="progress-slider-wrapper">
-                    <input type="range" min="0" max="100" value="0" class="progress-slider" id="progress-slider" step="1">
+                    <input type="range" min="0" max="100" value="0" class="progress-slider" id="progress-slider" step="1" aria-label="progress-slider">
                     <div class="progress-selector-value" id="progress-selector-value" style="left: 44%">44%</div>
                     <div class="progress-bar" id="progress-bar" style="width: 46%"></div>
                 </div>
@@ -160,7 +159,18 @@
             <span class="dot text p3">40% (234 von 587 Personen konnten beim ersten Mal richtig antworten)</span>
 
             <div class="box_border">
-                <h2><span>Text</span> für die Aufgaben</h2>
+                <div class="box-status">
+                    <h2><span>Text</span> für die Aufgaben</h2>
+                     
+                    <div class="status">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.9991 3.66309C32.1264 3.66309 40.3361 11.8728 40.3361 22.0001C40.3361 32.1256 32.1264 40.3334 21.9991 40.3334C11.8718 40.3334 3.66211 32.1256 3.66211 22.0001C3.66211 11.8728 11.8718 3.66309 21.9991 3.66309ZM21.9991 6.41309C19.9381 6.39073 17.8931 6.77737 15.9825 7.55062C14.0719 8.32387 12.3336 9.46837 10.8683 10.9179C9.40299 12.3674 8.23971 14.0932 7.44578 15.9953C6.65186 17.8974 6.24307 19.938 6.24307 21.9992C6.24307 24.0603 6.65186 26.101 7.44578 28.0031C8.23971 29.9052 9.40299 31.6309 10.8683 33.0804C12.3336 34.53 14.0719 35.6745 15.9825 36.4477C17.8931 37.221 19.9381 37.6076 21.9991 37.5853C26.1035 37.5407 30.0247 35.879 32.9113 32.9609C35.798 30.0428 37.4171 26.1038 37.4171 21.9992C37.4171 17.8945 35.798 13.9555 32.9113 11.0374C30.0247 8.1193 26.1035 6.4576 21.9991 6.41309ZM15.5128 27.1023C16.2852 28.0837 17.2703 28.8769 18.3939 29.4222C19.5175 29.9675 20.7502 30.2506 21.9991 30.2501C23.2469 30.2517 24.4787 29.9697 25.6014 29.4253C26.7242 28.881 27.7085 28.0885 28.4799 27.1078C28.5919 26.9661 28.7307 26.8478 28.8883 26.7598C29.046 26.6717 29.2194 26.6156 29.3988 26.5945C29.5781 26.5735 29.7598 26.588 29.9336 26.6372C30.1073 26.6864 30.2697 26.7694 30.4114 26.8813C30.553 26.9933 30.6713 27.132 30.7593 27.2897C30.8474 27.4473 30.9036 27.6208 30.9246 27.8001C30.9456 27.9795 30.9311 28.1612 30.8819 28.335C30.8327 28.5087 30.7497 28.6711 30.6378 28.8127C29.6089 30.1193 28.2967 31.175 26.8002 31.9004C25.3038 32.6257 23.6621 33.0018 21.9991 33.0001C20.3337 33.0019 18.6896 32.6248 17.1914 31.8974C15.6932 31.1701 14.38 30.1115 13.3513 28.8018C13.2396 28.6598 13.1569 28.4973 13.108 28.3234C13.0591 28.1495 13.0449 27.9677 13.0663 27.7884C13.0877 27.609 13.1442 27.4357 13.2325 27.2781C13.3209 27.1206 13.4394 26.982 13.5814 26.8703C13.7233 26.7586 13.8858 26.676 14.0597 26.6271C14.2336 26.5782 14.4154 26.564 14.5947 26.5854C14.7741 26.6067 14.9475 26.6632 15.105 26.7516C15.2625 26.84 15.4011 26.9585 15.5128 27.1004M16.4991 16.0418C16.8054 16.0331 17.1103 16.0859 17.3958 16.1972C17.6813 16.3084 17.9416 16.4757 18.1613 16.6893C18.381 16.9029 18.5556 17.1583 18.6749 17.4406C18.7941 17.7228 18.8556 18.0261 18.8556 18.3325C18.8556 18.6389 18.7941 18.9422 18.6749 19.2244C18.5556 19.5067 18.381 19.7621 18.1613 19.9757C17.9416 20.1893 17.6813 20.3566 17.3958 20.4679C17.1103 20.5791 16.8054 20.6319 16.4991 20.6233C15.9028 20.6064 15.3365 20.3576 14.9207 19.9299C14.5049 19.5021 14.2723 18.9291 14.2723 18.3325C14.2723 17.7359 14.5049 17.1629 14.9207 16.7351C15.3365 16.3074 15.9028 16.0586 16.4991 16.0418ZM27.4991 16.0418C27.8054 16.0331 28.1103 16.0859 28.3958 16.1972C28.6813 16.3084 28.9416 16.4757 29.1613 16.6893C29.381 16.9029 29.5556 17.1583 29.6749 17.4406C29.7941 17.7228 29.8556 18.0261 29.8556 18.3325C29.8556 18.6389 29.7941 18.9422 29.6749 19.2244C29.5556 19.5067 29.381 19.7621 29.1613 19.9757C28.9416 20.1893 28.6813 20.3566 28.3958 20.4679C28.1103 20.5791 27.8054 20.6319 27.4991 20.6233C26.9028 20.6064 26.3365 20.3576 25.9207 19.9299C25.5049 19.5021 25.2723 18.9291 25.2723 18.3325C25.2723 17.7359 25.5049 17.1629 25.9207 16.7351C26.3365 16.3074 26.9028 16.0586 27.4991 16.0418Z" fill="#F7631B"/>
+                        </svg>
+                        <span>5</span>/5
+                    </div>
+
+                </div>
+                
                 <p class='text p3 center'>Sie hören ein Gespräch. Zu diesem Gespräch gibt es zwei Aufgaben. Entscheiden Sie bei diesem Gespräch, ob die Aussage dazurichtig oder falsch ist und welche Antwort (a, b oder c) am besten passt.</p>
 
                 <h3>Mallorca</h3>
@@ -213,6 +223,7 @@
                     </div>
                 </div>
                 <audio src="../audio/BRdXYEtmgvCX.128.mp3" controls></audio>
+
             </div>
 
             <div class="box_border back__width">
@@ -221,25 +232,44 @@
 
                 <form method="post" action="#">
                     <div class="list__">
-                        <p class='label text p2_semibold'>Alex schlägt Serg vor, nach Mallorca zu fliegen.</p>
-                        <span class="input__box border__box orange">
-                            <input class='input_radio' type="radio" name="answer" value="richtig" aria-label="Richtig" checked><span>Richtig.</span> 
-                        </span>
+                        <p class='label text p2_semibold'> Alex schlägt Serg vor, nach Mallorca zu fliegen.</p>
+                        <div class="inputmodal inputmodal-1">
+                            <span class='close-inputmodal'>schließen
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24 24L16 16M16 16L8 8M16 16L24 8M16 16L8 24" stroke="#161616" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <div class="inputmodal__content">
+                                <p class='text p2'>Die Natur ist ein wunderbarer Ort, der uns Ruhe und Energie schenkt. Wenn wir durch die grünen Wälder wandern oder die majestätischen Berge betrachten, spüren wir eine tiefe Verbundenheit zur Erde. Jede Jahreszeit bringt ihre eigenen Farben und Düfte, die uns immer wieder in Erstaunen versetzen.<p>
+                                <p class='text p2'>Die frische Luft und die sanften Geräusche der Natur haben eine beruhigende Wirkung auf unseren Geist. Das Zwitschern der Vögel, das leise Plätschern eines Baches und das Rascheln der Blätter schaffen eine friedliche Atmosphäre. Diese Momente erinnern uns daran, wie kostbar und faszinierend die Welt um uns herum ist.</p>
+                                <p class='text p2'>Die frische Luft und die sanften Geräusche der Natur haben eine beruhigende Wirkung auf unseren Geist. Das Zwitschern der Vögel, das leise Plätschern eines Baches und das Rascheln der Blätter schaffen eine friedliche Atmosphäre. Diese Momente erinnern uns daran, wie kostbar und faszinierend die Welt um uns herum ist.</p>
+                                <p class='text p2'>Die frische Luft und die sanften Geräusche der Natur haben eine beruhigende Wirkung auf unseren Geist. Das Zwitschern der Vögel, das leise Plätschern eines Baches und das Rascheln der Blätter schaffen eine friedliche Atmosphäre. Diese Momente erinnern uns daran, wie kostbar und faszinierend die Welt um uns herum ist.</p>
+                            </div>
+                        </div>
                         <span class="input__box border__box">
-                            <input class='input_radio' type="radio" name="answer" value="falsch" aria-label="Falsch"><span>Falsch.</span> 
+                            <input id="richtig" class='input_radio' type="radio" name="answer" value="richtig" aria-label="richtig"><span>Richtig.</span>
+                        </span>
+                        <span class="input__box border__box green">
+                            <input id="falsch" class='input_radio' type="radio" name="answer" value="falsch" aria-label="Falsch"><span>Falsch.</span>
+                            <button class="primary-button" type="button" data-inputmodal='inputmodal-1'>
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.64648 7.07361C7.81728 6.54732 8.13015 6.07896 8.55078 5.71948C8.97141 5.36001 9.4838 5.12378 10.0303 5.03708C10.5768 4.95038 11.1362 5.0164 11.6475 5.22803C12.1587 5.43966 12.6014 5.78875 12.9268 6.23633C13.2521 6.68391 13.4469 7.21256 13.4904 7.76416C13.5339 8.31576 13.4238 8.86879 13.1727 9.36182C12.9215 9.85484 12.5394 10.2685 12.0676 10.5576C11.5958 10.8467 11.0533 10.9998 10.5 10.9998V12.0002M10.5 19C5.52944 19 1.5 14.9706 1.5 10C1.5 5.02944 5.52944 1 10.5 1C15.4706 1 19.5 5.02944 19.5 10C19.5 14.9706 15.4706 19 10.5 19ZM10.5498 15V15.1L10.4502 15.1002V15H10.5498Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                Erklärung
+                            </button>
                         </span>
                     </div>
                     <hr>
                     <div class="list__">
                         <p class='label text p2_semibold'> Wo möchte Alex am liebsten übernachten?</p>
-                        <span class="input__box border__box orange">
-                            <input class='input_radio' type="radio" name="liebsten" value="bei Verwandten" aria-label="bei Verwandten" checked><span>bei Verwandten.</span> 
+                        <span class="input__box border__box">
+                            <input id="verwandten" class='input_radio' type="radio" name="liebsten" value="bei Verwandten" aria-label="bei Verwandten"> <span>bei Verwandten.</span>
+                        </span>
+                        <span class="input__box border__box red">
+                            <input id="hotel" class='input_radio' type="radio" name="liebsten" value="im Hotel" aria-label="im Hotel"> <span>im Hotel.</span>
                         </span>
                         <span class="input__box border__box">
-                            <input class='input_radio' type="radio" name="liebsten" value="im Hotel" aria-label="im Hotel"><span>im Hotel.</span> 
-                        </span>
-                        <span class="input__box border__box">
-                            <input class='input_radio' type="radio" name="liebsten" value="im Zelt" aria-label="im Zelt"><span>im Zelt.</span> 
+                            <input id="zelt" class='input_radio' type="radio" name="liebsten" value="im Zelt" aria-label="im Zelt"> <span>im Zelt.</span>
                         </span>
                     </div>
 
@@ -249,7 +279,18 @@
                                 <path d="M1.5 8.00016L8.16667 14.6668M1.5 8.00016L8.16667 1.3335M1.5 8.00016H25.5" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg>Zurück</button>
 
-                        <button class="primary-button big" type="button">Prüfen</button>
+                        <button class="primary-button border black" type="button">
+                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.5002 4C19.331 4.00005 22.0705 5.0008 24.2348 6.8254C26.399 8.64999 27.8486 11.1809 28.3272 13.9709C28.8059 16.7609 28.2828 19.6303 26.8505 22.0719C25.4182 24.5135 23.1688 26.3702 20.4999 27.3137C17.8311 28.2573 14.9146 28.227 12.2659 27.2282C9.61723 26.2294 7.40692 24.3264 6.02563 21.8555C4.64434 19.3847 4.18101 16.505 4.71753 13.7256C5.25404 10.9462 6.75586 8.4459 8.95755 6.66667" stroke="#161616" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.5 6H9.83333V11.3333" stroke="#161616" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>Restart</button>
+
+                        <button class="primary-button border" type="button">Next
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28 15.9998L21.3333 9.33317M28 15.9998L21.3333 22.6665M28 15.9998H4" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        
                     </div>
                 </form>
 
@@ -315,11 +356,10 @@
                 </div>
             </div>
 
-
             <div class="google-review_block">
                 <div class="google-block_logo">
-                    <img src="/images/google-logo.svg" alt="google logo" width="184" height="60" class="google-logo_img">
-                    <img src="/images/google-logo-mobile.svg" alt="google logo" width="44" height="44" class="google-logo_img mobile">
+                    <img loading="lazy" src="/images/google-logo.svg" alt="google logo" width="184" height="60" class="google-logo_img">
+                    <img loading="lazy" src="/images/google-logo-mobile.svg" alt="google logo" width="44" height="44" class="google-logo_img mobile">
                 </div>
                 <div class="google-block_info">
                     <span>4.9</span>

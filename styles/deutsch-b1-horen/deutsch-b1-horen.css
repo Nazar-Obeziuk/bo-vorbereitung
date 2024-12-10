@@ -41,9 +41,7 @@
   color: var(--primary-orange);
 }
 
-
-
-.deutsch-b1-horen .box_border p {
+.box_border p {
   margin-bottom: 35px;
 }
 
@@ -133,8 +131,14 @@
     margin: 35px 0 35px -70px;
   }
 
-  .deutsch-b1-horen .box_border p {
+  .box_border p {
     margin-bottom: 28px;
+  }
+
+  .grup__button {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -168,11 +172,6 @@
 }
 
 @media (max-width: 575.98px) {
-  .grup__button {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
 
   .deutsch-b1-horen-button.primary-button.border.small {
     min-width: 100%;

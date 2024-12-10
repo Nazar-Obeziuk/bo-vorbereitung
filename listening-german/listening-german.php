@@ -865,8 +865,8 @@
 
             <div class="google-review_block">
                 <div class="google-block_logo">
-                    <img src="/images/google-logo.svg" alt="google logo" width="184" height="60" class="google-logo_img">
-                    <img src="/images/google-logo-mobile.svg" alt="google logo" width="44" height="44" class="google-logo_img mobile">
+                    <img loading="lazy" src="/images/google-logo.svg" alt="google logo" width="184" height="60" class="google-logo_img">
+                    <img loading="lazy" src="/images/google-logo-mobile.svg" alt="google logo" width="44" height="44" class="google-logo_img mobile">
                 </div>
                 <div class="google-block_info">
                     <span>4.9</span>

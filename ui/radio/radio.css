@@ -222,7 +222,7 @@ input[type="radio"]:checked::before {
   counter-increment: labelCounter;
 }
 
-.list__ label {
+.list__ .label {
   font: 600 24px/1.3em "Inter", sans-serif !important;
   margin-bottom: 24px;
   position: relative;
@@ -230,7 +230,7 @@ input[type="radio"]:checked::before {
   width: 100%;
 }
 
-.list__ label::before {
+.list__ .label::before {
   content: counter(labelCounter) ". ";
   font-weight: bold;
   margin-left: -30px;
@@ -246,7 +246,7 @@ input[type="radio"]:checked::before {
     padding: 20px 30px;
   }
 
-  .list__ label::before {
+  .list__ .label::before {
     content: counter(labelCounter) ". ";
     font-weight: bold;
     margin-left: 0px;
@@ -283,7 +283,7 @@ input[type="radio"]:checked::before {
     height: auto;
   }
 
-  .list__ label::before {
+  .list__ .label::before {
     content: counter(labelCounter) ". ";
     font-weight: bold;
     margin-left: 0;
@@ -293,7 +293,7 @@ input[type="radio"]:checked::before {
     margin-right: 5px;
   }
 
-  .list__ label {
+  .list__ .label {
     font: 600 16px/1.3em "Inter", sans-serif !important;
     margin-bottom: 16px;
   }
