@@ -222,6 +222,7 @@ input[type="radio"]:checked::before {
   counter-increment: labelCounter;
 }
 
+
 .list__ .label {
   font: 600 24px/1.3em "Inter", sans-serif !important;
   margin-bottom: 24px;
@@ -322,7 +323,7 @@ input[type="radio"]:checked::before {
     font-size: 12px;
   }
 
-  .input__box.border__box > *:nth-child(2) {
+  .input__box.border__box > span {
     width: calc(100% - 70px);
   }
   .input__box.border__box {

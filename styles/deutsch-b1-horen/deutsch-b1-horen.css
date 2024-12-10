@@ -140,6 +140,12 @@
     justify-content: center;
     align-items: center;
   }
+
+  .deutsch-b1-horen .box_border .grup__button button {
+    max-width: 100%;
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 767.98px) {
