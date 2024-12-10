@@ -111,7 +111,7 @@ input[type="radio"]:checked::before {
   content: url('data:image/svg+xml;utf8,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.33203 15.9993L11.9317 22.599L26.075 8.45703" stroke="%230EBE75" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>');
   display: inline-block;
   vertical-align: middle;
-  margin-left: 20px; /* Adjust as needed */
+  margin-left: 20px;
 }
 
 .input__box.border__box.red {
@@ -151,7 +151,7 @@ input[type="radio"]:checked::before {
   content: url('data:image/svg+xml;utf8,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 24L16 16M16 16L8 8M16 16L24 8M16 16L8 24" stroke="%23BE0E0E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>');
   display: inline-block;
   vertical-align: middle;
-  margin-left: auto; /* Adjust as needed */
+  margin-left: auto;
 }
 
 .inputmodal {
@@ -303,10 +303,6 @@ input[type="radio"]:checked::before {
     padding: 7px 18px;
     font-size: 12px;
   }
-
-  /* .input__box.border__box > *:nth-child(2) {
-    width: calc(100% - 70px);
-  } */
   .input__box.border__box {
     position: relative;
   }
