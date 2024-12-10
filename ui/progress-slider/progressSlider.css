@@ -26,6 +26,10 @@
     position: relative;
 }
 
+.progress-slider-wrapper label{
+    display: none;
+}
+
 .progress-slider {
     -webkit-appearance: none;
     appearance: none;

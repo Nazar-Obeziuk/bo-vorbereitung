@@ -138,16 +138,16 @@
                 </div>
             </div>
 
-
             <div class="progress-container">
                 <div class="progress-info">
                     <span class="start-label text p4">Dein Fortschritt</span>
-                    <span class="end-label text p4">
-                        Erfolgsquote 70 %
-                        <div class="like-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <span class="end-label text p4">Erfolgsquote 70 %
+                        <div class="like-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15 9.99905L14.26 9.87605C14.2421 9.98348 14.2479 10.0935 14.2769 10.1985C14.3058 10.3035 14.3573 10.4009 14.4277 10.484C14.4982 10.5671 14.5858 10.6338 14.6847 10.6796C14.7835 10.7254 14.8911 10.7491 15 10.749V9.99905ZM4 9.99905V9.24905C3.80109 9.24905 3.61032 9.32806 3.46967 9.46872C3.32902 9.60937 3.25 9.80013 3.25 9.99905H4ZM6 20.749H17.36V19.249H6V20.749ZM18.56 9.24905H15V10.749H18.56V9.24905ZM15.74 10.122L16.546 5.28705L15.066 5.04005L14.26 9.87605L15.74 10.122ZM14.82 3.24905H14.606V4.74905H14.819L14.82 3.24905ZM11.485 4.91905L8.97 8.69205L10.218 9.52405L12.733 5.75105L11.485 4.91905ZM7.93 9.24905H4V10.749H7.93V9.24905ZM3.25 9.99905V17.999H4.75V9.99905H3.25ZM20.057 18.539L21.257 12.539L19.787 12.244L18.587 18.244L20.057 18.539ZM8.97 8.69205C8.8559 8.86333 8.70127 9.00279 8.51985 9.09996C8.33842 9.19713 8.13581 9.24799 7.93 9.24805V10.748C8.85 10.748 9.708 10.289 10.218 9.52405L8.97 8.69205ZM16.546 5.28705C16.5877 5.03642 16.5743 4.77872 16.5067 4.53379C16.4392 4.28886 16.3191 4.06158 16.1549 3.86774C15.9906 3.67389 15.7861 3.51814 15.5556 3.4113C15.3251 3.30446 15.0741 3.24909 14.82 3.24905L14.819 4.74905C14.8552 4.74914 14.892 4.75711 14.9249 4.77241C14.9578 4.7877 14.9869 4.80997 15.0103 4.83765C15.0337 4.86533 15.0508 4.89777 15.0604 4.93272C15.07 4.96767 15.0719 5.00429 15.066 5.04005L16.546 5.28705ZM18.56 10.748C19.35 10.748 19.94 11.47 19.786 12.243L21.257 12.538C21.3366 12.1391 21.3267 11.7265 21.228 11.3319C21.1293 10.9373 20.9443 10.5695 20.6864 10.255C20.4284 9.9405 20.1039 9.68715 19.7362 9.5132C19.3685 9.33924 18.9668 9.24903 18.56 9.24905V10.748ZM17.36 20.749C17.9957 20.7492 18.6118 20.528 19.1035 20.1251C19.5952 19.7222 19.9322 19.1614 20.057 18.538L18.587 18.243C18.5303 18.5266 18.377 18.7818 18.1533 18.9651C17.9296 19.1483 17.6492 19.2493 17.36 19.249V20.749ZM14.606 3.24905C13.9887 3.24909 13.3809 3.40054 12.8366 3.69187C12.2923 3.98319 11.8284 4.40438 11.486 4.91805L12.733 5.75105C12.9385 5.44271 13.2171 5.18891 13.5438 5.0141C13.8706 4.8393 14.2354 4.74891 14.606 4.74905V3.24905ZM6 19.249C5.31 19.249 4.75 18.689 4.75 17.999H3.25C3.25 18.7284 3.53973 19.4279 4.05546 19.9436C4.57118 20.4593 5.27065 20.749 6 20.749V19.249Z" fill="#F7631B"></path>
                                 <path d="M8 10V20" stroke="#F7631B" stroke-width="1.5"></path>
-                            </svg></div>
+                            </svg>
+                        </div>
                     </span>
                 </div>
                 <div class="progress-slider-wrapper">
@@ -158,8 +158,7 @@
                 </div>
             </div>
 
-            <span class="dot text p3">40% (234 von 587 Personen konnten beim ersten Mal richtig antworten)
-            </span>
+            <span class="dot text p3">40% (234 von 587 Personen konnten beim ersten Mal richtig antworten)</span>
 
             <div class="box_border">
                 <h2><span>Text</span> für die Aufgaben</h2>
@@ -215,7 +214,6 @@
                     </div>
                 </div>
                 <audio src="../audio/BRdXYEtmgvCX.128.mp3" controls></audio>
-
             </div>
 
             <div class="box_border back__width">
@@ -224,30 +222,25 @@
 
                 <form method="post" action="#">
                     <div class="list__">
-                        <label class='text p2_semibold'> Alex schlägt Serg vor, nach Mallorca zu fliegen.</label>
+                        <p class='label text p2_semibold'>Alex schlägt Serg vor, nach Mallorca zu fliegen.</p>
                         <span class="input__box border__box orange">
-                            <label for="radio"></label>
-                            <input class='input_radio' type="radio" name="answer" value="richtig" checked> Richtig.
+                            <input class='input_radio' type="radio" name="answer" value="richtig" aria-label="Richtig" checked><span>Richtig.</span>
                         </span>
                         <span class="input__box border__box">
-                            <label for="radio"></label>
-                            <input class='input_radio' type="radio" name="answer" value="falsch"> Falsch.
+                            <input class='input_radio' type="radio" name="answer" value="falsch" aria-label="Falsch"><span>Falsch.</span>
                         </span>
                     </div>
                     <hr>
                     <div class="list__">
-                        <label class='text p2_semibold'> Wo möchte Alex am liebsten übernachten?</label>
+                        <p class='label text p2_semibold'> Wo möchte Alex am liebsten übernachten?</p>
                         <span class="input__box border__box orange">
-                            <label for="radio"></label>
-                            <input class='input_radio' type="radio" name="liebsten" value="bei Verwandten" checked> bei Verwandten.
+                            <input class='input_radio' type="radio" name="liebsten" value="bei Verwandten" aria-label="bei Verwandten" checked><span>bei Verwandten.</span>
                         </span>
                         <span class="input__box border__box">
-                            <label for="radio"></label>
-                            <input class='input_radio' type="radio" name="liebsten" value="im Hotel"> im Hotel.
+                            <input class='input_radio' type="radio" name="liebsten" value="im Hotel" aria-label="im Hotel"><span>im Hotel.</span>
                         </span>
                         <span class="input__box border__box">
-                            <label for="radio"></label>
-                            <input class='input_radio' type="radio" name="liebsten" value="im Zelt"> im Zelt.
+                            <input class='input_radio' type="radio" name="liebsten" value="im Zelt" aria-label="im Zelt"><span>im Zelt.</span>
                         </span>
                     </div>
 
@@ -255,11 +248,15 @@
                         <button class="primary-button border" type="button">
                             <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.5 8.00016L8.16667 14.6668M1.5 8.00016L8.16667 1.3335M1.5 8.00016H25.5" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                            Zurück
-                        </button>
+                            </svg>Zurück</button>
 
                         <button class="primary-button big" type="button">Prüfen</button>
+
+                        <button class="primary-button border" type="button">Next
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28 15.9998L21.3333 9.33317M28 15.9998L21.3333 22.6665M28 15.9998H4" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
                     </div>
                 </form>
 

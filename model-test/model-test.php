@@ -138,7 +138,6 @@
                 </div>
             </div>
 
-
             <div class="progress-container">
                 <div class="progress-info">
                     <span class="start-label text p4">Dein Fortschritt</span>
@@ -151,8 +150,7 @@
                     </span>
                 </div>
                 <div class="progress-slider-wrapper">
-                    <label for="progress-slider"></label>
-                    <input type="range" min="0" max="100" name="progress-slider" value="0" class="progress-slider" id="progress-slider" step="1">
+                    <input type="range" min="0" max="100" value="0" class="progress-slider" id="progress-slider" step="1" aria-label="Progress slider">
                     <div class="progress-selector-value" id="progress-selector-value" style="left: 44%">44%</div>
                     <div class="progress-bar" id="progress-bar" style="width: 46%"></div>
                 </div>
@@ -224,21 +222,20 @@
                         </div>
                         <audio src="../audio/BRdXYEtmgvCX.128.mp3" controls></audio>
                         <div class="list__">
-                            <label for="answer-1" class='text p2_semibold'>Was wird während dieser Zeit vorübergehend unterbrochen sein? </label>
+                            <p for="answer-1" class='label text p2_semibold'>Was wird während dieser Zeit vorübergehend unterbrochen sein? </p>
                             <div class="model-list_radio">
                                 <span class="input__box border__box orange">
-                                    <input class='input_radio' type="radio" name="answer-1" value="a" checked> <label for="answer-1">a) Die Verfügbarkeit von dringenden Bestellungen.</label>
+                                    <input class='input_radio' type="radio" name="answer-1" value="a" aria-label="a) Die" checked> <span>a) Die Verfügbarkeit von dringenden Bestellungen.</span>
                                 </span>
                                 <span class="input__box border__box">
-                                    <input class='input_radio' type="radio" name="answer-1" value="b"> <label for="answer-1">b) Die Lieferung von bereits getätigten Bestellungen.</label>
+                                    <input class='input_radio' type="radio" name="answer-1" value="b" aria-label="b) Die"> <span>b) Die Lieferung von bereits getätigten Bestellungen.</span>
                                 </span>
                                 <span class="input__box border__box">
-                                    <input class='input_radio' type="radio" name="answer-1" value="c"> <label for="answer-1">c) Online-Bestellungen könnten unterbrochen sein.</label>
+                                    <input class='input_radio' type="radio" name="answer-1" value="c" aria-label="c) Online-Bestellungen"> <span>c) Online-Bestellungen könnten unterbrochen sein.</span>
                                 </span>
                             </div>
                         </div>
                         <div class="model-test_line"></div>
-
                         <div class="audio-player">
                             <span class="play-btn">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -289,16 +286,16 @@
                         </div>
                         <audio src="../audio/BRdXYEtmgvCX.128.mp3" controls></audio>
                         <div class="list__">
-                            <label for="answer-2" class='text p2_semibold'>Was können die Zuschauer heute erwarten?</label>
+                            <p for="answer-2" class='label text p2_semibold'>Was können die Zuschauer heute erwarten?</p>
                             <div class="model-list_radio">
                                 <span class="input__box border__box orange">
-                                    <input class='input_radio' type="radio" name="answer-2" value="a" checked> <label for="answer-2">a) Regen.</label>
+                                    <input class='input_radio' type="radio" name="answer-2" value="a" aria-label="a) Regen" checked> <span>a) Regen.</span>
                                 </span>
                                 <span class="input__box border__box">
-                                    <input class='input_radio' type="radio" name="answer-2" value="b"> <label for="answer-2">b) Sonniges Wetter mit wenig Wind.</label>
+                                    <input class='input_radio' type="radio" name="answer-2" value="b" aria-label="b) Sonniges"> <span>b) Sonniges Wetter mit wenig Wind.</span>
                                 </span>
                                 <span class="input__box border__box">
-                                    <input class='input_radio' type="radio" name="answer-2" value="c"> <label for="answer-2">c) Sonniges Wetter mit Wind.</label>
+                                    <input class='input_radio' type="radio" name="answer-2" value="c" aria-label="c) Sonniges"> <span>c) Sonniges Wetter mit Wind.</span>
                                 </span>
                             </div>
                         </div>
@@ -359,11 +356,10 @@
                 </div>
             </div>
 
-
             <div class="google-review_block">
                 <div class="google-block_logo">
-                    <img src="/images/google-logo.svg" alt="google logo" width="184" height="60" class="google-logo_img">
-                    <img src="/images/google-logo-mobile.svg" alt="google logo" width="44" height="44" class="google-logo_img mobile">
+                    <img loading="lazy" src="/images/google-logo.svg" alt="google logo" width="184" height="60" class="google-logo_img">
+                    <img loading="lazy" src="/images/google-logo-mobile.svg" alt="google logo" width="44" height="44" class="google-logo_img mobile">
                 </div>
                 <div class="google-block_info">
                     <span>4.9</span>

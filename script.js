@@ -484,9 +484,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const speedButton = player.querySelector(".speed-options-btn");
     const speedOptions = player.querySelector(".speed-options");
     const progressBar = player.querySelector(".progress-bar_a");
-    const progressBarContainer = player.querySelector(
-      ".progress-bar-container_a"
-    );
+    const progressBarContainer = player.querySelector(".progress-bar-container_a");
     const currentTimeEl = player.querySelector(".current-time");
     const durationEl = player.querySelector(".duration");
 
@@ -696,10 +694,3 @@ if (primaryButton) {
     }
   });
 }
-
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    buttons.forEach((btn) => btn.classList.remove("active"));
-    button.classList.add("active");
-  });
-});

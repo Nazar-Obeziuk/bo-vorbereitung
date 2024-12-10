@@ -47,6 +47,21 @@
             Andere Übungen
         </button>
         <br>
+        <button class="primary-button border" type="button">
+            Andere Übungen
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28 15.9998L21.3333 9.33317M28 15.9998L21.3333 22.6665M28 15.9998H4" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <br>
+        <button class="primary-button border" type="button">
+            <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.5002 4C19.331 4.00005 22.0705 5.0008 24.2348 6.8254C26.399 8.64999 27.8486 11.1809 28.3272 13.9709C28.8059 16.7609 28.2828 19.6303 26.8505 22.0719C25.4182 24.5135 23.1688 26.3702 20.4999 27.3137C17.8311 28.2573 14.9146 28.227 12.2659 27.2282C9.61723 26.2294 7.40692 24.3264 6.02563 21.8555C4.64434 19.3847 4.18101 16.505 4.71753 13.7256C5.25404 10.9462 6.75586 8.4459 8.95755 6.66667" stroke="#161616" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.5 6H9.83333V11.3333" stroke="#161616" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Restart
+        </button>
+        <br>
         <button class="primary-button border small" type="button">
             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.5 21C19.5 17.134 16.366 14 12.5 14C8.63401 14 5.5 17.134 5.5 21M12.5 11C10.2909 11 8.5 9.20914 8.5 7C8.5 4.79086 10.2909 3 12.5 3C14.7091 3 16.5 4.79086 16.5 7C16.5 9.20914 14.7091 11 12.5 11Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -270,7 +285,7 @@
         </span>
         <br>
         <div class="list__">
-            <label class="text p2_semibold"> Was können die Zuschauer heute erwarten?</label>
+            <p class="label text p2_semibold"> Was können die Zuschauer heute erwarten?</p>
             <div class="inputmodal inputmodal-1">
                 <span class='close-inputmodal'>schließen
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -310,21 +325,18 @@
                 });
             </script>
 
-
             <span class="input__box border__box red">
-                <input class="input_radio" type="radio" name="radio2" value="bei Verwandten"> <span>a) Regen.</span>
+                <input class="input_radio" type="radio" name="radio2" value="bei Verwandten" aria-label="a) Regen"> <span>a) Regen.</span>
             </span>
             <span class="input__box border__box green">
-                <input class="input_radio" type="radio" name="radio2" value="im Hotel"> <span>b) Sonniges Wetter mit wenig Wind.</span>
+                <input class="input_radio" type="radio" name="radio2" value="im Hotel" aria-label="b) Sonniges"> <span>b) Sonniges Wetter mit wenig Wind.</span>
                 <button class="primary-button" type="button" data-inputmodal='inputmodal-1'>
                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.64648 7.07361C7.81728 6.54732 8.13015 6.07896 8.55078 5.71948C8.97141 5.36001 9.4838 5.12378 10.0303 5.03708C10.5768 4.95038 11.1362 5.0164 11.6475 5.22803C12.1587 5.43966 12.6014 5.78875 12.9268 6.23633C13.2521 6.68391 13.4469 7.21256 13.4904 7.76416C13.5339 8.31576 13.4238 8.86879 13.1727 9.36182C12.9215 9.85484 12.5394 10.2685 12.0676 10.5576C11.5958 10.8467 11.0533 10.9998 10.5 10.9998V12.0002M10.5 19C5.52944 19 1.5 14.9706 1.5 10C1.5 5.02944 5.52944 1 10.5 1C15.4706 1 19.5 5.02944 19.5 10C19.5 14.9706 15.4706 19 10.5 19ZM10.5498 15V15.1L10.4502 15.1002V15H10.5498Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                    Erklärung
-                </button>
+                    </svg>Erklärung</button>
             </span>
             <span class="input__box border__box">
-                <input class="input_radio" type="radio" name="radio2" value="im Zelt"> <span>c) Sonniges Wetter mit Wind.</span>
+                <input class="input_radio" type="radio" name="radio2" value="im Zelt" aria-label="c) Sonniges"> <span>c) Sonniges Wetter mit Wind.</span>
             </span>
         </div>
         <script type="text/javascript">
@@ -434,6 +446,8 @@
             </div>
         </div>
 
+        <br>
+        <br>
         <br>
 
     </div>
