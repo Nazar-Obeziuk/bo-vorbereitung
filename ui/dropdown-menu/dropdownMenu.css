@@ -37,7 +37,8 @@
 }
 
 .dropdown-menu-item:hover,
-.dropdown-menu-item.selected {
+.dropdown-menu-item.selected,
+.dropdown-menu-item .dropdown-menu-item-link.active {
     background-color: var(--light-gray);
 }
 
@@ -54,7 +55,8 @@
 }
 
 .dropdown-menu-item:hover .check-icon,
-.dropdown-menu-item.selected .check-icon {
+.dropdown-menu-item.selected .check-icon,
+.dropdown-menu-item .dropdown-menu-item-link.active .check-icon{
     opacity: 1;
 }
 

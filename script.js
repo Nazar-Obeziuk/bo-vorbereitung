@@ -1,4 +1,3 @@
-
 // Для акордеонів
 const accordionHeaders = document.querySelectorAll('.accordion-header');
 if (accordionHeaders.length > 0) {
@@ -680,21 +679,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const listeningExercises = document.querySelector(".listening-exercises");
 const listeningList = document.querySelector(".listening-list");
-const primaryButton = listeningExercises.querySelector(".primary-button");
+const primaryButton = listeningExercises ? listeningExercises.querySelector(".primary-button") : null;
 const buttons = document.querySelectorAll(
   ".listening-exercises__buttons button"
 );
 
-primaryButton.addEventListener("click", () => {
-  const isFull = listeningExercises.classList.contains("full");
+if (primaryButton) {
+  primaryButton.addEventListener("click", () => {
+    const isFull = listeningExercises.classList.contains("full");
 
-  if (isFull) {
-    listeningExercises.classList.remove("full");
-  } else {
-    listeningList.scrollTo(0, 0);
-    listeningExercises.classList.add("full");
-  }
-});
+    if (isFull) {
+      listeningExercises.classList.remove("full");
+    } else {
+      listeningList.scrollTo(0, 0);
+      listeningExercises.classList.add("full");
+    }
+  });
+}
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {

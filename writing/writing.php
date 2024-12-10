@@ -95,7 +95,7 @@
                     </a>
                 </div>
                 <div class="dropdown-menu-item" id="dropdown-menu-item-3">
-                    <a class="dropdown-menu-item-link" href="#">
+                    <a class="dropdown-menu-item-link active" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 100 100" fill="none">
                             <path d="M20 79.2812H80M20 79.2812V64.2812L50 34.2812M20 79.2812L35 79.2811L65 49.2811M50 34.2812L60.7574 23.5237L60.7638 23.5174C62.2446 22.0366 62.9864 21.2948 63.8414 21.017C64.5945 20.7723 65.4059 20.7723 66.1591 21.017C67.0135 21.2946 67.7543 22.0355 69.233 23.5142L75.7573 30.0385C77.2423 31.5235 77.9852 32.2664 78.2634 33.1226C78.5081 33.8758 78.5081 34.6871 78.2633 35.4403C77.9853 36.2959 77.2436 37.0376 75.7606 38.5206L75.7574 38.5237L65 49.2811M50 34.2812L65 49.2811" stroke="#F7631B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
@@ -173,7 +173,7 @@
 
                         <div class="dropdown-menu schprechen-navigation">
                             <div class="dropdown-menu-item" id="dropdown-menu-item-1">
-                                <a class="dropdown-menu-item-link" href="#">
+                                <a class="dropdown-menu-item-link active" href="#">
                                     <p class="text p3">Uber mich</p>
                                     <div class="check-icon"><?php echo $check_smoll; ?></div>
                                 </a>

@@ -324,11 +324,17 @@
 
 .lang .lang-menu {
   position: absolute;
+  width: 350px;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
   display: none;
   padding-top: 20px;
+}
+
+.lang .lang-menu .flag-icon {
+  display: flex;
+  align-items: center;
 }
 
 .lang:hover .lang-menu {
@@ -390,8 +396,6 @@
     gap: 30px;
   }
 
-
-
   .alphabet br {
     display: none;
   }
@@ -431,12 +435,17 @@
   .tabs {
     width: 100%;
     text-wrap: nowrap;
-    justify-content: flex-start;
-    overflow-x: scroll;
   }
 
   .tabs::-webkit-scrollbar {
     display: none;
+  }
+
+  .lang .lang-menu {
+    width: 300px;
+    left: auto;
+    right: 0;
+    transform: translateX(0%);
   }
 
 }

@@ -126,7 +126,7 @@
                     </a>
                 </div>
                 <div class="dropdown-menu-item" id="dropdown-menu-item-6">
-                    <a class="dropdown-menu-item-link" href="#">
+                    <a class="dropdown-menu-item-link active" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 100 100" fill="none">
                             <path d="M18.3335 46.0783V27.6959C18.3335 26.2475 18.6188 24.8133 19.1731 23.4751C19.7273 22.137 20.5398 20.9211 21.5639 19.8969C22.5881 18.8728 23.804 18.0603 25.1421 17.5061C26.4803 16.9518 27.9145 16.6665 29.3629 16.6665C30.8113 16.6665 32.2455 16.9518 33.5837 17.5061C34.9218 18.0603 36.1377 18.8728 37.1619 19.8969C38.1861 20.9211 38.9985 22.137 39.5528 23.4751C40.107 24.8133 40.3923 26.2475 40.3923 27.6959V46.0783M18.3335 35.0489H40.3923M77.157 24.0194V46.0783M18.3335 60.7842H62.4511M18.3335 75.49H40.3923M55.0982 75.49L62.4511 82.843L80.8335 64.4606M55.0982 35.0489C55.0982 37.974 56.2602 40.7794 58.3286 42.8478C60.3971 44.9162 63.2024 46.0783 66.1276 46.0783C69.0528 46.0783 71.8582 44.9162 73.9266 42.8478C75.995 40.7794 77.157 37.974 77.157 35.0489C77.157 32.1237 75.995 29.3183 73.9266 27.2499C71.8582 25.1815 69.0528 24.0194 66.1276 24.0194C63.2024 24.0194 60.3971 25.1815 58.3286 27.2499C56.2602 29.3183 55.0982 32.1237 55.0982 35.0489Z" stroke="#F7631B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
@@ -174,7 +174,7 @@
 
                         <div class="dropdown-menu schprechen-navigation">
                             <div class="dropdown-menu-item" id="dropdown-menu-item-1">
-                                <a class="dropdown-menu-item-link" href="#">
+                                <a class="dropdown-menu-item-link active" href="#">
                                     <p class="text p3">LWS</p>
                                     <div class="check-icon"><?php echo $check_smoll; ?></div>
                                 </a>
@@ -198,7 +198,7 @@
                             <div class="tab active" data-tab="alphabet">Alphabet</div>
                             <div class="tab" data-tab="thema">Thema</div>
                             <div class="lang">
-                                Translation: English
+                                 English
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
                                     <path d="M14 2L8 8L2 2" stroke="#444444" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
