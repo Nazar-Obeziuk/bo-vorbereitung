@@ -260,19 +260,10 @@
                                     </div>
 
                                     <span class="input__box border__box red">
-                                        <<<<<<< HEAD
-                                            <label for="radio"></label>
-                                            <input class='input_radio' type="radio" name="radio2" value="bei Verwandten"> <span>auf</span>
-                                    </span>
-                                    <span class="input__box border__box green">
-                                        <label for="radio"></label>
-                                        <input class='input_radio' type="radio" name="radio2" value="im Hotel"> <span>zu</span>
-                                        =======
                                         <input class='input_radio' type="radio" name="radio2" value="bei Verwandten" aria-label="auf"> <span>auf</span>
                                     </span>
                                     <span class="input__box border__box green">
                                         <input class='input_radio' type="radio" name="radio2" value="im Hotel" aria-label="zu"> <span>zu</span>
-                                        >>>>>>> 6a3976fef6125c476798c545fa486e8e09bdc6f8
                                         <button class="primary-button" type="button" data-inputmodal='inputmodal-2'>
                                             <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M7.64648 7.07361C7.81728 6.54732 8.13015 6.07896 8.55078 5.71948C8.97141 5.36001 9.4838 5.12378 10.0303 5.03708C10.5768 4.95038 11.1362 5.0164 11.6475 5.22803C12.1587 5.43966 12.6014 5.78875 12.9268 6.23633C13.2521 6.68391 13.4469 7.21256 13.4904 7.76416C13.5339 8.31576 13.4238 8.86879 13.1727 9.36182C12.9215 9.85484 12.5394 10.2685 12.0676 10.5576C11.5958 10.8467 11.0533 10.9998 10.5 10.9998V12.0002M10.5 19C5.52944 19 1.5 14.9706 1.5 10C1.5 5.02944 5.52944 1 10.5 1C15.4706 1 19.5 5.02944 19.5 10C19.5 14.9706 15.4706 19 10.5 19ZM10.5498 15V15.1L10.4502 15.1002V15H10.5498Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
