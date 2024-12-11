@@ -130,10 +130,6 @@
   width: 100%;
 }
 
-.listening-exercises__buttons button {
-  padding: 10px 26px !important;
-}
-
 .listening-exercises .listening-exercises__row {
   position: relative;
   display: flex;
@@ -284,6 +280,9 @@
   .listening-exercises .listening-exercises__row {
     padding-top: 0;
   }
+  /* .listening-exercises .listening-exercises__row::before {
+    width: 100%;
+  } */
 }
 
 @media (max-width: 575.98px) {

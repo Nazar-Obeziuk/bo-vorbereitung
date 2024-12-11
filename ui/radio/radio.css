@@ -111,7 +111,7 @@ input[type="radio"]:checked::before {
   content: url('data:image/svg+xml;utf8,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.33203 15.9993L11.9317 22.599L26.075 8.45703" stroke="%230EBE75" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>');
   display: inline-block;
   vertical-align: middle;
-  margin-left: 20px;
+  margin-left: 20px; /* Adjust as needed */
 }
 
 .input__box.border__box.red {
@@ -151,7 +151,7 @@ input[type="radio"]:checked::before {
   content: url('data:image/svg+xml;utf8,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 24L16 16M16 16L8 8M16 16L24 8M16 16L8 24" stroke="%23BE0E0E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>');
   display: inline-block;
   vertical-align: middle;
-  margin-left: auto;
+  margin-left: auto; /* Adjust as needed */
 }
 
 .inputmodal {
@@ -222,6 +222,7 @@ input[type="radio"]:checked::before {
   counter-increment: labelCounter;
 }
 
+
 .list__ .label {
   font: 600 24px/1.3em "Inter", sans-serif !important;
   margin-bottom: 24px;
@@ -259,6 +260,19 @@ input[type="radio"]:checked::before {
   .inputmodal {
     padding: 30px 25px;
     gap: 25px 0;
+    /* max-height: 472px; */
+    /* width: calc(100% - 32px); */
+  }
+
+  .box_border .inputmodal {
+    /* margin: 0 0 0 -82px; */
+    /* width: 100%; */
+  }
+}
+
+@media (max-width: 991.98px) {
+  .box_border .inputmodal {
+    /* margin: 0 0 0 -70px; */
   }
 }
 
@@ -284,11 +298,16 @@ input[type="radio"]:checked::before {
     font: 600 16px/1.3em "Inter", sans-serif !important;
     margin-bottom: 16px;
   }
+
+  .box_border .inputmodal {
+    /* margin: 0; */
+  }
 }
 
 @media (max-width: 575.98px) {
   .input__box.border__box {
     padding: 15px 14px !important;
+    /* height: auto !important; */
     margin-bottom: 12px;
     flex-wrap: wrap;
     gap: 14px 0;
@@ -303,6 +322,10 @@ input[type="radio"]:checked::before {
     padding: 7px 18px;
     font-size: 12px;
   }
+
+  .input__box.border__box > span {
+    width: calc(100% - 70px);
+  }
   .input__box.border__box {
     position: relative;
   }
@@ -311,7 +334,7 @@ input[type="radio"]:checked::before {
     content: url('data:image/svg+xml;utf8,<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 24L16 16M16 16L8 8M16 16L24 8M16 16L8 24" stroke="%23BE0E0E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>');
     display: inline-block;
     vertical-align: middle;
-    margin-left: 0;
+    margin-left: 0; /* Adjust as needed */
     top: 12px;
     right: 15px;
     position: absolute;
@@ -321,7 +344,7 @@ input[type="radio"]:checked::before {
     content: url('data:image/svg+xml;utf8,<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.33203 15.9993L11.9317 22.599L26.075 8.45703" stroke="%230EBE75" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>');
     display: inline-block;
     vertical-align: middle;
-    margin-left: 0px;
+    margin-left: 0px; /* Adjust as needed */
     top: 15px;
     right: 15px;
     position: absolute;
