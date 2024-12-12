@@ -88,14 +88,15 @@
   text-align: center;
 }
 
-.back__width {
+.back__width{
   background: var(--white);
 }
 
-.deutsch-b1-horen .max-width {
+.deutsch-b1-horen .max-width{
   max-width: 1044px;
   width: 100%;
 }
+
 
 @media (max-width: 1199.98px) {
   .deutsch-b1-horen .box_border {
@@ -112,7 +113,7 @@
   }
 
   .deutsch-b1-horen .center {
-    text-align: left;
+      text-align: left;
   }
 }
 
@@ -135,7 +136,7 @@
   }
 
   .grup__button {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
@@ -144,6 +145,7 @@
     max-width: 100%;
     width: 100%;
   }
+
 }
 
 @media (max-width: 767.98px) {
@@ -176,6 +178,7 @@
 }
 
 @media (max-width: 575.98px) {
+
   .deutsch-b1-horen-button.primary-button.border.small {
     min-width: 100%;
     width: fit-content;

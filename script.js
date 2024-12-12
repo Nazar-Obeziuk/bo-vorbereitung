@@ -694,3 +694,112 @@ if (primaryButton) {
     }
   });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('[name=send]').forEach(function (btn) {
+      btn.addEventListener('click', function (event) {
+          event.preventDefault();
+
+          // Remove existing errors and alerts
+          document.querySelectorAll('input.error, textarea.error').forEach(function (input) {
+              input.classList.remove('error');
+          });
+          document.querySelectorAll('.allert').forEach(function (alert) {
+              alert.remove();
+          });
+
+          let error = false;
+          const form = btn.closest('form');
+          const requiredFields = form.querySelectorAll('[required]');
+
+          // Validate required fields
+          requiredFields.forEach(function (field) {
+              if (!field.value.trim()) {
+                  field.classList.add('error');
+                  const errorDiv = document.createElement('div');
+                  errorDiv.className = 'allert';
+                  errorDiv.innerHTML = '<span>Fill this field</span>';
+                  field.parentNode.appendChild(errorDiv);
+                  error = true;
+                  if (!document.querySelector('input.error:focus, textarea.error:focus')) {
+                      field.focus();
+                  }
+              } else if (field.type === 'email') {
+                  const emailPattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{1,20}\.)?[a-z]{1,20}$/i;
+                  if (!emailPattern.test(field.value)) {
+                      field.value = '';
+                      field.classList.add('error', 'error_email');
+                      const errorDiv = document.createElement('div');
+                      errorDiv.className = 'allert';
+                      errorDiv.innerHTML = '<span>Need sign "@"</span>';
+                      field.parentNode.appendChild(errorDiv);
+                      error = true;
+                      if (!document.querySelector('input.error:focus, textarea.error:focus')) {
+                          field.focus();
+                      }
+                  }
+                  
+                } else if (field.type === 'password') {
+                  const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+                  if (!passwordPattern.test(field.value)) {
+                      field.value = '';
+                      field.classList.add('error', 'error_password');
+                      const errorDiv = document.createElement('div');
+                      errorDiv.className = 'allert';
+                      errorDiv.innerHTML = '<span>Invalid password</span>';
+                      field.parentNode.appendChild(errorDiv);
+                      error = true;
+                      if (!document.querySelector('input.error:focus, textarea.error:focus')) {
+                          field.focus();
+                      }
+                  }
+                  
+              } else if (field.type === 'tel') {
+                  const phonePattern = /^[+0-9]{7,30}$/i;
+                  if (!phonePattern.test(field.value)) {
+                      field.value = '';
+                      field.classList.add('error', 'error_tel');
+                      const errorDiv = document.createElement('div');
+                      errorDiv.className = 'allert';
+                      errorDiv.innerHTML = '<span>Invalid phone number</span>';
+                      field.parentNode.appendChild(errorDiv);
+                      error = true;
+                      if (!document.querySelector('input.error:focus, textarea.error:focus')) {
+                          field.focus();
+                      }
+                  }
+              }
+          });
+
+          if (!error) {
+              btn.disabled = true;
+              const formData = new FormData(form);
+
+              fetch('/send__mail.php', {
+                  method: 'POST',
+                  body: formData
+              }).then(response => {
+                  if (response.ok) {
+                      console.log('Success');
+                  } else {
+                      console.error('Error:', response.status);
+                  }
+              }).catch(error => {
+                  console.error('Error:', error);
+              });
+          }
+      });
+  });
+});
+
+document.querySelectorAll('i.icon').forEach(icon => {
+  icon.addEventListener('click', () => {
+    const input = icon.previousElementSibling;
+    if (input.type === 'password') {
+      input.type = 'text';
+    } else {
+      input.type = 'password';
+    }
+    icon.classList.toggle('open');
+  });
+});
