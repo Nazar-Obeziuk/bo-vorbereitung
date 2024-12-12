@@ -101,7 +101,6 @@
     margin-bottom: 24px;
 }
 
-
 .form_input .field input{
     color: #000;
 
@@ -119,7 +118,6 @@
 
     background-color: #FFFFFF;
     background-image: transparent;
-
 
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
     box-sizing: border-box;
@@ -201,12 +199,14 @@
 }
 
 
-@media (max-width: 1199.98px) { 
+@media (max-width: 1199.98px) {
+
     .login .login__content{
         padding: 50px 80px;
     }
 }
-@media (max-width: 991.98px)  { 
+@media (max-width: 991.98px)  {
+    
     .login .login__content{
         padding: 45px 70px;
     }
@@ -252,7 +252,6 @@
     .form_input .field input::placeholder {
         font: 200 16px/1.3em "Inter", sans-serif;
     }
-
 }
 @media (max-width: 575.98px)  { 
 
@@ -277,8 +276,6 @@
         justify-content: center;
         align-items: center;
     }
-    
-
 }
 @media (max-width: 374.98px)  { 
     

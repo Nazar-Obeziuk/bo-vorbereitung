@@ -803,3 +803,29 @@ document.querySelectorAll('i.icon').forEach(icon => {
     icon.classList.toggle('open');
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Modal open buttons
+  document.querySelectorAll("button.modal__").forEach((button) => {
+    button.addEventListener("click", function () {
+      const modalClass = this.getAttribute("data-mod");
+      const modal = document.querySelector(`.${modalClass}`);
+
+      if (modal) {
+        modal.classList.add("open");
+        document.body.classList.add("overflow-hidden", "back"); // Add overflow-hidden and back to body
+      }
+    });
+  });
+
+  // Modal close buttons
+  document.querySelectorAll(".modal-open .close").forEach((button) => {
+    button.addEventListener("click", function () {
+      document.querySelectorAll(".modal-open").forEach((modal) => {
+        modal.classList.remove("open");
+      });
+      document.body.classList.remove("overflow-hidden", "back"); // Remove overflow-hidden and back from body
+    });
+  });
+});
+
