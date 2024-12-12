@@ -241,6 +241,12 @@ h2 {
 .navigation-item.active.correct {
   background: var(--dark-green);
 }
+.gruup__{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 
 @media (max-width: 1199.98px) {
   .choice-of-exercises__list {

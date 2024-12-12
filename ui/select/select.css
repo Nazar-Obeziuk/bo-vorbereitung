@@ -1,0 +1,110 @@
+select {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 25px 20px 25px 24px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #fff;
+    color: var(--black);
+
+    /* appearance: none; */
+    /* -webkit-appearance: none; */
+    /* -moz-appearance: none; */
+    /* background-size: none !important; */
+    /* background-image: none !important; Disable the dropdown arrow */
+
+    -moz-appearance:none !important; /* Firefox */
+    -webkit-appearance:none !important; /* Safari and Chrome */
+    appearance:none !important;
+
+    max-height: 84px;
+    height: 100%;
+
+    font: 400 24px/1.3em Inter;
+
+}
+
+select:focus {
+    outline: none;
+}
+
+select option {
+    padding: 10px;
+    background-color: #fff;
+    color: var(--black);
+    font: 400 18px/1.3em Inter;
+}
+
+select option:hover {
+    /* background-color: #f1f1f1; */
+}
+
+select option:checked {
+    /* background-color: #007bff; */
+    color: #fff;
+}
+
+.form_input {
+    position: relative;
+}
+
+.login__form-group .form_select .field{
+    position: relative;
+    width: 100%;
+}
+
+.login__form-group .form_select .field svg{
+    width: 32px;
+    height: 32px;
+
+    position: absolute;
+    top:25px;
+    right: 24px;
+
+    pointer-events: none;
+}
+
+.login__form-group label{
+    color: var(--light-black);
+    font: 400 20px/1.3em Inter;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+
+@media (max-width: 1199.98px) { 
+
+}
+@media (max-width: 991.98px)  { 
+
+}
+@media (max-width: 767.98px)  { 
+
+    .login__form-group label{
+        font: 400 14px/1.3em Inter;
+    }
+
+    select {
+        padding: 17px 47px 17px 24px;
+        font: 400 16px/1.3em Inter;
+    }
+
+    .login__form-group .form_select .field svg{
+        width: 32px;
+        height: 32px;
+    
+        position: absolute;
+        top:12px;
+        right: 12px;
+    
+        pointer-events: none;
+    }
+
+}
+@media (max-width: 575.98px)  { 
+
+}
+@media (max-width: 374.98px)  { 
+
+}
