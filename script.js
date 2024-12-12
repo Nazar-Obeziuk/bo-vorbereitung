@@ -1,57 +1,57 @@
 // Для акордеонів
-const accordionHeaders = document.querySelectorAll('.accordion-header');
+const accordionHeaders = document.querySelectorAll(".accordion-header");
 if (accordionHeaders.length > 0) {
-  accordionHeaders.forEach(button => {
-    button.addEventListener('click', () => {
+  accordionHeaders.forEach((button) => {
+    button.addEventListener("click", () => {
       const content = button.nextElementSibling;
 
       if (content.style.maxHeight) {
         content.style.maxHeight = null;
         button.querySelector("svg").style.transform = "rotate(0deg)";
       } else {
-        document.querySelectorAll('.accordion-content').forEach(item => {
+        document.querySelectorAll(".accordion-content").forEach((item) => {
           item.style.maxHeight = null;
         });
 
-        document.querySelectorAll('.accordion-header svg').forEach(svg => {
+        document.querySelectorAll(".accordion-header svg").forEach((svg) => {
           svg.style.transform = "rotate(0deg)";
         });
 
-        content.style.maxHeight = content.scrollHeight + 'px';
+        content.style.maxHeight = content.scrollHeight + "px";
         button.querySelector("svg").style.transform = "rotate(180deg)";
       }
     });
   });
 }
 // Для табів
-const tabs = document.querySelectorAll('.tabs .tab');
-const tabContents = document.querySelectorAll('.learn-info_content');
+const tabs = document.querySelectorAll(".tabs .tab");
+const tabContents = document.querySelectorAll(".learn-info_content");
 
 if (tabs.length > 0 && tabContents.length > 0) {
-  tabs[0].classList.add('active');
+  tabs[0].classList.add("active");
   tabContents.forEach((content, index) => {
-    content.style.display = index === 0 ? 'flex' : 'none';
+    content.style.display = index === 0 ? "flex" : "none";
   });
 
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      document.querySelectorAll('.tabs .tab').forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      document
+        .querySelectorAll(".tabs .tab")
+        .forEach((t) => t.classList.remove("active"));
+      tab.classList.add("active");
 
-      const targetTab = tab.getAttribute('data-tab');
+      const targetTab = tab.getAttribute("data-tab");
 
-      tabContents.forEach(content => {
-        if (content.getAttribute('data-tab') === targetTab) {
-          content.style.display = 'flex';
+      tabContents.forEach((content) => {
+        if (content.getAttribute("data-tab") === targetTab) {
+          content.style.display = "flex";
         } else {
-          content.style.display = 'none';
+          content.style.display = "none";
         }
       });
     });
   });
 }
-
-
 
 // header
 
@@ -87,14 +87,14 @@ function toggleMenu(
     ) {
       return total + item.scrollHeight;
     },
-      0);
+    0);
     mobileMenuElement.setAttribute(
       "style",
       "height: " +
-      (mobileMenuHeight +
-        additionalHeightValue +
-        innerDropdownMenuHeightValue) +
-      "px;"
+        (mobileMenuHeight +
+          additionalHeightValue +
+          innerDropdownMenuHeightValue) +
+        "px;"
     );
   }
   let isInnerDropdownButtonActive = false;
@@ -153,7 +153,7 @@ function toggleHeaderMenu(
     button,
     headerSecondSectionContent,
     headerSecondSectionContentPaddingTopAndBottom +
-    headerSecondSectionContentGap,
+      headerSecondSectionContentGap,
     isInnerDropdownMenu,
     innerSecondSectionContentDropdownMenuHeight
   );
@@ -484,7 +484,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const speedButton = player.querySelector(".speed-options-btn");
     const speedOptions = player.querySelector(".speed-options");
     const progressBar = player.querySelector(".progress-bar_a");
-    const progressBarContainer = player.querySelector(".progress-bar-container_a");
+    const progressBarContainer = player.querySelector(
+      ".progress-bar-container_a"
+    );
     const currentTimeEl = player.querySelector(".current-time");
     const durationEl = player.querySelector(".duration");
 
@@ -677,7 +679,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const listeningExercises = document.querySelector(".listening-exercises");
 const listeningList = document.querySelector(".listening-list");
-const primaryButton = listeningExercises ? listeningExercises.querySelector(".primary-button") : null;
+const primaryButton = listeningExercises
+  ? listeningExercises.querySelector(".primary-button")
+  : null;
 const buttons = document.querySelectorAll(
   ".listening-exercises__buttons button"
 );
@@ -695,112 +699,124 @@ if (primaryButton) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('[name=send]').forEach(function (btn) {
-      btn.addEventListener('click', function (event) {
-          event.preventDefault();
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("[name=send]").forEach(function (btn) {
+    btn.addEventListener("click", function (event) {
+      event.preventDefault();
 
-          // Remove existing errors and alerts
-          document.querySelectorAll('input.error, textarea.error').forEach(function (input) {
-              input.classList.remove('error');
-          });
-          document.querySelectorAll('.allert').forEach(function (alert) {
-              alert.remove();
-          });
-
-          let error = false;
-          const form = btn.closest('form');
-          const requiredFields = form.querySelectorAll('[required]');
-
-          // Validate required fields
-          requiredFields.forEach(function (field) {
-              if (!field.value.trim()) {
-                  field.classList.add('error');
-                  const errorDiv = document.createElement('div');
-                  errorDiv.className = 'allert';
-                  errorDiv.innerHTML = '<span>Fill this field</span>';
-                  field.parentNode.appendChild(errorDiv);
-                  error = true;
-                  if (!document.querySelector('input.error:focus, textarea.error:focus')) {
-                      field.focus();
-                  }
-              } else if (field.type === 'email') {
-                  const emailPattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{1,20}\.)?[a-z]{1,20}$/i;
-                  if (!emailPattern.test(field.value)) {
-                      field.value = '';
-                      field.classList.add('error', 'error_email');
-                      const errorDiv = document.createElement('div');
-                      errorDiv.className = 'allert';
-                      errorDiv.innerHTML = '<span>Need sign "@"</span>';
-                      field.parentNode.appendChild(errorDiv);
-                      error = true;
-                      if (!document.querySelector('input.error:focus, textarea.error:focus')) {
-                          field.focus();
-                      }
-                  }
-                  
-                } else if (field.type === 'password') {
-                  const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-                  if (!passwordPattern.test(field.value)) {
-                      field.value = '';
-                      field.classList.add('error', 'error_password');
-                      const errorDiv = document.createElement('div');
-                      errorDiv.className = 'allert';
-                      errorDiv.innerHTML = '<span>Invalid password</span>';
-                      field.parentNode.appendChild(errorDiv);
-                      error = true;
-                      if (!document.querySelector('input.error:focus, textarea.error:focus')) {
-                          field.focus();
-                      }
-                  }
-                  
-              } else if (field.type === 'tel') {
-                  const phonePattern = /^[+0-9]{7,30}$/i;
-                  if (!phonePattern.test(field.value)) {
-                      field.value = '';
-                      field.classList.add('error', 'error_tel');
-                      const errorDiv = document.createElement('div');
-                      errorDiv.className = 'allert';
-                      errorDiv.innerHTML = '<span>Invalid phone number</span>';
-                      field.parentNode.appendChild(errorDiv);
-                      error = true;
-                      if (!document.querySelector('input.error:focus, textarea.error:focus')) {
-                          field.focus();
-                      }
-                  }
-              }
-          });
-
-          if (!error) {
-              btn.disabled = true;
-              const formData = new FormData(form);
-
-              fetch('/send__mail.php', {
-                  method: 'POST',
-                  body: formData
-              }).then(response => {
-                  if (response.ok) {
-                      console.log('Success');
-                  } else {
-                      console.error('Error:', response.status);
-                  }
-              }).catch(error => {
-                  console.error('Error:', error);
-              });
-          }
+      // Remove existing errors and alerts
+      document
+        .querySelectorAll("input.error, textarea.error")
+        .forEach(function (input) {
+          input.classList.remove("error");
+        });
+      document.querySelectorAll(".allert").forEach(function (alert) {
+        alert.remove();
       });
+
+      let error = false;
+      const form = btn.closest("form");
+      const requiredFields = form.querySelectorAll("[required]");
+
+      // Validate required fields
+      requiredFields.forEach(function (field) {
+        if (!field.value.trim()) {
+          field.classList.add("error");
+          const errorDiv = document.createElement("div");
+          errorDiv.className = "allert";
+          errorDiv.innerHTML = "<span>Fill this field</span>";
+          field.parentNode.appendChild(errorDiv);
+          error = true;
+          if (
+            !document.querySelector("input.error:focus, textarea.error:focus")
+          ) {
+            field.focus();
+          }
+        } else if (field.type === "email") {
+          const emailPattern =
+            /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{1,20}\.)?[a-z]{1,20}$/i;
+          if (!emailPattern.test(field.value)) {
+            field.value = "";
+            field.classList.add("error", "error_email");
+            const errorDiv = document.createElement("div");
+            errorDiv.className = "allert";
+            errorDiv.innerHTML = '<span>Need sign "@"</span>';
+            field.parentNode.appendChild(errorDiv);
+            error = true;
+            if (
+              !document.querySelector("input.error:focus, textarea.error:focus")
+            ) {
+              field.focus();
+            }
+          }
+        } else if (field.type === "password") {
+          const passwordPattern =
+            /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+          if (!passwordPattern.test(field.value)) {
+            field.value = "";
+            field.classList.add("error", "error_password");
+            const errorDiv = document.createElement("div");
+            errorDiv.className = "allert";
+            errorDiv.innerHTML = "<span>Invalid password</span>";
+            field.parentNode.appendChild(errorDiv);
+            error = true;
+            if (
+              !document.querySelector("input.error:focus, textarea.error:focus")
+            ) {
+              field.focus();
+            }
+          }
+        } else if (field.type === "tel") {
+          const phonePattern = /^[+0-9]{7,30}$/i;
+          if (!phonePattern.test(field.value)) {
+            field.value = "";
+            field.classList.add("error", "error_tel");
+            const errorDiv = document.createElement("div");
+            errorDiv.className = "allert";
+            errorDiv.innerHTML = "<span>Invalid phone number</span>";
+            field.parentNode.appendChild(errorDiv);
+            error = true;
+            if (
+              !document.querySelector("input.error:focus, textarea.error:focus")
+            ) {
+              field.focus();
+            }
+          }
+        }
+      });
+
+      if (!error) {
+        btn.disabled = true;
+        const formData = new FormData(form);
+
+        fetch("/send__mail.php", {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => {
+            if (response.ok) {
+              console.log("Success");
+            } else {
+              console.error("Error:", response.status);
+            }
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
+    });
   });
 });
 
-document.querySelectorAll('i.icon').forEach(icon => {
-  icon.addEventListener('click', () => {
+document.querySelectorAll("i.icon").forEach((icon) => {
+  icon.addEventListener("click", () => {
     const input = icon.previousElementSibling;
-    if (input.type === 'password') {
-      input.type = 'text';
+    if (input.type === "password") {
+      input.type = "text";
     } else {
-      input.type = 'password';
+      input.type = "password";
     }
-    icon.classList.toggle('open');
+    icon.classList.toggle("open");
   });
 });
 
@@ -828,4 +844,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
