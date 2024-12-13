@@ -211,19 +211,21 @@ headerFirstDropdownItem1Content.forEach(function (button) {
 });
 
 headerLanguageContent.forEach(function (button) {
-  button.addEventListener("click", function () {
-    if (window.innerWidth < 1199.99) {
-      let innerDropdownMenuHeight = 0;
-      if (this.parentElement.children[1].getAttribute("style")) {
-        this.parentElement.children[1].removeAttribute("style");
-        innerDropdownMenuHeight -= this.parentElement.children[1].scrollHeight;
-      } else {
-        this.parentElement.children[1].style.height = `${this.parentElement.children[1].scrollHeight}px`;
-        innerDropdownMenuHeight = this.parentElement.children[1].scrollHeight;
+  if(!button.classList.contains('footer-language-content')){
+    button.addEventListener("click", function () {
+      if (window.innerWidth < 1199.99) {
+        let innerDropdownMenuHeight = 0;
+        if (this.parentElement.children[1].getAttribute("style")) {
+          this.parentElement.children[1].removeAttribute("style");
+          innerDropdownMenuHeight -= this.parentElement.children[1].scrollHeight;
+        } else {
+          this.parentElement.children[1].style.height = `${this.parentElement.children[1].scrollHeight}px`;
+          innerDropdownMenuHeight = this.parentElement.children[1].scrollHeight;
+        }
+        toggleHeaderMenu(this, true, innerDropdownMenuHeight);
       }
-      toggleHeaderMenu(this, true, innerDropdownMenuHeight);
-    }
-  });
+    });
+  }
 });
 
 headerSecondNavItem.forEach(function (button) {
@@ -271,6 +273,14 @@ function windowResize() {
 
 window.addEventListener("resize", windowResize);
 window.addEventListener("orientationchange", windowResize);
+
+// footer
+document.querySelector('.footer-actions_button .footer-first-dropdown-item-1').addEventListener('click', function() {
+  this.classList.toggle('open');
+});
+document.querySelector('.footer-actions_button .language').addEventListener('click', function() {
+  this.classList.toggle('open');
+});
 
 // progress
 const circles = document.querySelectorAll(".progress-circle");
