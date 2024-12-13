@@ -1,100 +1,93 @@
-.modal-exit{
-    max-width: 712px;
-    width: 100%;
-    height: 100vh;
-    margin: 0 0 0 auto;
-    background: var(--white);
-    position: fixed;
-    top:0;
+.modal-exit {
+  max-width: 712px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 0 0 auto;
+  background: var(--white);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 12;
+  padding: 45px 90px;
+  display: none;
+  flex-direction: column;
+}
+.modal-exit.open {
+  display: flex;
+  transition: all 0.4s linear;
+  opacity: 1;
+}
+.modal-exit .close {
+  color: var(--black);
+  font: 400 20px/1.3em "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 5px;
+  margin-left: auto;
+  position: relative;
+  margin: 0 0 0 auto;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+.modal-exit .close:hover {
+  color: var(--primary-orange);
+}
+.modal-exit .close:hover svg {
+  transition: all 0.4s linear;
+}
+.modal-exit .close:hover svg path {
+  stroke: var(--primary-orange);
+  transition: all 0.4s linear;
+}
+.modal-exit .message {
+  background: var(--light-gray);
+  border-radius: 16px;
+  padding: 21px 30px 27px 30px;
+  margin: 50px 0;
+  border: 2px solid var(--gray);
+  position: relative;
+}
+.message-inner {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  bottom: -22px;
+  border-radius: 6px 0 6px 0;
+  border-right: 2px solid var(--gray);
+  border-bottom: 2px solid var(--gray);
+  transform: rotate(45deg);
+  background: var(--light-gray);
+}
+
+@media (max-width: 991.98px) {
+  .modal-exit {
+    padding: 23px 17px 72px 17px;
+    border: 1px solid var(--primary-orange);
+    max-width: calc(100vw - 32px);
+    border-radius: 25px;
+    max-height: calc(100vh - 62px);
+    height: inherit;
+    margin: 31px auto;
+    top: 0;
     right: 0;
-    z-index: 12;
-    padding: 45px 90px;
-    display: none;
-    flex-direction: column;
+    left: 0;
+  }
+  .modal-exit .primary-black {
+    max-width: 408px;
+    width: 100%;
+  }
 }
-.modal-exit.open{
-    display: flex;
-    transition: all .4s linear; 
-    opacity: 1;
+@media (max-width: 767.98px) {
+  .message-inner {
+    width: 24px;
+    height: 24px;
+    bottom: -13px;
+  }
 }
-.modal-exit .close{
-    color: var(--black);    
-    font: 400 20px/1.3em "Inter", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0 5px;
-    margin-left: auto;
-    position: relative;
-    margin: 0 0 0 auto;
-    cursor: pointer;
-    transition: all .4s linear; 
-}
-.modal-exit .close:hover{
-    color: var(--primary-orange);
-}
-.modal-exit .close:hover svg{
-    transition: all .4s linear; 
-}
-.modal-exit .close:hover svg path{
-    stroke: var(--primary-orange);
-    transition: all .4s linear;
-}
-.modal-exit .massage{
-    background: var(--light-gray);
-    border-radius: 16px;
-    padding: 21px 30px 27px 30px;
-    margin: 50px 0;
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
-    position: relative;
-}
-.modal-exit .massage:after {
-    content: '';
-    position: absolute;
-    bottom: -22px;
-    left: 40px;
-    display: block;
-    background: var(--light-gray);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-    width: 45.6px;
-    height: 45.6px;
-    border-radius: 5.58px;
-    transform: rotate(45deg);
-    z-index: -1;
-}
-@media (max-width: 1199.98px) { 
-
-}
-@media (max-width: 991.98px)  { 
-
-    .modal-exit{
-        padding: 23px 17px 72px 17px;
-        border: 1px solid var(--primary-orange);
-        max-width: calc(100vw - 32px);
-        border-radius: 25px;
-        max-height: calc(100vh - 62px);
-        height: inherit;
-        margin: 31px auto;
-        top: 0;
-        right: 0;
-        left: 0;
-        /* bottom: 0; */
-    }
-    .modal-exit .primary-black{
-        max-width: 408px;
-        width: 100%;
-    }
-}
-@media (max-width: 767.98px)  { 
-
-}
-@media (max-width: 575.98px)  { 
-
-    .modal-exit .primary-black{
-        max-width: 100%;
-        width: 100%;
-    }
-}
-@media (max-width: 374.98px)  { 
-
+@media (max-width: 575.98px) {
+  .modal-exit .primary-black {
+    max-width: 100%;
+    width: 100%;
+  }
 }

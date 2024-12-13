@@ -359,21 +359,22 @@
     </section>
 
     <div class="container">
-        <div class="gruup__">   
+        <div class="gruup__">
             <button class="primary-button exit__ big" type="button" data-mod='exit-1'>exit-1</button>
         </div>
     </div>
 
     <div class="modal-exit exit-1 open">
-        <span class="close">schließen 
+        <span class="close">schließen
             <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M40.4999 40.4999L27 27M27 27L13.5 13.5M27 27L40.5001 13.5M27 27L13.5 40.5001" stroke="#161616" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M40.4999 40.4999L27 27M27 27L13.5 13.5M27 27L40.5001 13.5M27 27L13.5 40.5001" stroke="#161616" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
         </span>
 
         <div class="modal-exit-content">
-            <div class="massage">
+            <div class="message">
                 <p class="text p2">Schauen Sie sich die <strong>aktuellen Themen dieser Woche für die B1-Prüfung</strong> an?</p>
+                <div class="message-inner"></div>
             </div>
 
             <button class="primary-black" type="button">Ja, bitte jetzt zeigen</button>
