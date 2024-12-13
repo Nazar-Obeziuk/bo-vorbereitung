@@ -63,7 +63,7 @@
 
 .header-first-dropdown-menu {
   display: none;
-  width: 350px;
+  width: 400px;
   padding-top: 9px;
   position: absolute;
   top: 100%;
@@ -72,7 +72,12 @@
 }
 
 .header-first-dropdown-item-1 .header-first-dropdown-menu {
-  left: -50%;
+  left: 0;
+  transform: translateX(-25%);
+}
+
+.header-first-dropdown-menu .dropdown-menu-item-link {
+  padding-right: 15px;
 }
 
 .header-first
@@ -364,6 +369,10 @@
     padding-top: 0;
     overflow: hidden;
     transition: 0.3s;
+  }
+
+  .header-first-dropdown-item-1 .header-first-dropdown-menu {
+    transform: translateX(0);
   }
 
   .header-second
