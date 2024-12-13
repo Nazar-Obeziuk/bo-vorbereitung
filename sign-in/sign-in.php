@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vorbereitung mit BO - Sign Up</title>
+    <title>Vorbereitung mit BO - Sign In</title>
     <meta name="description" content="Online Prüfungsvorbereitung für Deutsch Test für Zuwanderer (A1, A2, B1, B2, C1, C2 )">
     <meta name="keywords" content="Vorbereitung, Deutsch, Kurs, Test">
     <meta property="og:image" content="https://deutsch-vorbereitung.com/img/logo_medium.png">
@@ -168,30 +168,20 @@
                         <div class="sign-inner_form">
                             <form action="#" method="POST" class="login__form">
                                 <div class="sign-form_fields">
-                                    <div class="sign-form_control">
-                                        <div class="login__form-group">
-                                            <label for="username" class="login__form-label">Username</label>
-                                            <div class="form_input">
-                                                <span class='field'>
-                                                    <input type="text" name="username" id="username" class="login__form-input" placeholder="Your username" required="">
-                                                </span>
-                                            </div>
-                                        </div>
+                                    <div class="sign-in-form_control">
                                         <div class="login__form-group">
                                             <label for="email" class="login__form-label">Email address</label>
                                             <div class="form_input">
                                                 <span class='field'>
-                                                    <input type="email" name="email" id="email" class="login__form-input" placeholder="Ihre Email" required="">
+                                                    <input type="email" name="email" id="email" class="login__form-input" placeholder="Email address" required="">
                                                 </span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="sign-form_control">
                                         <div class="login__form-group">
                                             <label for="password" class="login__form-label">Password</label>
                                             <div class="form_input">
                                                 <span class='field'>
-                                                    <input type="password" name="password" id="password" class="login__form-input" placeholder="Must be 8 characters" required="">
+                                                    <input type="password" name="password" id="password" class="login__form-input" placeholder="Password" required="">
                                                     <i class="icon">
                                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M4.46967 4.46967C4.76256 4.17678 5.23744 4.17678 5.53033 4.46967L19.5303 18.4697C19.8232 18.7626 19.8232 19.2374 19.5303 19.5303C19.2374 19.8232 18.7626 19.8232 18.4697 19.5303L4.46967 5.53033C4.17678 5.23744 4.17678 4.76256 4.46967 4.46967Z" fill="#0A0A0A" />
@@ -206,38 +196,17 @@
                                                     </i>
                                                 </span>
                                             </div>
-                                        </div>
-                                        <div class="login__form-group">
-                                            <label for="confirm-password" class="login__form-label">Confirm password</label>
-                                            <div class="form_input">
-                                                <span class='field'>
-                                                    <input type="password" name="confirm-password" id="confirm-password" class="login__form-input" placeholder="Repeat password" required="">
-                                                    <i class="icon">
-                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.46967 4.46967C4.76256 4.17678 5.23744 4.17678 5.53033 4.46967L19.5303 18.4697C19.8232 18.7626 19.8232 19.2374 19.5303 19.5303C19.2374 19.8232 18.7626 19.8232 18.4697 19.5303L4.46967 5.53033C4.17678 5.23744 4.17678 4.76256 4.46967 4.46967Z" fill="#0A0A0A" />
-                                                            <path d="M3.80078 3.76367L20.1996 20.1625" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" />
-                                                            <circle cx="11.9986" cy="12" r="3.23684" stroke="#0A0A0A" stroke-width="1.5" />
-                                                            <path d="M20.5953 10.3669C21.494 11.2972 21.494 12.7031 20.5953 13.6334C18.6471 15.6502 15.4811 18.1833 12.0006 18.1833C8.52018 18.1833 5.35422 15.6502 3.40594 13.6334C2.50729 12.7031 2.50729 11.2972 3.40594 10.3669C5.35422 8.35 8.52018 5.81689 12.0006 5.81689C15.4811 5.81689 18.6471 8.35 20.5953 10.3669Z" stroke="#0A0A0A" stroke-width="1.5" />
-                                                        </svg>
-                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <circle cx="11.9986" cy="12" r="3.23684" stroke="#0A0A0A" stroke-width="1.5" />
-                                                            <path d="M20.5953 10.3669C21.494 11.2972 21.494 12.7031 20.5953 13.6334C18.6471 15.6502 15.4811 18.1833 12.0006 18.1833C8.52018 18.1833 5.35422 15.6502 3.40594 13.6334C2.50729 12.7031 2.50729 11.2972 3.40594 10.3669C5.35422 8.35 8.52018 5.81689 12.0006 5.81689C15.4811 5.81689 18.6471 8.35 20.5953 10.3669Z" stroke="#0A0A0A" stroke-width="1.5" />
-                                                        </svg>
-                                                    </i>
-                                                </span>
+                                            <div class="login-forgot">
+                                                <a href="#" class="login-forgot_link">Forgot your password?</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="sign-form_content">
-                                    <div class="sign-form-accept">
-                                        <input type="checkbox" class="custom-checkbox" id="accept-terms" />
-                                        <label class="text p4" for="accept-terms">I accept the Terms of Service and Privacy Policy</label>
-                                    </div>
                                     <div class="sign-form_anchor">
-                                        <p class="text p3">Already have an account? <a href="#" class="sign-achor_link">Log In</a></p>
+                                        <p class="text p3">New here? <a href="#" class="sign-achor_link">Register</a></p>
                                     </div>
-                                    <button class="primary-button big" type="send" name="send">Sign up</button>
+                                    <button class="primary-button big" type="send" name="send">Log In</button>
                                     <div class="sign-form_or">
                                         <span></span>
                                         <p class="text p4">or</p>
