@@ -75,7 +75,7 @@
 }
 
 .listening-german .secondary-button {
-  padding: 12px 26px;
+  padding: 12px 20px;
   transition: 0.4s;
 }
 
@@ -280,9 +280,9 @@
   .listening-exercises .listening-exercises__row {
     padding-top: 0;
   }
-  /* .listening-exercises .listening-exercises__row::before {
-    width: 100%;
-  } */
+  .listening-exercises button {
+    padding: 10px 18px !important;
+  }
 }
 
 @media (max-width: 575.98px) {

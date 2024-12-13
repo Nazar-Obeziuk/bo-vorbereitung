@@ -50,3 +50,10 @@
   color: var(--primary-orange);
   border-color: var(--primary-orange);
 }
+
+@media (max-width: 767.98px) {
+  .secondary-button {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
