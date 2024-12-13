@@ -125,7 +125,6 @@
 
 @media (max-width: 767.98px) {
   .review-block {
-    /* height: 400px; */
     padding: 32px 22px;
     flex-direction: column-reverse;
   }

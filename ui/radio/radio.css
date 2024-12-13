@@ -52,7 +52,7 @@ input[type="radio"]:checked::before {
 
   height: 80px;
   width: 100%;
-  border: 2px solid var(--gray, #cacaca);
+  border: 2px solid var(--gray);
   padding: 28px 35px;
   border-radius: 4px;
   margin-bottom: 15px;
@@ -163,8 +163,8 @@ input[type="radio"]:checked::before {
   gap: 38px 0;
   max-height: 543px;
   box-shadow: 0px 4px 4px 0px #00000040;
-  background: var(--white-background, #ffffff);
-  border: 2px solid var(--orange, #f7631b);
+  background: var(--white);
+  border: 2px solid var(--primary-orange);
   border-radius: 25px;
   width: calc(100% - 32px);
   z-index: 50;
@@ -236,7 +236,7 @@ input[type="radio"]:checked::before {
   font-weight: bold;
   margin-left: -30px;
 
-  color: var(--orange-text, #f7631b);
+  color: var(--primary-orange);
   font: 600 24px/1.3em "Inter", sans-serif;
   position: absolute;
 }
@@ -251,7 +251,7 @@ input[type="radio"]:checked::before {
     content: counter(labelCounter) ". ";
     font-weight: bold;
     margin-left: 0px;
-    color: var(--orange-text, #f7631b);
+    color: var(--primary-orange);
     font: 600 24px / 1.3em "Inter", sans-serif;
     position: relative;
     margin-right: 10px;
@@ -260,20 +260,11 @@ input[type="radio"]:checked::before {
   .inputmodal {
     padding: 30px 25px;
     gap: 25px 0;
-    /* max-height: 472px; */
-    /* width: calc(100% - 32px); */
-  }
-
-  .box_border .inputmodal {
-    /* margin: 0 0 0 -82px; */
-    /* width: 100%; */
   }
 }
 
 @media (max-width: 991.98px) {
-  .box_border .inputmodal {
-    /* margin: 0 0 0 -70px; */
-  }
+
 }
 
 @media (max-width: 767.98px) {
@@ -288,7 +279,7 @@ input[type="radio"]:checked::before {
     content: counter(labelCounter) ". ";
     font-weight: bold;
     margin-left: 0;
-    color: var(--orange-text, #f7631b);
+    color: var(--primary-orange);
     font: 600 16px/1.3em "Inter", sans-serif;
     position: relative;
     margin-right: 5px;
@@ -298,16 +289,11 @@ input[type="radio"]:checked::before {
     font: 600 16px/1.3em "Inter", sans-serif !important;
     margin-bottom: 16px;
   }
-
-  .box_border .inputmodal {
-    /* margin: 0; */
-  }
 }
 
 @media (max-width: 575.98px) {
   .input__box.border__box {
     padding: 15px 14px !important;
-    /* height: auto !important; */
     margin-bottom: 12px;
     flex-wrap: wrap;
     gap: 14px 0;

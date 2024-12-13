@@ -129,7 +129,7 @@ audio {
     cursor: pointer;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--gray, #CACACA);
+    border-bottom: 1px solid var(--gray);
 }
 
 .audio-player .menu li:last-child{
