@@ -64,7 +64,7 @@
                                 <div class="dropdown-menu">
                                     <?php
                                     $item_index = 1;
-                                    $language_dropdown = ['Englisch' => $flag_english, 'Türkisch' => $flag_turkish, 'Russisch' => $flag_russian];
+                                    $language_dropdown = ['Englisch' => $flag_english, 'Türkisch' => $flag_turkish, 'Russisch' => $flag_russian, 'Ukrainische' => $flag_ukrainian, 'Deutsch' => $flag_germany_2];
                                     foreach ($language_dropdown as $language_dropdown_item_text => $language_dropdown_item_flag) { ?>
                                         <div class="dropdown-menu-item" id="dropdown-menu-item-<?php echo $item_index; ?>">
                                             <a class="dropdown-menu-item-link" href="#">
