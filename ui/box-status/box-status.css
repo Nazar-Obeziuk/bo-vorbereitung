@@ -9,7 +9,7 @@
 
 .box-status .status{
     padding: 10px 15px;
-    border: 2px solid var(--primary-orange, #F7631B);
+    border: 2px solid var(--primary-orange);
     width: 154px;
     height: 64px;
     gap: 8px;

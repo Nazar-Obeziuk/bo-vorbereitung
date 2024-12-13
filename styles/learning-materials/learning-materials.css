@@ -302,7 +302,7 @@
   max-height: 0;
   overflow: hidden;
   padding: 0px;
-  background: #fff;
+  background: var(--white);
   font-size: 20px;
   transition: max-height 0.3s ease;
 }

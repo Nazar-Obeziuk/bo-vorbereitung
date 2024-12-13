@@ -844,3 +844,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Modal open buttons
+  document.querySelectorAll("button.exit__").forEach((button) => {
+    button.addEventListener("click", function () {
+      const modalClass = this.getAttribute("data-mod");
+      const modal = document.querySelector(`.${modalClass}`);
+
+      if (modal) {
+        modal.classList.add("open");
+        document.body.classList.add("overflow-hidden", "back"); // Add overflow-hidden and back to body
+      }
+    });
+  });
+
+  // Modal close buttons
+  document.querySelectorAll(".modal-exit .close").forEach((button) => {
+    button.addEventListener("click", function () {
+      document.querySelectorAll(".modal-exit").forEach((modal) => {
+        modal.classList.remove("open");
+      });
+      document.body.classList.remove("overflow-hidden", "back"); // Remove overflow-hidden and back from body
+    });
+  });
+});

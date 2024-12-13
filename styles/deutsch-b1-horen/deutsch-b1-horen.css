@@ -48,7 +48,7 @@
 .deutsch-b1-horen .box_border hr {
   width: calc(100% + 204px);
   height: 1px;
-  background: var(--gray, #cacaca73);
+  background: var(--gray);
   padding: 0;
   margin: 35px 0 35px -102px;
 }
@@ -74,7 +74,7 @@
 }
 
 .deutsch-b1-horen-button.primary-button.border.small {
-  border: 4px solid var(--orange, #f7631b);
+  border: 4px solid var(--primary-orange);
   min-width: 410.92px;
   width: max-content;
   min-height: 80px;
@@ -107,7 +107,7 @@
   .deutsch-b1-horen .box_border hr {
     width: calc(100% + 164px);
     height: 1px;
-    background: var(--gray, #cacaca73);
+    background: var(--gray);
     padding: 0;
     margin: 35px 0 35px -82px;
   }
@@ -126,7 +126,7 @@
   .deutsch-b1-horen .box_border hr {
     width: calc(100% + 140px);
     height: 1px;
-    background: var(--gray, #cacaca73);
+    background: var(--gray);
     padding: 0;
     margin: 35px 0 35px -70px;
   }
@@ -166,7 +166,7 @@
   .deutsch-b1-horen .box_border hr {
     width: calc(100% + 32px);
     height: 1px;
-    background: var(--gray, #cacaca73);
+    background: var(--gray);
     padding: 0;
     margin: 35px 0 35px -16px;
   }
