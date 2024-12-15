@@ -1,21 +1,22 @@
-.dot {
-  display: flex;
-  justify-items: start;
-  align-items: start;
-  position: relative;
-  width: 100%;
-  color: var(--light-black);
-}
+.dot{
+    display: flex;
+    justify-items: start;
+    align-items: start;
+    position: relative;
+    width: 100%;
 
-.dot::before {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  min-width: 20px;
-  min-height: 20px;
-  border-radius: 50%;
-  background: var(--primary-orange);
-  margin-right: 5px;
-  margin-top: 4px;
-}
+    color: var(--light-black);
+  
+    &::before{
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        min-width: 20px;
+        min-height: 20px;
+        border-radius: 50%;
+        background: var(--primary-orange);
+        margin-right: 5px;
+        margin-top: 4px;
+    }
+  }

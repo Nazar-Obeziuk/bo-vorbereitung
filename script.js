@@ -211,21 +211,19 @@ headerFirstDropdownItem1Content.forEach(function (button) {
 });
 
 headerLanguageContent.forEach(function (button) {
-  if(!button.classList.contains('footer-language-content')){
-    button.addEventListener("click", function () {
-      if (window.innerWidth < 1199.99) {
-        let innerDropdownMenuHeight = 0;
-        if (this.parentElement.children[1].getAttribute("style")) {
-          this.parentElement.children[1].removeAttribute("style");
-          innerDropdownMenuHeight -= this.parentElement.children[1].scrollHeight;
-        } else {
-          this.parentElement.children[1].style.height = `${this.parentElement.children[1].scrollHeight}px`;
-          innerDropdownMenuHeight = this.parentElement.children[1].scrollHeight;
-        }
-        toggleHeaderMenu(this, true, innerDropdownMenuHeight);
+  button.addEventListener("click", function () {
+    if (window.innerWidth < 1199.99) {
+      let innerDropdownMenuHeight = 0;
+      if (this.parentElement.children[1].getAttribute("style")) {
+        this.parentElement.children[1].removeAttribute("style");
+        innerDropdownMenuHeight -= this.parentElement.children[1].scrollHeight;
+      } else {
+        this.parentElement.children[1].style.height = `${this.parentElement.children[1].scrollHeight}px`;
+        innerDropdownMenuHeight = this.parentElement.children[1].scrollHeight;
       }
-    });
-  }
+      toggleHeaderMenu(this, true, innerDropdownMenuHeight);
+    }
+  });
 });
 
 headerSecondNavItem.forEach(function (button) {
@@ -273,14 +271,6 @@ function windowResize() {
 
 window.addEventListener("resize", windowResize);
 window.addEventListener("orientationchange", windowResize);
-
-// footer
-document.querySelector('.footer-actions_button .footer-first-dropdown-item-1').addEventListener('click', function() {
-  this.classList.toggle('open');
-});
-document.querySelector('.footer-actions_button .language').addEventListener('click', function() {
-  this.classList.toggle('open');
-});
 
 // progress
 const circles = document.querySelectorAll(".progress-circle");
@@ -879,4 +869,55 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.classList.remove("overflow-hidden", "back"); // Remove overflow-hidden and back from body
     });
   });
+});
+
+document.querySelectorAll('.block__select .ul .li').forEach(item => {
+  item.addEventListener('click', function() {
+    const blockSelect = this.closest('.block__select');
+    const numValue = this.getAttribute('data-num');
+    blockSelect.querySelector('.span-select .num').textContent = numValue;
+    blockSelect.querySelectorAll('.ul .li').forEach(li => {
+      li.classList.remove('active');
+    });
+    this.classList.add('active');
+    blockSelect.classList.remove('open');
+  });
+});
+
+document.querySelectorAll('.block__select .span-select').forEach(item => {
+  item.addEventListener('click', function() {
+    const blockSelect = this.closest('.block__select');
+    if (blockSelect.classList.contains('open')) {
+      blockSelect.classList.remove('open');
+    } else {
+      blockSelect.classList.add('open');
+    }
+  });
+});
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const blockSelects = document.querySelectorAll('.block__select');
+    blockSelects.forEach(blockSelect => {
+        const container = blockSelect.closest('.container');
+        if (container) {
+            const containerRect = container.getBoundingClientRect();
+            const blockRect = blockSelect.getBoundingClientRect();
+            const containerCenter = containerRect.width / 2;
+            const blockCenter = blockRect.left + blockRect.width / 2;
+
+            const tolerance = 70; 
+
+            if (Math.abs(blockCenter - containerCenter) <= tolerance) {
+                // If the element is within the tolerance of the center, add the 'center' class
+                blockSelect.classList.add('center');
+            } else if (blockRect.left < containerCenter) {
+                // If the element is to the left of the container center, add the 'left' class
+                blockSelect.classList.add('left');
+            } else {
+                // If the element is to the right of the container center, add the 'right' class
+                blockSelect.classList.add('right');
+            }
+        }
+    });
 });

@@ -1,0 +1,119 @@
+.block__select .span-select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 5px;
+
+    color: var(--black);
+    width: 72px;
+    height: 32px;
+    border-radius: 25px;
+    padding-left: 5px;
+
+    font: 400 20px/1.3em Inter;
+
+    border: 2px solid var(--primary-orange);
+    cursor: pointer;
+    transition: all 0.3s linear;
+    margin: 0 7px;
+}
+
+.block__select .span-select.open,.block__select.open .span-select{
+    background: var(--primary-orange);
+    color: var(--white);
+    transition: all 0.3s linear;
+}
+.block__select.open .span-select svg path{
+    stroke: var(--white);
+}
+.block__select.open .span-select svg{
+    transform: scaleY(-1);
+    transition: all 0.3s linear;
+}
+
+.block__select{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 5px;
+    position: relative;
+    flex-direction: column;
+}
+
+.block__select.open .ul{
+    transition: all 0.3s linear;
+    display: flex;
+}
+
+.block__select .ul{
+    bottom: 40px;
+    position: absolute;
+    width: 100%;
+    background: var(--white);
+    border-radius: 12px;
+    padding: 0;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    max-width: 232px;
+    min-width: 232px;
+    border: 1px solid var(--primary-orange);
+    overflow: hidden;
+    flex-direction: column;
+    display: none;
+}
+
+.block__select .ul .li{
+    border-bottom: 1px solid var(--gray);
+    background: var();
+
+    min-width: 100%;
+    min-height: 45px;
+    padding: 11px 50px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: var(--black);
+    font: 400 16px/1.3em Inter;
+    
+    position: relative; 
+}
+
+.block__select .ul .li.active,.block__select .ul .li:hover{
+    background: var(--light-gray);
+    font: 600 16px/1.3em Inter;
+    cursor: pointer;
+}
+.block__select .ul .li:hover:after,
+.block__select .ul .li.active:after{
+    content: '';
+    position: absolute;
+    right: 24px;
+    top: 11px;
+    width: 24px;
+    height: 24px;
+    background: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 11.9995L8.94975 16.9493L19.5572 6.34277" stroke="%23F7631B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat;
+    background-size: contain;
+}
+
+.block__select .span-select .num{
+    margin: 0 -5px;
+}
+
+@media (max-width: 991.98px)  { 
+    
+    .block__select.left.open{
+        align-items: flex-start;
+    }
+
+    .block__select.right.open{
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 767.98px)  { 
+    
+    .block__select .span-select{
+        font: 400 16px/1.3em Inter;
+    }
+}

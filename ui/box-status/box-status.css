@@ -1,65 +1,74 @@
-.box-status {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 0 154px;
-  margin-bottom: 25px;
-}
-
-.box-status .status {
-  padding: 10px 15px;
-  border: 2px solid var(--primary-orange);
-  width: 154px;
-  height: 64px;
-  gap: 8px;
-  border-radius: 16px;
-  position: absolute;
-  right: -70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font: 600 24px/1.3em Inter;
-  color: var(--black);
-}
-
-.box-status h2 {
-  margin-bottom: 0 !important;
-}
-
-.box-status .status span {
-  font: 600 24px/1.3em Inter;
-  color: var(--dark-green);
-  margin-right: -8px;
-}
-.box-status .status svg {
-  width: 44px;
-  height: 44px;
-}
-
-@media (max-width: 1199.98px) {
-  .box-status .status {
-    right: -50px;
-  }
-}
-@media (max-width: 991.98px) {
-  .box-status .status {
-    right: 0;
+.box-status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    max-width: 400px;
-    width: 100%;
-  }
-
-  .box-status {
-    padding: 0;
-    flex-direction: column;
-    gap: 20px;
-  }
+    padding: 0 154px;
+    margin-bottom: 25px;
 }
-@media (max-width: 767.98px) {
-  .box-status {
-    padding: 0;
-    flex-direction: column;
-    gap: 17px;
-  }
+
+.box-status .status{
+    padding: 10px 15px;
+    border: 2px solid var(--primary-orange);
+    width: 154px;
+    height: 64px;
+    gap: 8px;
+    border-radius: 16px;
+    position: absolute;
+    right: -70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 600 24px/1.3em Inter;
+    color: var(--black);
+}
+
+.box-status h2{
+    margin-bottom: 0 !important;
+}
+
+.box-status .status span{
+    font: 600 24px/1.3em Inter;
+    color: var(--dark-green);
+    margin-right: -8px;
+}
+.box-status .status svg{
+    width: 44px;
+    height: 44px;
+}
+
+@media (max-width: 1199.98px) { 
+
+    .box-status .status{
+        right: -50px;
+    }
+}
+@media (max-width: 991.98px)  { 
+    .box-status .status{
+        right: 0;
+        position: relative;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .box-status{
+        padding: 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media (max-width: 767.98px)  { 
+
+    .box-status{
+        padding: 0;
+        flex-direction: column;
+        gap: 17px;
+    }
+
+}
+@media (max-width: 575.98px)  { 
+
+}
+@media (max-width: 374.98px)  { 
+
 }
