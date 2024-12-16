@@ -53,6 +53,14 @@
   margin: 35px 0 35px -102px;
 }
 
+.deutsch-b1-horen .box_border hr.width{
+  width: 100%;
+  height: 1px;
+  background: var(--gray);
+  padding: 0;
+  margin: 35px 0;
+}
+
 .box_border>*:last-child {
   margin-bottom: 0;
 }
@@ -107,7 +115,6 @@
   width: 100%;
   margin-top: 20px;
   padding-top: 35px;
-
   border-top: 1px solid var(--gray);
 }
 
@@ -118,6 +125,10 @@
 
 .deutsch-b1-horen .box__padding__left .address{
   margin-bottom: 25px;
+}
+
+.deutsch-b1-horen .color_orange{
+  color: var(--primary-orange);
 }
 
 .deutsch-b1-horen .span_orange span{
@@ -135,8 +146,81 @@
   letter-spacing: .03em;
 }
 
+.deutsch-b1-horen ul.dot_list{
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px 0;
+  margin-bottom: 25px;
+}
+
+.deutsch-b1-horen ul.dot_list li{
+  position: relative;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.deutsch-b1-horen ul.dot_list li.line-through{
+  text-decoration: line-through;
+}
+
+.deutsch-b1-horen ul.dot_list li::before{
+  content: '';
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background: var(--primary-orange);
+  border-radius: 50%;
+}
+
+.deutsch-b1-horen ul.dot_list li.red{
+  color: var(--red);
+  font-weight: 600;
+}
+.deutsch-b1-horen ul.dot_list li.green{
+  color: var(--dark-green);
+  font-weight: 600;
+}
+
+.deutsch-b1-horen .box_border .primary-button {
+  margin-bottom: 25px !important; 
+}
+
+.deutsch-b1-horen .span-border.red{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  height: 32px;
+  border-radius: 25px;
+  padding: 0 7px;
+  font: 400 20px / 1.3em Inter;
+  border: 2px solid var(--red);
+  transition: all 0.3s linear;
+  margin: 0 5px;
+}
+
+.deutsch-b1-horen .span-border.green{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  height: 32px;
+  border-radius: 25px;
+  padding: 0 7px;
+  font: 400 20px / 1.3em Inter;
+  border: 2px solid var(--dark-green);
+  transition: all 0.3s linear;
+  margin: 0 5px;
+}
 
 @media (max-width: 1199.98px) {
+
   .deutsch-b1-horen .box_border {
     border-radius: 25px;
     padding: 35px 82px;
@@ -151,7 +235,7 @@
   }
 
   .deutsch-b1-horen .center {
-      text-align: left;
+    text-align: left;
   }
 }
 
@@ -187,7 +271,6 @@
     max-width: 100%;
     width: 100%;
   }
-
 }
 
 @media (max-width: 767.98px) {
@@ -225,6 +308,12 @@
 
   .deutsch-b1-horen .box_border.grey__content p{
     letter-spacing: inherit;
+  }
+  .deutsch-b1-horen .span-border.green,.deutsch-b1-horen .span-border.red{
+    font: 400 18px / 1.3em Inter;
+    margin: 0;
+    padding: 0 12px;
+    height: auto;
   }
 }
 
