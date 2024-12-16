@@ -23,7 +23,7 @@ if (accordionHeaders.length > 0) {
     });
   });
 }
-// Для табів
+// tabs
 const tabs = document.querySelectorAll(".tabs .tab");
 const tabContents = document.querySelectorAll(".learn-info_content");
 
@@ -704,7 +704,6 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.addEventListener("click", function (event) {
       event.preventDefault();
 
-      // Remove existing errors and alerts
       document
         .querySelectorAll("input.error, textarea.error")
         .forEach(function (input) {
@@ -718,7 +717,6 @@ document.addEventListener("DOMContentLoaded", function () {
       const form = btn.closest("form");
       const requiredFields = form.querySelectorAll("[required]");
 
-      // Validate required fields
       requiredFields.forEach(function (field) {
         if (!field.value.trim()) {
           field.classList.add("error");
@@ -821,7 +819,6 @@ document.querySelectorAll("i.icon").forEach((icon) => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Modal open buttons
   document.querySelectorAll("button.modal__").forEach((button) => {
     button.addEventListener("click", function () {
       const modalClass = this.getAttribute("data-mod");
@@ -834,7 +831,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Modal close buttons
   document.querySelectorAll(".modal-open .close").forEach((button) => {
     button.addEventListener("click", function () {
       document.querySelectorAll(".modal-open").forEach((modal) => {
@@ -845,9 +841,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
-  // Modal open buttons
   document.querySelectorAll("button.exit__").forEach((button) => {
     button.addEventListener("click", function () {
       const modalClass = this.getAttribute("data-mod");
@@ -860,7 +854,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Modal close buttons
   document.querySelectorAll(".modal-exit .close").forEach((button) => {
     button.addEventListener("click", function () {
       document.querySelectorAll(".modal-exit").forEach((modal) => {
@@ -871,53 +864,49 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-document.querySelectorAll('.block__select .ul .li').forEach(item => {
-  item.addEventListener('click', function() {
-    const blockSelect = this.closest('.block__select');
-    const numValue = this.getAttribute('data-num');
-    blockSelect.querySelector('.span-select .num').textContent = numValue;
-    blockSelect.querySelectorAll('.ul .li').forEach(li => {
-      li.classList.remove('active');
+document.querySelectorAll(".block__select .ul .li").forEach((item) => {
+  item.addEventListener("click", function () {
+    const blockSelect = this.closest(".block__select");
+    const numValue = this.getAttribute("data-num");
+    blockSelect.querySelector(".span-select .num").textContent = numValue;
+    blockSelect.querySelectorAll(".ul .li").forEach((li) => {
+      li.classList.remove("active");
     });
-    this.classList.add('active');
-    blockSelect.classList.remove('open');
+    this.classList.add("active");
+    blockSelect.classList.remove("open");
   });
 });
 
-document.querySelectorAll('.block__select .span-select').forEach(item => {
-  item.addEventListener('click', function() {
-    const blockSelect = this.closest('.block__select');
-    if (blockSelect.classList.contains('open')) {
-      blockSelect.classList.remove('open');
+document.querySelectorAll(".block__select .span-select").forEach((item) => {
+  item.addEventListener("click", function () {
+    const blockSelect = this.closest(".block__select");
+    if (blockSelect.classList.contains("open")) {
+      blockSelect.classList.remove("open");
     } else {
-      blockSelect.classList.add('open');
+      blockSelect.classList.add("open");
     }
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const blockSelects = document.querySelectorAll(".block__select");
+  blockSelects.forEach((blockSelect) => {
+    const container = blockSelect.closest(".container");
+    if (container) {
+      const containerRect = container.getBoundingClientRect();
+      const blockRect = blockSelect.getBoundingClientRect();
+      const containerCenter = containerRect.width / 2;
+      const blockCenter = blockRect.left + blockRect.width / 2;
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const blockSelects = document.querySelectorAll('.block__select');
-    blockSelects.forEach(blockSelect => {
-        const container = blockSelect.closest('.container');
-        if (container) {
-            const containerRect = container.getBoundingClientRect();
-            const blockRect = blockSelect.getBoundingClientRect();
-            const containerCenter = containerRect.width / 2;
-            const blockCenter = blockRect.left + blockRect.width / 2;
+      const tolerance = 70;
 
-            const tolerance = 70; 
-
-            if (Math.abs(blockCenter - containerCenter) <= tolerance) {
-                // If the element is within the tolerance of the center, add the 'center' class
-                blockSelect.classList.add('center');
-            } else if (blockRect.left < containerCenter) {
-                // If the element is to the left of the container center, add the 'left' class
-                blockSelect.classList.add('left');
-            } else {
-                // If the element is to the right of the container center, add the 'right' class
-                blockSelect.classList.add('right');
-            }
-        }
-    });
+      if (Math.abs(blockCenter - containerCenter) <= tolerance) {
+        blockSelect.classList.add("center");
+      } else if (blockRect.left < containerCenter) {
+        blockSelect.classList.add("left");
+      } else {
+        blockSelect.classList.add("right");
+      }
+    }
+  });
 });

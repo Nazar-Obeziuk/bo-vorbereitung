@@ -172,25 +172,28 @@
                 <p class="text p3 center span_orange"><strong><span>Entspannung nach der Arbeit: Mehr als nur Filme</span></strong></p>
 
                 <p class="text p2">Entspannung ist ein wichtiger Teil unseres Lebens, <span class="span-border red">mich</span>
-                        nach einem langen Arbeitstag. Während mein Kollege sich gerne mit Filmen entspannt, finde ich meine Ruhe auf andere Weise. Die Vielfalt der Möglichkeiten zur Entspannung ist faszinierend, und jeder findet seine  
-                        <span class="span-border green">eigene</span>  Methode, um den Stress abzubauen.</p>
-                <p class="text p2">Persönlich bevorzuge ich es, nach der Arbeit in die Natur zu gehen. Ein Spaziergang im Park oder eine Wanderung in den Bergen hilft mir, den Kopf frei zu bekommen und neue Energie zu tanken. Die frische Luft und die natürliche Umgebung wirken positiv 
-                <span class="span-border green">besonders</span> meine Stimmung und mein Wohlbefinden.</p>
+                    nach einem langen Arbeitstag. Während mein Kollege sich gerne mit Filmen entspannt, finde ich meine Ruhe auf andere Weise. Die Vielfalt der Möglichkeiten zur Entspannung ist faszinierend, und jeder findet seine
+                    <span class="span-border green">eigene</span> Methode, um den Stress abzubauen.
+                </p>
+                <p class="text p2">Persönlich bevorzuge ich es, nach der Arbeit in die Natur zu gehen. Ein Spaziergang im Park oder eine Wanderung in den Bergen hilft mir, den Kopf frei zu bekommen und neue Energie zu tanken. Die frische Luft und die natürliche Umgebung wirken positiv
+                    <span class="span-border green">besonders</span> meine Stimmung und mein Wohlbefinden.
+                </p>
 
-                <p class="text p2">Neben der Natur genieße ich es auch,  <span class="span-border red">zwischen</span>
-                     kreativ zu betätigen. Das kann das Malen eines Bildes, das Schreiben in meinem Tagebuch oder das Spielen eines Musikinstruments sein. Diese Aktivitäten ermöglichen es mir, mich auszudrücken und mich auf etwas Positives zu konzentrieren.</p>
+                <p class="text p2">Neben der Natur genieße ich es auch, <span class="span-border red">zwischen</span>
+                    kreativ zu betätigen. Das kann das Malen eines Bildes, das Schreiben in meinem Tagebuch oder das Spielen eines Musikinstruments sein. Diese Aktivitäten ermöglichen es mir, mich auszudrücken und mich auf etwas Positives zu konzentrieren.</p>
                 <p class="text p2">Natürlich gibt es auch Zeiten, in denen ich mich einfach nur auf die Couch kuscheln und einen Filmoder eine Serie genießen möchte. Es ist wichtig, sich selbst zu erlauben, sich zu entspannen und etwas zu tun, das einem Freude bereitet.</p>
                 <p class="text p2">Insgesamt ist es entscheidend, eine Balance <span class="span-border green">auf</span> Arbeit und Entspannung zu finden. Jeder hat seine eigenen Vorlieben und Bedürfnisse, wenn es darum geht, Stress abzubauen. Was für mich funktioniert, muss nicht unbedingt für meinen Kollegen gelten, und das ist völlig in Ordnung. Am Ende geht es darum, herauszufinden, was uns persönlich guttut und uns
-                <span class="span-border red">auf</span> hilft, zur Ruhe zu kommen.</p>
+                    <span class="span-border red">auf</span> hilft, zur Ruhe zu kommen.
+                </p>
 
-                <hr class="width">    
-                
+                <hr class="width">
+
                 <button class="primary-button" type="button" data-inputmodal="inputmodal-2">
                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.64648 7.07361C7.81728 6.54732 8.13015 6.07896 8.55078 5.71948C8.97141 5.36001 9.4838 5.12378 10.0303 5.03708C10.5768 4.95038 11.1362 5.0164 11.6475 5.22803C12.1587 5.43966 12.6014 5.78875 12.9268 6.23633C13.2521 6.68391 13.4469 7.21256 13.4904 7.76416C13.5339 8.31576 13.4238 8.86879 13.1727 9.36182C12.9215 9.85484 12.5394 10.2685 12.0676 10.5576C11.5958 10.8467 11.0533 10.9998 10.5 10.9998V12.0002M10.5 19C5.52944 19 1.5 14.9706 1.5 10C1.5 5.02944 5.52944 1 10.5 1C15.4706 1 19.5 5.02944 19.5 10C19.5 14.9706 15.4706 19 10.5 19ZM10.5498 15V15.1L10.4502 15.1002V15H10.5498Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>Erklärung</button>
 
-                <ul class="list dot_list"> 
+                <ul class="list dot_list">
                     <li class="line-through red">zwischen</li>
                     <li class="green">besonders</li>
                     <li class="green">eigene</li>
@@ -227,14 +230,14 @@
         <div class="container">
             <h2>Fahren Sie mit den <span>Übungen</span> fort</h2>
             <div class="choice-of-exercises__list">
-                <div class="listen-block outline-orange active" onclick=location.href="#">
+                <div class="listen-block outline-orange" onclick=location.href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
                         <path d="M73.8891 48.4721C73.8891 35.0485 63.0071 24.1665 49.5835 24.1665C36.1599 24.1665 25.2779 35.0485 25.2779 48.4721M63.4724 60.6248V67.5693C63.4724 69.1827 63.4724 69.9894 63.6058 70.6602C64.1538 73.415 66.3074 75.5696 69.0622 76.1176C69.733 76.251 70.5396 76.251 72.1529 76.251C73.7663 76.251 74.573 76.251 75.2438 76.1176C77.9986 75.5696 80.1516 73.415 80.6996 70.6602C80.833 69.9894 80.8335 69.1827 80.8335 67.5693V60.6248C80.8335 59.0115 80.833 58.2032 80.6996 57.5324C80.1516 54.7776 77.9986 52.6257 75.2438 52.0777C74.573 51.9443 73.7663 51.9443 72.1529 51.9443C70.5396 51.9443 69.733 51.9443 69.0622 52.0777C66.3074 52.6257 64.1538 54.7776 63.6058 57.5324C63.4724 58.2032 63.4724 59.0115 63.4724 60.6248ZM35.6946 60.6248V67.5693C35.6946 69.1827 35.6941 69.9894 35.5607 70.6602C35.0127 73.415 32.8596 75.5696 30.1048 76.1176C29.434 76.251 28.6276 76.251 27.0142 76.251C25.4008 76.251 24.5941 76.251 23.9233 76.1176C21.1685 75.5696 19.0149 73.415 18.4669 70.6602C18.3335 69.9894 18.3335 69.1827 18.3335 67.5693V60.6248C18.3335 59.0115 18.3335 58.2032 18.4669 57.5324C19.0149 54.7776 21.1685 52.6257 23.9233 52.0777C24.5941 51.9443 25.4008 51.9443 27.0142 51.9443C28.6276 51.9443 29.434 51.9443 30.1048 52.0777C32.8596 52.6257 35.0127 54.7776 35.5607 57.5324C35.6941 58.2032 35.6946 59.0115 35.6946 60.6248Z" stroke="#161616" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <a href="#" class="text p3">Hören</a>
                 </div>
 
-                <div class="listen-block outline-orange">
+                <div class="listen-block outline-orange active">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
                         <path d="M49.5835 40.8325V76.2492M49.5835 40.8325C49.5835 34.9986 49.5835 32.0829 50.7188 29.8546C51.7175 27.8946 53.3099 26.3005 55.2699 25.3019C57.4982 24.1665 60.4156 24.1665 66.2495 24.1665H75.2773C77.2219 24.1665 78.1949 24.1665 78.9376 24.545C79.591 24.8778 80.1208 25.4086 80.4537 26.062C80.8322 26.8047 80.8335 27.7778 80.8335 29.7224V60.278C80.8335 62.2226 80.8322 63.1935 80.4537 63.9363C80.1208 64.5896 79.5921 65.1222 78.9388 65.4551C78.1967 65.8332 77.2258 65.8332 75.285 65.8332H65.4492C62.1881 65.8332 60.5546 65.8332 59.0745 66.2827C57.7642 66.6806 56.5476 67.3322 55.4897 68.2017C54.2947 69.1839 53.3891 70.5406 51.5802 73.254L49.5835 76.2492M49.5835 40.8325C49.5835 34.9986 49.5829 32.0829 48.4476 29.8546C47.4489 27.8946 45.8552 26.3005 43.8952 25.3019C41.667 24.1665 38.7494 24.1665 32.9155 24.1665H23.8877C21.9431 24.1665 20.9717 24.1665 20.229 24.545C19.5756 24.8778 19.0448 25.4086 18.7119 26.062C18.3335 26.8047 18.3335 27.7778 18.3335 29.7224V60.278C18.3335 62.2226 18.3335 63.1935 18.7119 63.9363C19.0448 64.5896 19.5756 65.1222 20.229 65.4551C20.971 65.8332 21.9412 65.8332 23.882 65.8332H33.718C36.9791 65.8332 38.6093 65.8332 40.0893 66.2827C41.3997 66.6806 42.6221 67.3322 43.68 68.2017C44.8702 69.1799 45.77 70.5296 47.5643 73.2211L49.5835 76.2492" stroke="#161616" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>

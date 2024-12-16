@@ -137,6 +137,30 @@
   justify-content: flex-end;
   gap: 10px;
 }
+.learn-tabs {
+  display: flex;
+  gap: 36px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.learn-tab {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 10px;
+  border-bottom: 4px solid var(--black);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.learn-tab:hover {
+  border-bottom: 4px solid var(--primary-orange);
+}
+
+.learn-tab.active {
+  border-color: var(--primary-orange);
+}
 
 @media (max-width: 1199.98px) {
   .learn-main_tabs {
@@ -153,6 +177,9 @@
   .learn-main_info {
     padding: 0;
     background: transparent;
+  }
+  .learn-tabs {
+    display: none;
   }
 }
 

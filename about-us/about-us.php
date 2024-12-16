@@ -16,7 +16,7 @@
 
 <body>
     <?php include dirname(__DIR__) . "/components/header.php"; ?>
-    
+
     <section class="about-us">
         <div class="container">
             <h1><span>Learn German</span> with us. Guaranteed</h1>
@@ -36,27 +36,27 @@
                     <p class="text p1 about-us-inner__last">The Goethe-Institut stands for the competent and efficient teaching of German as a foreign language. Our recipe for success: lessons are based on clear learning goals and focus on your needs.</p>
                 </div>
             </div>
-        
+
     </section>
 
     <section class="learning-success">
-            <div class="container">
-                <div>
-                    <h2><span>Learning success</span> at the Deutsch  Vorbereitung</h2>
-                    <h3>The Deutsch Vorbereitung is Germany’s best language institute!</h3>
-                    <p class="text p1">That was the result of a representative consumer survey conducted by the ServiceValue market research institute on behalf of the Handelsblatt newspaper. Customers view the Goethe-Institut as by far the best language school provider based on their experiences over the past two years. <br/> <br/>
-                        Source: Handelsblatt, No. 174, 10.09.19, p. 43. <br/> <br/>
-                        A user survey conducted by Statista, an independent market research institute, on behalf of stern magazine to establish the best offers for pupils and adults in continuing education, also came to the same conclusion. Our learning quality was given the best and, at the same time, most important assessment in the survey. Course participants also assigned us with the best price-performance ratio.<br/> <br/>
-                        Source: stern, No. 35, 22.08.19, p. 93.</p>
-                </div>
-                <div>
-                    <h3>he Deutsch Vorbereitung is Germany’s best digital education provider!</h3>
-                    <p class="text p1">That was the result of a representative consumer survey conducted by the ServiceValue market research institute on behalf of the Handelsblatt newspaper. Customers view the Goethe-Institut as by far the best language school provider based on their experiences over the past two years.  <br/> <br/>
-                    Source: Handelsblatt, No. 174, 10.09.19, p. 43.  <br/> <br/>
-                    A user survey conducted by Statista, an independent market research institute, on behalf of stern magazine to establish the best offers for pupils and adults in continuing education, also came to the same conclusion. Our learning quality was given the best and, at the same time, most important assessment in the survey. Course participants also assigned us with the best price-performance ratio.  <br/> <br/>
+        <div class="container">
+            <div>
+                <h2><span>Learning success</span> at the Deutsch Vorbereitung</h2>
+                <h3>The Deutsch Vorbereitung is Germany’s best language institute!</h3>
+                <p class="text p1">That was the result of a representative consumer survey conducted by the ServiceValue market research institute on behalf of the Handelsblatt newspaper. Customers view the Goethe-Institut as by far the best language school provider based on their experiences over the past two years. <br /> <br />
+                    Source: Handelsblatt, No. 174, 10.09.19, p. 43. <br /> <br />
+                    A user survey conducted by Statista, an independent market research institute, on behalf of stern magazine to establish the best offers for pupils and adults in continuing education, also came to the same conclusion. Our learning quality was given the best and, at the same time, most important assessment in the survey. Course participants also assigned us with the best price-performance ratio.<br /> <br />
                     Source: stern, No. 35, 22.08.19, p. 93.</p>
-                </div>
             </div>
+            <div>
+                <h3>he Deutsch Vorbereitung is Germany’s best digital education provider!</h3>
+                <p class="text p1">That was the result of a representative consumer survey conducted by the ServiceValue market research institute on behalf of the Handelsblatt newspaper. Customers view the Goethe-Institut as by far the best language school provider based on their experiences over the past two years. <br /> <br />
+                    Source: Handelsblatt, No. 174, 10.09.19, p. 43. <br /> <br />
+                    A user survey conducted by Statista, an independent market research institute, on behalf of stern magazine to establish the best offers for pupils and adults in continuing education, also came to the same conclusion. Our learning quality was given the best and, at the same time, most important assessment in the survey. Course participants also assigned us with the best price-performance ratio. <br /> <br />
+                    Source: stern, No. 35, 22.08.19, p. 93.</p>
+            </div>
+        </div>
     </section>
 
     <section class="media-library">
@@ -84,7 +84,7 @@
             <div class="line"></div>
 
             <div class="row">
-                 <img src="../images/media-library.webp" alt="Media library image">
+                <img src="../images/media-library.webp" alt="Media library image">
                 <p class="text p1">At the Goethe-Institut, you can also use the free “Deutsch für Dich” digital service for practising and communicating. The community gives you access to extensive, interactive learning materials, games and exercises. Here you can network online with other people learning German and stay in touch with them after the course ends. That’s how we create a stimulating learning environment for learning German. Guaranteed.</p>
             </div>
         </div>
@@ -94,7 +94,7 @@
         <div class="container">
             <h2><span>Online community</span> “Deutsch für Dich”</h2>
             <p class="text p1 description">The Goethe-Instituts in Germany offer the entire range of courses – general language courses, exam preparation and job-related courses – for every language level and to meet every individual requirement. You can choose from intensive and evening courses to suit your needs, possibilities and language skills.</p>
-             <div class="row">
+            <div class="row">
                 <div class="online-community-box">
                     <img src="../images/online-community1.webp" alt="Online community image">
                     <p class="text p1 online-community-box__title"><strong>Regardless of the level</strong></p>
@@ -103,8 +103,8 @@
 
                 <div class="online-community-box">
                     <img src="../images/online-community2.webp" alt="Online community image">
-                    <p class="text p1 online-community-box__title"><strong>Regardless of the level</strong></p>
-                    <p class="text p1">The aim of the lessons is that you enjoy them and make rapid and lasting progress while improving your active language skills. You will train all the language skills – listening, reading, writing and speaking – in the learning and lesson phases, using up-to-date texts, authentic speaking and writing exercises, role plays related to everyday life, and practical project and research exercises.</p>
+                    <p class="text p1 online-community-box__title"><strong>Examinations can be taken on completion of every level</strong></p>
+                    <p class="text p1">All examinations of the Goethe-Institut are internationally recognised and are valued as proof of qualification by employers and educational institutions. During the course, we will check your progress, give your well-founded feedback and provide you with optimal preparation for your certificate.</p>
                 </div>
             </div>
         </div>
@@ -118,48 +118,48 @@
             <div class="grid">
                 <div class="guarantee-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
-                        <rect width="60" height="60" rx="30" fill="#F8F8FA"/>
-                        <path d="M14.6641 29.9991L24.1511 39.4861L44.4821 19.157" stroke="#F7631B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect width="60" height="60" rx="30" fill="#F8F8FA" />
+                        <path d="M14.6641 29.9991L24.1511 39.4861L44.4821 19.157" stroke="#F7631B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <p class="text p2">Individual grading into the appropriate level (online or at the location)</p>
                 </div>
 
-                 <div class="guarantee-box">
+                <div class="guarantee-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
-                        <rect width="60" height="60" rx="30" fill="#F8F8FA"/>
-                        <path d="M14.6641 29.9991L24.1511 39.4861L44.4821 19.157" stroke="#F7631B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect width="60" height="60" rx="30" fill="#F8F8FA" />
+                        <path d="M14.6641 29.9991L24.1511 39.4861L44.4821 19.157" stroke="#F7631B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <p class="text p2">Homogeneous learning groups and intensive support makes learning fun and gives you a sense of achievement</p>
                 </div>
 
-                 <div class="guarantee-box">
+                <div class="guarantee-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
-                        <rect width="60" height="60" rx="30" fill="#F8F8FA"/>
-                        <path d="M14.6641 29.9991L24.1511 39.4861L44.4821 19.157" stroke="#F7631B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect width="60" height="60" rx="30" fill="#F8F8FA" />
+                        <path d="M14.6641 29.9991L24.1511 39.4861L44.4821 19.157" stroke="#F7631B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <p class="text p2">Friendly and safe atmosphere due to optimal course sizes with max. 16 participants (18 participants in online courses)</p>
                 </div>
 
-                 <div class="guarantee-box">
+                <div class="guarantee-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
-                        <rect width="60" height="60" rx="30" fill="#F8F8FA"/>
-                        <path d="M14.6641 29.9991L24.1511 39.4861L44.4821 19.157" stroke="#F7631B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect width="60" height="60" rx="30" fill="#F8F8FA" />
+                        <path d="M14.6641 29.9991L24.1511 39.4861L44.4821 19.157" stroke="#F7631B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <p class="text p2">Communicative exercises and projects will enable you to use the language in a wide variety of everyday, work and study situations</p>
                 </div>
 
-                 <div class="guarantee-box">
+                <div class="guarantee-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
-                        <rect width="60" height="60" rx="30" fill="#F8F8FA"/>
-                        <path d="M14.6641 29.9991L24.1511 39.4861L44.4821 19.157" stroke="#F7631B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect width="60" height="60" rx="30" fill="#F8F8FA" />
+                        <path d="M14.6641 29.9991L24.1511 39.4861L44.4821 19.157" stroke="#F7631B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <p class="text p2">Active learning with all the senses: listening, reading, writing and speaking</p>
                 </div>
 
-                 <div class="guarantee-box">
+                <div class="guarantee-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
-                        <rect width="60" height="60" rx="30" fill="#F8F8FA"/>
-                        <path d="M14.6641 29.9991L24.1511 39.4861L44.4821 19.157" stroke="#F7631B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect width="60" height="60" rx="30" fill="#F8F8FA" />
+                        <path d="M14.6641 29.9991L24.1511 39.4861L44.4821 19.157" stroke="#F7631B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <p class="text p2">Syllabus in accordance with the Common European Framework of Reference</p>
                 </div>

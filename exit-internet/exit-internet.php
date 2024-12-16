@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/deutsch-b1-horen/deutsch-b1-horen.css" />
     <link rel="stylesheet" href="../styles/listening-german/listening-german.css" />
-
-    <link rel="stylesheet" href="../styles/exit-internet/exit-internet.css" />
+    <link rel="stylesheet" href="../ui/modal-exit/modal-exit.css" />
 </head>
 
 <body class="back overflow-hidden">

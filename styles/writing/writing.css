@@ -88,7 +88,7 @@
   padding: 30px 25px;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 20px;
 }
 .writing-main_info p span {
   font-weight: 600;

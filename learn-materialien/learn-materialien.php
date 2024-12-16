@@ -229,6 +229,10 @@
                     </div>
                     <div class="learn-main_info">
                         <h3>Verben mit prapositionen</h3>
+                        <div class="learn-tabs">
+                            <div class="learn-tab">Learn</div>
+                            <div class="learn-tab active">Modelltest</div>
+                        </div>
                         <div class="learn-info_content">
                             <div class="learn-info_navigation">
                                 <div class="navigation-block">
