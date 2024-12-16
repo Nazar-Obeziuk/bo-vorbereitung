@@ -96,13 +96,13 @@
             <p class="text p1 description">The Goethe-Instituts in Germany offer the entire range of courses – general language courses, exam preparation and job-related courses – for every language level and to meet every individual requirement. You can choose from intensive and evening courses to suit your needs, possibilities and language skills.</p>
             <div class="row">
                 <div class="online-community-box">
-                    <img src="../images/online-community1.webp" alt="Online community image">
+                    <img src="/images/online-community1.webp" alt="Online community image">
                     <p class="text p1 online-community-box__title"><strong>Regardless of the level</strong></p>
                     <p class="text p1">The aim of the lessons is that you enjoy them and make rapid and lasting progress while improving your active language skills. You will train all the language skills – listening, reading, writing and speaking – in the learning and lesson phases, using up-to-date texts, authentic speaking and writing exercises, role plays related to everyday life, and practical project and research exercises.</p>
                 </div>
 
                 <div class="online-community-box">
-                    <img src="../images/online-community2.webp" alt="Online community image">
+                    <img src="/images/online-community2.webp" alt="Online community image">
                     <p class="text p1 online-community-box__title"><strong>Examinations can be taken on completion of every level</strong></p>
                     <p class="text p1">All examinations of the Goethe-Institut are internationally recognised and are valued as proof of qualification by employers and educational institutions. During the course, we will check your progress, give your well-founded feedback and provide you with optimal preparation for your certificate.</p>
                 </div>

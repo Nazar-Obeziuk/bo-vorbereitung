@@ -244,7 +244,7 @@
                                         <span></span>
                                     </div>
                                     <button class="primary-button border big" type="send" name="send">
-                                        <img src="../images/google-logo-mobile.svg" alt="google logo">
+                                        <img src="/images/google-logo-mobile.svg" alt="google logo">
                                         Sign up with Google
                                     </button>
                                 </div>
@@ -261,7 +261,7 @@
                                             <div class="review-block_header">
                                                 <div class="review-header_info">
                                                     <div class="review-info_avatar">
-                                                        <img src="images/review-icon.webp" width="100" height="100" alt="review icon" class="review-avatar_icon">
+                                                        <img src="/images/review-icon.webp" width="100" height="100" alt="review icon" class="review-avatar_icon">
                                                     </div>
                                                     <div class="review-info_inner">
                                                         <p class="text p4">Damian Lorenzo</p>
@@ -285,7 +285,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="review-header_service">
-                                                    <img src="images/google-logo-mobile.svg" alt="google mobile" class="review-service_logo">
+                                                    <img src="/images/google-logo-mobile.svg" alt="google mobile" class="review-service_logo">
                                                 </div>
                                             </div>
                                             <div class="review-block_main">
@@ -298,7 +298,7 @@
                                             <div class="review-block_header">
                                                 <div class="review-header_info">
                                                     <div class="review-info_avatar">
-                                                        <img src="images/review-icon.webp" width="100" height="100" alt="review icon" class="review-avatar_icon">
+                                                        <img src="/images/review-icon.webp" width="100" height="100" alt="review icon" class="review-avatar_icon">
                                                     </div>
                                                     <div class="review-info_inner">
                                                         <p class="text p4">Victoria Schewtschenko</p>
@@ -322,7 +322,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="review-header_service">
-                                                    <img src="images/google-logo-mobile.svg" alt="google mobile" class="review-service_logo">
+                                                    <img src="/images/google-logo-mobile.svg" alt="google mobile" class="review-service_logo">
                                                 </div>
                                             </div>
                                             <div class="review-block_main">
@@ -335,7 +335,7 @@
                                             <div class="review-block_header">
                                                 <div class="review-header_info">
                                                     <div class="review-info_avatar">
-                                                        <img src="images/review-icon.webp" width="100" height="100" alt="review icon" class="review-avatar_icon">
+                                                        <img src="/images/review-icon.webp" width="100" height="100" alt="review icon" class="review-avatar_icon">
                                                     </div>
                                                     <div class="review-info_inner">
                                                         <p class="text p4">Damian Lorenzo</p>
@@ -359,7 +359,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="review-header_service">
-                                                    <img src="images/google-logo-mobile.svg" alt="google mobile" class="review-service_logo">
+                                                    <img src="/images/google-logo-mobile.svg" alt="google mobile" class="review-service_logo">
                                                 </div>
                                             </div>
                                             <div class="review-block_main">
@@ -372,7 +372,7 @@
                                             <div class="review-block_header">
                                                 <div class="review-header_info">
                                                     <div class="review-info_avatar">
-                                                        <img src="images/review-icon.webp" width="100" height="100" alt="review icon" class="review-avatar_icon">
+                                                        <img src="/images/review-icon.webp" width="100" height="100" alt="review icon" class="review-avatar_icon">
                                                     </div>
                                                     <div class="review-info_inner">
                                                         <p class="text p4">Damian Lorenzo</p>
@@ -396,7 +396,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="review-header_service">
-                                                    <img src="images/google-logo-mobile.svg" alt="google mobile" class="review-service_logo">
+                                                    <img src="/images/google-logo-mobile.svg" alt="google mobile" class="review-service_logo">
                                                 </div>
                                             </div>
                                             <div class="review-block_main">
@@ -409,7 +409,7 @@
                                             <div class="review-block_header">
                                                 <div class="review-header_info">
                                                     <div class="review-info_avatar">
-                                                        <img src="images/review-icon.webp" width="100" height="100" alt="review icon" class="review-avatar_icon">
+                                                        <img src="/images/review-icon.webp" width="100" height="100" alt="review icon" class="review-avatar_icon">
                                                     </div>
                                                     <div class="review-info_inner">
                                                         <p class="text p4">Damian Lorenzo</p>
@@ -433,7 +433,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="review-header_service">
-                                                    <img src="images/google-logo-mobile.svg" alt="google mobile" class="review-service_logo">
+                                                    <img src="/images/google-logo-mobile.svg" alt="google mobile" class="review-service_logo">
                                                 </div>
                                             </div>
                                             <div class="review-block_main">

@@ -111,7 +111,7 @@
         <div class="container">
             <h2>Die häufigsten <span>Fragen</span></h2>
             <div class="questions-box">
-                <img src="../images/questions.webp" alt="Questions image">
+                <img src="/images/questions.webp" alt="Questions image">
                 <div class="questions-box__text">
                     <h3>Welches Deutschniveau brauche ich, um die Prüfung zu bestehen?</h3>
                     <p class="text p1">Um den Deutsch-Test für Zuwanderer erfolgreich zu bestehen, wird in der Regel das Niveau B1 benötigt, das eine komfortable Kommunikation in Alltagssituationen ermöglicht.</p>
