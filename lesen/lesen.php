@@ -31,7 +31,7 @@
         </div>
     </section>
 
-    <section class='listening-german deutsch-b1-horen'>
+    <section class='listening-german deutsch-b1-horen p_20sz'>
         <div class="container">
             <h1><span>B1</span> Übungen auswählen</h1>
 
@@ -249,14 +249,14 @@
                     </div>
                 </form>
             </div>
-            <div class="box_border back__width grey__content">
+            <div class="box_border back__width grey__content p_20sz">
                 <h3 class="black">Ihre Antwort an Kunden</h3>
 
-                <p class="text p3 center span_orange"><strong>Betreff: <span>Entschuldigung für die Unannehmlichkeiten – Ihre Reklamation</span></strong></p>
+                <p class="text center box_28sz">Betreff: <span>Entschuldigung für die Unannehmlichkeiten – Ihre Reklamation</span></p>
 
-                <p class="text p2">Sehr geehrter Herr Müller,</p>
-                <p class="text p2">im Namen des Unternehmens entschuldige ich mich für das Missverständnis. Wir bedauern sehr,
-                    <span class="block__select">
+                <p class="text p2"><strong>Sehr geehrter Herr Müller,</strong><br>
+                im Namen des Unternehmens entschuldige ich mich für das Missverständnis. Wir bedauern sehr,
+                    <span class="block__select add">
                         <span class="ul">
                             <span data-num="1" class="li active">wodurch</span>
                             <span data-num="2" class="li">dass</span>
@@ -272,7 +272,7 @@
                         </span>
                     </span>
                     Sie mit unserem Service beim Einbau Ihrer neuen Küche nicht zufrieden waren. Wir können Ihren Ärger verstehen und möchten uns für die entstandenen Unannehmlichkeiten entschuldigen.
-                    <span class="block__select">
+                    <span class="block__select add">
                         <span class="ul">
                             <span data-num="1" class="li active">wodurch</span>
                             <span data-num="2" class="li">dass</span>
