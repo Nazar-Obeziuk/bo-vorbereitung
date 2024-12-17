@@ -42,6 +42,7 @@
         <div class="container">
             <div class="level-wrapper">
                 <h2>Wähl dein Deutsch <span>Niveau</span> aus</h2>
+                <!-- щоб додати ще рівні C1, C2 потрібно замість класу level-4 прописати level-6 -->
                 <div class="level-languages level-4">
                     <div class="level-language a1">
                         <p>A1</p>
@@ -55,6 +56,12 @@
                     <div class="level-language b2">
                         <p>B2</p>
                     </div>
+                    <!-- <div class="level-language c1">
+                        <p>C1</p>
+                    </div>
+                    <div class="level-language c2">
+                        <p>C2</p>
+                    </div> -->
                 </div>
                 <div class="google-review_block">
                     <div class="google-block_logo">
