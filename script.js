@@ -650,9 +650,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
 document.addEventListener("DOMContentLoaded", () => {
   document
-    .querySelectorAll(".input__box.border__box button.primary-button")
+    .querySelectorAll("button.primary-button[data-inputmodal]")
     .forEach((button) => {
       button.addEventListener("click", function () {
         const modalClass = this.getAttribute("data-inputmodal");
@@ -674,6 +675,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 // listening-german
 
@@ -922,7 +924,7 @@ function alignBlockSelects() {
       const containerCenter = containerRect.width / 2;
       const blockCenter = blockRect.left + blockRect.width / 2;
 
-      const tolerance = 20;
+      const tolerance = 40;
 
       blockSelect.classList.remove('center', 'left', 'right');
 

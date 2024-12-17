@@ -303,6 +303,23 @@
                         </div>
                     </div>
 
+                    <div class="inputmodal inputmodal-2">
+                            <span class="close-inputmodal">schließen
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24 24L16 16M16 16L8 8M16 16L24 8M16 16L8 24" stroke="#161616" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </span>
+                            <div class="inputmodal__content">
+                                <p class="text p2">Die Natur ist ein wunderbarer Ort, der uns Ruhe und Energie schenkt. Wenn wir durch die grünen Wälder wandern oder die majestätischen Berge betrachten, spüren wir eine tiefe Verbundenheit zur Erde. Jede Jahreszeit bringt ihre eigenen Farben und Düfte, die uns immer wieder in Erstaunen versetzen.
+                                </p>
+                                <p>
+                                </p>
+                                <p class="text p2">Die frische Luft und die sanften Geräusche der Natur haben eine beruhigende Wirkung auf unseren Geist. Das Zwitschern der Vögel, das leise Plätschern eines Baches und das Rascheln der Blätter schaffen eine friedliche Atmosphäre. Diese Momente erinnern uns daran, wie kostbar und faszinierend die Welt um uns herum ist.</p>
+                                <p class="text p2">Die frische Luft und die sanften Geräusche der Natur haben eine beruhigende Wirkung auf unseren Geist. Das Zwitschern der Vögel, das leise Plätschern eines Baches und das Rascheln der Blätter schaffen eine friedliche Atmosphäre. Diese Momente erinnern uns daran, wie kostbar und faszinierend die Welt um uns herum ist.</p>
+                                <p class="text p2">Die frische Luft und die sanften Geräusche der Natur haben eine beruhigende Wirkung auf unseren Geist. Das Zwitschern der Vögel, das leise Plätschern eines Baches und das Rascheln der Blätter schaffen eine friedliche Atmosphäre. Diese Momente erinnern uns daran, wie kostbar und faszinierend die Welt um uns herum ist.</p>
+                            </div>
+                        </div>
+
                     <button class="primary-button" type="button" data-inputmodal="inputmodal-2">
                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.64648 7.07361C7.81728 6.54732 8.13015 6.07896 8.55078 5.71948C8.97141 5.36001 9.4838 5.12378 10.0303 5.03708C10.5768 4.95038 11.1362 5.0164 11.6475 5.22803C12.1587 5.43966 12.6014 5.78875 12.9268 6.23633C13.2521 6.68391 13.4469 7.21256 13.4904 7.76416C13.5339 8.31576 13.4238 8.86879 13.1727 9.36182C12.9215 9.85484 12.5394 10.2685 12.0676 10.5576C11.5958 10.8467 11.0533 10.9998 10.5 10.9998V12.0002M10.5 19C5.52944 19 1.5 14.9706 1.5 10C1.5 5.02944 5.52944 1 10.5 1C15.4706 1 19.5 5.02944 19.5 10C19.5 14.9706 15.4706 19 10.5 19ZM10.5498 15V15.1L10.4502 15.1002V15H10.5498Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
