@@ -20,13 +20,13 @@
 
     <section class="breadcrumbs">
         <div class="container">
-            <p class="breadcrumbs-title">Deutsch <span>B1 Sprachbausteine</span></з>
+            <p class="breadcrumbs-title">Deutsch <span>B1 Hören und Schreiben</span></з>
             <div class="breadcrumbs-main">
                 <a class="text p4" href="#">Vorbereiting mit BO</a>
                 <span>-></span>
                 <a class="text p4" href="#">B1 (Goethe)</a>
                 <span>-></span>
-                <p class="text p4 bold">Sprachbausteine</p>
+                <p class="text p4 bold">Hören und Schreiben</p>
             </div>
         </div>
     </section>
@@ -36,14 +36,14 @@
             <h1><span>B1</span> Übungen auswählen</h1>
 
             <div class="listening-german__list">
-                <button class="secondary-button border" type="button">
+                <button class="secondary-button active border" type="button">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M23.645 15.5112C23.645 11.2156 20.1627 7.7334 15.8672 7.7334C11.5716 7.7334 8.08941 11.2156 8.08941 15.5112M20.3116 19.4001V21.6223C20.3116 22.1386 20.3116 22.3967 20.3543 22.6114C20.5297 23.4929 21.2188 24.1824 22.1004 24.3577C22.315 24.4004 22.5731 24.4004 23.0894 24.4004C23.6057 24.4004 23.8638 24.4004 24.0785 24.3577C24.96 24.1824 25.649 23.4929 25.8243 22.6114C25.867 22.3967 25.8672 22.1386 25.8672 21.6223V19.4001C25.8672 18.8838 25.867 18.6251 25.8243 18.4105C25.649 17.5289 24.96 16.8403 24.0785 16.665C23.8638 16.6223 23.6057 16.6223 23.0894 16.6223C22.5731 16.6223 22.315 16.6223 22.1004 16.665C21.2188 16.8403 20.5297 17.5289 20.3543 18.4105C20.3116 18.6251 20.3116 18.8838 20.3116 19.4001ZM11.4227 19.4001V21.6223C11.4227 22.1386 11.4226 22.3967 11.3799 22.6114C11.2045 23.4929 10.5155 24.1824 9.63401 24.3577C9.41934 24.4004 9.16129 24.4004 8.64501 24.4004C8.12874 24.4004 7.87059 24.4004 7.65592 24.3577C6.77439 24.1824 6.08524 23.4929 5.90989 22.6114C5.86719 22.3967 5.86719 22.1386 5.86719 21.6223V19.4001C5.86719 18.8838 5.86719 18.6251 5.90989 18.4105C6.08524 17.5289 6.77439 16.8403 7.65592 16.665C7.87059 16.6223 8.12873 16.6223 8.64501 16.6223C9.1613 16.6223 9.41934 16.6223 9.63401 16.665C10.5155 16.8403 11.2045 17.5289 11.3799 18.4105C11.4226 18.6251 11.4227 18.8838 11.4227 19.4001Z" stroke="#F7631B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <p class="text p2">Hören</p>
                 </button>
 
-                <button class="secondary-button active border" type="button">
+                <button class="secondary-button border" type="button">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.8662 13.0665V24.3998M15.8662 13.0665C15.8662 11.1997 15.8662 10.2666 16.2295 9.5536C16.5491 8.9264 17.0587 8.41629 17.6859 8.09671C18.3989 7.7334 19.3325 7.7334 21.1993 7.7334H24.0882C24.7105 7.7334 25.0219 7.7334 25.2595 7.8545C25.4686 7.96103 25.6382 8.13088 25.7447 8.33995C25.8658 8.57763 25.8662 8.889 25.8662 9.51128V19.2891C25.8662 19.9113 25.8658 20.2221 25.7447 20.4597C25.6382 20.6688 25.469 20.8392 25.2599 20.9457C25.0225 21.0667 24.7118 21.0667 24.0907 21.0667H20.9433C19.8997 21.0667 19.3769 21.0667 18.9033 21.2106C18.484 21.3379 18.0947 21.5464 17.7562 21.8247C17.3738 22.139 17.084 22.5731 16.5051 23.4414L15.8662 24.3998M15.8662 13.0665C15.8662 11.1997 15.866 10.2666 15.5027 9.5536C15.1831 8.9264 14.6732 8.41629 14.046 8.09671C13.3329 7.7334 12.3993 7.7334 10.5324 7.7334H7.64355C7.02127 7.7334 6.71044 7.7334 6.47276 7.8545C6.2637 7.96103 6.09384 8.13088 5.98731 8.33995C5.86621 8.57763 5.86621 8.889 5.86621 9.51128V19.2891C5.86621 19.9113 5.86621 20.2221 5.98731 20.4597C6.09384 20.6688 6.2637 20.8392 6.47276 20.9457C6.71021 21.0667 7.02067 21.0667 7.64173 21.0667H10.7892C11.8328 21.0667 12.3545 21.0667 12.8281 21.2106C13.2474 21.3379 13.6386 21.5464 13.9771 21.8247C14.358 22.1377 14.6459 22.5696 15.2201 23.4309L15.8662 24.3998" stroke="#F7631B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
@@ -81,7 +81,7 @@
 
             <div class="dropdown-menu navigation">
                 <div class="dropdown-menu-item" id="dropdown-menu-item-1">
-                    <a class="dropdown-menu-item-link" href="#">
+                    <a class="dropdown-menu-item-link active" href="#">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M23.645 15.5112C23.645 11.2156 20.1627 7.7334 15.8672 7.7334C11.5716 7.7334 8.08941 11.2156 8.08941 15.5112M20.3116 19.4001V21.6223C20.3116 22.1386 20.3116 22.3967 20.3543 22.6114C20.5297 23.4929 21.2188 24.1824 22.1004 24.3577C22.315 24.4004 22.5731 24.4004 23.0894 24.4004C23.6057 24.4004 23.8638 24.4004 24.0785 24.3577C24.96 24.1824 25.649 23.4929 25.8243 22.6114C25.867 22.3967 25.8672 22.1386 25.8672 21.6223V19.4001C25.8672 18.8838 25.867 18.6251 25.8243 18.4105C25.649 17.5289 24.96 16.8403 24.0785 16.665C23.8638 16.6223 23.6057 16.6223 23.0894 16.6223C22.5731 16.6223 22.315 16.6223 22.1004 16.665C21.2188 16.8403 20.5297 17.5289 20.3543 18.4105C20.3116 18.6251 20.3116 18.8838 20.3116 19.4001ZM11.4227 19.4001V21.6223C11.4227 22.1386 11.4226 22.3967 11.3799 22.6114C11.2045 23.4929 10.5155 24.1824 9.63401 24.3577C9.41934 24.4004 9.16129 24.4004 8.64501 24.4004C8.12874 24.4004 7.87059 24.4004 7.65592 24.3577C6.77439 24.1824 6.08524 23.4929 5.90989 22.6114C5.86719 22.3967 5.86719 22.1386 5.86719 21.6223V19.4001C5.86719 18.8838 5.86719 18.6251 5.90989 18.4105C6.08524 17.5289 6.77439 16.8403 7.65592 16.665C7.87059 16.6223 8.12873 16.6223 8.64501 16.6223C9.1613 16.6223 9.41934 16.6223 9.63401 16.665C10.5155 16.8403 11.2045 17.5289 11.3799 18.4105C11.4226 18.6251 11.4227 18.8838 11.4227 19.4001Z" stroke="#F7631B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
@@ -90,7 +90,7 @@
                     </a>
                 </div>
                 <div class="dropdown-menu-item" id="dropdown-menu-item-2">
-                    <a class="dropdown-menu-item-link active" href="#">
+                    <a class="dropdown-menu-item-link" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 100 100" fill="none">
                             <path d="M49.5835 40.8325V76.2492M49.5835 40.8325C49.5835 34.9986 49.5835 32.0829 50.7188 29.8546C51.7175 27.8946 53.3099 26.3005 55.2699 25.3019C57.4982 24.1665 60.4156 24.1665 66.2495 24.1665H75.2773C77.2219 24.1665 78.1949 24.1665 78.9376 24.545C79.591 24.8778 80.1208 25.4086 80.4537 26.062C80.8322 26.8047 80.8335 27.7778 80.8335 29.7224V60.278C80.8335 62.2226 80.8322 63.1935 80.4537 63.9363C80.1208 64.5896 79.5921 65.1222 78.9388 65.4551C78.1967 65.8332 77.2258 65.8332 75.285 65.8332H65.4492C62.1881 65.8332 60.5546 65.8332 59.0745 66.2827C57.7642 66.6806 56.5476 67.3322 55.4897 68.2017C54.2947 69.1839 53.3891 70.5406 51.5802 73.254L49.5835 76.2492M49.5835 40.8325C49.5835 34.9986 49.5829 32.0829 48.4476 29.8546C47.4489 27.8946 45.8552 26.3005 43.8952 25.3019C41.667 24.1665 38.7494 24.1665 32.9155 24.1665H23.8877C21.9431 24.1665 20.9717 24.1665 20.229 24.545C19.5756 24.8778 19.0448 25.4086 18.7119 26.062C18.3335 26.8047 18.3335 27.7778 18.3335 29.7224V60.278C18.3335 62.2226 18.3335 63.1935 18.7119 63.9363C19.0448 64.5896 19.5756 65.1222 20.229 65.4551C20.971 65.8332 21.9412 65.8332 23.882 65.8332H33.718C36.9791 65.8332 38.6093 65.8332 40.0893 66.2827C41.3997 66.6806 42.6221 67.3322 43.68 68.2017C44.8702 69.1799 45.77 70.5296 47.5643 73.2211L49.5835 76.2492" stroke="#F7631B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
@@ -160,56 +160,169 @@
 
             <span class="dot text p3">11% (40 von 363 Personen konnten beim ersten Mal richtig antworten)</span>
 
-            <div class="box_border back__width">
-                <h2 class="color_orange">Sprachbausteine</h2>
-                <p class="h3__title center mob-center">Übung</p>
-                <p class="text p3 center">Lesen Sie den folgenden Text. Welche Variante passt am besten <br>in die Lücken?</p>
+            <div class="box_border">
+                <h2><span>Text</span> für die Aufgaben</h2>
+                <div class="box_24sz">
+                    <p class="bold">Sie hören eine telefonische Mitteilung. Informieren Sie Ihre Kollegin. Notieren Sie die Informationen auf dem Antwortbogen.</p>
+                    <p class="color_orange">Sie hören die Mitteilung nur einmal.</p>
+                    <ul>
+                        <li>Grund für den Anruf</li>
+                    </ul>
+                    <p>Wählen Sie die richtige Lösung (a, b oder c). Markieren Sie auf dem Antwortbogen.</p>
+                    <ul>
+                        <li>Notizen schreiben</li>
+                    </ul>
+                    <p class="bold">Schreiben Sie Name, Telefonnummer, weitere Informationen und tragen Sie im Feld „zu erledigen“ ein, was zu erledigen ist.</p>
+                </div>
+              
+
+                <h3>Sporthallen</h3>
+                <div class="audio-player">
+                    <span class="play-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 17.3336V6.66698C5 5.78742 5 5.34715 5.18509 5.08691C5.34664 4.85977 5.59564 4.71064 5.87207 4.67499C6.18868 4.63415 6.57701 4.84126 7.35254 5.25487L17.3525 10.5882L17.3562 10.5898C18.2132 11.0469 18.642 11.2756 18.7826 11.5803C18.9053 11.8462 18.9053 12.1531 18.7826 12.4189C18.6418 12.7241 18.212 12.9537 17.3525 13.4121L7.35254 18.7454C6.57645 19.1593 6.1888 19.3657 5.87207 19.3248C5.59564 19.2891 5.34664 19.1401 5.18509 18.9129C5 18.6527 5 18.2132 5 17.3336Z" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <span class="time current-time">0:00</span>
+                    <div class="progress-bar-container_a">
+                        <div class="progress-bar_a"></div>
+                    </div>
+                    <span class="time duration">0:00</span>
+                    <span class="mute-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.82 4.68652C19.8191 5.61821 20.6167 6.74472 21.1636 7.99657C21.7105 9.24842 21.9952 10.5991 21.9999 11.9652C22.0047 13.3313 21.7295 14.6838 21.1914 15.9395C20.6532 17.1951 19.8635 18.3272 18.8709 19.2658M16.092 7.61194C16.6915 8.17095 17.17 8.84686 17.4982 9.59797C17.8263 10.3491 17.9971 11.1595 18 11.9791C18.0028 12.7988 17.8377 13.6103 17.5148 14.3637C17.1919 15.1171 16.7181 15.7963 16.1225 16.3595M7.4803 15.4069L9.15553 17.48C10.0288 18.5607 10.4655 19.1011 10.848 19.1599C11.1792 19.2108 11.5138 19.0925 11.7394 18.8448C12 18.5586 12 17.8638 12 16.4744V7.52572C12 6.13627 12 5.44155 11.7394 5.15536C11.5138 4.90761 11.1792 4.78929 10.848 4.84021C10.4655 4.89904 10.0288 5.43939 9.15553 6.52009L7.4803 8.59319C7.30388 8.81151 7.21567 8.92067 7.10652 8.99922C7.00982 9.06881 6.90147 9.12056 6.78656 9.15204C6.65687 9.18756 6.51652 9.18756 6.23583 9.18756H4.8125C4.0563 9.18756 3.6782 9.18756 3.37264 9.2885C2.77131 9.48716 2.2996 9.95887 2.10094 10.5602C2 10.8658 2 11.2439 2 12.0001C2 12.7563 2 13.1344 2.10094 13.4399C2.2996 14.0413 2.77131 14.513 3.37264 14.7116C3.6782 14.8126 4.0563 14.8126 4.8125 14.8126H6.23583C6.51652 14.8126 6.65687 14.8126 6.78656 14.8481C6.90147 14.8796 7.00982 14.9313 7.10652 15.0009C7.21567 15.0794 7.30388 15.1886 7.4803 15.4069Z" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+
+                    <div class="menu-container">
+                        <span class="menu-btn ml">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 6C12 6.55228 12.4477 7 13 7C13.5523 7 14 6.55228 14 6C14 5.44772 13.5523 5 13 5C12.4477 5 12 5.44772 12 6Z" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 12C12 12.5523 12.4477 13 13 13C13.5523 13 14 12.5523 14 12C14 11.4477 13.5523 11 13 11C12.4477 11 12 11.4477 12 12Z" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 18C12 18.5523 12.4477 19 13 19C13.5523 19 14 18.5523 14 18C14 17.4477 13.5523 17 13 17C12.4477 17 12 17.4477 12 18Z" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <ul class="menu hidden">
+                            <li>
+                                <a href="https://fobiya.github.io/Fobiya/PcOmxfke42b7.128.mp3" class="download-link" download><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 28H24M16 4V22.6667M16 22.6667L22.6667 16M16 22.6667L9.33333 16" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>Download</a>
+                            </li>
+                            <li>
+                                <span class="speed-options-btn">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.81 2.02202C13.8367 1.78868 14.9033 1.66602 15.9993 1.66602C23.9153 1.66602 30.3327 8.08335 30.3327 15.9993C30.3327 23.9153 23.9153 30.3327 15.9993 30.3327C14.9033 30.3327 13.8367 30.21 12.81 29.9767C12.6819 29.9476 12.5608 29.8936 12.4536 29.8177C12.3464 29.7419 12.2552 29.6456 12.1852 29.5345C12.1152 29.4234 12.0677 29.2996 12.0456 29.1701C12.0234 29.0406 12.0269 28.9081 12.056 28.78C12.0851 28.6519 12.1391 28.5308 12.215 28.4236C12.2908 28.3164 12.3871 28.2252 12.4982 28.1552C12.6093 28.0852 12.7331 28.0377 12.8626 28.0156C12.992 27.9934 13.1246 27.9969 13.2527 28.026C15.0585 28.4364 16.9336 28.4349 18.7387 28.0215C20.5439 27.6082 22.2328 26.7936 23.6801 25.6383C25.1274 24.483 26.296 23.0167 27.0991 21.348C27.9022 19.6793 28.3192 17.8512 28.3192 15.9993C28.3192 14.1475 27.9022 12.3194 27.0991 10.6507C26.296 8.98204 25.1274 7.51565 23.6801 6.36035C22.2328 5.20505 20.5439 4.39051 18.7387 3.97716C16.9336 3.56382 15.0585 3.56229 13.2527 3.97268C12.994 4.03138 12.7226 3.98492 12.4982 3.84352C12.2738 3.70212 12.1147 3.47736 12.056 3.21868C11.9973 2.96001 12.0438 2.68861 12.1852 2.46419C12.3266 2.23977 12.5513 2.08072 12.81 2.02202ZM9.75135 4.17535C9.89255 4.39974 9.93886 4.67102 9.8801 4.92955C9.82135 5.18808 9.66233 5.41269 9.43801 5.55402C7.86913 6.54243 6.54189 7.87012 5.55402 9.43935C5.41257 9.6639 5.18771 9.82306 4.92891 9.88182C4.67011 9.94058 4.39857 9.89413 4.17402 9.75268C3.94947 9.61123 3.7903 9.38638 3.73154 9.12757C3.67278 8.86877 3.71923 8.59723 3.86068 8.37268C5.00849 6.55067 6.55033 5.00929 8.37268 3.86202C8.48384 3.79189 8.60774 3.74437 8.73728 3.72217C8.86682 3.69996 8.99947 3.70351 9.12763 3.73261C9.2558 3.76172 9.37698 3.8158 9.48423 3.89176C9.59148 3.96773 9.68137 4.0641 9.75135 4.17535ZM3.97268 13.2527C4.03138 12.994 3.98492 12.7226 3.84352 12.4982C3.70212 12.2738 3.47736 12.1147 3.21868 12.056C2.96001 11.9973 2.68861 12.0438 2.46419 12.1852C2.23977 12.3266 2.08072 12.5513 2.02202 12.81C1.78868 13.8367 1.66602 14.9033 1.66602 15.9993C1.66602 17.0953 1.78868 18.162 2.02202 19.19C2.08089 19.4487 2.24012 19.6734 2.46466 19.8147C2.68921 19.9559 2.96067 20.0022 3.21935 19.9433C3.47802 19.8845 3.70271 19.7252 3.84399 19.5007C3.98527 19.2762 4.03156 19.0047 3.97268 18.746C3.76843 17.8447 3.66557 16.9235 3.66602 15.9993C3.66602 15.054 3.77268 14.1353 3.97268 13.2527ZM4.17535 22.2473C4.39974 22.1061 4.67102 22.0598 4.92955 22.1186C5.18808 22.1774 5.41269 22.3364 5.55402 22.5607C6.54205 24.1294 7.86927 25.4566 9.43801 26.4447C9.5492 26.5147 9.6455 26.606 9.72142 26.7132C9.79734 26.8205 9.85139 26.9416 9.88049 27.0698C9.90958 27.1979 9.91316 27.3306 9.891 27.4601C9.86884 27.5896 9.82139 27.7135 9.75135 27.8247C9.68131 27.9359 9.59006 28.0322 9.4828 28.1081C9.37555 28.184 9.25439 28.2381 9.12624 28.2672C8.86744 28.3259 8.5959 28.2795 8.37135 28.138C6.54997 26.9904 5.00906 25.4491 3.86202 23.6273C3.79189 23.5162 3.74437 23.3923 3.72217 23.2628C3.69996 23.1332 3.70351 23.0006 3.73261 22.8724C3.76172 22.7442 3.8158 22.6231 3.89176 22.5158C3.96773 22.4086 4.0641 22.3173 4.17535 22.2473Z" fill="black" />
+                                        <path d="M20.552 14.588C21.5933 15.204 21.5933 16.796 20.552 17.412L14.2587 21.128C13.2453 21.7253 12 20.9466 12 19.7146V12.2853C12 11.0533 13.2453 10.2759 14.2587 10.8733L20.552 14.588Z" fill="black" />
+                                    </svg> Playback speed</span>
+                                <ul class="speed-options hidden">
+                                    <li data-speed="0.5">0.5</li>
+                                    <li data-speed="0.75">0.75</li>
+                                    <li data-speed="1" class="active">1</li>
+                                    <li data-speed="1.25">1.25</li>
+                                    <li data-speed="1.5">1.5</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <audio src="../audio/BRdXYEtmgvCX.128.mp3" controls></audio>
             </div>
 
-            <div class="box_border back__width grey__content p_20sz">
-                <h3 class="black">Text für die Aufgaben</h3>
+            <div class="box_border back__width">
+                <h3 class="black">Aufgaben:</h3>
 
-                <p class="text box_28sz center"><span>Entspannung nach der Arbeit: Mehr als nur Filme</span></p>
+                <form method="post" action="#">
+                    <div class="list__">
+                        <p class='label text p2_semibold'>Grund für den Anruf</p>
+                        <span class="input__box border__box">
+                            <input class='input_radio' type="radio" name="answer1" value="richtig" aria-label="Angebot"><span>a) Angebot</span>
+                        </span>
+                        <span class="input__box border__box orange">
+                            <input class='input_radio' type="radio" name="answer1" value="falsch" aria-label="Bestellung" checked><span>b) Bestellung/Buchung</span>
+                        </span>
+                        <span class="input__box border__box">
+                            <input class='input_radio' type="radio" name="answer1" value="falsch" aria-label="Beschwerde"><span>c) Beschwerde</span>
+                        </span>
+                    </div>
+                    <div class="list__">
+                        <p class='label text p2_semibold'>Name:</p>
+                        <div class="form_input">
+                            <span class='field'>
+                                <input type="text" name="text1" class="login__form-input" placeholder="" aria-label="text1">
+                            </span>
+                        </div>
 
-                <p class="text p2">Entspannung ist ein wichtiger Teil unseres Lebens, <span class="span-border red">mich</span>
-                    nach einem langen Arbeitstag. Während mein Kollege sich gerne mit Filmen entspannt, finde ich meine Ruhe auf andere Weise. Die Vielfalt der Möglichkeiten zur Entspannung ist faszinierend, und jeder findet seine
-                    <span class="span-border green">eigene</span> Methode, um den Stress abzubauen.
-                </p>
-                <p class="text p2">Persönlich bevorzuge ich es, nach der Arbeit in die Natur zu gehen. Ein Spaziergang im Park oder eine Wanderung in den Bergen hilft mir, den Kopf frei zu bekommen und neue Energie zu tanken. Die frische Luft und die natürliche Umgebung wirken positiv
-                    <span class="span-border green">besonders</span> meine Stimmung und mein Wohlbefinden.
-                </p>
+                    </div>
+                    <div class="list__">
+                        <p class='label text p2_semibold'>Telefon:</p>
+                        <div class="form_input">
+                            <span class='field'>
+                                <input type="text" name="telefon" class="login__form-input" placeholder="" aria-label="telefon">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="list__">
+                        <p class='label text p2_semibold'>Weitere Informationen:</p>
+                        <div class="form_input">
+                            <span class='field'>
+                                <input type="text" name="weitere1" class="login__form-input" placeholder="" aria-label="weitere1">
+                            </span>
+                        </div>
+                        <div class="form_input">
+                            <span class='field'>
+                                <input type="text" name="weitere2" class="login__form-input" placeholder="" aria-label="weitere2">
+                            </span>
+                        </div>
+                        <div class="form_input">
+                            <span class='field'>
+                                <input type="text" name="weitere3" class="login__form-input" placeholder="" aria-label="weitere3">
+                            </span>
+                        </div>
+                        <div class="form_input">
+                            <span class='field'>
+                                <input type="text" name="weitere4" class="login__form-input" placeholder="" aria-label="weitere4">
+                            </span>
+                        </div>
+                        <div class="form_input">
+                            <span class='field'>
+                                <input type="text" name="weitere5" class="login__form-input" placeholder="" aria-label="weitere5">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="list__">
+                        <p class='label text p2_semibold'>Weitere Informationen:</p>
+                        <div class="form_input">
+                            <span class='field'>
+                                <input type="text" name="weitere6" class="login__form-input" placeholder="" aria-label="weitere6">
+                            </span>
+                        </div>
+                        <div class="form_input">
+                            <span class='field'>
+                                <input type="text" name="weitere7" class="login__form-input" placeholder="" aria-label="weitere7">
+                            </span>
+                        </div>
+                    </div>
 
-                <p class="text p2">Neben der Natur genieße ich es auch, <span class="span-border red">zwischen</span>
-                    kreativ zu betätigen. Das kann das Malen eines Bildes, das Schreiben in meinem Tagebuch oder das Spielen eines Musikinstruments sein. Diese Aktivitäten ermöglichen es mir, mich auszudrücken und mich auf etwas Positives zu konzentrieren.</p>
-                <p class="text p2">Natürlich gibt es auch Zeiten, in denen ich mich einfach nur auf die Couch kuscheln und einen Filmoder eine Serie genießen möchte. Es ist wichtig, sich selbst zu erlauben, sich zu entspannen und etwas zu tun, das einem Freude bereitet.</p>
-                <p class="text p2">Insgesamt ist es entscheidend, eine Balance <span class="span-border green">auf</span> Arbeit und Entspannung zu finden. Jeder hat seine eigenen Vorlieben und Bedürfnisse, wenn es darum geht, Stress abzubauen. Was für mich funktioniert, muss nicht unbedingt für meinen Kollegen gelten, und das ist völlig in Ordnung. Am Ende geht es darum, herauszufinden, was uns persönlich guttut und uns
-                    <span class="span-border red">auf</span> hilft, zur Ruhe zu kommen.
-                </p>
-
-                <hr class="width">
-
-                <button class="primary-button" type="button" data-inputmodal="inputmodal-2">
+                    <button class="primary-button" type="button" data-inputmodal="inputmodal-2">
                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.64648 7.07361C7.81728 6.54732 8.13015 6.07896 8.55078 5.71948C8.97141 5.36001 9.4838 5.12378 10.0303 5.03708C10.5768 4.95038 11.1362 5.0164 11.6475 5.22803C12.1587 5.43966 12.6014 5.78875 12.9268 6.23633C13.2521 6.68391 13.4469 7.21256 13.4904 7.76416C13.5339 8.31576 13.4238 8.86879 13.1727 9.36182C12.9215 9.85484 12.5394 10.2685 12.0676 10.5576C11.5958 10.8467 11.0533 10.9998 10.5 10.9998V12.0002M10.5 19C5.52944 19 1.5 14.9706 1.5 10C1.5 5.02944 5.52944 1 10.5 1C15.4706 1 19.5 5.02944 19.5 10C19.5 14.9706 15.4706 19 10.5 19ZM10.5498 15V15.1L10.4502 15.1002V15H10.5498Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>Erklärung</button>
 
-                <ul class="list dot_list">
-                    <li class="line-through red">zwischen</li>
-                    <li class="green">besonders</li>
-                    <li class="green">eigene</li>
-                    <li class="line-through red">mich</li>
-                    <li class="green">auf</li>
-                    <li class="line-through red">dabei</li>
-                </ul>
+                    <div class="grup__button">
+                        <button class="primary-button border" type="button">
+                            <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 8.00016L8.16667 14.6668M1.5 8.00016L8.16667 1.3335M1.5 8.00016H25.5" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>Zurück</button>
 
-                <div class="grup__button">
-                    <button class="primary-button border" type="button">
-                        <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.5 8.00016L8.16667 14.6668M1.5 8.00016L8.16667 1.3335M1.5 8.00016H25.5" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>Zurück</button>
-                    <button class="primary-button big" type="button">Prüfen</button>
-                </div>
+                        <button class="primary-button big" type="button">Prüfen</button>
 
+                        <button class="primary-button border" type="button">Next
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28 15.9998L21.3333 9.33317M28 15.9998L21.3333 22.6665M28 15.9998H4" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
             </div>
 
             <hr>
@@ -230,14 +343,14 @@
         <div class="container">
             <h2>Fahren Sie mit den <span>Übungen</span> fort</h2>
             <div class="choice-of-exercises__list">
-                <div class="listen-block outline-orange" onclick=location.href="#">
+                <div class="listen-block outline-orange active" onclick=location.href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
                         <path d="M73.8891 48.4721C73.8891 35.0485 63.0071 24.1665 49.5835 24.1665C36.1599 24.1665 25.2779 35.0485 25.2779 48.4721M63.4724 60.6248V67.5693C63.4724 69.1827 63.4724 69.9894 63.6058 70.6602C64.1538 73.415 66.3074 75.5696 69.0622 76.1176C69.733 76.251 70.5396 76.251 72.1529 76.251C73.7663 76.251 74.573 76.251 75.2438 76.1176C77.9986 75.5696 80.1516 73.415 80.6996 70.6602C80.833 69.9894 80.8335 69.1827 80.8335 67.5693V60.6248C80.8335 59.0115 80.833 58.2032 80.6996 57.5324C80.1516 54.7776 77.9986 52.6257 75.2438 52.0777C74.573 51.9443 73.7663 51.9443 72.1529 51.9443C70.5396 51.9443 69.733 51.9443 69.0622 52.0777C66.3074 52.6257 64.1538 54.7776 63.6058 57.5324C63.4724 58.2032 63.4724 59.0115 63.4724 60.6248ZM35.6946 60.6248V67.5693C35.6946 69.1827 35.6941 69.9894 35.5607 70.6602C35.0127 73.415 32.8596 75.5696 30.1048 76.1176C29.434 76.251 28.6276 76.251 27.0142 76.251C25.4008 76.251 24.5941 76.251 23.9233 76.1176C21.1685 75.5696 19.0149 73.415 18.4669 70.6602C18.3335 69.9894 18.3335 69.1827 18.3335 67.5693V60.6248C18.3335 59.0115 18.3335 58.2032 18.4669 57.5324C19.0149 54.7776 21.1685 52.6257 23.9233 52.0777C24.5941 51.9443 25.4008 51.9443 27.0142 51.9443C28.6276 51.9443 29.434 51.9443 30.1048 52.0777C32.8596 52.6257 35.0127 54.7776 35.5607 57.5324C35.6941 58.2032 35.6946 59.0115 35.6946 60.6248Z" stroke="#161616" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <a href="#" class="text p3">Hören</a>
                 </div>
 
-                <div class="listen-block outline-orange active">
+                <div class="listen-block outline-orange">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
                         <path d="M49.5835 40.8325V76.2492M49.5835 40.8325C49.5835 34.9986 49.5835 32.0829 50.7188 29.8546C51.7175 27.8946 53.3099 26.3005 55.2699 25.3019C57.4982 24.1665 60.4156 24.1665 66.2495 24.1665H75.2773C77.2219 24.1665 78.1949 24.1665 78.9376 24.545C79.591 24.8778 80.1208 25.4086 80.4537 26.062C80.8322 26.8047 80.8335 27.7778 80.8335 29.7224V60.278C80.8335 62.2226 80.8322 63.1935 80.4537 63.9363C80.1208 64.5896 79.5921 65.1222 78.9388 65.4551C78.1967 65.8332 77.2258 65.8332 75.285 65.8332H65.4492C62.1881 65.8332 60.5546 65.8332 59.0745 66.2827C57.7642 66.6806 56.5476 67.3322 55.4897 68.2017C54.2947 69.1839 53.3891 70.5406 51.5802 73.254L49.5835 76.2492M49.5835 40.8325C49.5835 34.9986 49.5829 32.0829 48.4476 29.8546C47.4489 27.8946 45.8552 26.3005 43.8952 25.3019C41.667 24.1665 38.7494 24.1665 32.9155 24.1665H23.8877C21.9431 24.1665 20.9717 24.1665 20.229 24.545C19.5756 24.8778 19.0448 25.4086 18.7119 26.062C18.3335 26.8047 18.3335 27.7778 18.3335 29.7224V60.278C18.3335 62.2226 18.3335 63.1935 18.7119 63.9363C19.0448 64.5896 19.5756 65.1222 20.229 65.4551C20.971 65.8332 21.9412 65.8332 23.882 65.8332H33.718C36.9791 65.8332 38.6093 65.8332 40.0893 66.2827C41.3997 66.6806 42.6221 67.3322 43.68 68.2017C44.8702 69.1799 45.77 70.5296 47.5643 73.2211L49.5835 76.2492" stroke="#161616" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
@@ -272,6 +385,7 @@
                     <a href="#" class="text p3">Lernmaterialien</a>
                 </div>
             </div>
+
 
             <div class="google-review_block">
                 <div class="google-block_logo">

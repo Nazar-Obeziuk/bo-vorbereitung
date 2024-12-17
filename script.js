@@ -874,6 +874,7 @@ document.querySelectorAll(".block__select .ul .li").forEach((item) => {
     });
     this.classList.add("active");
     blockSelect.classList.remove("open");
+    blockSelect.classList.add("add");
   });
 });
 
@@ -898,7 +899,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const containerCenter = containerRect.width / 2;
       const blockCenter = blockRect.left + blockRect.width / 2;
 
-      const tolerance = 70;
+      const tolerance = 90;
 
       if (Math.abs(blockCenter - containerCenter) <= tolerance) {
         blockSelect.classList.add("center");
@@ -910,3 +911,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+function alignBlockSelects() {
+  const blockSelects = document.querySelectorAll(".block__select");
+  blockSelects.forEach((blockSelect) => {
+    const container = blockSelect.closest(".container");
+    if (container) {
+      const containerRect = container.getBoundingClientRect();
+      const blockRect = blockSelect.getBoundingClientRect();
+      const containerCenter = containerRect.width / 2;
+      const blockCenter = blockRect.left + blockRect.width / 2;
+
+      const tolerance = 20;
+
+      blockSelect.classList.remove('center', 'left', 'right');
+
+      if (Math.abs(blockCenter - containerCenter) <= tolerance) {
+        blockSelect.classList.add("center");
+      } else if (blockRect.left < containerCenter) {
+        blockSelect.classList.add("left");
+      } else {
+        blockSelect.classList.add("right");
+      }
+    }
+  });
+}
+
+document.addEventListener("DOMContentLoaded", alignBlockSelects);
+window.addEventListener("resize", alignBlockSelects);
+window.addEventListener("orientationchange", alignBlockSelects);
