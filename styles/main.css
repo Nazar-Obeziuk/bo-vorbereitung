@@ -73,9 +73,9 @@
 .breadcrumbs .bold {
   font-weight: 600;
 }
+
 .breadcrumbs .breadcrumbs__list.open .bread__open {
   color: var(--primary-orange);
-  font-weight: 600;
 }
 
 .breadcrumbs .breadcrumbs__list.open .bread__open svg path {
@@ -91,6 +91,8 @@
   z-index: 10;
 }
 
+
+
 .breadcrumbs .breadcrumbs__list.open .ul {
   transition: all 0.3s linear;
   display: flex;
@@ -102,7 +104,7 @@
   overflow: hidden;
   display: none;
 
-  top: 30px;
+  top: 25px;
   position: absolute;
   width: 100%;
   background: var(--white);
@@ -150,6 +152,19 @@
   background: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 11.9995L8.94975 16.9493L19.5572 6.34277" stroke="%23F7631B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>')
     no-repeat;
   background-size: contain;
+}
+
+.breadcrumbs .breadcrumbs__list:hover .ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.breadcrumbs .breadcrumbs__list:hover .bread__open {
+  color: var(--primary-orange);
+}
+
+.breadcrumbs .breadcrumbs__list:hover .bread__open svg path {
+  stroke: var(--primary-orange);
 }
 
 
@@ -374,6 +389,15 @@ h2 {
   .choice-of-exercises__list {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .breadcrumbs .breadcrumbs__list.left {
+    align-items: flex-start;
+  }
+  
+  .breadcrumbs .breadcrumbs__list.right {
+    align-items: flex-end;
+  }
+
 }
 
 @media (max-width: 767.98px) {

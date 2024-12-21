@@ -953,35 +953,37 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-function alignBlockSelects() {
-  const blockSelects = document.querySelectorAll(".block__select");
-  blockSelects.forEach((blockSelect) => {
-    const container = blockSelect.closest(".container");
+function alignElements(selector, tolerance) {
+  const elements = document.querySelectorAll(selector);
+  elements.forEach((element) => {
+    const container = element.closest(".container");
     if (container) {
       const containerRect = container.getBoundingClientRect();
-      const blockRect = blockSelect.getBoundingClientRect();
+      const elementRect = element.getBoundingClientRect();
       const containerCenter = containerRect.width / 2;
-      const blockCenter = blockRect.left + blockRect.width / 2;
+      const elementCenter = elementRect.left + elementRect.width / 2;
 
-      const tolerance = 40;
+      element.classList.remove("center", "left", "right");
 
-      blockSelect.classList.remove("center", "left", "right");
-
-      if (Math.abs(blockCenter - containerCenter) <= tolerance) {
-        blockSelect.classList.add("center");
-      } else if (blockRect.left < containerCenter) {
-        blockSelect.classList.add("left");
+      if (Math.abs(elementCenter - containerCenter) <= tolerance) {
+        element.classList.add("center");
+      } else if (elementRect.left < containerCenter) {
+        element.classList.add("left");
       } else {
-        blockSelect.classList.add("right");
+        element.classList.add("right");
       }
     }
   });
 }
 
-document.addEventListener("DOMContentLoaded", alignBlockSelects);
-window.addEventListener("resize", alignBlockSelects);
-window.addEventListener("orientationchange", alignBlockSelects);
+function alignAllElements() {
+  alignElements(".block__select", 40);
+  alignElements(".breadcrumbs__list", 40);
+}
 
+document.addEventListener("DOMContentLoaded", alignAllElements);
+window.addEventListener("resize", alignAllElements);
+window.addEventListener("orientationchange", alignAllElements);
 
 document.querySelectorAll(".breadcrumbs__list .bread__open").forEach((item) => {
   item.addEventListener("click", function (event) {
