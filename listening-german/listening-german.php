@@ -22,12 +22,23 @@
             <div class="breadcrumbs-main">
                 <a class="text p4" href="#">Vorbereiting mit BO</a>
                 <span>-></span>
-                <a class="text p4" href="#">(Goethe) <?php echo $arrow_caret_down_MD_black; ?></a>
+                <span class="breadcrumbs__list">
+                    <a class="text p4 bread__open" href="#">(Goethe) <?php echo $arrow_caret_down_MD_black; ?></a>
+                    <span class="ul">
+                        <span data-num="1" class="li active">Goethe</span>
+                        <span data-num="2" class="li">Telc</span>
+                        <span data-num="3" class="li">OSD</span>
+                        <span data-num="4" class="li">TestDAF</span>
+                        <span data-num="5" class="li">g.a.s.t.</span>
+                        <span data-num="5" class="li">OIF</span>
+                    </span>
+                </span>
                 <span>-></span>
                 <a class="text p4" href="#">B1</a>
                 <span>-></span>
                 <p class="text p4 bold">Hören</p>
             </div>
+
         </div>
     </section>
 

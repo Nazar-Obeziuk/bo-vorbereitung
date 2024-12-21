@@ -981,3 +981,23 @@ function alignBlockSelects() {
 document.addEventListener("DOMContentLoaded", alignBlockSelects);
 window.addEventListener("resize", alignBlockSelects);
 window.addEventListener("orientationchange", alignBlockSelects);
+
+
+document.querySelectorAll(".breadcrumbs__list .bread__open").forEach((item) => {
+  item.addEventListener("click", function (event) {
+    event.stopPropagation();
+    const blockSelect = this.closest(".breadcrumbs__list");
+    document.querySelectorAll(".breadcrumbs__list").forEach((select) => {
+      if (select !== blockSelect) {
+        select.classList.remove("open");
+      }
+    });
+    blockSelect.classList.toggle("open");
+  });
+});
+
+document.addEventListener("click", function () {
+  document.querySelectorAll(".breadcrumbs__list").forEach((select) => {
+    select.classList.remove("open");
+  });
+});
