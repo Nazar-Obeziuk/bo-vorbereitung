@@ -42,6 +42,14 @@
   font-weight: 600;
   line-height: 34px;
   color: var(--black);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumbs-title a {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-orange);
 }
 
 .breadcrumbs-title span {
@@ -58,6 +66,8 @@
 
 .breadcrumbs a {
   color: var(--black);
+  display: flex;
+  align-items: center;
 }
 
 .breadcrumbs .bold {
@@ -241,7 +251,7 @@ h2 {
 .navigation-item.active.correct {
   background: var(--dark-green);
 }
-.gruup__{
+.gruup__ {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;

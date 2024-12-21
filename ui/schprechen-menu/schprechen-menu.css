@@ -10,6 +10,7 @@
 
 .schprechen-menu > button {
   width: 100%;
+  padding: 10px 20px !important;
 }
 
 .dropdown-menu.schprechen-navigation .dropdown-menu-item-link {

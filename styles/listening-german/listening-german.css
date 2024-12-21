@@ -257,6 +257,11 @@
     background-size: contain;
     margin-left: auto;
   }
+
+  .listening-list {
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -279,9 +284,6 @@
 
   .listening-exercises .listening-exercises__row {
     padding-top: 0;
-  }
-  .listening-exercises button {
-    padding: 10px 18px !important;
   }
 }
 

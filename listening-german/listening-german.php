@@ -18,11 +18,13 @@
     <?php include dirname(__DIR__) . "/components/header.php"; ?>
     <section class="breadcrumbs">
         <div class="container">
-            <p class="breadcrumbs-title">Deutsch <span>B1 Hören</span></з>
+            <p class="breadcrumbs-title">Deutsch <a href="#"><span>B1 Goethe -></span></a></p>
             <div class="breadcrumbs-main">
                 <a class="text p4" href="#">Vorbereiting mit BO</a>
                 <span>-></span>
-                <a class="text p4" href="#">B1 (Goethe)</a>
+                <a class="text p4" href="#">(Goethe) <?php echo $arrow_caret_down_MD_black; ?></a>
+                <span>-></span>
+                <a class="text p4" href="#">B1</a>
                 <span>-></span>
                 <p class="text p4 bold">Hören</p>
             </div>
