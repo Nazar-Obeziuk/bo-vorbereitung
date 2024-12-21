@@ -10,8 +10,8 @@
     <meta property="og:image" content="https://deutsch-vorbereitung.com/img/logo_medium.png">
     <meta property="og:title" content="Vorbereitung mit BO">
     <meta property="og:description" content="Deutsch Prüfung - Vorbereitung auf Hören, Lesen, Schreiben und Sprechen.">
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/home/home.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/home/home.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 

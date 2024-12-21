@@ -326,6 +326,12 @@
     padding-left: 50px;
     padding-top: 20px;
   }
+
+  .deutsch-b1-horen .box__padding__left .address p {
+    font: 400 18px / 1.3em Inter;
+    margin-bottom: 4px;
+  }
+
   .deutsch-b1-horen .box_border {
     border-radius: 20px;
     padding: 30px 70px;
@@ -449,6 +455,10 @@
   .deutsch-b1-horen .box__padding__left {
     padding-left: 0px;
     padding-top: 15px;
+  }
+  .deutsch-b1-horen .box__padding__left .address p {
+    font: 400 16px / 1.3em Inter;
+    margin-bottom: 4px;
   }
 
   .deutsch-b1-horen-button.primary-button.border.small {

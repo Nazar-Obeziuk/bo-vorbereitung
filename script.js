@@ -650,7 +650,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   document
     .querySelectorAll("button.primary-button[data-inputmodal]")
@@ -676,17 +675,49 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 // listening-german
+
+const buttons = document.querySelectorAll(
+  ".listening-exercises__buttons button"
+);
 
 const listeningExercises = document.querySelector(".listening-exercises");
 const listeningList = document.querySelector(".listening-list");
 const primaryButton = listeningExercises
   ? listeningExercises.querySelector(".primary-button")
   : null;
-const buttons = document.querySelectorAll(
-  ".listening-exercises__buttons button"
-);
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const targetId = button.getAttribute("data-target");
+    const targetElement = document.getElementById(targetId);
+
+    // Робимо кнопку активною
+    buttons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    // Відкриваємо блок, якщо він ще не відкритий
+    if (listeningExercises && !listeningExercises.classList.contains("full")) {
+      listeningExercises.classList.add("full");
+
+      // Виконуємо скрол після того, як блок став видимим
+      setTimeout(() => {
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      }, 300); // Час затримки залежить від анімації відкриття блоку
+    } else if (targetElement) {
+      // Скролимо без затримки, якщо блок уже відкритий
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  });
+});
 
 if (primaryButton) {
   primaryButton.addEventListener("click", () => {
@@ -881,13 +912,21 @@ document.querySelectorAll(".block__select .ul .li").forEach((item) => {
 });
 
 document.querySelectorAll(".block__select .span-select").forEach((item) => {
-  item.addEventListener("click", function () {
+  item.addEventListener("click", function (event) {
+    event.stopPropagation();
     const blockSelect = this.closest(".block__select");
-    if (blockSelect.classList.contains("open")) {
-      blockSelect.classList.remove("open");
-    } else {
-      blockSelect.classList.add("open");
-    }
+    document.querySelectorAll(".block__select").forEach((select) => {
+      if (select !== blockSelect) {
+        select.classList.remove("open");
+      }
+    });
+    blockSelect.classList.toggle("open");
+  });
+});
+
+document.addEventListener("click", function () {
+  document.querySelectorAll(".block__select").forEach((select) => {
+    select.classList.remove("open");
   });
 });
 
@@ -926,7 +965,7 @@ function alignBlockSelects() {
 
       const tolerance = 40;
 
-      blockSelect.classList.remove('center', 'left', 'right');
+      blockSelect.classList.remove("center", "left", "right");
 
       if (Math.abs(blockCenter - containerCenter) <= tolerance) {
         blockSelect.classList.add("center");
