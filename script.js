@@ -881,13 +881,21 @@ document.querySelectorAll(".block__select .ul .li").forEach((item) => {
 });
 
 document.querySelectorAll(".block__select .span-select").forEach((item) => {
-  item.addEventListener("click", function () {
+  item.addEventListener("click", function (event) {
+    event.stopPropagation();
     const blockSelect = this.closest(".block__select");
-    if (blockSelect.classList.contains("open")) {
-      blockSelect.classList.remove("open");
-    } else {
-      blockSelect.classList.add("open");
-    }
+    document.querySelectorAll(".block__select").forEach((select) => {
+      if (select !== blockSelect) {
+        select.classList.remove("open");
+      }
+    });
+    blockSelect.classList.toggle("open");
+  });
+});
+
+document.addEventListener("click", function () {
+  document.querySelectorAll(".block__select").forEach((select) => {
+    select.classList.remove("open");
   });
 });
 

@@ -324,6 +324,7 @@
 }
 
 @media (max-width: 991.98px) {
+
   .deutsch-b1-horen .h3__title{
     font: 500 30px/1.3em Inter;
   }
@@ -332,6 +333,12 @@
     padding-left: 50px;
     padding-top: 20px;
   }
+
+  .deutsch-b1-horen .box__padding__left .address p {
+      font: 400 18px / 1.3em Inter;
+      margin-bottom: 4px;
+  }
+
   .deutsch-b1-horen .box_border {
     border-radius: 20px;
     padding: 30px 70px;
@@ -362,6 +369,10 @@
 }
 
 @media (max-width: 767.98px) {
+
+  .box_border p {
+    margin-bottom: 20px;
+  }
 
   .deutsch-b1-horen .box_28sz{
     font: 600 20px/28px Inter;
@@ -457,8 +468,12 @@
 
 @media (max-width: 575.98px) {
   .deutsch-b1-horen .box__padding__left{
-    padding-left: 0px;
+    padding-left: 25px;
     padding-top: 15px;
+  }
+  .deutsch-b1-horen .box__padding__left .address p {
+      font: 400 16px / 1.3em Inter;
+      margin-bottom: 4px;
   }
 
   .deutsch-b1-horen-button.primary-button.border.small {

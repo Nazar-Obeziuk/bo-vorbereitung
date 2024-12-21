@@ -37,7 +37,11 @@ button {
 ul,
 ol,
 li {
-  list-style: none;
+  /* list-style: none; */
+}
+ul,
+ol{
+  padding-left: 20px;
 }
 
 .container {
