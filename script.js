@@ -189,7 +189,7 @@ burgerBtn.addEventListener("click", function () {
 const headerFirstDropdownItem1Content = document.querySelectorAll(
   ".header-first-dropdown-item-1-content"
 );
-const headerLanguageContent = document.querySelectorAll(".language-content");
+const headerLanguageContent = document.querySelectorAll(".header-language-content.language-content");
 const headerSecondNavItem = document.querySelectorAll(
   ".header-second-nav-item"
 );
@@ -271,6 +271,35 @@ function windowResize() {
 
 window.addEventListener("resize", windowResize);
 window.addEventListener("orientationchange", windowResize);
+
+// footer
+const footerDropdownButton1 = document.querySelector('.footer-first-dropdown-item-1-content');
+const footerDropdownButton2 = document.querySelector('.footer-language-content.language-content');
+
+footerDropdownButton1.addEventListener('click', function() {
+  if (window.innerWidth < 1199.99){
+    const dropdownMenu = this.parentElement.children[1];
+    footerDropdownButton2.parentElement.children[1].removeAttribute('style');
+    dropdownMenu.getAttribute('style') ? dropdownMenu.removeAttribute('style') : dropdownMenu.setAttribute('style', 'display: block');
+  }
+});
+
+footerDropdownButton2.addEventListener('click', function() {
+  if (window.innerWidth < 1199.99){
+    const dropdownMenu = this.parentElement.children[1];
+    footerDropdownButton1.parentElement.children[1].removeAttribute('style');
+    dropdownMenu.getAttribute('style') ? dropdownMenu.removeAttribute('style') : dropdownMenu.setAttribute('style', 'display: block');
+  }
+});
+
+document.addEventListener('click', function(e) {
+  if(!e.target.closest('.footer-first-dropdown-item-1-content') && !e.target.closest('.footer-first-dropdown-menu')) {
+    footerDropdownButton1.parentElement.children[1].removeAttribute('style');
+  }
+  if(!e.target.closest('.footer-language-content.language-content') && !e.target.closest('.footer-language-dropdown-menu')) {
+    footerDropdownButton2.parentElement.children[1].removeAttribute('style');
+  }
+});
 
 // progress
 const circles = document.querySelectorAll(".progress-circle");

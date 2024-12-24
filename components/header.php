@@ -33,7 +33,7 @@
                </div>
             </div>
             <div class="language">
-               <div class="language-content">
+               <div class="header-language-content language-content">
                   <div class="language-icon"><?php echo $flag_germany; ?></div>
                   <p class="text p4">Deutsch</p>
                   <div class="arrow-dropdown-icon"><?php echo $arrow_caret_down_MD_black; ?></div>
